@@ -312,12 +312,20 @@ def load_cache() -> dict:
     if CACHE_FILE.exists():
         data = json.loads(CACHE_FILE.read_text())
         if isinstance(data, list):
-            return {"seen": set(data), "shopify": {}}
-        return {"seen": set(data.get("seen", [])), "shopify": data.get("shopify", {})}
-    return {"seen": set(), "shopify": {}}
+            return {"seen": set(data), "shopify": {}, "seeded_stores": set()}
+        return {
+            "seen": set(data.get("seen", [])),
+            "shopify": data.get("shopify", {}),
+            "seeded_stores": set(data.get("seeded_stores", [])),
+        }
+    return {"seen": set(), "shopify": {}, "seeded_stores": set()}
 
 def save_cache(cache: dict):
-    CACHE_FILE.write_text(json.dumps({"seen": sorted(cache["seen"]), "shopify": cache["shopify"]}, indent=0))
+    CACHE_FILE.write_text(json.dumps({
+        "seen": sorted(cache["seen"]),
+        "shopify": cache["shopify"],
+        "seeded_stores": sorted(cache["seeded_stores"]),
+    }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
 
@@ -488,23 +496,33 @@ def run():
 
     for f in all_finds:
         cache["seen"].add(f["id"])
+
+    # New stores get one silent seed pass (like the global first-run seed, but
+    # scoped per-store) so adding a store never floods alerts for its whole
+    # existing catalog — only genuinely new drops alert from its second check on.
+    checked_names = {store["name"] for store in STORES}
+    new_stores = checked_names - cache["seeded_stores"]
+    if new_stores:
+        log.info("Silently seeding %d new store(s): %s", len(new_stores), ", ".join(sorted(new_stores)))
+    alertable_finds = [f for f in all_finds if f["store"] not in new_stores]
+    cache["seeded_stores"] |= checked_names
     save_cache(cache)
 
     if first_run:
         log.info("Cache seeded: %d products tracked. No alerts sent on first run.", len(cache["seen"]))
         return
 
-    if not all_finds:
+    if not alertable_finds:
         log.info("No new SBs this run.")
         return
 
-    for f in all_finds:
+    for f in alertable_finds:
         try:
             send_discord(f)
         except Exception as e:
             log.error("Discord alert failed for %s: %s", f["title"], e)
 
-    dunk_finds = [f for f in all_finds if is_dunk(f["title"])]
+    dunk_finds = [f for f in alertable_finds if is_dunk(f["title"])]
     if dunk_finds:
         try:
             send_email(dunk_finds)
@@ -513,7 +531,7 @@ def run():
     else:
         log.info("No SB Dunks this run (%d non-Dunk SB find(s)) — email skipped, Discord still alerted.", len(all_finds))
 
-    log.info("Run complete: %d new drop(s) alerted.", len(all_finds))
+    log.info("Run complete: %d new drop(s) alerted.", len(alertable_finds))
 
 
 if __name__ == "__main__":
