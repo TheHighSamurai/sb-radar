@@ -149,6 +149,9 @@ def send_email(finds: list):
 # ── Store list ────────────────────────────────────────────────────────────────
 STORES = [
     # ── NATIONAL (verified-reachable, DNS-checked Sep 2026) ─────────────────
+    {"name": "Doubler Kicks", "url": "https://doublerkicks.com"},
+    {"name": "Flatspot", "url": "https://www.flatspot.com"},
+    {"name": "Stardust Skate Shop", "url": "https://www.stardustskateshop.com"},
     {"name": "Reset Mercantile", "url": "https://resetmercantile.com"},
     {"name": "Sequence", "url": "https://sequencealaska.com"},
     {"name": "BLX Skateshop", "url": "https://blxskateshop.com"},
