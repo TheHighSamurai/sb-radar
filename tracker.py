@@ -1,4 +1,4 @@
-undefined"""
+"""
 Nike SB Dunk Tracker — SB Radar
 - Monitors Nike-adjacent skate shop sites (national list, DNS-verified Sep 2026)
   plus San Diego / North County local shops
@@ -46,7 +46,7 @@ HEADERS = {
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
 
-# ── Discord ────────────────────────────────────────────────────────────────
+# ── Discord ─────────────────────────────────────────────────────────────────
 DISCORD_WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL")
 
 def send_discord(find: dict):
