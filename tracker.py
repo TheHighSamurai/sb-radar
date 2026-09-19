@@ -26,8 +26,8 @@ import requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
 CACHE_FILE      = Path("seen_products.json")
-REQUEST_TIMEOUT = 12
-MAX_WORKERS     = 30
+REQUEST_TIMEOUT = 6
+MAX_WORKERS     = 50
 
 SB_KEYWORDS = [
     "sb dunk", "dunk sb", "nike sb", " sb low", " sb high",
@@ -328,6 +328,18 @@ def is_sb(text: str) -> bool:
 def is_dunk(text: str) -> bool:
     return "dunk" in text.lower()
 
+APPAREL_KEYWORDS = [
+    "hoodie", "t-shirt", "tee", "shirt", "jacket", "crewneck", "sweatshirt",
+    "sweatpants", "pants", "shorts", "hat", "cap", "beanie", "socks",
+    "backpack", "bag", "tote", "sweater", "pullover", "jersey", "vest",
+    "sticker", "poster", "grip tape", "wheels", "trucks", "bearings",
+    "gloves", "belt", "wallet", "deck",
+]
+
+def is_apparel(title: str, product_type: str = "") -> bool:
+    text = f"{title} {product_type}".lower()
+    return any(re.search(rf"\b{re.escape(kw)}\b", text) for kw in APPAREL_KEYWORDS)
+
 def is_shopify(url: str, cache: dict) -> bool:
     base = url.rstrip("/")
     if base in cache["shopify"]:
@@ -379,7 +391,7 @@ def fetch_html(store: dict) -> list:
             candidates += re.findall(r'<h[123][^>]*>([^<]{5,100})</h[123]>', html, re.IGNORECASE)
             for c in candidates:
                 c = c.strip()
-                if is_sb(c):
+                if is_sb(c) and not is_apparel(c):
                     found.append({
                         "id":    f"{store['name']}::html::{c.lower()[:60]}",
                         "title": c,
@@ -424,6 +436,9 @@ def check_store(store: dict, cache: dict) -> list:
         for p in fetch_shopify(store):
             title = p.get("title", "")
             if not is_sb(title):
+                continue
+            product_type = p.get("product_type", "")
+            if is_apparel(title, product_type):
                 continue
             pid = f"{store['name']}::{p.get('id')}"
             if pid in seen:
