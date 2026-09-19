@@ -17,6 +17,8 @@ import smtplib
 import logging
 import concurrent.futures
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from html import escape as _html_escape
 from datetime import datetime
 from pathlib import Path
 
@@ -93,20 +95,52 @@ def send_email(finds: list):
     if not (GMAIL_ADDRESS and GMAIL_APP_PASSWORD and EMAIL_TO):
         log.warning("Gmail SMTP env vars not set — skipping email alert")
         return
-    lines = []
+
+    # Plain-text fallback (for clients that don't render HTML)
+    text_lines = []
     for f in finds:
         local_tag = " (LOCAL — check in-store)" if f.get("local") else ""
-        lines.append(
+        text_lines.append(
             f"{f['store']}{local_tag}\n"
             f"{f['title']} — ${f['price']}\n"
             f"Sizes: {f['sizes']}\n"
             f"{f['link']}\n"
         )
-    body = "\n---\n".join(lines)
-    msg = MIMEText(body)
+    text_body = "\n---\n".join(text_lines)
+
+    # HTML version — includes the product image (same URL used in the Discord embed)
+    cards = []
+    for f in finds:
+        local_tag = " 📍 <b>LOCAL — check in-store</b>" if f.get("local") else ""
+        img_html = (
+            f'<img src="{_html_escape(f["image"])}" alt="" '
+            f'style="max-width:320px;width:100%;border-radius:8px;'
+            f'margin:8px 0;display:block;">'
+            if f.get("image") else ""
+        )
+        cards.append(f"""
+        <div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e2e2e2;">
+          <div style="font-weight:600;font-size:14px;color:#555;">{_html_escape(f['store'])}{local_tag}</div>
+          <a href="{_html_escape(f['link'])}" style="font-size:16px;font-weight:700;color:#ff6a00;text-decoration:none;">
+            {_html_escape(f['title'])}
+          </a>
+          <div style="font-size:14px;margin-top:4px;">💵 ${_html_escape(str(f['price']))}</div>
+          <div style="font-size:14px;">📏 {_html_escape(f['sizes'])}</div>
+          {img_html}
+          <a href="{_html_escape(f['link'])}" style="font-size:13px;color:#1a73e8;">{_html_escape(f['link'])}</a>
+        </div>""")
+    html_body = f"""
+    <html><body style="font-family:-apple-system,Helvetica,Arial,sans-serif;color:#111;max-width:480px;margin:0 auto;">
+      <h2 style="color:#ff6a00;">🛹 SB Radar — {len(finds)} new drop(s)</h2>
+      {''.join(cards)}
+    </body></html>"""
+
+    msg = MIMEMultipart("alternative")
     msg["Subject"] = f"SB Radar: {len(finds)} new SB Dunk drop(s)"
     msg["From"]    = GMAIL_ADDRESS
     msg["To"]      = EMAIL_TO
+    msg.attach(MIMEText(text_body, "plain"))
+    msg.attach(MIMEText(html_body, "html"))
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
         server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
