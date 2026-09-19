@@ -150,6 +150,10 @@ def send_email(finds: list):
 STORES = [
     # ── NATIONAL (verified-reachable, DNS-checked Sep 2026) ─────────────────
     {"name": "Doubler Kicks", "url": "https://doublerkicks.com"},
+    {"name": "Humidity Skateshop", "url": "https://humiditynola.com"},
+    {"name": "Bluetile Skateboards", "url": "https://bluetilesc.com"},
+    {"name": "The Block Skate Supply", "url": "https://theblockskatesupply.com"},
+    {"name": "Unheardof", "url": "https://unheardofbrand.com"},
     {"name": "Flatspot", "url": "https://www.flatspot.com"},
     {"name": "Stardust Skate Shop", "url": "https://www.stardustskateshop.com"},
     {"name": "Reset Mercantile", "url": "https://resetmercantile.com"},
