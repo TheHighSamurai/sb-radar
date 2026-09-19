@@ -78,7 +78,7 @@ def send_discord(find: dict):
     }
     if find.get("image"):
         embed["image"] = {"url": find["image"]}
-    payload = {"content": "🛹 New SB Dunk drop", "embeds": [embed]}
+    payload = {"content": "🛹 New SB's detected", "embeds": [embed]}
     for webhook_url in DISCORD_WEBHOOKS:
         try:
             resp = requests.post(webhook_url, json=payload, timeout=10)
@@ -136,7 +136,7 @@ def send_email(finds: list):
     </body></html>"""
 
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"SB Radar: {len(finds)} new SB Dunk drop(s)"
+    msg["Subject"] = f"SB Radar: {len(finds)} new SB's detected"
     msg["From"]    = GMAIL_ADDRESS
     msg["To"]      = EMAIL_TO
     msg.attach(MIMEText(text_body, "plain"))
