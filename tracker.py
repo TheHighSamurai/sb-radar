@@ -46,12 +46,22 @@ HEADERS = {
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
 
-# ── Discord ─────────────────────────────────────────────────────────────────
-DISCORD_WEBHOOK = os.environ.get("DISCORD_WEBHOOK_URL")
+# ── Discord ───────────────────────────────────────────────────────────────────
+# Supports posting to multiple Discord servers — set DISCORD_WEBHOOK_URL for the
+# primary server, and optionally DISCORD_WEBHOOK_URL_2 (a second server, e.g. a
+# friend's), DISCORD_WEBHOOK_URL_3, etc. Any unset ones are just skipped.
+DISCORD_WEBHOOKS = [
+    v for v in (
+        os.environ.get("DISCORD_WEBHOOK_URL"),
+        os.environ.get("DISCORD_WEBHOOK_URL_2"),
+        os.environ.get("DISCORD_WEBHOOK_URL_3"),
+    )
+    if v
+]
 
 def send_discord(find: dict):
-    if not DISCORD_WEBHOOK:
-        log.warning("DISCORD_WEBHOOK_URL not set — skipping Discord alert")
+    if not DISCORD_WEBHOOKS:
+        log.warning("No DISCORD_WEBHOOK_URL* env vars set — skipping Discord alert")
         return
     local_line = "\n📍 **LOCAL — CHECK IN-STORE**" if find.get("local") else ""
     embed = {
@@ -66,12 +76,13 @@ def send_discord(find: dict):
     }
     if find.get("image"):
         embed["image"] = {"url": find["image"]}
-    resp = requests.post(
-        DISCORD_WEBHOOK,
-        json={"content": "🛹 New SB Dunk drop", "embeds": [embed]},
-        timeout=10,
-    )
-    resp.raise_for_status()
+    payload = {"content": "🛹 New SB Dunk drop", "embeds": [embed]}
+    for webhook_url in DISCORD_WEBHOOKS:
+        try:
+            resp = requests.post(webhook_url, json=payload, timeout=10)
+            resp.raise_for_status()
+        except requests.RequestException as e:
+            log.warning(f"Discord post failed for one webhook: {e}")
 
 # ── Email (Gmail SMTP) ───────────────────────────────────────────────────────
 GMAIL_ADDRESS      = os.environ.get("GMAIL_ADDRESS")
