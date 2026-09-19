@@ -288,6 +288,9 @@ def is_sb(text: str) -> bool:
     lower = text.lower()
     return any(kw in lower for kw in SB_KEYWORDS)
 
+def is_dunk(text: str) -> bool:
+    return "dunk" in text.lower()
+
 def is_shopify(url: str, cache: dict) -> bool:
     base = url.rstrip("/")
     if base in cache["shopify"]:
@@ -449,10 +452,14 @@ def run():
         except Exception as e:
             log.error("Discord alert failed for %s: %s", f["title"], e)
 
-    try:
-        send_email(all_finds)
-    except Exception as e:
-        log.error("Email alert failed: %s", e)
+    dunk_finds = [f for f in all_finds if is_dunk(f["title"])]
+    if dunk_finds:
+        try:
+            send_email(dunk_finds)
+        except Exception as e:
+            log.error("Email alert failed: %s", e)
+    else:
+        log.info("No SB Dunks this run (%d non-Dunk SB find(s)) — email skipped, Discord still alerted.", len(all_finds))
 
     log.info("Run complete: %d new drop(s) alerted.", len(all_finds))
 
