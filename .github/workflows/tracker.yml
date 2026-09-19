@@ -1,0 +1,49 @@
+name: SB Radar Tracker
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sb-radar-tracker
+  cancel-in-progress: false
+
+jobs:
+  run-tracker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tracker
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python tracker.py
+
+      - name: Commit updated cache
+        run: |
+          if [ -n "$(git status --porcelain seen_products.json)" ]; then
+            git config user.name "sb-radar-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add seen_products.json
+            git commit -m "Update seen-products cache [skip ci]"
+            git push
+          else
+            echo "No cache changes to commit."
+          fi
