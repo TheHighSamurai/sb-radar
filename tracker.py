@@ -215,7 +215,6 @@ STORES = [
     {"name": "Skaters Advocate", "url": "https://skatersadvocate.com"},
     {"name": "Familia Skateboard Shop", "url": "https://familiaskateshop.com"},
     {"name": "Cal Surf MN", "url": "https://calsurf.com"},
-    {"name": "Swellophonic", "url": "https://swellophonic.com"},
     {"name": "Infinity Skate", "url": "https://infinityskate.com"},
     {"name": "Coureur Goods", "url": "https://coureurgoods.com"},
     {"name": "NJ Skateshop", "url": "https://njskateshop.com"},
