@@ -146,6 +146,57 @@ def send_email(finds: list):
         server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
         server.sendmail(GMAIL_ADDRESS, [EMAIL_TO], msg.as_string())
 
+def send_weekly_digest(finds: list):
+    """Weekly Friday recap of all SB shoe finds accumulated since last Friday."""
+    if not (GMAIL_ADDRESS and GMAIL_APP_PASSWORD and EMAIL_TO):
+        log.warning("Gmail SMTP env vars not set — skipping weekly digest")
+        return
+    from datetime import date as _date
+    week_label = _date.today().strftime("%b %d, %Y")
+    text_lines = []
+    for f in finds:
+        local_tag = " (LOCAL — check in-store)" if f.get("local") else ""
+        text_lines.append(
+            f"{f['store']}{local_tag}\n"
+            f"{f['title']} — ${f['price']}\n"
+            f"Sizes: {f['sizes']}\n"
+            f"{f['link']}\n"
+        )
+    text_body = "\n---\n".join(text_lines)
+    cards = []
+    for f in finds:
+        local_tag = " 📍 <b>LOCAL</b>" if f.get("local") else ""
+        img_html = (
+            f'<img src="{_html_escape(f["image"])}" alt="" '
+            f'style="max-width:320px;width:100%;border-radius:8px;margin:8px 0;display:block;">'
+            if f.get("image") else ""
+        )
+        cards.append(
+            '<div style="margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid #e2e2e2;">'
+            + f'<div style="font-weight:600;font-size:14px;color:#555;">{_html_escape(f["store"])}{local_tag}</div>'
+            + f'<a href="{_html_escape(f["link"])}" style="font-size:16px;font-weight:700;color:#ff6a00;text-decoration:none;">{_html_escape(f["title"])}</a>'
+            + f'<div style="font-size:14px;margin-top:4px;">💵 ${_html_escape(str(f["price"]))}</div>'
+            + f'<div style="font-size:14px;">📏 {_html_escape(f["sizes"])}</div>'
+            + img_html
+            + f'<a href="{_html_escape(f["link"])}" style="font-size:13px;color:#1a73e8;">{_html_escape(f["link"])}</a>'
+            + '</div>'
+        )
+    html_body = (
+        '<html><body style="font-family:-apple-system,Helvetica,Arial,sans-serif;color:#111;max-width:480px;margin:0 auto;">'
+        + f'<h2 style="color:#ff6a00;">🛹 SB Radar — Weekly ({week_label}, {len(finds)} drop(s))</h2>'
+        + ''.join(cards)
+        + '</body></html>'
+    )
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"SB Radar Weekly: {len(finds)} SB drop(s) — {week_label}"
+    msg["From"]    = GMAIL_ADDRESS
+    msg["To"]      = EMAIL_TO
+    msg.attach(MIMEText(text_body, "plain"))
+    msg.attach(MIMEText(html_body, "html"))
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
+        server.sendmail(GMAIL_ADDRESS, [EMAIL_TO], msg.as_string())
+
 # ── Store list ────────────────────────────────────────────────────────────────
 STORES = [
     # ── NATIONAL (verified-reachable, DNS-checked Sep 2026) ─────────────────
@@ -316,14 +367,16 @@ def load_cache() -> dict:
             "seen": set(data.get("seen", [])),
             "shopify": data.get("shopify", {}),
             "seeded_stores": set(data.get("seeded_stores", [])),
+            "weekly_digest": data.get("weekly_digest", []),
         }
-    return {"seen": set(), "shopify": {}, "seeded_stores": set()}
+    return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": []}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
         "seen": sorted(cache["seen"]),
         "shopify": cache["shopify"],
         "seeded_stores": sorted(cache["seeded_stores"]),
+        "weekly_digest": cache.get("weekly_digest", []),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -346,6 +399,16 @@ APPAREL_KEYWORDS = [
 def is_apparel(title: str, product_type: str = "") -> bool:
     text = f"{title} {product_type}".lower()
     return any(re.search(rf"\b{re.escape(kw)}\b", text) for kw in APPAREL_KEYWORDS)
+
+def is_shoe_variant(product: dict) -> bool:
+    """Return True only if the product has at least one numeric size variant.
+    Catches color-only accessories (e.g. option1='Maroon') that slip through is_apparel()."""
+    import re as _re
+    for v in product.get("variants", []):
+        opt = (v.get("option1") or v.get("title") or "").strip()
+        if opt and opt != "Default Title" and _re.search(r'\d', opt):
+            return True
+    return False
 
 def is_shopify(url: str, cache: dict) -> bool:
     base = url.rstrip("/")
@@ -447,6 +510,8 @@ def check_store(store: dict, cache: dict) -> list:
             product_type = p.get("product_type", "")
             if is_apparel(title, product_type):
                 continue
+            if not is_shoe_variant(p):
+                continue
             pid = f"{store['name']}::{p.get('id')}"
             if pid in seen:
                 continue
@@ -529,6 +594,32 @@ def run():
             log.error("Email alert failed: %s", e)
     else:
         log.info("No SB Dunks this run (%d non-Dunk SB find(s)) — email skipped, Discord still alerted.", len(all_finds))
+
+    # Accumulate all new SB shoe finds into the weekly digest buffer
+    if alertable_finds:
+        digest_buf = cache.get("weekly_digest", [])
+        for f in alertable_finds:
+            digest_buf.append({
+                "store": f["store"], "title": f["title"], "price": f["price"],
+                "sizes": f["sizes"], "link": f["link"],
+                "image": f.get("image"), "local": f.get("local", False),
+            })
+        cache["weekly_digest"] = digest_buf
+        save_cache(cache)
+
+    # Friday weekly digest — send accumulated finds and clear the buffer
+    if datetime.now().weekday() == 4:  # 4 = Friday
+        digest_buf = cache.get("weekly_digest", [])
+        if digest_buf:
+            log.info("Friday — sending weekly digest (%d find(s)) and clearing buffer.", len(digest_buf))
+            try:
+                send_weekly_digest(digest_buf)
+                cache["weekly_digest"] = []
+                save_cache(cache)
+            except Exception as e:
+                log.error("Weekly digest failed: %s", e)
+        else:
+            log.info("Friday — no accumulated finds for weekly digest.")
 
     log.info("Run complete: %d new drop(s) alerted.", len(alertable_finds))
 
