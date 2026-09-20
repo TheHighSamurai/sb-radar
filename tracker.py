@@ -396,19 +396,15 @@ APPAREL_KEYWORDS = [
     "gloves", "belt", "wallet", "deck",
 ]
 
+APPAREL_PRODUCT_TYPES = {"apparel", "headwear", "accessories", "accessory", "hardware", "clothing"}
+
 def is_apparel(title: str, product_type: str = "") -> bool:
+    # Block by Shopify product_type first (most reliable signal)
+    if product_type.strip().lower() in APPAREL_PRODUCT_TYPES:
+        return True
+    # Then check title for apparel keywords
     text = f"{title} {product_type}".lower()
     return any(re.search(rf"\b{re.escape(kw)}\b", text) for kw in APPAREL_KEYWORDS)
-
-def is_shoe_variant(product: dict) -> bool:
-    """Return True only if the product has at least one numeric size variant.
-    Catches color-only accessories (e.g. option1='Maroon') that slip through is_apparel()."""
-    import re as _re
-    for v in product.get("variants", []):
-        opt = (v.get("option1") or v.get("title") or "").strip()
-        if opt and opt != "Default Title" and _re.search(r'\d', opt):
-            return True
-    return False
 
 def is_shopify(url: str, cache: dict) -> bool:
     base = url.rstrip("/")
@@ -509,8 +505,6 @@ def check_store(store: dict, cache: dict) -> list:
                 continue
             product_type = p.get("product_type", "")
             if is_apparel(title, product_type):
-                continue
-            if not is_shoe_variant(p):
                 continue
             pid = f"{store['name']}::{p.get('id')}"
             if pid in seen:
