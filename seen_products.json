@@ -2980,6 +2980,7 @@
 "Magnolia Skateshop::9491711262933",
 "Magnolia Skateshop::9514177822933",
 "Magnolia Skateshop::9516826525909",
+"Magnolia Skateshop::9618938691797",
 "Mainland::7015456243797",
 "Mainland::7015458799701",
 "Mainland::7015587348565",
@@ -5766,5 +5767,15 @@
 "Wonder Skate Shop",
 "Xtreme"
 ],
-"weekly_digest": []
+"weekly_digest": [
+{
+"store": "Magnolia Skateshop",
+"title": "Nike SB \"Filbert\" Dunk Low",
+"price": "125.00",
+"sizes": "Check site",
+"link": "https://magnoliaskateshop.com/products/nike-sb-filbert-dunk-low",
+"image": "https://cdn.shopify.com/s/files/1/0293/1182/8103/files/n1.webp?v=1790011934",
+"local": false
+}
+]
 }
