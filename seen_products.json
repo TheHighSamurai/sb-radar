@@ -2498,6 +2498,7 @@
 "Furnace Skate::10544164602040",
 "Furnace Skate::10574405828792",
 "Furnace Skate::10574406647992",
+"Furnace Skate::10578617499832",
 "Furnace Skate::7299934453944",
 "Furnace Skate::7299935043768",
 "Furnace Skate::7315759136952",
@@ -5905,6 +5906,15 @@
 "sizes": "University Gold/Game Royal",
 "link": "https://303boards-com.myshopify.com/products/nike-sb-blazer-mid-pro-gt-university-gold-game-royal",
 "image": "https://cdn.shopify.com/s/files/1/0028/6756/0494/files/Nike_SB_-_Blazer_Mid_Pro_GT_University_Gold_Game_Royal.jpg?v=1745510058",
+"local": false
+},
+{
+"store": "Furnace Skate",
+"title": "Nike SB PS8",
+"price": "135.00",
+"sizes": "8.5, 9, 9.5, 11, 11.5, 12",
+"link": "https://furnaceskate.com/products/nike-sb-ps8",
+"image": "https://cdn.shopify.com/s/files/1/0376/9217/files/IMG_0181.jpg?v=1790116880",
 "local": false
 }
 ]
