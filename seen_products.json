@@ -3768,6 +3768,7 @@
 "Rock City Kicks::8865156661406",
 "Rock City Kicks::8884802224286",
 "Rock City Kicks::8884815757470",
+"Rock City Kicks::8884825653406",
 "Rock City Kicks::8887427367070",
 "Rose Street Encinitas::6174506123463",
 "Rose Street Encinitas::6723872620743",
@@ -5915,6 +5916,15 @@
 "sizes": "8.5, 9, 9.5, 11, 11.5, 12",
 "link": "https://furnaceskate.com/products/nike-sb-ps8",
 "image": "https://cdn.shopify.com/s/files/1/0376/9217/files/IMG_0181.jpg?v=1790116880",
+"local": false
+},
+{
+"store": "Rock City Kicks",
+"title": "Nike SB Dunk Low Pro (Filbert/LT Chocolate-Black)",
+"price": "120.00",
+"sizes": "Check site",
+"link": "https://rockcitykicks.com/products/nike-sb-dunk-low-pro-filbert-lt-chocolate-black",
+"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBDunkLowPro_Filbert_LTChocolate-Black_HQ1625-2011.jpg?v=1790220834",
 "local": false
 }
 ]
