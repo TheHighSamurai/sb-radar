@@ -20,6 +20,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from html import escape as _html_escape
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 import requests
@@ -28,6 +29,13 @@ import requests
 CACHE_FILE      = Path("seen_products.json")
 REQUEST_TIMEOUT = 6
 MAX_WORKERS     = 50
+
+# Weekly digest = Nike SB NON-shoe items only (apparel + accessories).
+# Shoes keep going out in real time via Discord/email; apparel never alerts in
+# real time, it just accumulates and goes out once a week.
+DIGEST_TZ      = ZoneInfo("America/Los_Angeles")
+DIGEST_WEEKDAY = 4   # Friday
+DIGEST_HOUR    = 8   # first run at/after 8 AM Pacific sends it
 
 SB_KEYWORDS = [
     "sb dunk", "dunk sb", "nike sb", " sb low", " sb high",
@@ -147,12 +155,11 @@ def send_email(finds: list):
         server.sendmail(GMAIL_ADDRESS, [EMAIL_TO], msg.as_string())
 
 def send_weekly_digest(finds: list):
-    """Weekly Friday recap of all SB shoe finds accumulated since last Friday."""
+    """Weekly Friday recap of Nike SB apparel & accessories found since the last digest."""
     if not (GMAIL_ADDRESS and GMAIL_APP_PASSWORD and EMAIL_TO):
         log.warning("Gmail SMTP env vars not set — skipping weekly digest")
         return
-    from datetime import date as _date
-    week_label = _date.today().strftime("%b %d, %Y")
+    week_label = datetime.now(DIGEST_TZ).strftime("%b %d, %Y")
     text_lines = []
     for f in finds:
         local_tag = " (LOCAL — check in-store)" if f.get("local") else ""
@@ -183,12 +190,12 @@ def send_weekly_digest(finds: list):
         )
     html_body = (
         '<html><body style="font-family:-apple-system,Helvetica,Arial,sans-serif;color:#111;max-width:480px;margin:0 auto;">'
-        + f'<h2 style="color:#ff6a00;">🛹 SB Radar — Weekly ({week_label}, {len(finds)} drop(s))</h2>'
+        + f'<h2 style="color:#ff6a00;">🛹 SB Radar Weekly — Apparel & Accessories ({week_label}, {len(finds)} item(s))</h2>'
         + ''.join(cards)
         + '</body></html>'
     )
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"SB Radar Weekly: {len(finds)} SB drop(s) — {week_label}"
+    msg["Subject"] = f"SB Radar Weekly: {len(finds)} SB apparel & accessories — {week_label}"
     msg["From"]    = GMAIL_ADDRESS
     msg["To"]      = EMAIL_TO
     msg.attach(MIMEText(text_body, "plain"))
@@ -368,8 +375,11 @@ def load_cache() -> dict:
             "shopify": data.get("shopify", {}),
             "seeded_stores": set(data.get("seeded_stores", [])),
             "weekly_digest": data.get("weekly_digest", []),
+            "apparel_seeded": data.get("apparel_seeded", False),
+            "last_digest_date": data.get("last_digest_date"),
         }
-    return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": []}
+    return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
+            "apparel_seeded": False, "last_digest_date": None}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
@@ -377,6 +387,8 @@ def save_cache(cache: dict):
         "shopify": cache["shopify"],
         "seeded_stores": sorted(cache["seeded_stores"]),
         "weekly_digest": cache.get("weekly_digest", []),
+        "apparel_seeded": cache.get("apparel_seeded", False),
+        "last_digest_date": cache.get("last_digest_date"),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -504,8 +516,7 @@ def check_store(store: dict, cache: dict) -> list:
             if not is_sb(title):
                 continue
             product_type = p.get("product_type", "")
-            if is_apparel(title, product_type):
-                continue
+            apparel = is_apparel(title, product_type)
             pid = f"{store['name']}::{p.get('id')}"
             if pid in seen:
                 continue
@@ -519,14 +530,16 @@ def check_store(store: dict, cache: dict) -> list:
                 "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
                 "image": product_image(p),
                 "local": store.get("local_sd", False),
+                "apparel": apparel,
             })
     else:
         for f in fetch_html(store):
             if f["id"] not in seen:
-                finds.append({**f, "store": store["name"], "local": store.get("local_sd", False)})
+                finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False})
 
     for f in finds:
-        log.info(f"  NEW SB [{store['name']}]: {f['title']} — ${f['price']}")
+        kind = "APPAREL" if f.get("apparel") else "SB"
+        log.info(f"  NEW {kind} [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
 
 # ── Main (single pass) ────────────────────────────────────────────────────────
@@ -564,59 +577,82 @@ def run():
         log.info("Silently seeding %d new store(s): %s", len(new_stores), ", ".join(sorted(new_stores)))
     alertable_finds = [f for f in all_finds if f["store"] not in new_stores]
     cache["seeded_stores"] |= checked_names
-    save_cache(cache)
 
-    if first_run:
-        log.info("Cache seeded: %d products tracked. No alerts sent on first run.", len(cache["seen"]))
-        return
+    # Apparel/accessories were never tracked before, so the first run after this
+    # feature ships marks every existing SB apparel item as seen WITHOUT adding
+    # it to the digest — otherwise the first digest would be the whole back catalog.
+    apparel_seed_run = not cache.get("apparel_seeded", False)
+    shoe_finds    = [f for f in alertable_finds if not f.get("apparel")]
+    apparel_finds = [] if (first_run or apparel_seed_run) else [f for f in alertable_finds if f.get("apparel")]
+    if apparel_seed_run:
+        n = sum(1 for f in all_finds if f.get("apparel"))
+        log.info("Apparel seed pass: marked %d existing SB apparel/accessory item(s) seen, none added to digest.", n)
+        cache["apparel_seeded"] = True
 
-    if not alertable_finds:
-        log.info("No new SBs this run.")
-        return
-
-    for f in alertable_finds:
-        try:
-            send_discord(f)
-        except Exception as e:
-            log.error("Discord alert failed for %s: %s", f["title"], e)
-
-    dunk_finds = [f for f in alertable_finds if is_dunk(f["title"])]
-    if dunk_finds:
-        try:
-            send_email(dunk_finds)
-        except Exception as e:
-            log.error("Email alert failed: %s", e)
-    else:
-        log.info("No SB Dunks this run (%d non-Dunk SB find(s)) — email skipped, Discord still alerted.", len(all_finds))
-
-    # Accumulate all new SB shoe finds into the weekly digest buffer
-    if alertable_finds:
+    if apparel_finds:
         digest_buf = cache.get("weekly_digest", [])
-        for f in alertable_finds:
+        for f in apparel_finds:
             digest_buf.append({
                 "store": f["store"], "title": f["title"], "price": f["price"],
                 "sizes": f["sizes"], "link": f["link"],
                 "image": f.get("image"), "local": f.get("local", False),
             })
         cache["weekly_digest"] = digest_buf
-        save_cache(cache)
+        log.info("Added %d SB apparel/accessory item(s) to weekly digest (%d total queued).", len(apparel_finds), len(digest_buf))
+    save_cache(cache)
 
-    # Friday weekly digest — send accumulated finds and clear the buffer
-    if datetime.now().weekday() == 4:  # 4 = Friday
-        digest_buf = cache.get("weekly_digest", [])
-        if digest_buf:
-            log.info("Friday — sending weekly digest (%d find(s)) and clearing buffer.", len(digest_buf))
-            try:
-                send_weekly_digest(digest_buf)
-                cache["weekly_digest"] = []
-                save_cache(cache)
-            except Exception as e:
-                log.error("Weekly digest failed: %s", e)
-        else:
-            log.info("Friday — no accumulated finds for weekly digest.")
+    if first_run:
+        log.info("Cache seeded: %d products tracked. No alerts sent on first run.", len(cache["seen"]))
+        return
 
-    log.info("Run complete: %d new drop(s) alerted.", len(alertable_finds))
+    maybe_send_weekly_digest(cache)
 
+    if not shoe_finds:
+        log.info("No new SB shoes this run.")
+        return
+
+    # Real-time alerts are SHOES ONLY — apparel goes to the weekly digest instead.
+    for f in shoe_finds:
+        try:
+            send_discord(f)
+        except Exception as e:
+            log.error("Discord alert failed for %s: %s", f["title"], e)
+
+    dunk_finds = [f for f in shoe_finds if is_dunk(f["title"])]
+    if dunk_finds:
+        try:
+            send_email(dunk_finds)
+        except Exception as e:
+            log.error("Email alert failed: %s", e)
+    else:
+        log.info("No SB Dunks this run (%d non-Dunk SB shoe find(s)) — email skipped, Discord still alerted.", len(shoe_finds))
+
+    log.info("Run complete: %d new SB shoe(s) alerted.", len(shoe_finds))
+
+
+def maybe_send_weekly_digest(cache: dict):
+    """Send the apparel/accessories digest once per week: the first run on
+    Friday at/after DIGEST_HOUR Pacific. last_digest_date stops it re-sending
+    on every 5-minute run for the rest of Friday."""
+    now = datetime.now(DIGEST_TZ)
+    today = now.date().isoformat()
+    if now.weekday() != DIGEST_WEEKDAY or now.hour < DIGEST_HOUR:
+        return
+    if cache.get("last_digest_date") == today:
+        return
+    digest_buf = cache.get("weekly_digest", [])
+    if digest_buf:
+        log.info("Friday — sending weekly apparel digest (%d item(s)) and clearing buffer.", len(digest_buf))
+        try:
+            send_weekly_digest(digest_buf)
+        except Exception as e:
+            log.error("Weekly digest failed (will retry next run): %s", e)
+            return
+        cache["weekly_digest"] = []
+    else:
+        log.info("Friday — no SB apparel/accessories found this week, no digest sent.")
+    cache["last_digest_date"] = today
+    save_cache(cache)
 
 if __name__ == "__main__":
     run()
