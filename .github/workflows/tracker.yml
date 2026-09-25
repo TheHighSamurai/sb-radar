@@ -3,7 +3,12 @@ name: SB Radar Tracker
 on:
   schedule:
     - cron: "*/5 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      backfill_days:
+        description: "One-off: email SB apparel/accessories published in the last N days (0 = normal run)"
+        required: false
+        default: "0"
 
 permissions:
   contents: write
@@ -35,6 +40,7 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          BACKFILL_DAYS: ${{ github.event.inputs.backfill_days || '0' }}
         run: python tracker.py
 
       - name: Commit updated cache
