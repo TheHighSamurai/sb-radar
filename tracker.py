@@ -654,5 +654,61 @@ def maybe_send_weekly_digest(cache: dict):
     cache["last_digest_date"] = today
     save_cache(cache)
 
+def backfill_digest(days: int):
+    """One-off: email a digest of SB apparel/accessories that Shopify stores
+    published in the last `days` days. Read-only — doesn't touch the cache or
+    the weekly buffer. Triggered manually via the workflow's backfill_days input."""
+    from datetime import timedelta, timezone
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+    cache = load_cache()
+    log.info("Backfill: SB apparel/accessories published since %s (%d day(s))", cutoff.isoformat(timespec="minutes"), days)
+
+    def scan(store):
+        out = []
+        if not is_shopify(store["url"], cache):
+            return out
+        for p in fetch_shopify(store):
+            title = p.get("title", "")
+            if not is_sb(title) or not is_apparel(title, p.get("product_type", "")):
+                continue
+            ts = p.get("published_at") or p.get("created_at")
+            try:
+                when = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+            except Exception:
+                continue
+            if when < cutoff:
+                continue
+            v = p.get("variants", [{}])
+            out.append({
+                "store": store["name"], "title": title,
+                "price": v[0].get("price", "?") if v else "?",
+                "sizes": format_sizes(p),
+                "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
+                "image": product_image(p), "local": store.get("local_sd", False),
+                "_when": when.isoformat(),
+            })
+        return out
+
+    finds = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
+        for fut in concurrent.futures.as_completed([ex.submit(scan, s) for s in STORES]):
+            try:
+                finds.extend(fut.result())
+            except Exception as e:
+                log.error("Backfill store error: %s", e)
+    finds.sort(key=lambda f: f["_when"], reverse=True)
+    for f in finds:
+        log.info("  BACKFILL [%s] %s — %s", f["store"], f["title"], f["_when"][:10])
+    if not finds:
+        log.info("Backfill: nothing found, no email sent.")
+        return
+    send_weekly_digest(finds)
+    log.info("Backfill: emailed %d item(s).", len(finds))
+
+
 if __name__ == "__main__":
-    run()
+    _bf = os.environ.get("BACKFILL_DAYS", "").strip()
+    if _bf and _bf != "0":
+        backfill_digest(int(_bf))
+    else:
+        run()
