@@ -7248,7 +7248,13 @@
 "Xtreme::7766696624222",
 "Xtreme::7766700589150",
 "Xtreme::7766701047902",
-"Xtreme::9056923189342"
+"Xtreme::9056923189342",
+"Xtreme::9056991903838",
+"Xtreme::9057093877854",
+"Xtreme::9057110196318",
+"Xtreme::9057118355550",
+"Xtreme::9057127858270",
+"Xtreme::9057140375646"
 ],
 "shopify": {
 "https://crownapparelco.com": false,
@@ -7800,6 +7806,33 @@
 "link": "https://artsandrecstore.com/products/nike-sb-woven-skate-top-black",
 "image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IQ6263-010_PHSFM001-2000.jpg?v=1790378203",
 "local": true
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Switch Drill Woven Pants Black",
+"price": "104.95",
+"sizes": "L, XL",
+"link": "https://xbusa.com/products/nike-sb-switch-drill-woven-pants-black",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/NikeSBSwitchDrillWovenPants-Black.png?v=1790355080",
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Rugby LSE LS T-Shirt Black",
+"price": "49.95",
+"sizes": "M, L, XL",
+"link": "https://xbusa.com/products/nike-sb-rugby-lse-ls-t-shirt-black",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/RUGBYLSELSTEE.png?v=1790355519",
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB WC26 Loose T-Shirt Game Royal",
+"price": "44.95",
+"sizes": "M, L, XL",
+"link": "https://xbusa.com/products/nike-sb-wc26-loose-t-shirt-game-royal",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/WC26LOOSETEE_2.png?v=1790356268",
+"local": false
 }
 ],
 "apparel_seeded": true,
