@@ -444,6 +444,7 @@
 "Arts & Rec::15486592221295",
 "Arts & Rec::15496530067567",
 "Arts & Rec::15496535933039",
+"Arts & Rec::15552850133103",
 "Arts & Rec::7121500209263",
 "Arts & Rec::7128968986735",
 "Arts & Rec::7525986730095",
@@ -7790,6 +7791,15 @@
 "link": "https://stolenskateshop.com/products/nike-sb-peak-beanie-black",
 "image": "https://cdn.shopify.com/s/files/1/0359/9279/7228/files/PEAKBEANIE.png?v=1790366852",
 "local": false
+},
+{
+"store": "Arts & Rec",
+"title": "NIKE SB Woven Skate Top- BLACK",
+"price": "110.00",
+"sizes": "Large, Medium",
+"link": "https://artsandrecstore.com/products/nike-sb-woven-skate-top-black",
+"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IQ6263-010_PHSFM001-2000.jpg?v=1790378203",
+"local": true
 }
 ],
 "apparel_seeded": true,
