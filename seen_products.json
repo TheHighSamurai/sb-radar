@@ -1754,6 +1754,7 @@
 "Detroit City Skateboards::8904372945058",
 "Detroit City Skateboards::8923792375970",
 "Detroit City Skateboards::9289680814242",
+"Doubler Kicks::10035929612573",
 "Doubler Kicks::10166993125661",
 "Doubler Kicks::10166996795677",
 "Doubler Kicks::10167004234013",
@@ -7952,6 +7953,15 @@
 "sizes": "Medium/Large",
 "link": "https://doublerkicks.com/products/nike-sb-club-strapback-cap-blue-void",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HF7278-492_PHSFM001-3144.png?v=1735416783",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Club Strapback Cap White",
+"price": "16.99",
+"sizes": "Medium/Large",
+"link": "https://doublerkicks.com/products/nike-sb-club-strapback-cap-white-black",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/HF7278-133-1.webp?v=1763250827",
 "local": false
 }
 ],
