@@ -5869,6 +5869,9 @@
 "Southside Boardshop::10435762618685",
 "Southside Boardshop::10435763110205",
 "Southside Boardshop::10449178951997",
+"Southside Boardshop::10462408835389",
+"Southside Boardshop::10462409195837",
+"Southside Boardshop::10462409720125",
 "Southside Boardshop::10467899703613",
 "Southside Boardshop::10493329408317",
 "Southside Boardshop::10493333766461",
@@ -5902,6 +5905,7 @@
 "Southside Boardshop::9980413018429",
 "Southside Boardshop::9984701923645",
 "Southside Boardshop::9994503717181",
+"Southside Boardshop::9995336384829",
 "Stardust Skate Shop::8081538416852",
 "Stardust Skate Shop::8081540153556",
 "Stardust Skate Shop::8110130364628",
@@ -7997,6 +8001,42 @@
 "sizes": "Black",
 "link": "https://undergroundskateshop.com/products/nike-sb-getamovin-pants-black-copy",
 "image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBGetamovinPants-BlackFront.jpg?v=1790792303",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "Nike SB Everday Elevated 3 Pack IR1328910 White Black Crew Socks",
+"price": "25.94",
+"sizes": "Size 9.5-12",
+"link": "https://southsideskateshop.com/products/nike-sb-everday-elevated-3-pack-ir1328910-white-black-crew-socks",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Nike-SB-Everday-Elevated-3-Pack-IR1328910-White-Black-Crew-Socks_2.jpg?v=1786476607",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "Black Fir FD7544323 Nike SB RPM Skate Backpack",
+"price": "107.00",
+"sizes": "Check site",
+"link": "https://southsideskateshop.com/products/black-fir-fd7544323-nike-sb-rpm-skate-backpack",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Black-Fir-FD7544323-Nike-SB-RPM-Skate-Backpack-9.jpg?v=1786475522",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "FD7544010 Black Nike SB RPM Skate Backpack",
+"price": "107.00",
+"sizes": "Check site",
+"link": "https://southsideskateshop.com/products/fd7544010-black-nike-sb-rpm-skate-backpack",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Nike-SB-RPM-Skate-Backpack-Black-1_cee4ed0d-f437-4392-b53b-99e3cf2001b6.jpg?v=1753290051",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "Black Reflect Silver IQ1279010 Nike SB RPM Skate Backpack",
+"price": "42.00",
+"sizes": "Check site",
+"link": "https://southsideskateshop.com/products/black-reflect-silver-iq1279010-nike-sb-rpm-skate-backpack",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Black-Reflect-Silver-IQ1279010-Nike-SB-RPM-Skate-Backpack-9.jpg?v=1786475213",
 "local": false
 }
 ],
