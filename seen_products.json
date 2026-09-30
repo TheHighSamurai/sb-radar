@@ -1333,6 +1333,7 @@
 "Civil::10580186333472",
 "Civil::10608862658848",
 "Civil::10615230628128",
+"Civil::15396650058016",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -7967,6 +7968,15 @@
 "sizes": "Medium/Large",
 "link": "https://doublerkicks.com/products/nike-sb-club-strapback-cap-white-black",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/HF7278-133-1.webp?v=1763250827",
+"local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Men's Skate Pants - Black / White",
+"price": "85.00",
+"sizes": "30, 32, 34, 36",
+"link": "https://wearecivil.com/products/nike-sb-mens-skate-pants-black-white",
+"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IM5428-011_PHSYM001-2000.jpg?v=1790790707",
 "local": false
 }
 ],
