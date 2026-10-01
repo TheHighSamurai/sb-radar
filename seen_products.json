@@ -603,6 +603,7 @@
 "Black Sheep NC::7658286284846",
 "Black Sheep NC::7665152852014",
 "Black Sheep NC::7666442502190",
+"Black Sheep NC::7666480807982",
 "Blacklist::8899439526121",
 "Blacklist::8899494543593",
 "Blacklist::8942782677225",
@@ -8078,6 +8079,15 @@
 "sizes": "Check site",
 "link": "https://wearecivil.com/products/nike-sb-acg-lava-flow-therma-fit-adv-down-jacket-black-summit-white",
 "image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IR2244-010_PHSYM001-2000.jpg?v=1790880345",
+"local": false
+},
+{
+"store": "Black Sheep NC",
+"title": "Nike SB Dri-Fit Skate Pants Black - White",
+"price": "84.95",
+"sizes": "32, 34, 36, 38",
+"link": "https://blacksheepskateshop.com/products/nike-sb-skate-pants-black-white",
+"image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IM5428-011_PHSFM001-2000.png?v=1790881755",
 "local": false
 }
 ],
