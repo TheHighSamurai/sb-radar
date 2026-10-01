@@ -3820,6 +3820,7 @@
 "Jerics Skate::html::nike sb air force one (yuto)",
 "Kinetic::15401711435878",
 "Kinetic::15401768550502",
+"Kinetic::15401985671270",
 "Kinetic::8126141530214",
 "Kinetic::8166366183526",
 "Kinetic::8171206017126",
@@ -8054,6 +8055,15 @@
 "sizes": "Check site",
 "link": "https://stolenskateshop.com/products/nike-sb-commute-crossbody-bag-black",
 "image": "https://cdn.shopify.com/s/files/1/0359/9279/7228/files/commutebag.png?v=1790872681",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB ACG Daymax Backpack (Chocolate/Summit White)",
+"price": "145.00",
+"sizes": "Check site",
+"link": "https://kineticskateboarding.com/products/nike-sb-acg-daymax-backpack-chocolate-mystic-dates-summit-white",
+"image": null,
 "local": false
 }
 ],
