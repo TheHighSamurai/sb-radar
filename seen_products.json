@@ -4775,6 +4775,7 @@
 "PLA Folsom::15351390535838",
 "PLA Folsom::15355571732638",
 "PLA Folsom::15355676557470",
+"PLA Folsom::15355711357086",
 "PLA Folsom::6704398106782",
 "PLA Folsom::7398563446942",
 "PLA Folsom::7470616903838",
@@ -8123,6 +8124,15 @@
 "sizes": "M, L, XL",
 "link": "https://plaskate.com/products/nike-sb-oval-logo-skate-zip-up-hoodie-black-grey",
 "image": "https://cdn.shopify.com/s/files/1/0736/4771/files/NIKESBOVALLOGOSKATEZIP-UPHOODIE-BLACK_GREYIU7631-010.png?v=1790889490",
+"local": false
+},
+{
+"store": "PLA Folsom",
+"title": "NIKE SB PEAK BEANIE - BLACK",
+"price": "28.00",
+"sizes": "Check site",
+"link": "https://plaskate.com/products/nike-sb-peak-beanie-black",
+"image": null,
 "local": false
 }
 ],
