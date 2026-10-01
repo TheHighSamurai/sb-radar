@@ -4773,6 +4773,7 @@
 "Overload::9984663191799",
 "Overload::9995576213751",
 "PLA Folsom::15351390535838",
+"PLA Folsom::15355571732638",
 "PLA Folsom::6704398106782",
 "PLA Folsom::7398563446942",
 "PLA Folsom::7470616903838",
@@ -8093,6 +8094,15 @@
 "sizes": "32, 34, 36, 38",
 "link": "https://blacksheepskateshop.com/products/nike-sb-skate-pants-black-white",
 "image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IM5428-011_PHSFM001-2000.png?v=1790881755",
+"local": false
+},
+{
+"store": "PLA Folsom",
+"title": "NIKE SB LOGO FILL SKATE TEE - CAMO GREEN",
+"price": "42.00",
+"sizes": "L, M, XL",
+"link": "https://plaskate.com/products/nike-sb-logo-fill-skate-tee-camo-green",
+"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/NIKESBLOGOFILLSKATETEE-CAMOGREENIQ1372-303.png?v=1790886061",
 "local": false
 }
 ],
