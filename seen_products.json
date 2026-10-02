@@ -1116,6 +1116,7 @@
 "CCS::6761087991991",
 "CCS::6761088286903",
 "CCS::7080600371383",
+"CCS::7344693248183",
 "CCS::7371004870839",
 "CCS::7769685098679",
 "CCS::7769685131447",
@@ -1211,6 +1212,8 @@
 "CCS::8481485947063",
 "CCS::8563943801015",
 "CCS::8563943932087",
+"CCS::8563944521911",
+"CCS::8563974570167",
 "CCS::8582772392119",
 "CCS::8603798798519",
 "CCS::8603798831287",
@@ -7644,7 +7647,35 @@
 "Wonder Skate Shop",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "CCS",
+"title": "Nike SB LSE Logo Fill T-Shirt - Camo Green",
+"price": "41.95",
+"sizes": "SM, XXL, LG, XL, MD",
+"link": "https://ccs.com/products/nike-sb-lse-logo-fill-t-shirt-camo-green",
+"image": null,
+"local": false
+},
+{
+"store": "CCS",
+"title": "Nike SB Peak Beanie - Black/White",
+"price": "36.95",
+"sizes": "Check site",
+"link": "https://ccs.com/products/nike-sb-peak-beanie-black-white",
+"image": null,
+"local": false
+},
+{
+"store": "CCS",
+"title": "Nike SB Sportswear RPM Backpack - Black/Black/White",
+"price": "106.95",
+"sizes": "Check site",
+"link": "https://ccs.com/products/nike-sb-sportswear-rpm-backpack-black-black-white",
+"image": "https://cdn.shopify.com/s/files/1/0519/1388/3831/files/196968860326-1.jpg?v=1696978177",
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-10-02"
 }
