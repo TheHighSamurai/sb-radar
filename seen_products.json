@@ -5837,6 +5837,7 @@
 "Skaters Advocate::8726762389738",
 "Skaters Advocate::8731854176490",
 "Skaters Advocate::8755361677546",
+"Skaters Advocate::8766230233322",
 "Southside Boardshop::10031911305533",
 "Southside Boardshop::10032171286845",
 "Southside Boardshop::10033916313917",
@@ -8259,6 +8260,15 @@
 "sizes": "L, M",
 "link": "https://rockcitykicks.com/products/nike-sb-fleece-pullover-skate-hoodie-silver-lilac-white",
 "image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBFleecePulloverSkateHoodie_SilverLilac_White_FV7351-0221.jpg?v=1790917137",
+"local": false
+},
+{
+"store": "Skaters Advocate",
+"title": "Nike SB Woodgrain Tee- Green",
+"price": "41.99",
+"sizes": "Medium, XL, Large, Small",
+"link": "https://skatersadvocate.com/products/nike-sb-air-force-1-yuto-t-shirt-copy-1",
+"image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/Nike_SB_Woodgrain_Tee-_Green_1.webp?v=1790204004",
 "local": false
 }
 ],
