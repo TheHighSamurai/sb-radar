@@ -3783,6 +3783,7 @@
 "Innercity Skate::10556088811799",
 "Innercity Skate::15402852253975",
 "Innercity Skate::15407423029527",
+"Innercity Skate::15409833509143",
 "Innercity Skate::8065331331351",
 "Innercity Skate::8205713637655",
 "Innercity Skate::8253827121431",
@@ -7804,6 +7805,15 @@
 "sizes": "M, L",
 "link": "https://renarts.com/products/nike-sb-mens-yuto-horigome-skate-tee-im4432-100",
 "image": "https://cdn.shopify.com/s/files/1/0245/7221/files/AURORA_IM4432-100_PHSYM001-2000.jpg?v=1790357962",
+"local": false
+},
+{
+"store": "Innercity Skate",
+"title": "Nike SB Peak Skate Beanie",
+"price": "31.99",
+"sizes": "Check site",
+"link": "https://innercityskate.com/products/nike-sb-peak-skate-beanie",
+"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_7.jpg?v=1791239471",
 "local": false
 }
 ],
