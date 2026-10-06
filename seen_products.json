@@ -305,6 +305,7 @@
 "35th North::11213025443876",
 "35th North::15397851496484",
 "35th North::15402369744932",
+"35th North::15402378690596",
 "35th North::5046050029604",
 "35th North::7087622815780",
 "35th North::7227698446372",
@@ -7840,6 +7841,15 @@
 "sizes": "Check site",
 "link": "https://35thnorth.com/products/nike-sb-dri-fit-standard-skate-pants-black",
 "image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/2811A620-7AFC-4CD0-8752-91FDEE278727.webp?v=1791315240",
+"local": false
+},
+{
+"store": "35th North",
+"title": "Nike SB Beanie - Black",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://35thnorth.com/products/nike-sb-beanie-black",
+"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/IMG-0105.webp?v=1791315699",
 "local": false
 }
 ],
