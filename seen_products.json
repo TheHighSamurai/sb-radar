@@ -304,6 +304,7 @@
 "35th North::11204411686948",
 "35th North::11213025443876",
 "35th North::15397851496484",
+"35th North::15402369744932",
 "35th North::5046050029604",
 "35th North::7087622815780",
 "35th North::7227698446372",
@@ -7829,6 +7830,15 @@
 "sizes": "S, L, M, XL",
 "link": "https://www.flatspot.com/products/nike-sb-kyle-wilson-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-kyle-wilson-t-shirt-white-1.jpg?v=1791301390",
+"local": false
+},
+{
+"store": "35th North",
+"title": "Nike SB Dri-Fit Standard Skate Pants - Black",
+"price": "85.00",
+"sizes": "Check site",
+"link": "https://35thnorth.com/products/nike-sb-dri-fit-standard-skate-pants-black",
+"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/2811A620-7AFC-4CD0-8752-91FDEE278727.webp?v=1791315240",
 "local": false
 }
 ],
