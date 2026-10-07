@@ -6209,6 +6209,7 @@
 "Stolen Skate Shop::8570257244204",
 "Stolen Skate Shop::8584183906348",
 "Stolen Skate Shop::8584388444204",
+"Stolen Skate Shop::8593103355948",
 "Stratosphere::7846349668513",
 "Stratosphere::8199285440673",
 "Stratosphere::8221672046753",
@@ -7930,6 +7931,15 @@
 "sizes": "Check site",
 "link": "https://deliskatesupply.com/products/nike-sb-terra-beanie-green",
 "image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/U_NK_PEAK_BEANIE_SB_HO26_png.avif?v=1791398696",
+"local": false
+},
+{
+"store": "Stolen Skate Shop",
+"title": "Nike SB - Peak Beanie - ( Green )",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://stolenskateshop.com/products/nike-sb-peak-beanie-green",
+"image": "https://cdn.shopify.com/s/files/1/0359/9279/7228/files/peakbeaniegreen.png?v=1791400292",
 "local": false
 }
 ],
