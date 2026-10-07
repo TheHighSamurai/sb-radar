@@ -3506,6 +3506,7 @@
 "Geometric Skate Shop::15379212402963",
 "Geometric Skate Shop::15379244089619",
 "Geometric Skate Shop::15395010412819",
+"Geometric Skate Shop::15395043705107",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -8036,6 +8037,15 @@
 "sizes": "Check site",
 "link": "https://www.nocomplyatx.com/products/nike-sb-peak-beanie-camo-green-white-ix3086-303",
 "image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IX3086-303_PHSYD001-2000.webp?v=1791225948",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Logo Fill Skate Tee - Camo Green",
+"price": "42.00",
+"sizes": "XL, L, M, XXL",
+"link": "https://geometricskateshop.com/products/nike-shirt-iq1372-303-green",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/NIKESBLOGOFILLSKATETEE-CAMOGREENIQ1372-303_grande_6d3fb6a8-1008-4f8a-9ff0-e262a97da8c5.webp?v=1791413219",
 "local": false
 }
 ],
