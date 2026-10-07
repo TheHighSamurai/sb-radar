@@ -5379,6 +5379,7 @@
 "Seasons Skate Shop::9530965328130",
 "Seasons Skate Shop::9585314005250",
 "Seasons Skate Shop::9592181686530",
+"Seasons Skate Shop::9594056868098",
 "Seasons Skate Shop::9612527304962",
 "Seasons Skate Shop::9613169950978",
 "Seasons Skate Shop::9613281427714",
@@ -7971,6 +7972,15 @@
 "sizes": "Green/White",
 "link": "https://embassyboardshop.com/products/nike-sb-peak-skate-beanie-green-white",
 "image": "https://cdn.shopify.com/s/files/1/2032/9159/files/Nike_SB_Peak_Beanie_Green_00.png?v=1791401026",
+"local": false
+},
+{
+"store": "Seasons Skate Shop",
+"title": "Nike SB Cuff Beanie- Green",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://seasonsskateshop.com/products/butter-trumpet-5-panel-hat-black",
+"image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/Nike_SB_Cuff_Beanie_Green.jpg?v=1791403095",
 "local": false
 }
 ],
