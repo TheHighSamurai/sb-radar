@@ -6869,6 +6869,7 @@
 "Underground Skateshop::8345328877768",
 "Underground Skateshop::8345530892488",
 "Underground Skateshop::8346233635016",
+"Underground Skateshop::8346233929928",
 "Unheardof::10434272985253",
 "Unheardof::10434274361509",
 "Unheardof::10438519029925",
@@ -7908,6 +7909,15 @@
 "sizes": "Green",
 "link": "https://undergroundskateshop.com/products/nike-sb-peak-beanie-green",
 "image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBPeakBeanie-Green.jpg?v=1791391888",
+"local": false
+},
+{
+"store": "Underground Skateshop",
+"title": "Nike SB Enforcer Skate Hoodie - Black",
+"price": "95.00",
+"sizes": "M, S, L",
+"link": "https://undergroundskateshop.com/products/nike-sb-enforcer-skate-hoodie-black",
+"image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBEnforcerSkateHoodie-BlackFront.jpg?v=1791393583",
 "local": false
 }
 ],
