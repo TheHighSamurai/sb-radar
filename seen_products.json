@@ -3880,6 +3880,7 @@
 "Kinetic::15401768550502",
 "Kinetic::15401985671270",
 "Kinetic::15411014860902",
+"Kinetic::15411216285798",
 "Kinetic::8126141530214",
 "Kinetic::8166366183526",
 "Kinetic::8171206017126",
@@ -7982,6 +7983,15 @@
 "sizes": "Check site",
 "link": "https://seasonsskateshop.com/products/butter-trumpet-5-panel-hat-black",
 "image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/Nike_SB_Cuff_Beanie_Green.jpg?v=1791403095",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Fleece Pullover Skate Hoodie (Black)",
+"price": "95.00",
+"sizes": "L",
+"link": "https://kineticskateboarding.com/products/nike-sb-fleece-pullover-skate-hoodie-black-1",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IM5419-010_PHSFM001-2000.jpg?v=1791408084",
 "local": false
 }
 ],
