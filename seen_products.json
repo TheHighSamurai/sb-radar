@@ -4258,6 +4258,7 @@
 "Mainland::7548127805525",
 "Mainland::8493175504981",
 "NJ Skateshop::15396784046114",
+"NJ Skateshop::15419208990754",
 "NJ Skateshop::2256769581115",
 "NJ Skateshop::7781460181026",
 "NJ Skateshop::7802310983714",
@@ -7941,6 +7942,15 @@
 "sizes": "Check site",
 "link": "https://stolenskateshop.com/products/nike-sb-peak-beanie-green",
 "image": "https://cdn.shopify.com/s/files/1/0359/9279/7228/files/peakbeaniegreen.png?v=1791400292",
+"local": false
+},
+{
+"store": "NJ Skateshop",
+"title": "Nike SB - Peak Skate Beanie",
+"price": "32.00",
+"sizes": "Black/White, Camo Green/White",
+"link": "https://njskateshop.com/products/nike-sb-peak-skate-beanie",
+"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/Nike-SB-Peak-Skate-Beanie-Black-White-removebg-preview.png?v=1791401829",
 "local": false
 }
 ],
