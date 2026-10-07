@@ -3506,6 +3506,7 @@
 "Geometric Skate Shop::15379212402963",
 "Geometric Skate Shop::15379244089619",
 "Geometric Skate Shop::15395010412819",
+"Geometric Skate Shop::15395042918675",
 "Geometric Skate Shop::15395043705107",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
@@ -8046,6 +8047,15 @@
 "sizes": "XL, L, M, XXL",
 "link": "https://geometricskateshop.com/products/nike-shirt-iq1372-303-green",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/NIKESBLOGOFILLSKATETEE-CAMOGREENIQ1372-303_grande_6d3fb6a8-1008-4f8a-9ff0-e262a97da8c5.webp?v=1791413219",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Chipped Skate Tee - New Slate Blue",
+"price": "45.00",
+"sizes": "XL, L, M, XXL",
+"link": "https://geometricskateshop.com/products/nike-shirt-im4436-438-blue",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/U_NK_SB_TEE_LSE_CHIPPED.avif?v=1791414344",
 "local": false
 }
 ],
