@@ -3874,6 +3874,7 @@
 "Kinetic::15401711435878",
 "Kinetic::15401768550502",
 "Kinetic::15401985671270",
+"Kinetic::15411014860902",
 "Kinetic::8126141530214",
 "Kinetic::8166366183526",
 "Kinetic::8171206017126",
@@ -7887,6 +7888,15 @@
 "sizes": "Check site",
 "link": "https://blacksheepskateshop.com/products/nike-sb-peak-skate-beanie-camo-green-white",
 "image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IX3086-303_PHSYD001-2000.png?v=1791391001",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Zoom Tennis Classic (Black/Black-Off Noir)",
+"price": "95.00",
+"sizes": "8.5 M, 9.0 M, 9.5 M, 10.0 M, 10.5 M, 11.0 M, 11.5 M, 12.0 M, 13.0 M",
+"link": "https://kineticskateboarding.com/products/nike-sb-zoom-tennis-classic-black-black-off-noir",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/nike-sb-zoom-tennis-classic-shoes-black-black-black-off-noir-1.webp?v=1791391421",
 "local": false
 }
 ],
