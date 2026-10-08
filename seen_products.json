@@ -1361,6 +1361,7 @@
 "Civil::15412572553504",
 "Civil::15428278878496",
 "Civil::15428300177696",
+"Civil::15428314956064",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -8125,6 +8126,15 @@
 "sizes": "Check site",
 "link": "https://skateparkoftampa.com/products/nike-sb-everyday-elevated-6-pack-crew-socks",
 "image": "https://cdn.shopify.com/s/files/1/0783/8856/0145/files/AURORA_HQ8021-903_PHSFH001-2000.jpg?v=1791482622",
+"local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Men's ACG Dolomiti Pants - Black",
+"price": "85.00",
+"sizes": "Check site",
+"link": "https://wearecivil.com/products/nike-sb-mens-acg-dolomiti-pants-black",
+"image": null,
 "local": false
 }
 ],
