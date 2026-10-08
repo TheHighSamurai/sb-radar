@@ -1360,6 +1360,7 @@
 "Civil::15404716458272",
 "Civil::15412572553504",
 "Civil::15428278878496",
+"Civil::15428300177696",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -8104,6 +8105,15 @@
 "sizes": "Green",
 "link": "https://peopleskateandsnowboard.com/products/nike-sb-peak-skate-beanie-camo-green-white",
 "image": "https://cdn.shopify.com/s/files/1/0173/7776/files/Nike-SB-Peak-Skate-Beanie-Camo-Green-White-main.webp?v=1791480250",
+"local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Peak Beanie - Camo Green / White",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://wearecivil.com/products/nike-sb-peak-beanie-camo-green-white",
+"image": null,
 "local": false
 }
 ],
