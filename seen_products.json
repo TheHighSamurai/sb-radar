@@ -6406,6 +6406,7 @@
 "The Block Skate Supply::8882444730583",
 "The Block Skate Supply::8956686926039",
 "The Block Skate Supply::9053683843287",
+"The Block Skate Supply::9062413074647",
 "The Block Skate Supply::9110804824279",
 "The Block Skate Supply::9235210502359",
 "The Block Skate Supply::9236008173783",
@@ -8058,6 +8059,15 @@
 "sizes": "XL, L, M, XXL",
 "link": "https://geometricskateshop.com/products/nike-shirt-im4436-438-blue",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/U_NK_SB_TEE_LSE_CHIPPED.avif?v=1791414344",
+"local": false
+},
+{
+"store": "The Block Skate Supply",
+"title": "Nike SB - Loose Denim Skate Pants - Mosswood Brown",
+"price": "64.99",
+"sizes": "36, 38",
+"link": "https://theblockskatesupply.com/products/nike-sb-loose-denim-skate-pants-mosswood-brown",
+"image": "https://cdn.shopify.com/s/files/1/0694/1995/8487/files/AURORA_IB2992-235_PHSYD001-2000.jpg?v=1784480869",
 "local": false
 }
 ],
