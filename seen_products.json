@@ -5717,6 +5717,7 @@
 "Skatepark of Tampa::11230531715345",
 "Skatepark of Tampa::15409931747601",
 "Skatepark of Tampa::15410234917137",
+"Skatepark of Tampa::15433975529745",
 "Skatepark of Tampa::9228785123601",
 "Skatepark of Tampa::9228793708817",
 "Skatepark of Tampa::9228931432721",
@@ -8115,6 +8116,15 @@
 "sizes": "Check site",
 "link": "https://wearecivil.com/products/nike-sb-peak-beanie-camo-green-white",
 "image": null,
+"local": false
+},
+{
+"store": "Skatepark of Tampa",
+"title": "Nike SB Everyday Elevated 6-Pack Crew Socks",
+"price": "30.00",
+"sizes": "Check site",
+"link": "https://skateparkoftampa.com/products/nike-sb-everyday-elevated-6-pack-crew-socks",
+"image": "https://cdn.shopify.com/s/files/1/0783/8856/0145/files/AURORA_HQ8021-903_PHSFH001-2000.jpg?v=1791482622",
 "local": false
 }
 ],
