@@ -1231,6 +1231,7 @@
 "CCS::8563943932087",
 "CCS::8563944521911",
 "CCS::8563974570167",
+"CCS::8563974635703",
 "CCS::8582772392119",
 "CCS::8603798798519",
 "CCS::8603798831287",
@@ -8192,6 +8193,15 @@
 "sizes": "Check site",
 "link": "https://35thnorth.com/products/nike-sb-everyday-elevated-crew-socks-6-pack-white-black",
 "image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/AURORA_IR1328-910_PHCFH001-2000_clipped_rev_1_1200x_e95f6ef4-5c95-4413-bedc-c374bfcc1a17.webp?v=1783128247",
+"local": false
+},
+{
+"store": "CCS",
+"title": "Nike SB Peak Beanie - Camo Green/White",
+"price": "34.95",
+"sizes": "Check site",
+"link": "https://ccs.com/products/nike-sb-peak-beanie-camo-green-white",
+"image": null,
 "local": false
 }
 ],
