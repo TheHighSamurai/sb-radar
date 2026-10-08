@@ -4875,6 +4875,7 @@
 "PLA Folsom::15355571732638",
 "PLA Folsom::15355676557470",
 "PLA Folsom::15355711357086",
+"PLA Folsom::15382416031902",
 "PLA Folsom::6704398106782",
 "PLA Folsom::7398563446942",
 "PLA Folsom::7470616903838",
@@ -8202,6 +8203,15 @@
 "sizes": "Check site",
 "link": "https://ccs.com/products/nike-sb-peak-beanie-camo-green-white",
 "image": null,
+"local": false
+},
+{
+"store": "PLA Folsom",
+"title": "NIKE SB PEAK BEANIE - CAMO GREEN",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://plaskate.com/products/nike-sb-peak-beanie-camo-green-ix3086-303",
+"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-peak-beanie-camo-green-ix3086-303.jpg?v=1791494712",
 "local": false
 }
 ],
