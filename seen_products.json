@@ -3894,6 +3894,7 @@
 "Kinetic::15411216285798",
 "Kinetic::15412541751398",
 "Kinetic::15412764672102",
+"Kinetic::15412810219622",
 "Kinetic::8126141530214",
 "Kinetic::8166366183526",
 "Kinetic::8171206017126",
@@ -8171,6 +8172,15 @@
 "sizes": "8.5 M, 9.0 M, 9.5 M, 10.0 M, 10.5 M, 11.0 M, 11.5 M, 12.0 M, 13.0 M",
 "link": "https://kineticskateboarding.com/products/nike-sb-zoom-tennis-classic-stealth-red-black",
 "image": "https://cdn.shopify.com/s/files/1/0267/3063/files/NikeSBZoomTennisClassicShoesStealth_GymRed-Blackright.webp?v=1791487527",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Enforcer Skate Hoodie - Black",
+"price": "95.00",
+"sizes": "Check site",
+"link": "https://kineticskateboarding.com/products/nike-sb-enforcer-skate-hoodie-black",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/NikeSBEnforcerSkateHoodie-BlackFront_ccfc966d-a391-4978-ade8-62ceea7cf6c5.webp?v=1791488884",
 "local": false
 }
 ],
