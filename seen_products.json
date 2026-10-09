@@ -5422,6 +5422,7 @@
 "Seasons Skate Shop::10401556398338",
 "Seasons Skate Shop::10402813182210",
 "Seasons Skate Shop::10402813935874",
+"Seasons Skate Shop::10403023847682",
 "Seasons Skate Shop::8001557987586",
 "Seasons Skate Shop::9113496781058",
 "Seasons Skate Shop::9123955081474",
@@ -7891,6 +7892,15 @@
 "sizes": "Check site",
 "link": "https://coureurgoods.com/products/nike-sb-peak-skate-beanie-camo-green-white",
 "image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/AURORA_IX3086-303_PHSYD001-2000.jpg?v=1791576612",
+"local": false
+},
+{
+"store": "Seasons Skate Shop",
+"title": "Nike SB Peak Beanie- Camo Green/White",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://seasonsskateshop.com/products/nike-sb-cuff-beanie-green-copy",
+"image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/5C07B754-AD18-4B19-81DD-9E8B93F33FA2.jpg?v=1791582082",
 "local": false
 }
 ],
