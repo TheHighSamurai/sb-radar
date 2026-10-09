@@ -1874,6 +1874,7 @@
 "Doubler Kicks::9892841783581",
 "Doubler Kicks::9898101604637",
 "Doubler Kicks::9899076911389",
+"Doubler Kicks::9960080245021",
 "Drift House::9549998293247",
 "Embassy::15396620271671",
 "Embassy::15397628346423",
@@ -8459,6 +8460,15 @@
 "sizes": "Large, Medium",
 "link": "https://doublerkicks.com/products/nike-sb-dri-fit-jacquard-skate-jersey-black-white",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HJ2965-010_PHSYM001-3144.png?v=1751752883",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Paul Rodriguez Max90 T-Shirt White",
+"price": "24.99",
+"sizes": "XL, Medium",
+"link": "https://doublerkicks.com/products/nike-sb-nbsp-paul-rodriguez-max90-t-shirt-white",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HV1309-100_PHSBMG01-3144.png?v=1757456048",
 "local": false
 }
 ],
