@@ -1843,6 +1843,8 @@
 "Doubler Kicks::8255938953501",
 "Doubler Kicks::8280131043613",
 "Doubler Kicks::8470534717725",
+"Doubler Kicks::9521320984861",
+"Doubler Kicks::9628663415069",
 "Doubler Kicks::9628672852253",
 "Doubler Kicks::9686511681821",
 "Doubler Kicks::9898101604637",
@@ -8224,6 +8226,24 @@
 "sizes": "XXL, L, XL",
 "link": "https://geometricskateshop.com/products/nike-sb-essential-logo-hoodie",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/U_NK_SB_FLC_PO_HD_ESSNTL_LOGO.avif?v=1791502675",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Logo Hoodie Black White",
+"price": "49.99",
+"sizes": "XL",
+"link": "https://doublerkicks.com/products/nike-sb-logo-hoodie-black-white",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/Nike_SBBLACK_DV8839-010_01.webp?v=1731169105",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Stallion Hoodie Black",
+"price": "49.99",
+"sizes": "Medium",
+"link": "https://doublerkicks.com/products/nike-sb-stallion-hoodie-black",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FV7369-010_PHCBM001-3144.png?v=1735347628",
 "local": false
 }
 ],
