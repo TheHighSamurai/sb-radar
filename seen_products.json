@@ -3518,6 +3518,7 @@
 "Geometric Skate Shop::15395048620307",
 "Geometric Skate Shop::15395054977299",
 "Geometric Skate Shop::15396085072147",
+"Geometric Skate Shop::15396590027027",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -8214,6 +8215,15 @@
 "sizes": "Check site",
 "link": "https://plaskate.com/products/nike-sb-peak-beanie-camo-green-ix3086-303",
 "image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-peak-beanie-camo-green-ix3086-303.jpg?v=1791494712",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Essential Logo Hoodie- (Silver Lilac/White)",
+"price": "85.00",
+"sizes": "XXL, L, XL",
+"link": "https://geometricskateshop.com/products/nike-sb-essential-logo-hoodie",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/U_NK_SB_FLC_PO_HD_ESSNTL_LOGO.avif?v=1791502675",
 "local": false
 }
 ],
