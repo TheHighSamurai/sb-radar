@@ -1842,6 +1842,7 @@
 "Doubler Kicks::15415942218013",
 "Doubler Kicks::8255938953501",
 "Doubler Kicks::8271036023069",
+"Doubler Kicks::8271037727005",
 "Doubler Kicks::8280131043613",
 "Doubler Kicks::8470534717725",
 "Doubler Kicks::9521320984861",
@@ -8264,6 +8265,15 @@
 "sizes": "Small",
 "link": "https://doublerkicks.com/products/nike-sb-pullover-skate-hoodie-embroidered-logo-black-white",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/products/PDPplus_HO19_CI5844-010_MOB_BN01.jpg?v=1682359459",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Luxury Black/Gold Hoodie",
+"price": "39.99",
+"sizes": "Small",
+"link": "https://doublerkicks.com/products/nike-sb-luxury-black-gold-hoodie",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/products/DA4264-010-PHSYM001.jpg?v=1682359514",
 "local": false
 }
 ],
