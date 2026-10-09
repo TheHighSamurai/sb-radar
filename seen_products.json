@@ -1854,6 +1854,7 @@
 "Doubler Kicks::9268987101469",
 "Doubler Kicks::9487013642525",
 "Doubler Kicks::9507709747485",
+"Doubler Kicks::9507760832797",
 "Doubler Kicks::9521320984861",
 "Doubler Kicks::9559335928093",
 "Doubler Kicks::9600310411549",
@@ -1863,6 +1864,7 @@
 "Doubler Kicks::9680559374621",
 "Doubler Kicks::9686511681821",
 "Doubler Kicks::9707232624925",
+"Doubler Kicks::9713396351261",
 "Doubler Kicks::9745799610653",
 "Doubler Kicks::9865843999005",
 "Doubler Kicks::9892764647709",
@@ -8389,6 +8391,24 @@
 "sizes": "XL, Small, Medium",
 "link": "https://doublerkicks.com/products/nike-sb-kearny-cargo-shorts-black",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HJ2908-010_PHSFM001-3144.png?v=1736639102",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Kearny Cargo Pants Black",
+"price": "49.99",
+"sizes": "XL, Large",
+"link": "https://doublerkicks.com/products/nike-sb-kearny-cargo-pants-black-1",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FV7347-010_PHSFM001-3144.png?v=1723225999",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Max90 Tow T-Shirt Black",
+"price": "24.99",
+"sizes": "Medium",
+"link": "https://doublerkicks.com/products/nike-sb-max90-tow-t-shirt-black",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HJ0820-010_PHSBM001-3144.png?v=1737137600",
 "local": false
 }
 ],
