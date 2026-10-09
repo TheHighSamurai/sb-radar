@@ -1847,6 +1847,7 @@
 "Doubler Kicks::9628663415069",
 "Doubler Kicks::9628672852253",
 "Doubler Kicks::9686511681821",
+"Doubler Kicks::9865843999005",
 "Doubler Kicks::9898101604637",
 "Drift House::9549998293247",
 "Embassy::15396620271671",
@@ -8244,6 +8245,15 @@
 "sizes": "Medium",
 "link": "https://doublerkicks.com/products/nike-sb-stallion-hoodie-black",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FV7369-010_PHCBM001-3144.png?v=1735347628",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Haley T-Shirt",
+"price": "24.99",
+"sizes": "Medium",
+"link": "https://doublerkicks.com/products/nike-sb-haley-t-shirt",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HJ0814-060_PHSYM001-3144.png?v=1749144548",
 "local": false
 }
 ],
