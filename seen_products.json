@@ -1853,9 +1853,11 @@
 "Doubler Kicks::9099473813789",
 "Doubler Kicks::9268987101469",
 "Doubler Kicks::9487013642525",
+"Doubler Kicks::9507709747485",
 "Doubler Kicks::9521320984861",
 "Doubler Kicks::9628663415069",
 "Doubler Kicks::9628672852253",
+"Doubler Kicks::9645443940637",
 "Doubler Kicks::9686511681821",
 "Doubler Kicks::9865843999005",
 "Doubler Kicks::9898101604637",
@@ -8336,6 +8338,15 @@
 "sizes": "Medium",
 "link": "https://doublerkicks.com/products/nike-sb-long-sleeve-skate-t-shirt-city-of-love-earth",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FQ7681-227_PHSYM001-3144.png?v=1711850355",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Max90 Sounds Bangin T-Shirt Black",
+"price": "24.99",
+"sizes": "Medium, Large, Small",
+"link": "https://doublerkicks.com/products/nike-sb-max-90-sounds-bangin-t-shirt-black",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FZ5287-010_PHSBM001-3144.png?v=1781735620",
 "local": false
 }
 ],
