@@ -1797,6 +1797,7 @@
 "Detroit City Skateboards::8923792375970",
 "Detroit City Skateboards::9289680814242",
 "Doubler Kicks::10035929612573",
+"Doubler Kicks::10050408415517",
 "Doubler Kicks::10166993125661",
 "Doubler Kicks::10166996795677",
 "Doubler Kicks::10167004234013",
@@ -8469,6 +8470,15 @@
 "sizes": "XL, Medium",
 "link": "https://doublerkicks.com/products/nike-sb-nbsp-paul-rodriguez-max90-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_HV1309-100_PHSBMG01-3144.png?v=1757456048",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Loose Denim Pants Football Grey",
+"price": "59.99",
+"sizes": "32, 34",
+"link": "https://doublerkicks.com/products/nike-sb-loose-denim-pants-football-grey",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_IB2992-085_PHSFM001-3144.png?v=1764799045",
 "local": false
 }
 ],
