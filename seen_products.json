@@ -1798,6 +1798,8 @@
 "Detroit City Skateboards::9289680814242",
 "Doubler Kicks::10035929612573",
 "Doubler Kicks::10050408415517",
+"Doubler Kicks::10122639442205",
+"Doubler Kicks::10153582723357",
 "Doubler Kicks::10166993125661",
 "Doubler Kicks::10166996795677",
 "Doubler Kicks::10167004234013",
@@ -8479,6 +8481,15 @@
 "sizes": "32, 34",
 "link": "https://doublerkicks.com/products/nike-sb-loose-denim-pants-football-grey",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_IB2992-085_PHSFM001-3144.png?v=1764799045",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Dino Keychain T-Shirt Black",
+"price": "22.99",
+"sizes": "Medium, XXL, Large",
+"link": "https://doublerkicks.com/products/nike-sb-dino-keychain-t-shirt-black",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_IH1431-010_PHSYM001-3144.png?v=1772758197",
 "local": false
 }
 ],
