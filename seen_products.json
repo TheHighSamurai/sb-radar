@@ -1850,6 +1850,7 @@
 "Doubler Kicks::8436450132253",
 "Doubler Kicks::8436516716829",
 "Doubler Kicks::8470534717725",
+"Doubler Kicks::8771663003933",
 "Doubler Kicks::9006146126109",
 "Doubler Kicks::9006154842397",
 "Doubler Kicks::9006170931485",
@@ -8490,6 +8491,15 @@
 "sizes": "Medium, XXL, Large",
 "link": "https://doublerkicks.com/products/nike-sb-dino-keychain-t-shirt-black",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_IH1431-010_PHSYM001-3144.png?v=1772758197",
+"local": false
+},
+{
+"store": "Doubler Kicks",
+"title": "Nike SB Embroidered Oval Logo Heavyweight Hoodie Black",
+"price": "54.99",
+"sizes": "Large",
+"link": "https://doublerkicks.com/products/nike-sb-oval-logo-hoodie-black",
+"image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FB8587-010_PHCFM001-3144.png?v=1696632786",
 "local": false
 }
 ],
