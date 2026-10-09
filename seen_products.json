@@ -3555,6 +3555,7 @@
 "Geometric Skate Shop::15395054977299",
 "Geometric Skate Shop::15396085072147",
 "Geometric Skate Shop::15396590027027",
+"Geometric Skate Shop::15397862408467",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -7838,6 +7839,15 @@
 "sizes": "Check site",
 "link": "https://exodusrideshop.com/products/nike-sb-peak-beanie-camo-green-white",
 "image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IX3086-303_PHSYD001-2000.png?v=1791559894",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Peak Beanie - (Camo Green)",
+"price": "0.00",
+"sizes": "Check site",
+"link": "https://geometricskateshop.com/products/nike-sb-peak-beanie-camo-green",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/Nike-SB-Peak-Skate-Beanie-Camo-Green-White.webp?v=1791566877",
 "local": false
 }
 ],
