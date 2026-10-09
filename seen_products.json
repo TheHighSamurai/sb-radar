@@ -2527,6 +2527,7 @@
 "Exodus Rideshop::8304882188406",
 "Exodus Rideshop::8319975915638",
 "Exodus Rideshop::9038372077686",
+"Exodus Rideshop::9055446368374",
 "FTC SF::9161382822062",
 "FTC SF::9161416310958",
 "Familia Skateshop::10475185996088",
@@ -7827,7 +7828,17 @@
 "Wonder Skate Shop",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "Exodus Rideshop",
+"title": "Nike SB Peak Beanie - Camo Green/White",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://exodusrideshop.com/products/nike-sb-peak-beanie-camo-green-white",
+"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IX3086-303_PHSYD001-2000.png?v=1791559894",
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-10-09"
 }
