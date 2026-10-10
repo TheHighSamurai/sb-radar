@@ -86,7 +86,8 @@ def send_discord(find: dict):
     }
     if find.get("image"):
         embed["image"] = {"url": find["image"]}
-    payload = {"content": "🛹 New SB's detected", "embeds": [embed]}
+    content = "🔔 NOW AVAILABLE — sizes just unlocked" if find.get("flip") else "🛹 New SB's detected"
+    payload = {"content": content, "embeds": [embed]}
     for webhook_url in DISCORD_WEBHOOKS:
         try:
             resp = requests.post(webhook_url, json=payload, timeout=10)
@@ -99,7 +100,7 @@ GMAIL_ADDRESS      = os.environ.get("GMAIL_ADDRESS")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD")
 EMAIL_TO           = os.environ.get("EMAIL_TO", GMAIL_ADDRESS)
 
-def send_email(finds: list):
+def send_email(finds: list, subject: str | None = None):
     if not (GMAIL_ADDRESS and GMAIL_APP_PASSWORD and EMAIL_TO):
         log.warning("Gmail SMTP env vars not set — skipping email alert")
         return
@@ -144,7 +145,7 @@ def send_email(finds: list):
     </body></html>"""
 
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"SB Radar: {len(finds)} new SB's detected"
+    msg["Subject"] = subject or f"SB Radar: {len(finds)} new SB's detected"
     msg["From"]    = GMAIL_ADDRESS
     msg["To"]      = EMAIL_TO
     msg.attach(MIMEText(text_body, "plain"))
@@ -369,7 +370,7 @@ def load_cache() -> dict:
     if CACHE_FILE.exists():
         data = json.loads(CACHE_FILE.read_text())
         if isinstance(data, list):
-            return {"seen": set(data), "shopify": {}, "seeded_stores": set()}
+            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}}
         return {
             "seen": set(data.get("seen", [])),
             "shopify": data.get("shopify", {}),
@@ -377,9 +378,10 @@ def load_cache() -> dict:
             "weekly_digest": data.get("weekly_digest", []),
             "apparel_seeded": data.get("apparel_seeded", False),
             "last_digest_date": data.get("last_digest_date"),
+            "stock": data.get("stock", {}),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
-            "apparel_seeded": False, "last_digest_date": None}
+            "apparel_seeded": False, "last_digest_date": None, "stock": {}}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
@@ -389,6 +391,7 @@ def save_cache(cache: dict):
         "weekly_digest": cache.get("weekly_digest", []),
         "apparel_seeded": cache.get("apparel_seeded", False),
         "last_digest_date": cache.get("last_digest_date"),
+        "stock": cache.get("stock", {}),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -508,6 +511,8 @@ def product_image(product: dict) -> str | None:
 
 def check_store(store: dict, cache: dict) -> list:
     seen  = cache["seen"]
+    stock = cache.get("stock", {})
+    obs   = cache.setdefault("_stock_obs", {})   # observed this run; merged into cache["stock"] after alerts
     finds = []
 
     if is_shopify(store["url"], cache):
@@ -518,15 +523,36 @@ def check_store(store: dict, cache: dict) -> list:
             product_type = p.get("product_type", "")
             apparel = is_apparel(title, product_type)
             pid = f"{store['name']}::{p.get('id')}"
+            variants = p.get("variants", [])
+            in_stock = any(x.get("available", True) for x in variants)
+            if not apparel:
+                obs[pid] = in_stock
+            v = variants or [{}]
             if pid in seen:
+                # Already alerted on this product. Re-alert only when it goes from
+                # nothing purchasable -> purchasable (early listing unlocking, or a
+                # restock). Products with no recorded stock state yet (cache from
+                # before this feature) are just recorded silently.
+                if (not apparel) and stock.get(pid) is False and in_stock:
+                    finds.append({
+                        "id":    pid,
+                        "store": store["name"],
+                        "title": title,
+                        "price": v[0].get("price", "?"),
+                        "sizes": format_sizes(p),
+                        "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
+                        "image": product_image(p),
+                        "local": store.get("local_sd", False),
+                        "apparel": False,
+                        "flip":  True,
+                    })
                 continue
-            v = p.get("variants", [{}])
             finds.append({
                 "id":    pid,
                 "store": store["name"],
                 "title": title,
                 "price": v[0].get("price", "?") if v else "?",
-                "sizes": format_sizes(p),
+                "sizes": format_sizes(p) if in_stock else "None purchasable yet — will alert when sizes unlock",
                 "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
                 "image": product_image(p),
                 "local": store.get("local_sd", False),
@@ -538,7 +564,7 @@ def check_store(store: dict, cache: dict) -> list:
                 finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False})
 
     for f in finds:
-        kind = "APPAREL" if f.get("apparel") else "SB"
+        kind = "APPAREL" if f.get("apparel") else ("NOW-AVAILABLE" if f.get("flip") else "SB")
         log.info(f"  NEW {kind} [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
 
@@ -565,8 +591,9 @@ def run():
             except Exception as e:
                 log.error("Error on %s: %s", store["name"], e)
 
-    for f in all_finds:
-        cache["seen"].add(f["id"])
+    # NOTE: "seen"/stock state is committed to the cache only AFTER alerts are sent
+    # (see below), so a run that dies mid-send re-alerts next run instead of
+    # silently swallowing the drop.
 
     # New stores get one silent seed pass (like the global first-run seed, but
     # scoped per-store) so adding a store never floods alerts for its whole
@@ -577,6 +604,13 @@ def run():
         log.info("Silently seeding %d new store(s): %s", len(new_stores), ", ".join(sorted(new_stores)))
     alertable_finds = [f for f in all_finds if f["store"] not in new_stores]
     cache["seeded_stores"] |= checked_names
+
+    def _commit_state():
+        for f in all_finds:
+            cache["seen"].add(f["id"])
+        # Stock state: record what we observed. Flipped items are now in_stock=True,
+        # so they won't re-alert until they go fully unavailable and back again.
+        cache.setdefault("stock", {}).update(cache.pop("_stock_obs", {}))
 
     # Apparel/accessories were never tracked before, so the first run after this
     # feature ships marks every existing SB apparel item as seen WITHOUT adding
@@ -599,15 +633,17 @@ def run():
             })
         cache["weekly_digest"] = digest_buf
         log.info("Added %d SB apparel/accessory item(s) to weekly digest (%d total queued).", len(apparel_finds), len(digest_buf))
-    save_cache(cache)
 
     if first_run:
+        _commit_state()
+        save_cache(cache)
         log.info("Cache seeded: %d products tracked. No alerts sent on first run.", len(cache["seen"]))
         return
 
-    maybe_send_weekly_digest(cache)
-
     if not shoe_finds:
+        _commit_state()
+        save_cache(cache)
+        maybe_send_weekly_digest(cache)
         log.info("No new SB shoes this run.")
         return
 
@@ -620,14 +656,25 @@ def run():
 
     dunk_finds = [f for f in shoe_finds if is_dunk(f["title"])]
     if dunk_finds:
+        n_live = sum(1 for f in dunk_finds if f.get("flip"))
+        subject = None
+        if n_live:
+            subject = (f"SB Radar: {n_live} SB Dunk(s) NOW AVAILABLE" if n_live == len(dunk_finds)
+                       else f"SB Radar: {len(dunk_finds)} SB Dunk(s) — {n_live} now available")
         try:
-            send_email(dunk_finds)
+            send_email(dunk_finds, subject)
         except Exception as e:
             log.error("Email alert failed: %s", e)
     else:
         log.info("No SB Dunks this run (%d non-Dunk SB shoe find(s)) — email skipped, Discord still alerted.", len(shoe_finds))
 
-    log.info("Run complete: %d new SB shoe(s) alerted.", len(shoe_finds))
+    # Alerts are out — now it is safe to mark everything seen / record stock state.
+    _commit_state()
+    save_cache(cache)
+    maybe_send_weekly_digest(cache)
+
+    log.info("Run complete: %d SB shoe alert(s) sent (%d new, %d now-available).",
+             len(shoe_finds), sum(1 for f in shoe_finds if not f.get("flip")), sum(1 for f in shoe_finds if f.get("flip")))
 
 
 def maybe_send_weekly_digest(cache: dict):
