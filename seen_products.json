@@ -6315,6 +6315,7 @@
 "Stolen Skate Shop::8593103355948",
 "Stolen Skate Shop::8593128128556",
 "Stolen Skate Shop::8594775736364",
+"Stolen Skate Shop::8606558421036",
 "Stratosphere::7846349668513",
 "Stratosphere::8199285440673",
 "Stratosphere::8221672046753",
@@ -7914,6 +7915,15 @@
 "sizes": "Check site",
 "link": "https://seasonsskateshop.com/products/nike-sb-cuff-beanie-green-copy",
 "image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/5C07B754-AD18-4B19-81DD-9E8B93F33FA2.jpg?v=1791582082",
+"local": false
+},
+{
+"store": "Stolen Skate Shop",
+"title": "Nike SB - Loose Denim Skate Pant - ( Dark Russet )",
+"price": "115.00",
+"sizes": "30, 32, 34, 36, 38",
+"link": "https://stolenskateshop.com/products/nike-sb-loose-denim-skate-pant-dark-russet",
+"image": "https://cdn.shopify.com/s/files/1/0359/9279/7228/files/darkrussetsbjeans.png?v=1791825296",
 "local": false
 }
 ],
