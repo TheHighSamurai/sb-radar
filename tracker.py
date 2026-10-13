@@ -708,7 +708,7 @@ def run():
                 oos_c.pop(pid, None)
             else:
                 n = oos_c.get(pid, 0) + 1
-                if stock_c.get(pid) is None or n >= OOS_RUNS:   # first sight, or confirmed sold out
+                if stock_c.get(pid) is not True or n >= OOS_RUNS:   # first sight / already sold out, or newly confirmed sold out
                     stock_c[pid] = False
                     oos_c.pop(pid, None)
                 else:
