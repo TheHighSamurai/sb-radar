@@ -7209,6 +7209,7 @@
 "Val Surf::15227915206816",
 "Val Surf::15231124897952",
 "Val Surf::15231144591520",
+"Val Surf::15277814612128",
 "Val Surf::15283152421024",
 "Val Surf::15301333975200",
 "Val Surf::15644216361120",
@@ -12142,7 +12143,8 @@
 "Overload::10129113481463": true,
 "Unheardof::10809753534629": true,
 "Doubler Kicks::9713396351261": true,
-"Rock City Kicks::7657326870686": true
+"Rock City Kicks::7657326870686": true,
+"Val Surf::15277814612128": true
 },
 "oos": {},
 "avail": {
@@ -28544,6 +28546,10 @@
 },
 "Rock City Kicks::7657326870686": {
 "a": "L|XL",
+"m": {}
+},
+"Val Surf::15277814612128": {
+"a": "9M",
 "m": {}
 }
 }
