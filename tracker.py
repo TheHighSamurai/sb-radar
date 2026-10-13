@@ -13,6 +13,7 @@ Nike SB Dunk Tracker — SB Radar
 import os
 import json
 import re
+import time
 import smtplib
 import logging
 import concurrent.futures
@@ -370,7 +371,7 @@ def load_cache() -> dict:
     if CACHE_FILE.exists():
         data = json.loads(CACHE_FILE.read_text())
         if isinstance(data, list):
-            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}}
+            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "sizes11": {}}
         return {
             "seen": set(data.get("seen", [])),
             "shopify": data.get("shopify", {}),
@@ -379,9 +380,10 @@ def load_cache() -> dict:
             "apparel_seeded": data.get("apparel_seeded", False),
             "last_digest_date": data.get("last_digest_date"),
             "stock": data.get("stock", {}),
+            "sizes11": data.get("sizes11", {}),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
-            "apparel_seeded": False, "last_digest_date": None, "stock": {}}
+            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "sizes11": {}}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
@@ -392,6 +394,7 @@ def save_cache(cache: dict):
         "apparel_seeded": cache.get("apparel_seeded", False),
         "last_digest_date": cache.get("last_digest_date"),
         "stock": cache.get("stock", {}),
+        "sizes11": cache.get("sizes11", {}),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -501,6 +504,22 @@ def format_sizes(product: dict) -> str:
         except Exception: return 999
     return ", ".join(sorted(set(available), key=key))
 
+WATCH_SIZES = ("11", "11.5")          # email-only restock watch (Dunks)
+SIZE_ALERT_COOLDOWN = 1800            # seconds between restock emails per product
+_SIZE_RE = re.compile(r"^\s*(?:us|m|men'?s)?\s*(11|11\.5)\s*(?:us|m)?\s*$", re.I)
+
+def watched_size_state(product: dict) -> dict:
+    """{'11': bool, '11.5': bool} — is that men's size purchasable right now?
+    Sizes not offered at all are omitted. Women's (W) labels never match."""
+    out = {}
+    for v in product.get("variants", []):
+        for key in ("option1", "option2", "option3"):
+            m = _SIZE_RE.match(str(v.get(key) or ""))
+            if m:
+                out[m.group(1)] = out.get(m.group(1), False) or bool(v.get("available", True))
+                break
+    return out
+
 def product_image(product: dict) -> str | None:
     images = product.get("images") or []
     if images:
@@ -513,6 +532,8 @@ def check_store(store: dict, cache: dict) -> list:
     seen  = cache["seen"]
     stock = cache.get("stock", {})
     obs   = cache.setdefault("_stock_obs", {})   # observed this run; merged into cache["stock"] after alerts
+    sobs  = cache.setdefault("_size_obs", {})    # watched-size state observed this run
+    sizes_prev = cache.get("sizes11", {})
     finds = []
 
     if is_shopify(store["url"], cache):
@@ -528,6 +549,20 @@ def check_store(store: dict, cache: dict) -> list:
             if not apparel:
                 obs[pid] = in_stock
             v = variants or [{}]
+            size_now = watched_size_state(p) if (not apparel and is_dunk(title)) else {}
+            size_back = []
+            if size_now:
+                prev = sizes_prev.get(pid)
+                entry = {k: size_now.get(k, False) for k in WATCH_SIZES}
+                last = prev.get("t", 0) if prev else 0
+                if prev is not None and pid in seen:
+                    size_back = [k for k in WATCH_SIZES if size_now.get(k) and not prev.get(k, False)]
+                    if size_back and time.time() - last < SIZE_ALERT_COOLDOWN:
+                        size_back = []
+                    if size_back:
+                        last = time.time()
+                entry["t"] = last
+                sobs[pid] = entry
             if pid in seen:
                 # Already alerted on this product. Re-alert only when it goes from
                 # nothing purchasable -> purchasable (early listing unlocking, or a
@@ -545,6 +580,20 @@ def check_store(store: dict, cache: dict) -> list:
                         "local": store.get("local_sd", False),
                         "apparel": False,
                         "flip":  True,
+                    })
+                elif size_back:
+                    finds.append({
+                        "id":    pid,
+                        "store": store["name"],
+                        "title": title,
+                        "price": v[0].get("price", "?"),
+                        "sizes": "RESTOCK — size " + " & ".join(size_back) + " back in stock (all available: " + format_sizes(p) + ")",
+                        "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
+                        "image": product_image(p),
+                        "local": store.get("local_sd", False),
+                        "apparel": False,
+                        "size_only": True,
+                        "size_back": size_back,
                     })
                 continue
             finds.append({
@@ -564,7 +613,7 @@ def check_store(store: dict, cache: dict) -> list:
                 finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False})
 
     for f in finds:
-        kind = "APPAREL" if f.get("apparel") else ("NOW-AVAILABLE" if f.get("flip") else "SB")
+        kind = "APPAREL" if f.get("apparel") else ("SIZE-RESTOCK" if f.get("size_only") else ("NOW-AVAILABLE" if f.get("flip") else "SB"))
         log.info(f"  NEW {kind} [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
 
@@ -611,12 +660,14 @@ def run():
         # Stock state: record what we observed. Flipped items are now in_stock=True,
         # so they won't re-alert until they go fully unavailable and back again.
         cache.setdefault("stock", {}).update(cache.pop("_stock_obs", {}))
+        cache.setdefault("sizes11", {}).update(cache.pop("_size_obs", {}))
 
     # Apparel/accessories were never tracked before, so the first run after this
     # feature ships marks every existing SB apparel item as seen WITHOUT adding
     # it to the digest — otherwise the first digest would be the whole back catalog.
     apparel_seed_run = not cache.get("apparel_seeded", False)
-    shoe_finds    = [f for f in alertable_finds if not f.get("apparel")]
+    size_finds    = [f for f in alertable_finds if f.get("size_only")]   # email-only (Dunk size 11/11.5 restock)
+    shoe_finds    = [f for f in alertable_finds if not f.get("apparel") and not f.get("size_only")]
     apparel_finds = [] if (first_run or apparel_seed_run) else [f for f in alertable_finds if f.get("apparel")]
     if apparel_seed_run:
         n = sum(1 for f in all_finds if f.get("apparel"))
@@ -640,12 +691,18 @@ def run():
         log.info("Cache seeded: %d products tracked. No alerts sent on first run.", len(cache["seen"]))
         return
 
-    if not shoe_finds:
+    if not shoe_finds and not size_finds:
         _commit_state()
         save_cache(cache)
         maybe_send_weekly_digest(cache)
         log.info("No new SB shoes this run.")
         return
+
+    if size_finds:
+        try:
+            send_email(size_finds, "SB Radar: SB Dunk size " + " / ".join(sorted({x for f in size_finds for x in f["size_back"]}, key=float)) + " RESTOCK")
+        except Exception as e:
+            log.error("Size-restock email failed: %s", e)
 
     # Real-time alerts are SHOES ONLY — apparel goes to the weekly digest instead.
     for f in shoe_finds:
