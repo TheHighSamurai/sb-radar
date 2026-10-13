@@ -12131,5 +12131,2337 @@
 "Overload::10128778526967": true,
 "Overload::10129113481463": true,
 "Unheardof::10809753534629": true
+},
+"sizes11": {
+"Stratosphere::8592830529697": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Stratosphere::8478146625697": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"510 Skateboarding::9465524322409": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"510 Skateboarding::9401331679337": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"510 Skateboarding::9393047240809": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Humidity Skateshop::10343492747555": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Humidity Skateshop::10316819333411": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Humidity Skateshop::10312601207075": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Humidity Skateshop::10302271717667": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Sixes and Sevens::9009288183977": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Sixes and Sevens::9003338629289": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8948034142377": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8934736527529": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8929704706217": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8925545300137": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8865632944297": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8770479390889": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Sixes and Sevens::8765163536553": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"PLA Folsom::8798264000670": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"PLA Folsom::8798252335262": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Doubler Kicks::10312968962333": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Doubler Kicks::10403075522845": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Doubler Kicks::10262163128605": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Underground Skateshop::8145980784840": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Underground Skateshop::8333778026696": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Underground Skateshop::8330543235272": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Underground Skateshop::8330338599112": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Underground Skateshop::8310814703816": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Underground Skateshop::8308509376712": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Underground Skateshop::8254142841032": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Travel Skate Shop::7910418546765": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Travel Skate Shop::7903448858701": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Travel Skate Shop::7901670408269": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Travel Skate Shop::7415737483341": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Travel Skate Shop::7415741284429": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"NJ Skateshop::8544910180386": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Unheardof::10803002114213": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Unheardof::10755044376741": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Unheardof::10765345259685": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Unheardof::10670741029029": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15130123305120": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15800903467168": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Pawnshop Skate::15687083753632": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15646624481440": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15659890016416": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15677558358176": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15632488530080": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15628835324064": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15662954840224": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15658127786144": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pawnshop Skate::15006244929696": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10056084521239": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10409023373591": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10393125323031": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9840267034903": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Innercity Skate::10245144314135": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10146741846295": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10110843027735": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10069115601175": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::10023308886295": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9990880723223": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9967359394071": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9954881306903": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9883427733783": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9867437736215": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9777543610647": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9737162883351": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9702360940823": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9641296232727": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Innercity Skate::9615880421655": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"The Block Skate Supply::9110804824279": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Stolen Skate Shop::8441361334316": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Stolen Skate Shop::8428106547244": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Stolen Skate Shop::8245288861740": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Stolen Skate Shop::7805038198828": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Stolen Skate Shop::7803903180844": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Stolen Skate Shop::7928996495404": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Richmond Hood::10180401692836": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Richmond Hood::10368776175780": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Richmond Hood::10363049345188": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Richmond Hood::10363346682020": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Richmond Hood::10273801371812": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Richmond Hood::10345659891876": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Richmond Hood::10341931581604": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Richmond Hood::10338401288356": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Richmond Hood::10191983411364": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Richmond Hood::10315513495716": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Renarts::7989436416043": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Renarts::7956328874027": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Olympia Skate Shop::10354556633395": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Olympia Skate Shop::10351804612915": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::10338863087923": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::10069811527987": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::10069811429683": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::10069811167539": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::10047872205107": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::9810548293939": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Olympia Skate Shop::9454240203059": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Rose Street Encinitas::8836540530887": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Rose Street Encinitas::8675121070279": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Rose Street Encinitas::8613282676935": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Rose Street Encinitas::8621500629191": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Rose Street Encinitas::8554704765127": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Rose Street Encinitas::8309423767751": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Satellite Boardshop::9988578935073": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Satellite Boardshop::9849490440481": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Satellite Boardshop::9843047891233": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Embassy::7495024115767": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Stardust Skate Shop::9288739619028": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Stardust Skate Shop::9286616776916": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Stardust Skate Shop::9278836605140": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Stardust Skate Shop::9139603046612": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Stardust Skate Shop::9034157457620": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Stardust Skate Shop::8912813195476": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Stardust Skate Shop::8860694708436": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Stardust Skate Shop::8842883891412": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Stardust Skate Shop::8749847183572": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Stardust Skate Shop::8749892862164": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"35th North::11119173533732": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"35th North::7771442675748": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"35th North::11115937497124": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"35th North::11109025644580": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7629827670098": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7627424497746": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7625022570578": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7472193077330": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7466386292818": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7457727479890": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pharmacy Temecula::7457725939794": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"After Hours Skateshop::9643109908735": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"After Hours Skateshop::9613389594879": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"After Hours Skateshop::9613330350335": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"After Hours Skateshop::9585666719999": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"After Hours Skateshop::9364058505471": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Andrew::9164317524204": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pastime Skateshop::15637160329376": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pastime Skateshop::15660505956512": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Pastime Skateshop::15665664229536": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Pastime Skateshop::15680129990816": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Arts & Rec::15409234083951": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Arts & Rec::15352181063791": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Arts & Rec::15349259993199": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Arts & Rec::7724287852655": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15944441102417": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15904738377809": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Brooklyn Projects::15770199228497": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15719430193233": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15654604177489": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15612938453073": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15593006235729": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::15592999485521": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::7806905090129": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Brooklyn Projects::7701164556369": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7991986192449": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7889623613505": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7852612190273": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7787085430849": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7680262209601": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7498473340993": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7591107362881": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7581159325761": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Annex::7571388923969": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Detroit City Skateboards::8868935205026": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Detroit City Skateboards::8868933075106": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Detroit City Skateboards::8868929175714": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Detroit City Skateboards::8868928389282": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Detroit City Skateboards::8868924424354": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Detroit City Skateboards::8865993621666": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"APB Store::8277019557924": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"APB Store::8263009304612": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"APB Store::8251819098148": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"APB Store::7937330053156": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Magnolia Skateshop::15413201928405": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Magnolia Skateshop::9618938691797": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Magnolia Skateshop::9516826525909": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Magnolia Skateshop::9514177822933": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Magnolia Skateshop::9491711262933": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Suite160::8297582723268": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Rock City Kicks::8802844344478": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Rock City Kicks::8779679826078": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"VU Skate Shop::11136181174439": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"VU Skate Shop::11126836854951": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"VU Skate Shop::11126804283559": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Coureur Goods::9604550689023": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Coureur Goods::8997124767999": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Barewires::15186409980157": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Barewires::15186403557629": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Barewires::15186403459325": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Barewires::9216392036605": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Black Sheep NC::7658286284846": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Black Sheep NC::7641653084206": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Black Sheep NC::7616313458734": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Black Sheep NC::7620021452846": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Black Sheep NC::7551160156206": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Black Sheep NC::7436343443502": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Black Sheep NC::7215938076718": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Black Sheep NC::7191088103470": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Black Sheep NC::7125300281390": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Black Sheep NC::7127489511470": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Black Sheep NC::7115867553838": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Southside Boardshop::10413890470205": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Southside Boardshop::9801259778365": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Geometric Skate Shop::10488144167187": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Geometric Skate Shop::10472320663827": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Geometric Skate Shop::10479355101459": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Geometric Skate Shop::9811643990291": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Orchard::10516773470373": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Orchard::10662384959653": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Orchard::10675024232613": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Orchard::10558801871013": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Orchard::10666330095781": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Orchard::10662389809317": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Orchard::10529335345317": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Orchard::10525330538661": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Swellophonic::7627024859218": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Swellophonic::7571986055250": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Swellophonic::7497876406354": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"People Skate and Snowboard::9408090898647": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"People Skate and Snowboard::9373489529047": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"People Skate and Snowboard::9328058302679": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Skaters Advocate::8776259829994": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Skaters Advocate::8776248688874": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Skaters Advocate::8702701797610": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Skaters Advocate::8698814955754": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Skaters Advocate::8694837706986": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Skaters Advocate::8644001759466": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skaters Advocate::8558324351210": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Skaters Advocate::8544942555370": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7717810569310": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7712434258014": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7298000650334": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7705309118558": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7616280199262": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7567661531230": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Xtreme::7546309050462": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7504796352606": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7472579969118": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7470252654686": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7446194946142": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7425476952158": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7417508135006": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7409232740446": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7395794780254": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7370613489758": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7303644643422": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7303647199326": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7303643791454": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Xtreme::7268822777950": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7222391734366": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7220088766558": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7184369549406": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7187720568926": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7173190778974": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::7132008185950": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::6988046073950": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Xtreme::6988030836830": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7493888901205": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Mainland::7497169010773": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Mainland::7480171069525": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Mainland::7366269337685": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Mainland::7277432078421": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7210708074581": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Mainland::7181765836885": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7158113501269": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Mainland::7143058014293": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Mainland::7135852593237": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Mainland::7081298591829": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7078600507477": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Mainland::7078586056789": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Mainland::7055288107093": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7040433979477": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7015456243797": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7034685489237": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7024844275797": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7020837470293": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Mainland::7020817973333": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Time Machine::8336871260310": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Time Machine::8336869392534": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Time Machine::8692523204758": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Time Machine::8683982389398": {
+"11": true,
+"11.5": false,
+"t": 0
+},
+"Time Machine::8678405931158": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Time Machine::8641558544534": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Time Machine::8630546759830": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Time Machine::8452246831254": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Deli Skate Supply::8695918330105": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Deli Skate Supply::10160055517433": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Deli Skate Supply::10147314270457": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Deli Skate Supply::8847736570105": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Deli Skate Supply::9312801358073": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Deli Skate Supply::8939605819641": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Deli Skate Supply::8843384684793": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7991986192449": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7889623613505": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7852612190273": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7787085430849": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7680262209601": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7498473340993": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7591107362881": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7581159325761": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"303 Boards::7571388923969": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15809078657184": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15658215440544": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15807999312032": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15790978662560": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Val Surf::15663199518880": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15660144263328": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15653881512096": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15644216361120": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15164114665632": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Val Surf::15055960670368": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"LB Skate::9181519151260": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"LB Skate::9166470185116": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10497707966752": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Civil::10488551637280": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10478548255008": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10292289765664": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10246722453792": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10249448456480": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9957201838368": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9892661526816": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10238050500896": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10235496530208": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10208920437024": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10162620203296": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10151269105952": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10118764724512": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10112955777312": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10070410494240": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10060495520032": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10031836692768": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10017353662752": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::10006013313312": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9992817180960": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9983515853088": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9584974954784": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9964225593632": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9947351679264": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9828964532512": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9823942672672": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9814592913696": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"Civil::9810096521504": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Civil::9769741025568": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9724233482528": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9711774630176": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9701395530016": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Civil::9401550274848": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9371515584738": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9286105596130": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Bluetile Skateboards::9286104187106": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9279825412322": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9186319040738": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9167206285538": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9166777188578": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9153477607650": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9139393102050": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9095680327906": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9083836236002": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9073346019554": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9050331807970": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9044556546274": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9033922871522": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::9033480896738": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8990332813538": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8985750733026": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8961383170274": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8936730755298": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7632928866530": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7520409747682": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7520406339810": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7743760564450": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7731369607394": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7609035489506": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7828372979938": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7648657735906": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7823718645986": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7819126014178": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7765621375202": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7803661385954": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7929488277730": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7924906393826": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7996821143778": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::7996811870434": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8289701396706": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8646458704098": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8689777672418": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8689693556962": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8685300678882": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8420377919714": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8590308868322": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8590295531746": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8667869282530": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8576388071650": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8734936531170": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8661942730978": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8881698996450": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8802253045986": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8537562775778": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8714877108450": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8801315160290": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Bluetile Skateboards::8757251834082": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8863845253346": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8929016709346": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8927271813346": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8902119620834": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8898944041186": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8828845424866": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8755233128674": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8885592785122": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8769194361058": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8769189806306": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8755232145634": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8855082074338": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Bluetile Skateboards::8913330634978": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Bluetile Skateboards::8807073906914": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::15436195397905": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::11157944172817": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Skatepark of Tampa::11145718300945": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Skatepark of Tampa::11144683651345": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::11034808254737": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::11009548222737": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::11001947914513": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10995898024209": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10974308991249": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10940001747217": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10774719365393": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10748042871057": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10719320932625": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10711898226961": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10689212940561": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10629486182673": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10616263082257": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10369474461969": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10547105792273": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10518400303377": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10514984632593": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10510459142417": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10496935428369": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10440710193425": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10404665065745": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10398934335761": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10433516044561": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10237072441617": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10240374604049": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10221498925329": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10183279444241": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10218732060945": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Skatepark of Tampa::10224602546449": {
+"11": true,
+"11.5": true,
+"t": 0
+},
+"Skatepark of Tampa::10227371082001": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10159842558225": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10198655009041": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10185605841169": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10167864066321": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10158860042513": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10158858305809": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10158126727441": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10141320413457": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10128029319441": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10022286819601": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10000672194833": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::10012918645009": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"Skatepark of Tampa::9987227582737": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"CCS::7769685098679": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"CCS::8447107793079": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"CCS::8481485947063": {
+"11": false,
+"11.5": true,
+"t": 0
+},
+"CCS::8644296114359": {
+"11": false,
+"11.5": false,
+"t": 0
+},
+"CCS::7769685131447": {
+"11": false,
+"11.5": true,
+"t": 0
+}
 }
 }
