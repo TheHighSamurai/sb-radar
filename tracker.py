@@ -36,7 +36,7 @@ MAX_WORKERS     = 50
 # real time, it just accumulates and goes out once a week.
 DIGEST_TZ      = ZoneInfo("America/Los_Angeles")
 DIGEST_WEEKDAY = 4   # Friday
-DIGEST_HOUR    = 8   # first run at/after 8 AM Pacific sends it
+DIGEST_HOUR    = 7   # first run at/after 7 AM Pacific sends it
 
 SB_KEYWORDS = [
     "sb dunk", "dunk sb", "nike sb", " sb low", " sb high",
@@ -376,7 +376,7 @@ def load_cache() -> dict:
     if CACHE_FILE.exists():
         data = json.loads(CACHE_FILE.read_text())
         if isinstance(data, list):
-            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "sizes11": {}, "avail": {}}
+            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "oos": {}, "avail": {}}
         return {
             "seen": set(data.get("seen", [])),
             "shopify": data.get("shopify", {}),
@@ -385,11 +385,11 @@ def load_cache() -> dict:
             "apparel_seeded": data.get("apparel_seeded", False),
             "last_digest_date": data.get("last_digest_date"),
             "stock": data.get("stock", {}),
-            "sizes11": data.get("sizes11", {}),
+            "oos": data.get("oos", {}),
             "avail": data.get("avail", {}),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
-            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "sizes11": {}, "avail": {}}
+            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
@@ -400,7 +400,7 @@ def save_cache(cache: dict):
         "apparel_seeded": cache.get("apparel_seeded", False),
         "last_digest_date": cache.get("last_digest_date"),
         "stock": cache.get("stock", {}),
-        "sizes11": cache.get("sizes11", {}),
+        "oos": cache.get("oos", {}),
         "avail": cache.get("avail", {}),
     }, indent=0))
 
@@ -419,14 +419,23 @@ APPAREL_KEYWORDS = [
     "backpack", "bag", "tote", "sweater", "pullover", "jersey", "vest",
     "sticker", "poster", "grip tape", "wheels", "trucks", "bearings",
     "gloves", "belt", "wallet", "deck",
+    "pant", "longsleeve", "long sleeve", "long-sleeve", "trousers", "chino", "chinos",
+    "short", "polo", "fleece", "flannel", "windbreaker", "anorak", "coaches", "overalls",
+    "jorts", "sweater", "knit", "mask", "towel", "keychain", "lanyard",
 ]
+FOOTWEAR_PRODUCT_TYPES = {"shoes", "shoe", "footwear", "sneakers", "sneaker", "skate shoes", "skate shoe"}
 
-APPAREL_PRODUCT_TYPES = {"apparel", "headwear", "accessories", "accessory", "hardware", "clothing"}
+APPAREL_PRODUCT_TYPES = {"apparel", "headwear", "accessories", "accessory", "hardware", "clothing",
+                         "pants", "bottoms", "tops", "shirts", "t-shirts", "tees", "outerwear", "jackets",
+                         "hats", "hoodies", "sweatshirts", "shorts", "socks", "bags", "skateboards", "decks"}
 
 def is_apparel(title: str, product_type: str = "") -> bool:
     # Block by Shopify product_type first (most reliable signal)
     if product_type.strip().lower() in APPAREL_PRODUCT_TYPES:
         return True
+    # Shopify says it's footwear -> trust it (stops colorway words like "Cap Toe" etc. from hiding a shoe)
+    if product_type.strip().lower() in FOOTWEAR_PRODUCT_TYPES:
+        return False
     # Then check title for apparel keywords
     text = f"{title} {product_type}".lower()
     return any(re.search(rf"\b{re.escape(kw)}\b", text) for kw in APPAREL_KEYWORDS)
@@ -512,21 +521,19 @@ def format_sizes(product: dict) -> str:
     return ", ".join(sorted(set(available), key=key))
 
 WATCH_SIZES = ("11", "11.5")          # email-only restock watch (Dunks)
-SIZE_ALERT_COOLDOWN = 1800            # seconds between restock emails per product
+OOS_RUNS = 3                          # an item must read unavailable this many runs in a row (~15 min) to count as sold out
 _SIZE_RE = re.compile(r"^\s*(?:us|m|men'?s)?\s*(11(?:\.0+)?|11\.5)\s*(?:us|m)?\s*$", re.I)
 
-def watched_size_state(product: dict) -> dict:
-    """{'11': bool, '11.5': bool} — is that men's size purchasable right now?
-    Sizes not offered at all are omitted. Women's (W) labels never match."""
-    out = {}
-    for v in product.get("variants", []):
-        for key in ("option1", "option2", "option3"):
-            m = _SIZE_RE.match(str(v.get(key) or ""))
-            if m:
-                sz = "11.5" if float(m.group(1)) == 11.5 else "11"
-                out[sz] = out.get(sz, False) or bool(v.get("available", True))
-                break
-    return out
+def watched_label(label: str):
+    """Map a size label to '11' / '11.5' (men's only), else None."""
+    m = _SIZE_RE.match(label or "")
+    if not m:
+        return None
+    return "11.5" if float(m.group(1)) == 11.5 else "11"
+
+def _num(l):
+    try: return float(re.sub(r"[^\d.]", "", l) or 999)
+    except Exception: return 999
 
 def product_image(product: dict) -> str | None:
     images = product.get("images") or []
@@ -540,9 +547,7 @@ def check_store(store: dict, cache: dict) -> list:
     seen  = cache["seen"]
     stock = cache.get("stock", {})
     obs   = cache.setdefault("_stock_obs", {})   # observed this run; merged into cache["stock"] after alerts
-    sobs  = cache.setdefault("_size_obs", {})    # watched-size state observed this run
-    sizes_prev = cache.get("sizes11", {})
-    aobs  = cache.setdefault("_avail_obs", {})   # available size labels per SB shoe, observed this run
+    aobs  = cache.setdefault("_avail_obs", {})   # debounced available-size state per SB shoe, observed this run
     avail_prev = cache.get("avail", {})
     finds = []
 
@@ -560,32 +565,32 @@ def check_store(store: dict, cache: dict) -> list:
                 obs[pid] = in_stock
             v = variants or [{}]
             restock_sizes = []
-            if not apparel:
-                labels = sorted({str(x.get("option1") or x.get("title") or "") for x in variants if x.get("available", True)} - {""})
-                prevrec = avail_prev.get(pid)
-                last_r = prevrec[1] if prevrec else 0
-                if prevrec is not None and pid in seen:
-                    before = set(prevrec[0].split("|")) if prevrec[0] else set()
-                    restock_sizes = [l for l in labels if l not in before]
-                    if restock_sizes and time.time() - last_r < SIZE_ALERT_COOLDOWN:
-                        restock_sizes = []
-                    if restock_sizes:
-                        last_r = time.time()
-                aobs[pid] = ["|".join(labels), last_r]
-            size_now = watched_size_state(p) if (not apparel and is_dunk(title)) else {}
             size_back = []
-            if size_now:
-                prev = sizes_prev.get(pid)
-                entry = {k: size_now.get(k, False) for k in WATCH_SIZES}
-                last = prev.get("t", 0) if prev else 0
-                if prev is not None and pid in seen:
-                    size_back = [k for k in WATCH_SIZES if size_now.get(k) and not prev.get(k, False)]
-                    if size_back and time.time() - last < SIZE_ALERT_COOLDOWN:
-                        size_back = []
-                    if size_back:
-                        last = time.time()
-                entry["t"] = last
-                sobs[pid] = entry
+            if not apparel:
+                labels = {str(x.get("option1") or x.get("title") or "") for x in variants if x.get("available", True)} - {""}
+                rec = avail_prev.get(pid)
+                if isinstance(rec, list):            # legacy format [labels, t] from the first restock version
+                    rec = {"a": rec[0], "m": {}}
+                if rec is None:
+                    new = {"a": "|".join(sorted(labels)), "m": {}}
+                else:
+                    conf = set(rec["a"].split("|")) if rec.get("a") else set()
+                    miss = dict(rec.get("m", {}))
+                    for l in list(conf):
+                        if l in labels:
+                            miss.pop(l, None)
+                        else:
+                            miss[l] = miss.get(l, 0) + 1
+                            if miss[l] >= OOS_RUNS:      # confirmed sold out
+                                conf.discard(l); miss.pop(l)
+                    newly = labels - conf                # genuinely back (was confirmed sold out)
+                    if pid in seen:
+                        restock_sizes = sorted(newly, key=_num)
+                        if is_dunk(title):
+                            size_back = sorted({watched_label(l) for l in newly if watched_label(l)}, key=float)
+                    conf |= newly
+                    new = {"a": "|".join(sorted(conf)), "m": miss}
+                aobs[pid] = new
             if pid in seen:
                 # Already alerted on this product. Re-alert only when it goes from
                 # nothing purchasable -> purchasable (early listing unlocking, or a
@@ -695,8 +700,19 @@ def run():
             cache["seen"].add(f["id"])
         # Stock state: record what we observed. Flipped items are now in_stock=True,
         # so they won't re-alert until they go fully unavailable and back again.
-        cache.setdefault("stock", {}).update(cache.pop("_stock_obs", {}))
-        cache.setdefault("sizes11", {}).update(cache.pop("_size_obs", {}))
+        stock_c = cache.setdefault("stock", {})
+        oos_c   = cache.setdefault("oos", {})
+        for pid, ok in cache.pop("_stock_obs", {}).items():
+            if ok:
+                stock_c[pid] = True
+                oos_c.pop(pid, None)
+            else:
+                n = oos_c.get(pid, 0) + 1
+                if stock_c.get(pid) is None or n >= OOS_RUNS:   # first sight, or confirmed sold out
+                    stock_c[pid] = False
+                    oos_c.pop(pid, None)
+                else:
+                    oos_c[pid] = n                              # maybe a blip — wait for confirmation
         cache.setdefault("avail", {}).update(cache.pop("_avail_obs", {}))
 
     # Apparel/accessories were never tracked before, so the first run after this
