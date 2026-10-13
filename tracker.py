@@ -87,7 +87,12 @@ def send_discord(find: dict):
     }
     if find.get("image"):
         embed["image"] = {"url": find["image"]}
-    content = "🔔 NOW AVAILABLE — sizes just unlocked" if find.get("flip") else "🛹 New SB's detected"
+    if find.get("flip"):
+        content = "🔔 NOW AVAILABLE — sizes just unlocked"
+    elif find.get("restock"):
+        content = "🔁 RESTOCK — sizes back in stock"
+    else:
+        content = "🛹 New SB's detected"
     payload = {"content": content, "embeds": [embed]}
     for webhook_url in DISCORD_WEBHOOKS:
         try:
@@ -371,7 +376,7 @@ def load_cache() -> dict:
     if CACHE_FILE.exists():
         data = json.loads(CACHE_FILE.read_text())
         if isinstance(data, list):
-            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "sizes11": {}}
+            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "sizes11": {}, "avail": {}}
         return {
             "seen": set(data.get("seen", [])),
             "shopify": data.get("shopify", {}),
@@ -381,9 +386,10 @@ def load_cache() -> dict:
             "last_digest_date": data.get("last_digest_date"),
             "stock": data.get("stock", {}),
             "sizes11": data.get("sizes11", {}),
+            "avail": data.get("avail", {}),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
-            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "sizes11": {}}
+            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "sizes11": {}, "avail": {}}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
@@ -395,6 +401,7 @@ def save_cache(cache: dict):
         "last_digest_date": cache.get("last_digest_date"),
         "stock": cache.get("stock", {}),
         "sizes11": cache.get("sizes11", {}),
+        "avail": cache.get("avail", {}),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -506,7 +513,7 @@ def format_sizes(product: dict) -> str:
 
 WATCH_SIZES = ("11", "11.5")          # email-only restock watch (Dunks)
 SIZE_ALERT_COOLDOWN = 1800            # seconds between restock emails per product
-_SIZE_RE = re.compile(r"^\s*(?:us|m|men'?s)?\s*(11|11\.5)\s*(?:us|m)?\s*$", re.I)
+_SIZE_RE = re.compile(r"^\s*(?:us|m|men'?s)?\s*(11(?:\.0+)?|11\.5)\s*(?:us|m)?\s*$", re.I)
 
 def watched_size_state(product: dict) -> dict:
     """{'11': bool, '11.5': bool} — is that men's size purchasable right now?
@@ -516,7 +523,8 @@ def watched_size_state(product: dict) -> dict:
         for key in ("option1", "option2", "option3"):
             m = _SIZE_RE.match(str(v.get(key) or ""))
             if m:
-                out[m.group(1)] = out.get(m.group(1), False) or bool(v.get("available", True))
+                sz = "11.5" if float(m.group(1)) == 11.5 else "11"
+                out[sz] = out.get(sz, False) or bool(v.get("available", True))
                 break
     return out
 
@@ -534,6 +542,8 @@ def check_store(store: dict, cache: dict) -> list:
     obs   = cache.setdefault("_stock_obs", {})   # observed this run; merged into cache["stock"] after alerts
     sobs  = cache.setdefault("_size_obs", {})    # watched-size state observed this run
     sizes_prev = cache.get("sizes11", {})
+    aobs  = cache.setdefault("_avail_obs", {})   # available size labels per SB shoe, observed this run
+    avail_prev = cache.get("avail", {})
     finds = []
 
     if is_shopify(store["url"], cache):
@@ -549,6 +559,19 @@ def check_store(store: dict, cache: dict) -> list:
             if not apparel:
                 obs[pid] = in_stock
             v = variants or [{}]
+            restock_sizes = []
+            if not apparel:
+                labels = sorted({str(x.get("option1") or x.get("title") or "") for x in variants if x.get("available", True)} - {""})
+                prevrec = avail_prev.get(pid)
+                last_r = prevrec[1] if prevrec else 0
+                if prevrec is not None and pid in seen:
+                    before = set(prevrec[0].split("|")) if prevrec[0] else set()
+                    restock_sizes = [l for l in labels if l not in before]
+                    if restock_sizes and time.time() - last_r < SIZE_ALERT_COOLDOWN:
+                        restock_sizes = []
+                    if restock_sizes:
+                        last_r = time.time()
+                aobs[pid] = ["|".join(labels), last_r]
             size_now = watched_size_state(p) if (not apparel and is_dunk(title)) else {}
             size_back = []
             if size_now:
@@ -568,6 +591,19 @@ def check_store(store: dict, cache: dict) -> list:
                 # nothing purchasable -> purchasable (early listing unlocking, or a
                 # restock). Products with no recorded stock state yet (cache from
                 # before this feature) are just recorded silently.
+                if restock_sizes and not ((not apparel) and stock.get(pid) is False and in_stock):
+                    finds.append({
+                        "id":    pid,
+                        "store": store["name"],
+                        "title": title,
+                        "price": v[0].get("price", "?"),
+                        "sizes": "RESTOCK — back: " + ", ".join(restock_sizes) + " (all available: " + format_sizes(p) + ")",
+                        "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
+                        "image": product_image(p),
+                        "local": store.get("local_sd", False),
+                        "apparel": False,
+                        "restock": True,
+                    })
                 if (not apparel) and stock.get(pid) is False and in_stock:
                     finds.append({
                         "id":    pid,
@@ -613,7 +649,7 @@ def check_store(store: dict, cache: dict) -> list:
                 finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False})
 
     for f in finds:
-        kind = "APPAREL" if f.get("apparel") else ("SIZE-RESTOCK" if f.get("size_only") else ("NOW-AVAILABLE" if f.get("flip") else "SB"))
+        kind = "APPAREL" if f.get("apparel") else ("SIZE-RESTOCK" if f.get("size_only") else ("RESTOCK" if f.get("restock") else ("NOW-AVAILABLE" if f.get("flip") else "SB")))
         log.info(f"  NEW {kind} [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
 
@@ -661,6 +697,7 @@ def run():
         # so they won't re-alert until they go fully unavailable and back again.
         cache.setdefault("stock", {}).update(cache.pop("_stock_obs", {}))
         cache.setdefault("sizes11", {}).update(cache.pop("_size_obs", {}))
+        cache.setdefault("avail", {}).update(cache.pop("_avail_obs", {}))
 
     # Apparel/accessories were never tracked before, so the first run after this
     # feature ships marks every existing SB apparel item as seen WITHOUT adding
@@ -711,7 +748,7 @@ def run():
         except Exception as e:
             log.error("Discord alert failed for %s: %s", f["title"], e)
 
-    dunk_finds = [f for f in shoe_finds if is_dunk(f["title"])]
+    dunk_finds = [f for f in shoe_finds if is_dunk(f["title"]) and not f.get("restock")]
     if dunk_finds:
         n_live = sum(1 for f in dunk_finds if f.get("flip"))
         subject = None
