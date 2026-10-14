@@ -6040,6 +6040,7 @@
 "Skaters Advocate::8776259829994",
 "Skaters Advocate::8776659828970",
 "Skaters Advocate::8776661041386",
+"Skaters Advocate::8777878110442",
 "Southside Boardshop::10031911305533",
 "Southside Boardshop::10032171286845",
 "Southside Boardshop::10033916313917",
@@ -12188,7 +12189,8 @@
 "Rock City Kicks::7657326870686": true,
 "Val Surf::15277814612128": true,
 "Pawnshop Skate::15915379753120": true,
-"Mainland::8526765031509": true
+"Mainland::8526765031509": true,
+"Skaters Advocate::8777878110442": true
 },
 "oos": {},
 "avail": {
@@ -28602,6 +28604,10 @@
 },
 "Mainland::8526765031509": {
 "a": "Filbert/Light Chocolate",
+"m": {}
+},
+"Skaters Advocate::8777878110442": {
+"a": "9",
 "m": {}
 }
 }
