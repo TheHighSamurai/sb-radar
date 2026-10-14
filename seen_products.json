@@ -1895,6 +1895,7 @@
 "Embassy::15398234423351",
 "Embassy::15403630100535",
 "Embassy::15403714019383",
+"Embassy::15407116648503",
 "Embassy::6828415942711",
 "Embassy::6828416204855",
 "Embassy::6913467285559",
@@ -8015,6 +8016,15 @@
 "sizes": "W.30, W.32, W.34, W.36",
 "link": "https://www.flatspot.com/products/nike-sb-albatross-sk8-slacks-black-white",
 "image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-albatross-sk8-slacks-black-white-1.jpg?v=1791982600",
+"local": false
+},
+{
+"store": "Embassy",
+"title": "Nike SB Airmail Longsleeve T-Shirt - Black / Gray",
+"price": "50.00",
+"sizes": "Black/Grey",
+"link": "https://embassyboardshop.com/products/nike-sb-airmail-longsleeve-t-shirt-black-gray",
+"image": "https://cdn.shopify.com/s/files/1/2032/9159/files/Nike_SB_Airmail_longSleeve_Tee_00.png?v=1791993102",
 "local": false
 }
 ],
