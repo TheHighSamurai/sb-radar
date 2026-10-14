@@ -12193,7 +12193,7 @@
 "Pawnshop Skate::15915379753120": true,
 "Mainland::8526765031509": true,
 "Skaters Advocate::8777878110442": true,
-"Travel Skate Shop::15418007027789": false,
+"Travel Skate Shop::15418007027789": true,
 "Geometric Skate Shop::15404847431955": true
 },
 "oos": {},
@@ -28615,13 +28615,14 @@
 "m": {}
 },
 "Travel Skate Shop::15418007027789": {
-"a": "",
+"a": "10|10.5|11|11.5|12|13|7.5|8|8.5|9|9.5",
 "m": {}
 },
 "Geometric Skate Shop::15404847431955": {
 "a": "10|10.5|11|11.5|12|13|7|7.5|8|8.5|9|9.5",
 "m": {
-"12": 1
+"12": 2,
+"11": 1
 }
 }
 }
