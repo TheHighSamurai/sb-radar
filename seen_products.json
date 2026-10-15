@@ -6130,6 +6130,7 @@
 "Southside Boardshop::9773143687485",
 "Southside Boardshop::9779039732029",
 "Southside Boardshop::9801259778365",
+"Southside Boardshop::9805562609981",
 "Southside Boardshop::9895437140285",
 "Southside Boardshop::9913986384189",
 "Southside Boardshop::9920678887741",
@@ -12196,7 +12197,8 @@
 "Skaters Advocate::8777878110442": true,
 "Travel Skate Shop::15418007027789": true,
 "Geometric Skate Shop::15404847431955": true,
-"Arts & Rec::15604923072623": false
+"Arts & Rec::15604923072623": false,
+"Southside Boardshop::9805562609981": true
 },
 "oos": {},
 "avail": {
@@ -28626,6 +28628,10 @@
 },
 "Arts & Rec::15604923072623": {
 "a": "",
+"m": {}
+},
+"Southside Boardshop::9805562609981": {
+"a": "11.5",
 "m": {}
 }
 }
