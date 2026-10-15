@@ -11410,7 +11410,7 @@
 "Skatepark of Tampa::9470499356945": false,
 "Skatepark of Tampa::9229079183633": false,
 "Skatepark of Tampa::9229077119249": false,
-"Skatepark of Tampa::9384622358801": true,
+"Skatepark of Tampa::9384622358801": false,
 "Skatepark of Tampa::9384622489873": true,
 "Skatepark of Tampa::9228793708817": true,
 "Skatepark of Tampa::9228785123601": true,
@@ -12202,9 +12202,7 @@
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": true
 },
-"oos": {
-"Skatepark of Tampa::9384622358801": 2
-},
+"oos": {},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -24175,10 +24173,8 @@
 "m": {}
 },
 "Skatepark of Tampa::9384622358801": {
-"a": "Black/ White-Black",
-"m": {
-"Black/ White-Black": 2
-}
+"a": "",
+"m": {}
 },
 "Skatepark of Tampa::9384622489873": {
 "a": "Black/ White-Black|White/ Black-White-White",
