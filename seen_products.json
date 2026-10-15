@@ -12222,14 +12222,12 @@
 "Geometric Skate Shop::15404847431955": true,
 "Arts & Rec::15604923072623": false,
 "Southside Boardshop::9805562609981": true,
-"Underground Skateshop::8347264286920": true,
+"Underground Skateshop::8347264286920": false,
 "Travel Skate Shop::15418113163341": true,
 "Kinetic::9052143419494": true,
 "Labor Skate Shop::7534535835750": true
 },
-"oos": {
-"Underground Skateshop::8347264286920": 2
-},
+"oos": {},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -28664,17 +28662,12 @@
 "m": {}
 },
 "Underground Skateshop::8347264286920": {
-"a": "12",
-"m": {
-"12": 2
-}
+"a": "",
+"m": {}
 },
 "Travel Skate Shop::15418113163341": {
-"a": "10|11.5|12|13|15|7.5|8|8.5|9|9.5",
-"m": {
-"12": 2,
-"10": 2
-}
+"a": "11.5|13|15|7.5|8|8.5|9|9.5",
+"m": {}
 },
 "Kinetic::9052143419494": {
 "a": "10.0 M|10.5 M|11.0 M|11.5 M|12.0 M|13.0 M|8.0 M|8.5 M|9.0 M|9.5 M",
