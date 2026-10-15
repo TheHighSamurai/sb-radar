@@ -17,6 +17,8 @@ import time
 import smtplib
 import logging
 import concurrent.futures
+import urllib.parse
+from collections import Counter
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from html import escape as _html_escape
@@ -70,10 +72,22 @@ DISCORD_WEBHOOKS = [
     if v
 ]
 
+# Mute-by-reaction (optional): needs a Discord bot in the PRIMARY server. Without
+# DISCORD_BOT_TOKEN everything below is skipped and alerts behave exactly as before.
+DISCORD_BOT_TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+DISCORD_OWNER_ID  = os.environ.get("DISCORD_OWNER_ID", "").strip()   # optional: only this user's reaction mutes
+DISCORD_API       = "https://discord.com/api/v10"
+MUTE_EMOJI        = "\U0001F6AB"   # 🚫 you add this to mute
+OK_EMOJI          = "\u2705"       # ✅ the bot adds this once the mute is registered
+MSG_KEEP_SECONDS  = 7 * 86400       # how long an alert stays muteable via reaction
+MSG_PAGES         = 4               # channel history pages (100 msgs each) scanned per run
+
 def send_discord(find: dict):
+    """Post to every configured webhook. Returns {"mid", "cid"} for the PRIMARY
+    webhook's message when a bot token is configured (needed for reaction muting), else None."""
     if not DISCORD_WEBHOOKS:
         log.warning("No DISCORD_WEBHOOK_URL* env vars set — skipping Discord alert")
-        return
+        return None
     local_line = "\n📍 **LOCAL — CHECK IN-STORE**" if find.get("local") else ""
     embed = {
         "title": find["title"],
@@ -93,13 +107,158 @@ def send_discord(find: dict):
         content = "🔁 RESTOCK — sizes back in stock"
     else:
         content = "🛹 New SB's detected"
-    payload = {"content": content, "embeds": [embed]}
+    primary_url = os.environ.get("DISCORD_WEBHOOK_URL")
+    posted = None
     for webhook_url in DISCORD_WEBHOOKS:
+        is_primary = bool(DISCORD_BOT_TOKEN) and webhook_url == primary_url
+        e = dict(embed)
+        if is_primary:
+            e["footer"] = {"text": f"React {MUTE_EMOJI} to mute this shoe (Discord + email)"}
         try:
-            resp = requests.post(webhook_url, json=payload, timeout=10)
+            resp = requests.post(
+                webhook_url, json={"content": content, "embeds": [e]},
+                params={"wait": "true"} if is_primary else None, timeout=10,
+            )
             resp.raise_for_status()
-        except requests.RequestException as e:
-            log.warning(f"Discord post failed for one webhook: {e}")
+            if is_primary:
+                m = resp.json()
+                posted = {"mid": m["id"], "cid": m["channel_id"]}
+        except (requests.RequestException, ValueError, KeyError) as ex:
+            log.warning(f"Discord post failed for one webhook: {ex}")
+    return posted
+
+# ── Mute by reaction ──────────────────────────────────────────────────────────
+_STYLE_RE   = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4}-\d{3})(?!\d)")
+_TITLE_STOP = {"nike", "sb", "mens", "men", "s", "shoe", "shoes"}
+TITLE_KEY_MIN_TOKENS = 5   # a bare "Dunk Low Pro" must never mute every colorway
+
+def title_key(title: str):
+    toks = [t for t in re.sub(r"[^a-z0-9]+", " ", (title or "").lower().replace("\u2019", "'").replace("'", "")).split()
+            if t not in _TITLE_STOP]
+    return ("t:" + " ".join(toks)) if len(toks) >= TITLE_KEY_MIN_TOKENS else None
+
+def shoe_keys(p, title: str, pid: str) -> list:
+    """Identity keys for a find, strongest first: s: Nike style code from the SKUs
+    (matches the same shoe across stores), t: normalized full title (exact match
+    only — never fuzzy), p: this exact store listing (always present)."""
+    keys = []
+    if p:
+        codes = Counter()
+        for v in p.get("variants", []) or []:
+            m = _STYLE_RE.search((v.get("sku") or "").upper())
+            if m:
+                codes[m.group(1)] += 1
+        if codes:
+            keys.append("s:" + codes.most_common(1)[0][0])
+    tk = title_key(title)
+    if tk:
+        keys.append(tk)
+    keys.append("p:" + pid)
+    return keys
+
+def is_muted(find: dict, cache: dict) -> bool:
+    muted = cache.get("muted", {})
+    return any(k in muted for k in find.get("keys", []))
+
+def _bot(method: str, path: str, **kw):
+    r = requests.request(method, DISCORD_API + path, headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}"}, timeout=10, **kw)
+    if r.status_code == 429:
+        try: wait = min(float(r.json().get("retry_after", 1)), 5)
+        except Exception: wait = 1
+        time.sleep(wait)
+        r = requests.request(method, DISCORD_API + path, headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}"}, timeout=10, **kw)
+    return r
+
+def _react(cid: str, mid: str, emoji: str, remove: bool = False):
+    path = f"/channels/{cid}/messages/{mid}/reactions/{urllib.parse.quote(emoji)}/@me"
+    try:
+        r = _bot("DELETE" if remove else "PUT", path)
+        if r.status_code >= 300:
+            log.warning("Discord reaction %s %s failed: HTTP %s %s", "remove" if remove else "add", emoji, r.status_code, r.text[:120])
+    except requests.RequestException as e:
+        log.warning("Discord reaction call failed: %s", e)
+    time.sleep(0.3)
+
+def record_alert(cache: dict, find: dict, posted):
+    """Remember which Discord message belongs to which shoe, and pre-add the 🚫 so muting is one tap."""
+    if not (posted and DISCORD_BOT_TOKEN):
+        return
+    cache.setdefault("msgs", {})[posted["mid"]] = {
+        "cid": posted["cid"], "keys": find.get("keys", []), "title": find["title"], "t": int(time.time()),
+    }
+    _react(posted["cid"], posted["mid"], MUTE_EMOJI)
+
+def _reacted_by_owner(cid: str, mid: str) -> bool:
+    r = _bot("GET", f"/channels/{cid}/messages/{mid}/reactions/{urllib.parse.quote(MUTE_EMOJI)}", params={"limit": 100})
+    if r.status_code != 200:
+        log.warning("Reaction user lookup failed: HTTP %s", r.status_code)
+        return True   # fail open to the count we already saw
+    return any(u.get("id") == DISCORD_OWNER_ID for u in r.json())
+
+def process_mutes(cache: dict):
+    """Read 🚫 reactions on recent alerts (one history fetch per channel) and sync cache['muted']."""
+    if not DISCORD_BOT_TOKEN:
+        return
+    msgs  = cache.setdefault("msgs", {})
+    muted = cache.setdefault("muted", {})
+    now = int(time.time())
+    for mid in [m for m, v in msgs.items() if now - v.get("t", 0) > MSG_KEEP_SECONDS]:
+        del msgs[mid]
+    if not msgs:
+        return
+    by_channel = {}
+    for mid, v in msgs.items():
+        by_channel.setdefault(v["cid"], set()).add(mid)
+    for cid, wanted in by_channel.items():
+        found, before = {}, None
+        for _ in range(MSG_PAGES):
+            params = {"limit": 100}
+            if before:
+                params["before"] = before
+            r = _bot("GET", f"/channels/{cid}/messages", params=params)
+            if r.status_code != 200:
+                log.warning("Mute check skipped: channel history HTTP %s %s", r.status_code, r.text[:160])
+                return            # keep existing mutes untouched
+            page = r.json()
+            if not page:
+                break
+            for m in page:
+                if m["id"] in wanted:
+                    found[m["id"]] = m
+            before = page[-1]["id"]
+            if len(found) == len(wanted):
+                break
+        for mid, m in found.items():
+            info = msgs[mid]
+            rx = {}
+            for x in m.get("reactions", []) or []:
+                rx[x["emoji"].get("name")] = x
+            mute_rx = rx.get(MUTE_EMOJI)
+            others = (mute_rx["count"] - (1 if mute_rx.get("me") else 0)) if mute_rx else 0
+            if others > 0 and DISCORD_OWNER_ID:
+                others = 1 if _reacted_by_owner(cid, mid) else 0
+            ok_me = bool(rx.get(OK_EMOJI, {}).get("me"))
+            if others > 0:
+                for k in info["keys"]:
+                    ent = muted.setdefault(k, {"mids": [], "title": info.get("title", ""), "t": now})
+                    if mid not in ent["mids"]:
+                        ent["mids"].append(mid)
+                if not ok_me:
+                    log.info("MUTED via reaction: %s  keys=%s", info.get("title"), info["keys"])
+                    _react(cid, mid, OK_EMOJI)
+            else:
+                changed = False
+                for k in info["keys"]:
+                    ent = muted.get(k)
+                    if ent and mid in ent["mids"]:
+                        ent["mids"].remove(mid)
+                        changed = True
+                        if not ent["mids"]:
+                            del muted[k]
+                if changed:
+                    log.info("UN-MUTED (reaction removed): %s", info.get("title"))
+                if ok_me:
+                    _react(cid, mid, OK_EMOJI, remove=True)
 
 # ── Email (Gmail SMTP) ───────────────────────────────────────────────────────
 GMAIL_ADDRESS      = os.environ.get("GMAIL_ADDRESS")
@@ -376,7 +535,7 @@ def load_cache() -> dict:
     if CACHE_FILE.exists():
         data = json.loads(CACHE_FILE.read_text())
         if isinstance(data, list):
-            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "oos": {}, "avail": {}}
+            return {"seen": set(data), "shopify": {}, "seeded_stores": set(), "stock": {}, "oos": {}, "avail": {}, "muted": {}, "msgs": {}}
         return {
             "seen": set(data.get("seen", [])),
             "shopify": data.get("shopify", {}),
@@ -387,9 +546,11 @@ def load_cache() -> dict:
             "stock": data.get("stock", {}),
             "oos": data.get("oos", {}),
             "avail": data.get("avail", {}),
+            "muted": data.get("muted", {}),
+            "msgs": data.get("msgs", {}),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
-            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}}
+            "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}, "muted": {}, "msgs": {}}
 
 def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps({
@@ -402,6 +563,8 @@ def save_cache(cache: dict):
         "stock": cache.get("stock", {}),
         "oos": cache.get("oos", {}),
         "avail": cache.get("avail", {}),
+        "muted": cache.get("muted", {}),
+        "msgs": cache.get("msgs", {}),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -559,6 +722,7 @@ def check_store(store: dict, cache: dict) -> list:
             product_type = p.get("product_type", "")
             apparel = is_apparel(title, product_type)
             pid = f"{store['name']}::{p.get('id')}"
+            pkeys = shoe_keys(p, title, pid)
             variants = p.get("variants", [])
             in_stock = any(x.get("available", True) for x in variants)
             if not apparel:
@@ -605,6 +769,7 @@ def check_store(store: dict, cache: dict) -> list:
                         "sizes": "RESTOCK — back: " + ", ".join(restock_sizes) + " (all available: " + format_sizes(p) + ")",
                         "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
                         "image": product_image(p),
+                        "keys":  pkeys,
                         "local": store.get("local_sd", False),
                         "apparel": False,
                         "restock": True,
@@ -618,6 +783,7 @@ def check_store(store: dict, cache: dict) -> list:
                         "sizes": format_sizes(p),
                         "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
                         "image": product_image(p),
+                        "keys":  pkeys,
                         "local": store.get("local_sd", False),
                         "apparel": False,
                         "flip":  True,
@@ -631,6 +797,7 @@ def check_store(store: dict, cache: dict) -> list:
                         "sizes": "RESTOCK — size " + " & ".join(size_back) + " back in stock (all available: " + format_sizes(p) + ")",
                         "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
                         "image": product_image(p),
+                        "keys":  pkeys,
                         "local": store.get("local_sd", False),
                         "apparel": False,
                         "size_only": True,
@@ -645,13 +812,15 @@ def check_store(store: dict, cache: dict) -> list:
                 "sizes": format_sizes(p) if in_stock else "None purchasable yet — will alert when sizes unlock",
                 "link":  f"{store['url'].rstrip('/')}/products/{p.get('handle','')}",
                 "image": product_image(p),
+                        "keys":  pkeys,
                 "local": store.get("local_sd", False),
                 "apparel": apparel,
             })
     else:
         for f in fetch_html(store):
             if f["id"] not in seen:
-                finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False})
+                finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False,
+                              "keys": shoe_keys(None, f["title"], f["id"])})
 
     for f in finds:
         kind = "APPAREL" if f.get("apparel") else ("SIZE-RESTOCK" if f.get("size_only") else ("RESTOCK" if f.get("restock") else ("NOW-AVAILABLE" if f.get("flip") else "SB")))
@@ -666,6 +835,10 @@ def run():
     log.info("=" * 60)
 
     cache     = load_cache()
+    try:
+        process_mutes(cache)
+    except Exception as e:   # muting must never break alerting
+        log.error("Mute sync failed (existing mutes kept): %s", e)
     first_run = len(cache["seen"]) == 0
     if first_run:
         log.info("First run — seeding cache silently. Only NEW drops will alert from here on.")
@@ -693,6 +866,10 @@ def run():
     if new_stores:
         log.info("Silently seeding %d new store(s): %s", len(new_stores), ", ".join(sorted(new_stores)))
     alertable_finds = [f for f in all_finds if f["store"] not in new_stores]
+    _muted_now = [f for f in alertable_finds if not f.get("apparel") and is_muted(f, cache)]
+    if _muted_now:
+        log.info("Muted: suppressing %d alert(s): %s", len(_muted_now), "; ".join(f["title"][:50] for f in _muted_now))
+        alertable_finds = [f for f in alertable_finds if f not in _muted_now]
     cache["seeded_stores"] |= checked_names
 
     def _commit_state():
@@ -760,7 +937,7 @@ def run():
     # Real-time alerts are SHOES ONLY — apparel goes to the weekly digest instead.
     for f in shoe_finds:
         try:
-            send_discord(f)
+            record_alert(cache, f, send_discord(f))
         except Exception as e:
             log.error("Discord alert failed for %s: %s", f["title"], e)
 
