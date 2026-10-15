@@ -6782,6 +6782,7 @@
 "Travel Skate Shop::15404342149197",
 "Travel Skate Shop::15404343853133",
 "Travel Skate Shop::15418007027789",
+"Travel Skate Shop::15418113163341",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -12200,7 +12201,8 @@
 "Geometric Skate Shop::15404847431955": true,
 "Arts & Rec::15604923072623": false,
 "Southside Boardshop::9805562609981": true,
-"Underground Skateshop::8347264286920": true
+"Underground Skateshop::8347264286920": true,
+"Travel Skate Shop::15418113163341": true
 },
 "oos": {},
 "avail": {
@@ -18850,7 +18852,9 @@
 },
 "Geometric Skate Shop::10384265150739": {
 "a": "10|10.5|11|11.5|12|13|6|7|8|8.5|9|9.5",
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Geometric Skate Shop::10390593339667": {
 "a": "10|11.5|12|13|8.5|9.5",
@@ -26811,7 +26815,7 @@
 "Flatspot::15850383868277": {
 "a": "UK 10|UK 12",
 "m": {
-"UK 10": 1
+"UK 10": 2
 }
 },
 "Flatspot::15663966126453": {
@@ -28640,6 +28644,10 @@
 },
 "Underground Skateshop::8347264286920": {
 "a": "12",
+"m": {}
+},
+"Travel Skate Shop::15418113163341": {
+"a": "10|10.5|11|11.5|12|13|14|15|7.5|8|8.5|9|9.5",
 "m": {}
 }
 },
