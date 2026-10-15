@@ -12198,7 +12198,9 @@
 "Geometric Skate Shop::15404847431955": true,
 "Arts & Rec::15604923072623": false
 },
-"oos": {},
+"oos": {
+"Travel Skate Shop::7413944811597": 1
+},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -13350,7 +13352,9 @@
 },
 "Travel Skate Shop::7413944811597": {
 "a": "9",
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Travel Skate Shop::7411703447629": {
 "a": "10|11|11.5|12|8.5",
