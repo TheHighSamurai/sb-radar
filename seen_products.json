@@ -8514,7 +8514,7 @@
 "Travel Skate Shop::7414006317133": true,
 "Travel Skate Shop::7413954576461": true,
 "Travel Skate Shop::7413952577613": true,
-"Travel Skate Shop::7413944811597": true,
+"Travel Skate Shop::7413944811597": false,
 "Travel Skate Shop::7411703447629": true,
 "Travel Skate Shop::7411692896333": true,
 "Travel Skate Shop::7411688505421": true,
@@ -12198,9 +12198,7 @@
 "Geometric Skate Shop::15404847431955": true,
 "Arts & Rec::15604923072623": false
 },
-"oos": {
-"Travel Skate Shop::7413944811597": 2
-},
+"oos": {},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -13351,10 +13349,8 @@
 "m": {}
 },
 "Travel Skate Shop::7413944811597": {
-"a": "9",
-"m": {
-"9": 2
-}
+"a": "",
+"m": {}
 },
 "Travel Skate Shop::7411703447629": {
 "a": "10|11|11.5|12|8.5",
