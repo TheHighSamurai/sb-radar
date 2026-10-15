@@ -12200,7 +12200,9 @@
 "Arts & Rec::15604923072623": false,
 "Southside Boardshop::9805562609981": true
 },
-"oos": {},
+"oos": {
+"Travel Skate Shop::6954144530509": 1
+},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -13444,7 +13446,9 @@
 },
 "Travel Skate Shop::6954144530509": {
 "a": "8.5",
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Travel Skate Shop::6913037467725": {
 "a": "11|11.5|8",
