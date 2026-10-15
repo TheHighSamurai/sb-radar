@@ -1392,6 +1392,7 @@
 "Civil::15430051823904",
 "Civil::15443971473696",
 "Civil::15454082236704",
+"Civil::15454236180768",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -8092,6 +8093,15 @@
 "link": "https://artsandrecstore.com/products/nike-sb-x-nocturnal-solid-break-polo-af1-city-pack-10-23",
 "image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IV0597-010_PHSYM001-2000.jpg?v=1792086861",
 "local": true
+},
+{
+"store": "Civil",
+"title": "Nike SB Men's ACG Dolomiti Pants - Black / Summit White",
+"price": "115.00",
+"sizes": "Small, Medium, Large, XL",
+"link": "https://wearecivil.com/products/nike-sb-mens-acg-dolomiti-pants-black-summit-white",
+"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IF0913-010_PHSYM001-2000.jpg?v=1792091927",
+"local": false
 }
 ],
 "apparel_seeded": true,
