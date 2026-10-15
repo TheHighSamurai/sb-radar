@@ -456,6 +456,7 @@
 "Arts & Rec::15561629204591",
 "Arts & Rec::15565521518703",
 "Arts & Rec::15604923072623",
+"Arts & Rec::15607105585263",
 "Arts & Rec::7121500209263",
 "Arts & Rec::7128968986735",
 "Arts & Rec::7525986730095",
@@ -8064,6 +8065,15 @@
 "link": "https://wearecivil.com/products/nike-sb-acg-terra-beanie-black",
 "image": null,
 "local": false
+},
+{
+"store": "Arts & Rec",
+"title": "NIKE SB x Nocturnal Solid Break Polo AF1 - \"City Pack\" (10/23)",
+"price": "65.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://artsandrecstore.com/products/nike-sb-x-nocturnal-solid-break-polo-af1-city-pack-10-23",
+"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IV0597-010_PHSYM001-2000.jpg?v=1792086861",
+"local": true
 }
 ],
 "apparel_seeded": true,
@@ -12214,10 +12224,11 @@
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": true,
 "Travel Skate Shop::15418113163341": true,
-"Kinetic::9052143419494": true
+"Kinetic::9052143419494": true,
+"Labor Skate Shop::7534535835750": true
 },
 "oos": {
-"Underground Skateshop::8347264286920": 1
+"Underground Skateshop::8347264286920": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -28655,19 +28666,22 @@
 "Underground Skateshop::8347264286920": {
 "a": "12",
 "m": {
-"12": 1
+"12": 2
 }
 },
 "Travel Skate Shop::15418113163341": {
-"a": "10|11|11.5|12|13|15|7.5|8|8.5|9|9.5",
+"a": "10|11.5|12|13|15|7.5|8|8.5|9|9.5",
 "m": {
-"11": 2,
-"12": 1,
-"10": 1
+"12": 2,
+"10": 2
 }
 },
 "Kinetic::9052143419494": {
 "a": "10.0 M|10.5 M|11.0 M|11.5 M|12.0 M|13.0 M|8.0 M|8.5 M|9.0 M|9.5 M",
+"m": {}
+},
+"Labor Skate Shop::7534535835750": {
+"a": "9",
 "m": {}
 }
 },
