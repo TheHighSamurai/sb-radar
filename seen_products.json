@@ -1400,6 +1400,7 @@
 "Civil::15454236180768",
 "Civil::15454696571168",
 "Civil::15459711910176",
+"Civil::15460076355872",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -7958,6 +7959,15 @@
 "link": "https://stratosphereskateboards.com/products/nike-sb-chest-icon-logo",
 "image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/DD9E94B9-BAA4-4640-A0F5-54B3F3B31D80.webp?v=1763158920",
 "local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Men's ACG Dolomiti Pants - Gridiron / Summit White (Copy)",
+"price": "115.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://wearecivil.com/products/nike-sb-mens-acg-dolomiti-pants-gridiron-summit-white-copy",
+"image": null,
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -12142,7 +12152,7 @@
 "510 Skateboarding::15402005102697": true
 },
 "oos": {
-"Suite160::8670920671428": 1
+"Suite160::8670920671428": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -17060,7 +17070,7 @@
 "Suite160::8670920671428": {
 "a": "10",
 "m": {
-"10": 1
+"10": 2
 }
 },
 "Suite160::8670926995652": {
