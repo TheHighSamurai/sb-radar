@@ -1739,6 +1739,7 @@
 "Deli Skate Supply::15291570651385",
 "Deli Skate Supply::15292332933369",
 "Deli Skate Supply::15292360098041",
+"Deli Skate Supply::15307282874617",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -7921,7 +7922,17 @@
 "Wonder Skate Shop",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Crest Tee White",
+"price": "44.99",
+"sizes": "Large, X-Large, Medium",
+"link": "https://deliskatesupply.com/products/nike-sb-crest-tee-white",
+"image": null,
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-10-16",
 "stock": {
@@ -12097,7 +12108,7 @@
 "Bluetile Skateboards::15419302707426": false
 },
 "oos": {
-"Flatspot::7415833428148": 1
+"Flatspot::7415833428148": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -27999,7 +28010,7 @@
 "Flatspot::7415833428148": {
 "a": "UK 9.5",
 "m": {
-"UK 9.5": 1
+"UK 9.5": 2
 }
 },
 "Flatspot::7073099677876": {
