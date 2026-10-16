@@ -12093,7 +12093,9 @@
 "Theory Skate Shop::15420193833147": true,
 "Skatepark of Tampa::15449113952529": false
 },
-"oos": {},
+"oos": {
+"Seasons Skate Shop::10415770403074": 1
+},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -28617,11 +28619,15 @@
 },
 "Seasons Skate Shop::10415770403074": {
 "a": "8",
-"m": {}
+"m": {
+"8": 1
+}
 },
 "Theory Skate Shop::15420193833147": {
 "a": "M11.5/W13|M5.5/W7|M5/W6.5|M8.5/W10",
-"m": {}
+"m": {
+"M5/W6.5": 1
+}
 },
 "Skatepark of Tampa::15449113952529": {
 "a": "",
