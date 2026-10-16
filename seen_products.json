@@ -12089,14 +12089,12 @@
 "303 Boards::7688530362433": true,
 "303 Annex::7467323392065": true,
 "303 Boards::7467323392065": true,
-"Seasons Skate Shop::10415770403074": true,
+"Seasons Skate Shop::10415770403074": false,
 "Theory Skate Shop::15420193833147": true,
 "Skatepark of Tampa::15449113952529": false,
 "35th North::7773985767460": true
 },
-"oos": {
-"Seasons Skate Shop::10415770403074": 2
-},
+"oos": {},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -28619,16 +28617,12 @@
 "m": {}
 },
 "Seasons Skate Shop::10415770403074": {
-"a": "8",
-"m": {
-"8": 2
-}
+"a": "",
+"m": {}
 },
 "Theory Skate Shop::15420193833147": {
-"a": "M11.5/W13|M5.5/W7|M5/W6.5|M8.5/W10",
-"m": {
-"M5/W6.5": 2
-}
+"a": "M11.5/W13|M5.5/W7|M8.5/W10",
+"m": {}
 },
 "Skatepark of Tampa::15449113952529": {
 "a": "",
