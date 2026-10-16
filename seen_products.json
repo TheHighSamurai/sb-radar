@@ -3987,7 +3987,13 @@
 "Kinetic::15412541751398",
 "Kinetic::15412764672102",
 "Kinetic::15412810219622",
+"Kinetic::8095107121254",
+"Kinetic::8095107907686",
+"Kinetic::8126132551782",
 "Kinetic::8126141530214",
+"Kinetic::8136345518182",
+"Kinetic::8136357773414",
+"Kinetic::8136368095334",
 "Kinetic::8166366183526",
 "Kinetic::8171206017126",
 "Kinetic::8177729634406",
@@ -7969,6 +7975,33 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://wearecivil.com/products/nike-sb-mens-acg-dolomiti-pants-gridiron-summit-white-copy",
 "image": null,
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Fix It Track Jacket (Black)",
+"price": "85.00",
+"sizes": "L",
+"link": "https://kineticskateboarding.com/products/nike-sb-track-jacket-black",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Fix_It_Skate_Tracksuit_Black_3.webp?v=1772068444",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Fix It Track Pants (Black)",
+"price": "85.00",
+"sizes": "L, S",
+"link": "https://kineticskateboarding.com/products/nike-sb-fix-it-track-pants-black",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Fix_It_Skate_Tracksuit_Black_5.webp?v=1772068460",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Zoom Tennis Classic (Black/White/White)",
+"price": "95.00",
+"sizes": "7.5 M, 8.5 M, 9.0 M, 9.5 M, 10.0 M, 10.5 M, 11.0 M, 11.5 M, 12.0 M, 13.0 M",
+"link": "https://kineticskateboarding.com/products/nike-sb-zoom-tennis-classic-black-white-white",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Zoom_Tennis_Classic_Black_White_White.png?v=1785864832",
 "local": false
 }
 ],
@@ -12153,7 +12186,11 @@
 "510 Skateboarding::15402007625833": true,
 "510 Skateboarding::15402005102697": true,
 "CCS::8563091865783": true,
-"Bluetile Skateboards::15419430961378": false
+"Bluetile Skateboards::15419430961378": false,
+"Kinetic::8166366183526": true,
+"Kinetic::8136368095334": true,
+"Kinetic::8136345518182": true,
+"Kinetic::8126132551782": true
 },
 "oos": {},
 "avail": {
@@ -26812,7 +26849,7 @@
 "Flatspot::15663966585205": {
 "a": "UK 10|UK 12|UK 8|UK 8.5",
 "m": {
-"UK 10": 1
+"UK 10": 2
 }
 },
 "Flatspot::15663966388597": {
@@ -28766,6 +28803,22 @@
 "Bluetile Skateboards::15419430961378": {
 "a": "",
 "m": {}
+},
+"Kinetic::8166366183526": {
+"a": "10.0 M|10.5 M|11.0 M|11.5 M|12.0 M|12.5|13.0 M|9.0 M|9.5 M",
+"m": {}
+},
+"Kinetic::8136368095334": {
+"a": "10.0 M|10.5 M|11.0 M|12.0 M|9.0 M|9.5 M",
+"m": {}
+},
+"Kinetic::8136345518182": {
+"a": "10.0 M|10.5 M|11.0 M|11.5 M|12.0 M|13.0 M|7.5 M|8.5 M|9.0 M|9.5 M",
+"m": {}
+},
+"Kinetic::8126132551782": {
+"a": "10.5 M|11.0 M|11.5 M|13.0 M|9.5 M",
+"m": {}
 }
 },
 "muted": {
@@ -29558,6 +29611,35 @@
 ],
 "title": "NIKE SB CODE 58 DK SMOKE GREY / BLUE ECLIPSE-BLACK",
 "t": 1792177586
+},
+"1560731858172379228": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IR1889-400",
+"t:react leo baker navy navy",
+"p:Kinetic::8136368095334"
+],
+"title": "Nike SB React Leo Baker (Navy/Navy)",
+"t": 1792177872
+},
+"1560731862429602004": {
+"cid": "1550909316897177842",
+"keys": [
+"t:zoom tennis classic deep pewter medium olive",
+"p:Kinetic::8136345518182"
+],
+"title": "Nike SB Zoom Tennis Classic (Deep Pewter Medium Olive)",
+"t": 1792177873
+},
+"1560731869631488122": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IO0427-300",
+"t:dunk low pro wc saffron quartz saffron quartz pear",
+"p:Kinetic::8126132551782"
+],
+"title": "Nike SB Dunk Low Pro WC (Saffron Quartz/Saffron Quartz-Pear)",
+"t": 1792177875
 }
 }
 }
