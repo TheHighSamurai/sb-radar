@@ -12293,7 +12293,7 @@
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": false,
 "Travel Skate Shop::15418113163341": true,
-"Kinetic::9052143419494": true,
+"Kinetic::9052143419494": false,
 "Labor Skate Shop::7534535835750": true,
 "303 Annex::6971904753729": true,
 "303 Annex::7305965436993": true,
@@ -12315,9 +12315,7 @@
 "303 Boards::7467323392065": true,
 "Seasons Skate Shop::10415770403074": true
 },
-"oos": {
-"Kinetic::9052143419494": 2
-},
+"oos": {},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -28760,10 +28758,8 @@
 "m": {}
 },
 "Kinetic::9052143419494": {
-"a": "8.0 M",
-"m": {
-"8.0 M": 2
-}
+"a": "",
+"m": {}
 },
 "Labor Skate Shop::7534535835750": {
 "a": "9",
