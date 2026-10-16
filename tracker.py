@@ -132,10 +132,38 @@ _STYLE_RE   = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4}-\d{3})(?!\d)")
 _TITLE_STOP = {"nike", "sb", "mens", "men", "s", "shoe", "shoes"}
 TITLE_KEY_MIN_TOKENS = 5   # a bare "Dunk Low Pro" must never mute every colorway
 
-def title_key(title: str):
-    toks = [t for t in re.sub(r"[^a-z0-9]+", " ", (title or "").lower().replace("\u2019", "'").replace("'", "")).split()
+def _title_tokens(title: str) -> list:
+    return [t for t in re.sub(r"[^a-z0-9]+", " ", (title or "").lower().replace("\u2019", "'").replace("'", "")).split()
             if t not in _TITLE_STOP]
+
+def title_key(title: str):
+    toks = _title_tokens(title)
     return ("t:" + " ".join(toks)) if len(toks) >= TITLE_KEY_MIN_TOKENS else None
+
+# Cross-store name match: stores word the same shoe differently ("Dunk Low Pro Filbert"
+# vs "Dunk Low Pro- Filbert/Light Chocolate-Black-Burgundy Ash") and many have no style
+# code in their SKUs. A find counts as muted when one title's words are ALL contained in
+# the other's, AND the shared words include something beyond model names / basic colors
+# (e.g. "filbert") \u2014 so muting "Air Max Ishod Black" never mutes every black Ishod.
+NAME_MATCH_MIN_TOKENS = 2   # after dropping the words below, e.g. {dunk, filbert}
+_NAME_DROP    = {"sale", "low", "high", "mid", "pro", "og", "qs", "prm", "premium", "skateboard", "skateboarding", "skate"}
+_GENERIC_WORDS = {
+    "dunk", "zoom", "air", "max", "blazer", "janoski", "ishod", "nyjah", "force", "react", "leo", "tennis",
+    "classic", "code", "vertebrae", "ps8", "paul", "rodriguez", "p", "rod", "iso", "dg", "l", "plus",
+    "black", "white", "grey", "gray", "red", "blue", "green", "brown", "pink", "purple", "yellow", "orange",
+    "gold", "silver", "navy", "tan", "cream", "sail", "gum", "light", "dark", "deep", "university",
+    "varsity", "summit", "metallic", "royal", "medium", "pale", "team", "game",
+}
+
+def _name_set(title: str) -> frozenset:
+    return frozenset(t for t in _title_tokens(title) if t not in _NAME_DROP)
+
+def names_match(a: str, b: str) -> bool:
+    sa, sb = _name_set(a), _name_set(b)
+    small, big = (sa, sb) if len(sa) <= len(sb) else (sb, sa)
+    if len(small) < NAME_MATCH_MIN_TOKENS or not small <= big:
+        return False
+    return any(t not in _GENERIC_WORDS and not t.isdigit() for t in small)
 
 def shoe_keys(p, title: str, pid: str) -> list:
     """Identity keys for a find, strongest first: s: Nike style code from the SKUs
@@ -158,7 +186,9 @@ def shoe_keys(p, title: str, pid: str) -> list:
 
 def is_muted(find: dict, cache: dict) -> bool:
     muted = cache.get("muted", {})
-    return any(k in muted for k in find.get("keys", []))
+    if any(k in muted for k in find.get("keys", [])):
+        return True
+    return any(names_match(find.get("title", ""), t) for t in {e.get("title", "") for e in muted.values()})
 
 def _bot(method: str, path: str, **kw):
     r = requests.request(method, DISCORD_API + path, headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}"}, timeout=10, **kw)
