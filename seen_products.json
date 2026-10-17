@@ -2581,6 +2581,7 @@
 "Exodus Rideshop::9055446368374",
 "Exodus Rideshop::9055446859894",
 "Exodus Rideshop::9055449415798",
+"Exodus Rideshop::9062389088374",
 "FTC SF::9161382822062",
 "FTC SF::9161416310958",
 "Familia Skateshop::10475185996088",
@@ -8687,7 +8688,7 @@
 "Humidity Skateshop::9949534126371": true,
 "Humidity Skateshop::9946808975651": true,
 "Humidity Skateshop::9938993217827": true,
-"Humidity Skateshop::9938953666851": true,
+"Humidity Skateshop::9938953666851": false,
 "Humidity Skateshop::9878510698787": false,
 "Humidity Skateshop::9843075088675": true,
 "Humidity Skateshop::9843063062819": true,
@@ -11276,7 +11277,7 @@
 "Skatepark of Tampa::10774390210833": true,
 "Skatepark of Tampa::10774384541969": false,
 "Skatepark of Tampa::10766708932881": true,
-"Skatepark of Tampa::10758450217233": true,
+"Skatepark of Tampa::10758450217233": false,
 "Skatepark of Tampa::10758446285073": false,
 "Skatepark of Tampa::10749663641873": false,
 "Skatepark of Tampa::10749663084817": false,
@@ -12252,12 +12253,10 @@
 "CCS::8563944423607": true,
 "CCS::8563092095159": true,
 "Arts & Rec::15610224115823": true,
-"Xtreme::15449359843422": true
+"Xtreme::15449359843422": true,
+"Exodus Rideshop::9062389088374": true
 },
-"oos": {
-"Humidity Skateshop::9938953666851": 2,
-"Skatepark of Tampa::10758450217233": 2
-},
+"oos": {},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -14964,10 +14963,8 @@
 "m": {}
 },
 "Humidity Skateshop::9938953666851": {
-"a": "12",
-"m": {
-"12": 2
-}
+"a": "",
+"m": {}
 },
 "Humidity Skateshop::9843075088675": {
 "a": "8.5",
@@ -17207,7 +17204,9 @@
 },
 "Suite160::8304937238724": {
 "a": "10|10.5|8.5",
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Suite160::8309484421316": {
 "a": "8",
@@ -23666,10 +23665,8 @@
 "m": {}
 },
 "Skatepark of Tampa::10758450217233": {
-"a": "Obsidian/ Black",
-"m": {
-"Obsidian/ Black": 2
-}
+"a": "",
+"m": {}
 },
 "Skatepark of Tampa::10758446285073": {
 "a": "",
@@ -28909,6 +28906,10 @@
 },
 "Xtreme::15449359843422": {
 "a": "8.5|9",
+"m": {}
+},
+"Exodus Rideshop::9062389088374": {
+"a": "M 10 / W 11.5|M 10.5 / W 12|M 11 / W 12.5|M 11.5 / W 13|M 12 / W 13.5|M 13 / W 14.5|M 7.5 / W 9|M 8 / W 9.5|M 8.5 / W 10|M 9 / W 10.5|M 9.5 / W 11",
 "m": {}
 }
 },
