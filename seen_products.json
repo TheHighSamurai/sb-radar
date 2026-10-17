@@ -4553,6 +4553,7 @@
 "Olympia Skate Shop::15398624330035",
 "Olympia Skate Shop::15403997692211",
 "Olympia Skate Shop::15403998052659",
+"Olympia Skate Shop::15425472332083",
 "Olympia Skate Shop::8070557958451",
 "Olympia Skate Shop::8087628022067",
 "Olympia Skate Shop::8087698964787",
@@ -8038,6 +8039,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://homebaseskateshop.com/products/nike-sb-t-shirt-1",
 "image": null,
+"local": false
+},
+{
+"store": "Olympia Skate Shop",
+"title": "NIKE SB PEAK CAMO GREEN BEANIE",
+"price": "32.00",
+"sizes": "GREEN",
+"link": "https://olympiaskateshop.com/products/nike-sb-peak-camo-green-beanie",
+"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/nikesbbeanie.webp?v=1792255683",
 "local": false
 }
 ],
@@ -14215,7 +14225,7 @@
 "Stolen Skate Shop::7849724117036": {
 "a": "10|10.5|11|11.5|12|13|4|4.5|5|5.5|6|6.5|7.5|8|8.5|9|9.5",
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "Stolen Skate Shop::8138309271596": [
