@@ -3647,6 +3647,7 @@
 "Geometric Skate Shop::9916017377555",
 "Geometric Skate Shop::9922446950675",
 "Geometric Skate Shop::9925522129171",
+"Home Base Skate Shop::15450352386202",
 "Humidity Skateshop::10011064271139",
 "Humidity Skateshop::10011065975075",
 "Humidity Skateshop::10011681390883",
@@ -8028,6 +8029,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://bluetilesc.com/products/nike-sb-peak-beanie-camo-green",
 "image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbbeaniepeakcamogreen.jpg?v=1792181218",
+"local": false
+},
+{
+"store": "Home Base Skate Shop",
+"title": "Nike SB T-Shirt",
+"price": "45.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://homebaseskateshop.com/products/nike-sb-t-shirt-1",
+"image": null,
 "local": false
 }
 ],
@@ -14204,7 +14214,9 @@
 },
 "Stolen Skate Shop::7849724117036": {
 "a": "10|10.5|11|11.5|12|13|4|4.5|5|5.5|6|6.5|7.5|8|8.5|9|9.5",
-"m": {}
+"m": {
+"10.5": 1
+}
 },
 "Stolen Skate Shop::8138309271596": [
 "M",
