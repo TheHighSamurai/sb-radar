@@ -12254,7 +12254,10 @@
 "Arts & Rec::15610224115823": true,
 "Xtreme::15449359843422": true
 },
-"oos": {},
+"oos": {
+"Humidity Skateshop::9938953666851": 1,
+"Skatepark of Tampa::10758450217233": 1
+},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -14962,7 +14965,9 @@
 },
 "Humidity Skateshop::9938953666851": {
 "a": "12",
-"m": {}
+"m": {
+"12": 1
+}
 },
 "Humidity Skateshop::9843075088675": {
 "a": "8.5",
@@ -23662,7 +23667,9 @@
 },
 "Skatepark of Tampa::10758450217233": {
 "a": "Obsidian/ Black",
-"m": {}
+"m": {
+"Obsidian/ Black": 1
+}
 },
 "Skatepark of Tampa::10758446285073": {
 "a": "",
