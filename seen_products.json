@@ -4557,6 +4557,7 @@
 "Olympia Skate Shop::15403997692211",
 "Olympia Skate Shop::15403998052659",
 "Olympia Skate Shop::15425472332083",
+"Olympia Skate Shop::15425515979059",
 "Olympia Skate Shop::8070557958451",
 "Olympia Skate Shop::8087628022067",
 "Olympia Skate Shop::8087698964787",
@@ -12264,7 +12265,8 @@
 "CCS::8563092095159": true,
 "Arts & Rec::15610224115823": true,
 "Xtreme::15449359843422": true,
-"Exodus Rideshop::9062389088374": true
+"Exodus Rideshop::9062389088374": true,
+"Olympia Skate Shop::15425515979059": true
 },
 "oos": {},
 "avail": {
@@ -16509,7 +16511,7 @@
 "m": {}
 },
 "35th North::11119173533732": {
-"a": "10|11|8.5|9.5",
+"a": "10|11|14|8.5|9.5",
 "m": {}
 },
 "35th North::7771442675748": {
@@ -28918,6 +28920,10 @@
 },
 "Exodus Rideshop::9062389088374": {
 "a": "M 10 / W 11.5|M 10.5 / W 12|M 11.5 / W 13|M 7.5 / W 9|M 8 / W 9.5|M 9.5 / W 11",
+"m": {}
+},
+"Olympia Skate Shop::15425515979059": {
+"a": "10|10.5|11.5|7.5|8.5|9|9.5",
 "m": {}
 }
 },
