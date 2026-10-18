@@ -2597,6 +2597,7 @@
 "Familia Skateshop::10871460331832",
 "Familia Skateshop::10948869390648",
 "Familia Skateshop::10948870242616",
+"Familia Skateshop::10959985934648",
 "Familia Skateshop::9473564311864",
 "Familia Skateshop::9473565163832",
 "Flatspot::10333428234",
@@ -8092,6 +8093,15 @@
 "sizes": "One size",
 "link": "https://familiaskate.com/products/nike-sb-peak-beanie-green",
 "image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-PEAK-BEANIE-GRN.jpg?v=1792305383",
+"local": false
+},
+{
+"store": "Familia Skateshop",
+"title": "NIKE SB CHAMPAGNE TEE - BLACK",
+"price": "45.00",
+"sizes": "M, L, XL",
+"link": "https://familiaskate.com/products/nike-sb-champagne-tee-black",
+"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-CHAMPANGE-BLK.jpg?v=1792306378",
 "local": false
 }
 ],
@@ -20915,10 +20925,8 @@
 "m": {}
 },
 "Theory Skate Shop::8505237110971": {
-"a": "M11.5/W13|M8.5/W10",
-"m": {
-"M8.5/W10": 2
-}
+"a": "M11.5/W13",
+"m": {}
 },
 "Theory Skate Shop::8467224592571": {
 "a": "M5/W6.5",
