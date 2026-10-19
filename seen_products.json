@@ -4008,6 +4008,7 @@
 "Kinetic::15412764672102",
 "Kinetic::15412810219622",
 "Kinetic::15426594046054",
+"Kinetic::15434123083878",
 "Kinetic::8095107121254",
 "Kinetic::8095107907686",
 "Kinetic::8126132551782",
@@ -6462,6 +6463,7 @@
 "Suite160::8694771351748",
 "Suite160::8701760012484",
 "Suite160::8701761159364",
+"Sun Diego Boardshop::10272462471360",
 "Sun Diego Boardshop::7930060996800",
 "Sun Diego Boardshop::7930062864576",
 "Sun Diego Boardshop::7930062897344",
@@ -8186,6 +8188,15 @@
 "sizes": "W.36",
 "link": "https://www.flatspot.com/products/nike-sb-loose-denim-pants-black",
 "image": "https://cdn.shopify.com/s/files/1/1202/6102/files/NikeSBLooseDenimPants-Black-1.jpg?v=1792419749",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Switch Drill Woven Pant (Silver Lilac/ Palest Purple)",
+"price": "105.00",
+"sizes": "XL, M, XXL, S, L",
+"link": "https://kineticskateboarding.com/products/nike-sb-switch-drill-woven-pant-silver-lilac-palest-purple",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/DSCF9442_1024x1024_a3035139-581b-4b2a-a5bf-5da70741d21f.webp?v=1792426400",
 "local": false
 }
 ],
@@ -12388,7 +12399,8 @@
 "Xtreme::15459206987870": true,
 "Xtreme::15459173597278": true,
 "Flatspot::15851366547829": true,
-"Civil::15443275120928": true
+"Civil::15443275120928": true,
+"Sun Diego Boardshop::10272462471360": true
 },
 "oos": {},
 "avail": {
@@ -29070,6 +29082,10 @@
 },
 "Civil::15443275120928": {
 "a": "10|10.5|11|11.5|12|7|8|8.5|9|9.5",
+"m": {}
+},
+"Sun Diego Boardshop::10272462471360": {
+"a": "Black Spruce Corduroy Brown Black Spruce",
 "m": {}
 }
 },
