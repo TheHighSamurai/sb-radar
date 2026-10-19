@@ -12368,7 +12368,9 @@
 "Xtreme::15459173597278": true,
 "Flatspot::15851366547829": true
 },
-"oos": {},
+"oos": {
+"People Skate and Snowboard::8982698950871": 1
+},
 "avail": {
 "Defy Boardshop::7863138517110": {
 "a": "10.0m/11.5w",
@@ -19860,7 +19862,9 @@
 },
 "People Skate and Snowboard::8982698950871": {
 "a": "black/gum",
-"m": {}
+"m": {
+"black/gum": 1
+}
 },
 "People Skate and Snowboard::8138950607063": {
 "a": "black/white",
