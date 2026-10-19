@@ -12392,7 +12392,7 @@
 "CCS::8563092095159": true,
 "Arts & Rec::15610224115823": true,
 "Xtreme::15449359843422": true,
-"Exodus Rideshop::9062389088374": false,
+"Exodus Rideshop::9062389088374": true,
 "Olympia Skate Shop::15425515979059": true,
 "Orchard::10825142173861": true,
 "Xtreme::15453558702174": true,
@@ -29053,7 +29053,7 @@
 "m": {}
 },
 "Exodus Rideshop::9062389088374": {
-"a": "",
+"a": "M 8.5 / W 10|M 9 / W 10.5",
 "m": {}
 },
 "Olympia Skate Shop::15425515979059": {
