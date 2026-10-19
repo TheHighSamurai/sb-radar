@@ -6859,6 +6859,7 @@
 "Travel Skate Shop::15404343853133",
 "Travel Skate Shop::15418007027789",
 "Travel Skate Shop::15418113163341",
+"Travel Skate Shop::15428088234061",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -8218,6 +8219,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://bluetilesc.com/products/nike-sb-crest-skate-tee-white",
 "image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbcrestteewhitetheskatetee.jpg?v=1792445165",
+"local": false
+},
+{
+"store": "Travel Skate Shop",
+"title": "Nike SB \"Champagne Dunk\" Tee",
+"price": "45.00",
+"sizes": "X-Large, Smal, Medium, Large",
+"link": "https://travelskateshop.com/products/nike-sb-champagne-dunk-tee",
+"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/540648150.jpg?v=1792448564",
 "local": false
 }
 ],
@@ -22810,10 +22820,8 @@
 "m": {}
 },
 "Civil::10478548255008": {
-"a": "10|10.5|12|8|9|9.5",
-"m": {
-"12": 2
-}
+"a": "10|10.5|8|9|9.5",
+"m": {}
 },
 "Civil::10488561533216": {
 "a": "10|10.5|11|11.5|12|9|9.5",
@@ -26936,10 +26944,8 @@
 "m": {}
 },
 "CCS::8277434106039": {
-"a": "10.0|11.0|8.0|9.0|9.5",
-"m": {
-"9.5": 2
-}
+"a": "10.0|11.0|8.0|9.0",
+"m": {}
 },
 "CCS::8276286734519": {
 "a": "10.0|10.5|11.0|11.5|12.0|13.0|4.5|6.5|7.0|7.5|8.5|9.0|9.5",
