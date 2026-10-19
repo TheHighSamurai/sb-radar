@@ -11456,7 +11456,7 @@
 "Skatepark of Tampa::10614555017489": true,
 "Skatepark of Tampa::10614484926737": false,
 "Skatepark of Tampa::10614484467985": false,
-"Skatepark of Tampa::10614483419409": true,
+"Skatepark of Tampa::10614483419409": false,
 "Skatepark of Tampa::10614482534673": false,
 "Skatepark of Tampa::10614480109841": false,
 "Skatepark of Tampa::10614479487249": false,
@@ -12426,8 +12426,7 @@
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
-"LB Skate::9105301012636": 1,
-"Skatepark of Tampa::10614483419409": 2
+"LB Skate::9105301012636": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -23919,10 +23918,8 @@
 "m": {}
 },
 "Skatepark of Tampa::10614483419409": {
-"a": "Cinnamon/ Light Bone",
-"m": {
-"Cinnamon/ Light Bone": 2
-}
+"a": "",
+"m": {}
 },
 "Skatepark of Tampa::10614482534673": {
 "a": "",
