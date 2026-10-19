@@ -6861,6 +6861,7 @@
 "Travel Skate Shop::15418113163341",
 "Travel Skate Shop::15428088234061",
 "Travel Skate Shop::15428089675853",
+"Travel Skate Shop::15428091150413",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -8238,6 +8239,15 @@
 "sizes": "X-Large, Medium, Large, Small",
 "link": "https://travelskateshop.com/products/nike-sb-champagne-dunk-tee-1",
 "image": "https://cdn.shopify.com/s/files/1/1193/7716/files/7D335D95-606B-43C5-A907-D4B4CC742537.webp?v=1792448698",
+"local": false
+},
+{
+"store": "Travel Skate Shop",
+"title": "Nike SB Peak Beanie",
+"price": "31.00",
+"sizes": "Check site",
+"link": "https://travelskateshop.com/products/nike-sb-peak-beanie",
+"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/shopping-3_5e45c862-f5cf-4520-aae7-e6619b450dc9.webp?v=1792449166",
 "local": false
 }
 ],
