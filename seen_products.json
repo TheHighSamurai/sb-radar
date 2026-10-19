@@ -2877,6 +2877,7 @@
 "Flatspot::15850384228725",
 "Flatspot::15850384359797",
 "Flatspot::15851366875509",
+"Flatspot::15851367104885",
 "Flatspot::15854417969525",
 "Flatspot::15854418002293",
 "Flatspot::15854423310709",
@@ -8154,6 +8155,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://xbusa.com/products/nike-sb-peak-skate-beanie-black-white",
 "image": "https://cdn.shopify.com/s/files/1/1881/0779/files/12_645a0839-138d-4db4-8931-023bc01d7d57.png?v=1792371444",
+"local": false
+},
+{
+"store": "Flatspot",
+"title": "Nike SB Peak Beanie - Camo Green / White",
+"price": "39.00",
+"sizes": "One Size",
+"link": "https://www.flatspot.com/products/nike-sb-peak-beanie-camo-green-white",
+"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-peak-beanie-camo-green-white--1.jpg?v=1792400289",
 "local": false
 }
 ],
