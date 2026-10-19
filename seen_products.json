@@ -7340,6 +7340,11 @@
 "Xtreme::15418037862494",
 "Xtreme::15449359843422",
 "Xtreme::15453558702174",
+"Xtreme::15459173597278",
+"Xtreme::15459206987870",
+"Xtreme::15459238019166",
+"Xtreme::15459369058398",
+"Xtreme::15459402874974",
 "Xtreme::4818859819102",
 "Xtreme::4826790297694",
 "Xtreme::6568085848158",
@@ -8122,6 +8127,33 @@
 "sizes": "O/S",
 "link": "https://furnaceskate.com/products/nike-sb-embroidered-logo-beanie-2",
 "image": "https://cdn.shopify.com/s/files/1/0376/9217/files/beanie_ec0ae5ac-a7bb-4c04-bfa9-a611997f3835.jpg?v=1792370674",
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Switch Drill Woven Pants Silver Lilac",
+"price": "104.95",
+"sizes": "M, XL, L",
+"link": "https://xbusa.com/products/nike-sb-switch-drill-woven-pants-silver-lilac",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/10_7d0189d3-62c7-4f34-bb8f-2b9bda9c3d12.png?v=1792374291",
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Peak Skate Beanie Camo Green/White",
+"price": "31.95",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://xbusa.com/products/nike-sb-peak-skate-beanie-camo-green-white",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/12_23bada9d-55e2-4a37-981e-5d852774d1fd.png?v=1792373699",
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Peak Skate Beanie Black/White",
+"price": "31.95",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://xbusa.com/products/nike-sb-peak-skate-beanie-black-white",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/12_645a0839-138d-4db4-8931-023bc01d7d57.png?v=1792371444",
 "local": false
 }
 ],
@@ -12320,7 +12352,9 @@
 "Exodus Rideshop::9062389088374": true,
 "Olympia Skate Shop::15425515979059": true,
 "Orchard::10825142173861": true,
-"Xtreme::15453558702174": true
+"Xtreme::15453558702174": true,
+"Xtreme::15459206987870": true,
+"Xtreme::15459173597278": true
 },
 "oos": {},
 "avail": {
@@ -28987,6 +29021,14 @@
 "Xtreme::15453558702174": {
 "a": "10|10.5|11|11.5|12|8|8.5|9|9.5",
 "m": {}
+},
+"Xtreme::15459206987870": {
+"a": "10|10.5|11|8.5|9|9.5",
+"m": {}
+},
+"Xtreme::15459173597278": {
+"a": "10|10.5|11|11.5|12|8|8.5|9|9.5",
+"m": {}
 }
 },
 "muted": {
@@ -29967,6 +30009,15 @@
 ],
 "title": "Nike SB Dunk Low Pro",
 "t": 1792364783
+},
+"1561558589020311555": {
+"cid": "1550909316897177842",
+"keys": [
+"t:zoom tennis classic black black suede",
+"p:Xtreme::15459173597278"
+],
+"title": "Nike SB Zoom Tennis Classic Black/Black Suede",
+"t": 1792374980
 }
 }
 }
