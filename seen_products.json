@@ -12357,7 +12357,7 @@
 "Xtreme::15459173597278": true
 },
 "oos": {
-"Exodus Rideshop::9062389088374": 1
+"Exodus Rideshop::9062389088374": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -26959,7 +26959,7 @@
 "Flatspot::15850383638901": {
 "a": "UK 10|UK 11|UK 12|UK 6 (EU 40)|UK 6.5|UK 7|UK 7.5|UK 8|UK 8.5|UK 9|UK 9.5",
 "m": {
-"UK 10": 1
+"UK 10": 2
 }
 },
 "Flatspot::15850383704437": {
@@ -29013,7 +29013,7 @@
 "Exodus Rideshop::9062389088374": {
 "a": "M 8 / W 9.5",
 "m": {
-"M 8 / W 9.5": 1
+"M 8 / W 9.5": 2
 }
 },
 "Olympia Skate Shop::15425515979059": {
