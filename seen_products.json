@@ -6860,6 +6860,7 @@
 "Travel Skate Shop::15418007027789",
 "Travel Skate Shop::15418113163341",
 "Travel Skate Shop::15428088234061",
+"Travel Skate Shop::15428089675853",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -8228,6 +8229,15 @@
 "sizes": "X-Large, Smal, Medium, Large",
 "link": "https://travelskateshop.com/products/nike-sb-champagne-dunk-tee",
 "image": "https://cdn.shopify.com/s/files/1/1193/7716/files/540648150.jpg?v=1792448564",
+"local": false
+},
+{
+"store": "Travel Skate Shop",
+"title": "Nike SB \"Champagne Dunk\" Tee",
+"price": "45.00",
+"sizes": "X-Large, Medium, Large, Small",
+"link": "https://travelskateshop.com/products/nike-sb-champagne-dunk-tee-1",
+"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/7D335D95-606B-43C5-A907-D4B4CC742537.webp?v=1792448698",
 "local": false
 }
 ],
