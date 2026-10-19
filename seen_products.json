@@ -3527,6 +3527,7 @@
 "Furnace Skate::10574405828792",
 "Furnace Skate::10574406647992",
 "Furnace Skate::10578617499832",
+"Furnace Skate::10668903399608",
 "Furnace Skate::7299934453944",
 "Furnace Skate::7299935043768",
 "Furnace Skate::7315759136952",
@@ -8112,6 +8113,15 @@
 "sizes": "M",
 "link": "https://familiaskate.com/products/nike-sb-champagne-dunk-tee-white",
 "image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-CHAMPANGE-WHT.jpg?v=1792306659",
+"local": false
+},
+{
+"store": "Furnace Skate",
+"title": "Nike SB Embroidered Logo Beanie",
+"price": "32.00",
+"sizes": "O/S",
+"link": "https://furnaceskate.com/products/nike-sb-embroidered-logo-beanie-2",
+"image": "https://cdn.shopify.com/s/files/1/0376/9217/files/beanie_ec0ae5ac-a7bb-4c04-bfa9-a611997f3835.jpg?v=1792370674",
 "local": false
 }
 ],
