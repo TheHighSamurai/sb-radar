@@ -4411,6 +4411,7 @@
 "NJ Skateshop::15396784046114",
 "NJ Skateshop::15419208990754",
 "NJ Skateshop::15421473587234",
+"NJ Skateshop::15442670845986",
 "NJ Skateshop::2256769581115",
 "NJ Skateshop::7781460181026",
 "NJ Skateshop::7802310983714",
@@ -8312,6 +8313,15 @@
 "sizes": "M, S, L",
 "link": "https://geometricskateshop.com/products/nike-sb-switch-drill-woven-pant-silver-lilac-palest-purple",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/DSCF9442_1913x_af083d9d-6e8a-4ac4-b6a8-92a33c64cbae.webp?v=1792520734",
+"local": false
+},
+{
+"store": "NJ Skateshop",
+"title": "Nike SB - Champagne Crest Tee",
+"price": "45.00",
+"sizes": "M, XL, S, L",
+"link": "https://njskateshop.com/products/nike-sb-crest-tee",
+"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/NIKESB-CHAMPANGE-WHT.webp?v=1792522742",
 "local": false
 }
 ],
@@ -20243,7 +20253,7 @@
 "Val Surf::15774666096800": {
 "a": "10.5M|10M|11M|12M|9.5M|9M",
 "m": {
-"12M": 1
+"12M": 2
 }
 },
 "Val Surf::15769541345440": {
