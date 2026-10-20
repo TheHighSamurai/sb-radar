@@ -479,6 +479,7 @@
 "Arts & Rec::15604923072623",
 "Arts & Rec::15607105585263",
 "Arts & Rec::15610224115823",
+"Arts & Rec::15627099439215",
 "Arts & Rec::7121500209263",
 "Arts & Rec::7128968986735",
 "Arts & Rec::7525986730095",
@@ -8269,6 +8270,15 @@
 "link": "https://innercityskate.com/products/nike-sb-champagne-dunk-t-shirt",
 "image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_25.jpg?v=1792441835",
 "local": false
+},
+{
+"store": "Arts & Rec",
+"title": "Nike SB Skate Top: ANTHRACITE/BLACK/WHITE",
+"price": "50.00",
+"sizes": "XX-Large, Medium",
+"link": "https://artsandrecstore.com/products/nike-sb-skate-top-anthracite-black-white",
+"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IM5430-060_PHSFM001-2000.jpg?v=1792455504",
+"local": true
 }
 ],
 "apparel_seeded": true,
