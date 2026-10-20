@@ -12494,7 +12494,7 @@
 "CCS::8563092095159": true,
 "Arts & Rec::15610224115823": true,
 "Xtreme::15449359843422": true,
-"Exodus Rideshop::9062389088374": true,
+"Exodus Rideshop::9062389088374": false,
 "Olympia Skate Shop::15425515979059": true,
 "Orchard::10825142173861": true,
 "Xtreme::15453558702174": true,
@@ -12508,8 +12508,7 @@
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
-"LB Skate::9105301012636": 1,
-"Exodus Rideshop::9062389088374": 2
+"LB Skate::9105301012636": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -29167,10 +29166,8 @@
 "m": {}
 },
 "Exodus Rideshop::9062389088374": {
-"a": "M 8.5 / W 10",
-"m": {
-"M 8.5 / W 10": 2
-}
+"a": "",
+"m": {}
 },
 "Olympia Skate Shop::15425515979059": {
 "a": "9|9.5",
