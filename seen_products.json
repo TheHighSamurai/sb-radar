@@ -12509,7 +12509,7 @@
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
 "LB Skate::9105301012636": 1,
-"Exodus Rideshop::9062389088374": 1
+"Exodus Rideshop::9062389088374": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -29169,7 +29169,7 @@
 "Exodus Rideshop::9062389088374": {
 "a": "M 8.5 / W 10",
 "m": {
-"M 8.5 / W 10": 1
+"M 8.5 / W 10": 2
 }
 },
 "Olympia Skate Shop::15425515979059": {
