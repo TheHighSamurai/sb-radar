@@ -4011,6 +4011,8 @@
 "Kinetic::15412541751398",
 "Kinetic::15412764672102",
 "Kinetic::15412810219622",
+"Kinetic::15422497456230",
+"Kinetic::15422497620070",
 "Kinetic::15426594046054",
 "Kinetic::15434123083878",
 "Kinetic::8095107121254",
@@ -8280,6 +8282,24 @@
 "link": "https://artsandrecstore.com/products/nike-sb-skate-top-anthracite-black-white",
 "image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IM5430-060_PHSFM001-2000.jpg?v=1792455504",
 "local": true
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Skate Tee (Anthracite)",
+"price": "45.00",
+"sizes": "XXL, M, XL, S, L",
+"link": "https://kineticskateboarding.com/products/nike-sb-skate-tee-anthracite",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Skate_Tee_Anthracite_2.jpg?v=1792427657",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Skate Tee (White)",
+"price": "45.00",
+"sizes": "XXL, M, XL, S, L",
+"link": "https://kineticskateboarding.com/products/nike-sb-skate-tee-white",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Skate_Tee_White_1.jpg?v=1792427789",
+"local": false
 }
 ],
 "apparel_seeded": true,
