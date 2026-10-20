@@ -3624,6 +3624,7 @@
 "Geometric Skate Shop::15396590027027",
 "Geometric Skate Shop::15397862408467",
 "Geometric Skate Shop::15404847431955",
+"Geometric Skate Shop::15417067503891",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -8302,6 +8303,15 @@
 "link": "https://kineticskateboarding.com/products/nike-sb-skate-tee-white",
 "image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Skate_Tee_White_1.jpg?v=1792427789",
 "local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Switch Drill Woven Pant - Silver Lilac/Palest Purple'",
+"price": "105.00",
+"sizes": "M, S, L",
+"link": "https://geometricskateshop.com/products/nike-sb-switch-drill-woven-pant-silver-lilac-palest-purple",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/DSCF9442_1913x_af083d9d-6e8a-4ac4-b6a8-92a33c64cbae.webp?v=1792520734",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -12973,10 +12983,8 @@
 "m": {}
 },
 "PLA Folsom::8798252335262": {
-"a": "10|10.5|11|11.5|12|13|7|7.5|8|8.5|9|9.5",
-"m": {
-"8.5": 2
-}
+"a": "10|10.5|11|11.5|12|13|7|7.5|8|9|9.5",
+"m": {}
 },
 "PLA Folsom::8725133754526": {
 "a": "10|8|8.5|9|9.5",
@@ -13520,7 +13528,9 @@
 },
 "Travel Skate Shop::7879963312205": {
 "a": "10|10.5|11|12|13|8|9|9.5",
-"m": {}
+"m": {
+"11": 1
+}
 },
 "Travel Skate Shop::7849687613517": {
 "a": "9",
@@ -29181,10 +29191,8 @@
 "m": {}
 },
 "Orchard::10825142173861": {
-"a": "10|10.5|11|6|7|7.5|8|8.5|9|9.5",
-"m": {
-"8.5": 2
-}
+"a": "10|10.5|11|6|7|7.5|8|9|9.5",
+"m": {}
 },
 "Xtreme::15453558702174": {
 "a": "10|10.5|11|11.5|12|8|8.5|9|9.5",
