@@ -5417,6 +5417,7 @@
 "Rock City Kicks::15355513307294",
 "Rock City Kicks::15368894808222",
 "Rock City Kicks::15368975417502",
+"Rock City Kicks::15410848432286",
 "Rock City Kicks::7101368500382",
 "Rock City Kicks::7156800127134",
 "Rock City Kicks::7186358173854",
@@ -8345,6 +8346,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://35thnorth.com/products/nike-sb-airmail-long-sleeve-t-shirt-black-grey",
 "image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/nike-sb-airmail-long-sleeve-t-shirt-anthracite-black-white--1_1300x1500_crop_center.progressive_933889e7-5644-429e-b3db-fd0a2560a0f1.webp?v=1792539267",
+"local": false
+},
+{
+"store": "Rock City Kicks",
+"title": "Nike SB Fleece 1/2 Zip Skate Sweatshirt (Gym Red/Stealth)",
+"price": "80.00",
+"sizes": "XL",
+"link": "https://rockcitykicks.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBFleece1_2ZipSkateSweatshirt_GymRed_Stealth_IZ1853-6871.jpg?v=1792539960",
 "local": false
 }
 ],
