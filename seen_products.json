@@ -4583,6 +4583,7 @@
 "Olympia Skate Shop::15403998052659",
 "Olympia Skate Shop::15425472332083",
 "Olympia Skate Shop::15425515979059",
+"Olympia Skate Shop::15431113441587",
 "Olympia Skate Shop::8070557958451",
 "Olympia Skate Shop::8087628022067",
 "Olympia Skate Shop::8087698964787",
@@ -8324,6 +8325,15 @@
 "sizes": "M, XL, S, L",
 "link": "https://njskateshop.com/products/nike-sb-crest-tee",
 "image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/NIKESB-CHAMPANGE-WHT.webp?v=1792522742",
+"local": false
+},
+{
+"store": "Olympia Skate Shop",
+"title": "NIKE SB PEAK BEANIE BLACK",
+"price": "32.00",
+"sizes": "OSFA",
+"link": "https://olympiaskateshop.com/products/nike-sb-peak-beanie-black",
+"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/AURORA_IX3086-010_PHSYD001-2000.webp?v=1792525118",
 "local": false
 }
 ],
@@ -29077,7 +29087,7 @@
 "Theory Skate Shop::15420193833147": {
 "a": "M10.5/W12|M11/W12.5|M15/W16.5|M6.5/W8|M7/W8.5|M8.5/W10",
 "m": {
-"M10.5/W12": 1
+"M10.5/W12": 2
 }
 },
 "Skatepark of Tampa::15449113952529": {
@@ -29273,7 +29283,7 @@
 "Labor Skate Shop::15436762120294": {
 "a": "10|10.5|11|11.5|12|13|14|15|7|7.5|8.5|9|9.5",
 "m": {
-"7": 1
+"7": 2
 }
 }
 },
