@@ -12464,7 +12464,7 @@
 "Skaters Advocate::8776259829994": true,
 "Skaters Advocate::8776248688874": true,
 "Humidity Skateshop::10404518887715": true,
-"NJ Skateshop::8678870777890": false,
+"NJ Skateshop::8678870777890": true,
 "PLA Folsom::15387924594846": true,
 "PLA Folsom::15387939274910": true,
 "Theory Skate Shop::15417518424251": true,
@@ -29236,7 +29236,9 @@
 },
 "Civil::15443275120928": {
 "a": "10|11.5|7|8|9",
-"m": {}
+"m": {
+"11.5": 1
+}
 },
 "Sun Diego Boardshop::10272462471360": {
 "a": "Black Spruce Corduroy Brown Black Spruce",
@@ -29278,6 +29280,10 @@
 },
 "Labor Skate Shop::15436762120294": {
 "a": "10|10.5|11|11.5|12|13|14|15|7.5|8.5|9|9.5",
+"m": {}
+},
+"NJ Skateshop::8678870777890": {
+"a": "10|10.5|11|11.5|13|14|6.5|7.5|8.5|9|9.5",
 "m": {}
 }
 },
