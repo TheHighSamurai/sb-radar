@@ -1415,6 +1415,7 @@
 "Civil::15454696571168",
 "Civil::15459711910176",
 "Civil::15460076355872",
+"Civil::15489219658016",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -8377,6 +8378,15 @@
 "link": "https://shopoverload.com/products/nike-sb-champagne-dunk-tee-black",
 "image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Champagne_Dunk_Tee_Black_Front.jpg?v=1792541651",
 "local": true
+},
+{
+"store": "Civil",
+"title": "Nike SB ACG Terra Beanie - Hyper Royal",
+"price": "35.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://wearecivil.com/products/nike-sb-acg-terra-beanie-hyper-royal",
+"image": null,
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -27165,10 +27175,8 @@
 "m": {}
 },
 "CCS::6761088286903": {
-"a": "10.0|10.5|11.0|11.5|12.0|13.0|14.0|4.0|5.0|5.5|6.0|6.5|7.0|7.5|8.0|8.5|9.0|9.5",
-"m": {
-"7.5": 2
-}
+"a": "10.0|10.5|11.0|11.5|12.0|13.0|14.0|4.0|5.0|5.5|6.0|6.5|7.0|8.0|8.5|9.0|9.5",
+"m": {}
 },
 "CCS::6566660309175": {
 "a": "10.0|11.0|11.5|12.0|13.0|14.0|15.0|4.5|5.0|5.5|6.0|6.5|7.0|7.5",
