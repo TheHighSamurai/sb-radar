@@ -6604,6 +6604,7 @@
 "Tactics::html::nike sb",
 "The Block Skate Supply::15396381065431",
 "The Block Skate Supply::15420117745879",
+"The Block Skate Supply::15444958347479",
 "The Block Skate Supply::8654116454615",
 "The Block Skate Supply::8654117929175",
 "The Block Skate Supply::8655340798167",
@@ -8420,6 +8421,15 @@
 "sizes": "XL, M, L, S",
 "link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-anthracite-black-white",
 "image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5430-060_PHSFM001-2000.png?v=1792614442",
+"local": false
+},
+{
+"store": "The Block Skate Supply",
+"title": "Nike SB - Crest Skate T-Shirt - White",
+"price": "44.99",
+"sizes": "XL, Medium, Small, Large",
+"link": "https://theblockskatesupply.com/products/nike-sb-crest-skate-t-shirt-white",
+"image": "https://cdn.shopify.com/s/files/1/0694/1995/8487/files/AURORA_IW3134-100_PHSYM001-2000.jpg?v=1792616074",
 "local": false
 }
 ],
