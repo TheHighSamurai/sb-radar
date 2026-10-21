@@ -2593,6 +2593,7 @@
 "Exodus Rideshop::9055449415798",
 "Exodus Rideshop::9062389088374",
 "Exodus Rideshop::9075266289782",
+"Exodus Rideshop::9075267043446",
 "FTC SF::9161382822062",
 "FTC SF::9161416310958",
 "Familia Skateshop::10475185996088",
@@ -8410,6 +8411,15 @@
 "sizes": "M, XL, L",
 "link": "https://exodusrideshop.com/products/nike-sb-champange-crest-tee-white",
 "image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IW3134-100_PHSFM001-2000.png?v=1792614102",
+"local": false
+},
+{
+"store": "Exodus Rideshop",
+"title": "Nike SB Airmail Long Sleeve Skate Tee - Anthracite/Black-White",
+"price": "50.00",
+"sizes": "XL, M, L, S",
+"link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-anthracite-black-white",
+"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5430-060_PHSFM001-2000.png?v=1792614442",
 "local": false
 }
 ],
