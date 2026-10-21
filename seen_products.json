@@ -1665,6 +1665,7 @@
 "Coureur Goods::10349258277119",
 "Coureur Goods::10353724752127",
 "Coureur Goods::10353725931775",
+"Coureur Goods::10375935820031",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
 "Coureur Goods::8375408197887",
@@ -12672,7 +12673,8 @@
 "Skaters Advocate::8780721619178": true,
 "PLA Folsom::15393901281438": true,
 "CCS::8561832788151": true,
-"No-Comply::15448005542073": true
+"No-Comply::15448005542073": true,
+"Coureur Goods::10375935820031": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -29463,6 +29465,10 @@
 },
 "No-Comply::15448005542073": {
 "a": "M10.5=W12|M10=W11.5|M11.5=W13|M11=W12.5|M12=W13.5|M13=W14.5|M8.5=W10|M8=W9.5|M9.5=W11|M9=W10.5",
+"m": {}
+},
+"Coureur Goods::10375935820031": {
+"a": "10.5|11|11.5|8.5|9.5",
 "m": {}
 }
 },
