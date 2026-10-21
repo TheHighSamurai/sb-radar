@@ -4939,6 +4939,8 @@
 "Overload::10129113481463",
 "Overload::10153844637943",
 "Overload::10157022773495",
+"Overload::10157031063799",
+"Overload::10157031620855",
 "Overload::7533907378423",
 "Overload::7569332830455",
 "Overload::7724310069495",
@@ -8356,6 +8358,24 @@
 "link": "https://rockcitykicks.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
 "image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBFleece1_2ZipSkateSweatshirt_GymRed_Stealth_IZ1853-6871.jpg?v=1792539960",
 "local": false
+},
+{
+"store": "Overload",
+"title": "Nike SB Champagne Dunk Tee - White",
+"price": "45.00",
+"sizes": "L, M, XL",
+"link": "https://shopoverload.com/products/nike-sb-champagne-dunk-tee-white",
+"image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Champagne_Dunk_Tee_White_Front.jpg?v=1792541681",
+"local": true
+},
+{
+"store": "Overload",
+"title": "Nike SB Champagne Dunk Tee - Black",
+"price": "45.00",
+"sizes": "L, M, XXL, XL",
+"link": "https://shopoverload.com/products/nike-sb-champagne-dunk-tee-black",
+"image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Champagne_Dunk_Tee_Black_Front.jpg?v=1792541651",
+"local": true
 }
 ],
 "apparel_seeded": true,
@@ -15369,7 +15389,7 @@
 "Brooklyn Projects::15982521253969": {
 "a": "10|10.5|11|11.5|12|13|8",
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Brooklyn Projects::15944441102417": {
@@ -20282,7 +20302,13 @@
 },
 "Val Surf::15776769867936": {
 "a": "10.5M|10M|11.5M|11M|9.5M|9M",
-"m": {}
+"m": {
+"9M": 1,
+"10M": 1,
+"11M": 1,
+"10.5M": 1,
+"9.5M": 1
+}
 },
 "Val Surf::15776751321248": {
 "a": "10.5M|10M|11.5M|11M|12M|9.5M|9M",
@@ -20290,7 +20316,12 @@
 },
 "Val Surf::15774666096800": {
 "a": "10.5M|10M|11M|9.5M|9M",
-"m": {}
+"m": {
+"9M": 1,
+"11M": 1,
+"10.5M": 1,
+"9.5M": 1
+}
 },
 "Val Surf::15769541345440": {
 "a": "8M|9.5M",
