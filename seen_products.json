@@ -2592,6 +2592,7 @@
 "Exodus Rideshop::9055446859894",
 "Exodus Rideshop::9055449415798",
 "Exodus Rideshop::9062389088374",
+"Exodus Rideshop::9075266289782",
 "FTC SF::9161382822062",
 "FTC SF::9161416310958",
 "Familia Skateshop::10475185996088",
@@ -8400,6 +8401,15 @@
 "sizes": "X-Large, Medium, Large",
 "link": "https://blacksheepskateshop.com/products/nike-sb-crest-graphic-skate-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IW3134-100_PHSYM003-2000.png?v=1792605030",
+"local": false
+},
+{
+"store": "Exodus Rideshop",
+"title": "Nike SB Champange Crest Tee - White",
+"price": "45.00",
+"sizes": "M, XL, L",
+"link": "https://exodusrideshop.com/products/nike-sb-champange-crest-tee-white",
+"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IW3134-100_PHSFM001-2000.png?v=1792614102",
 "local": false
 }
 ],
@@ -16230,7 +16240,9 @@
 },
 "Labor Skate Shop::7992643944550": {
 "a": "10|10.5|11|11.5|12|13|9|9.5",
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Labor Skate Shop::15399776321638": {
 "a": "10.5|11|12|9|9.5",
