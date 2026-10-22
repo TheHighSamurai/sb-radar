@@ -585,31 +585,31 @@ STORES = [
     {"name": "Suite160", "url": "https://suite160.com"},
     # Sneaker boutiques (Oct 2026) — carry regular Nike Dunks, not just SB. Each one
     # was checked to serve a public Shopify /products.json before being added.
-    {"name": "Undefeated", "url": "https://undefeated.com"},
-    {"name": "Kith", "url": "https://kith.com"},
-    {"name": "Concepts", "url": "https://cncpts.com"},
-    {"name": "Bodega", "url": "https://bdgastore.com"},
-    {"name": "A Ma Maniere", "url": "https://www.a-ma-maniere.com"},
-    {"name": "Social Status", "url": "https://www.socialstatuspgh.com"},
-    {"name": "Lapstone & Hammer", "url": "https://www.lapstoneandhammer.com"},
-    {"name": "DTLR", "url": "https://www.dtlr.com"},
-    {"name": "Extra Butter", "url": "https://extrabutterny.com"},
-    {"name": "Packer Shoes", "url": "https://packershoes.com"},
-    {"name": "Sneaker Politics", "url": "https://sneakerpolitics.com"},
-    {"name": "Feature", "url": "https://www.featuresneakerboutique.com"},
-    {"name": "Notre", "url": "https://www.notre-shop.com"},
-    {"name": "Union LA", "url": "https://store.unionlosangeles.com"},
-    {"name": "Shoe Palace", "url": "https://www.shoepalace.com"},
-    {"name": "Xhibition", "url": "https://www.xhibition.co"},
-    {"name": "Oneness", "url": "https://www.onenessboutique.com"},
-    {"name": "Wish ATL", "url": "https://wishatl.com"},
-    {"name": "Nice Kicks", "url": "https://shopnicekicks.com"},
-    {"name": "Corporate", "url": "https://www.corporategotem.com"},
-    {"name": "Burn Rubber", "url": "https://burnrubbersneakers.com"},
-    {"name": "Sneakersnstuff", "url": "https://www.sneakersnstuff.com"},
-    {"name": "Bows and Arrows", "url": "https://www.bowsandarrowsberkeley.com"},
-    {"name": "Livestock", "url": "https://www.deadstock.ca"},
-    {"name": "Haven", "url": "https://shop.havenshop.com"},
+    {"name": "Undefeated", "url": "https://undefeated.com", "shopify_only": True},
+    {"name": "Kith", "url": "https://kith.com", "shopify_only": True},
+    {"name": "Concepts", "url": "https://cncpts.com", "shopify_only": True},
+    {"name": "Bodega", "url": "https://bdgastore.com", "shopify_only": True},
+    {"name": "A Ma Maniere", "url": "https://www.a-ma-maniere.com", "shopify_only": True},
+    {"name": "Social Status", "url": "https://www.socialstatuspgh.com", "shopify_only": True},
+    {"name": "Lapstone & Hammer", "url": "https://www.lapstoneandhammer.com", "shopify_only": True},
+    {"name": "DTLR", "url": "https://www.dtlr.com", "shopify_only": True},
+    {"name": "Extra Butter", "url": "https://extrabutterny.com", "shopify_only": True},
+    {"name": "Packer Shoes", "url": "https://packershoes.com", "shopify_only": True},
+    {"name": "Sneaker Politics", "url": "https://sneakerpolitics.com", "shopify_only": True},
+    {"name": "Feature", "url": "https://www.featuresneakerboutique.com", "shopify_only": True},
+    {"name": "Notre", "url": "https://www.notre-shop.com", "shopify_only": True},
+    {"name": "Union LA", "url": "https://store.unionlosangeles.com", "shopify_only": True},
+    {"name": "Shoe Palace", "url": "https://www.shoepalace.com", "shopify_only": True},
+    {"name": "Xhibition", "url": "https://www.xhibition.co", "shopify_only": True},
+    {"name": "Oneness", "url": "https://www.onenessboutique.com", "shopify_only": True},
+    {"name": "Wish ATL", "url": "https://wishatl.com", "shopify_only": True},
+    {"name": "Nice Kicks", "url": "https://shopnicekicks.com", "shopify_only": True},
+    {"name": "Corporate", "url": "https://www.corporategotem.com", "shopify_only": True},
+    {"name": "Burn Rubber", "url": "https://burnrubbersneakers.com", "shopify_only": True},
+    {"name": "Sneakersnstuff", "url": "https://www.sneakersnstuff.com", "shopify_only": True},
+    {"name": "Bows and Arrows", "url": "https://www.bowsandarrowsberkeley.com", "shopify_only": True},
+    {"name": "Livestock", "url": "https://www.deadstock.ca", "shopify_only": True},
+    {"name": "Haven", "url": "https://shop.havenshop.com", "shopify_only": True},
     # Nike's own SNKRS launch calendar (upcoming Dunk launches) — not Shopify.
     {"name": "Nike SNKRS", "url": "https://www.nike.com/launch", "snkrs": True},
 ]
@@ -634,6 +634,7 @@ def load_cache() -> dict:
             "muted": data.get("muted", {}),
             "msgs": data.get("msgs", {}),
             "nike_dunk_seeded": data.get("nike_dunk_seeded", False),
+            "boutique_reseed": data.get("boutique_reseed", False),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
             "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}, "muted": {}, "msgs": {}}
@@ -652,6 +653,7 @@ def save_cache(cache: dict):
         "muted": cache.get("muted", {}),
         "msgs": cache.get("msgs", {}),
         "nike_dunk_seeded": cache.get("nike_dunk_seeded", False),
+        "boutique_reseed": cache.get("boutique_reseed", False),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -733,6 +735,8 @@ def fetch_shopify(store: dict) -> list:
                 timeout=REQUEST_TIMEOUT, headers=HEADERS,
             )
             if r.status_code != 200:
+                if store.get("shopify_only") and page == 1:
+                    log.warning(f"{store['name']} products.json HTTP {r.status_code} — skipped this run")
                 break
             products = r.json().get("products", [])
             if not products:
@@ -849,6 +853,7 @@ def check_snkrs(store: dict, cache: dict) -> list:
                 log.warning("Nike SNKRS feed HTTP %s", r.status_code)
                 break
             objs = r.json().get("objects", []) or []
+            cache.setdefault("_fetched", set()).add(store["name"])
         except Exception as e:
             log.warning("Nike SNKRS feed error: %s", e)
             break
@@ -885,6 +890,18 @@ def check_snkrs(store: dict, cache: dict) -> list:
         log.info(f"  NEW SNKRS [{store['name']}]: {f['title']} — {f['sizes']}")
     return finds
 
+NEW_MAX_AGE_DAYS = 10   # a never-seen listing older than this is back-catalog, not a new drop
+
+def _listing_age_days(p: dict) -> float:
+    ts = p.get("published_at") or p.get("created_at")
+    if not ts:
+        return 0.0
+    try:
+        when = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        return (datetime.now(when.tzinfo) - when).total_seconds() / 86400
+    except Exception:
+        return 0.0
+
 def check_store(store: dict, cache: dict) -> list:
     seen  = cache["seen"]
     stock = cache.get("stock", {})
@@ -894,11 +911,18 @@ def check_store(store: dict, cache: dict) -> list:
     finds = []
     vendors = {}   # pid -> Shopify vendor, used to pick the channel for each find below
 
+    fetched = cache.setdefault("_fetched", set())   # stores whose catalog actually loaded this run
+
     if store.get("snkrs"):
         return check_snkrs(store, cache)
 
-    if is_shopify(store["url"], cache):
-        for p in fetch_shopify(store):
+    # Boutiques: Shopify feed only, re-tried every run (never cached as "not Shopify",
+    # never homepage-scraped — scraping them produced duplicate, priceless junk alerts).
+    if store.get("shopify_only") or is_shopify(store["url"], cache):
+        products = fetch_shopify(store)
+        if products:
+            fetched.add(store["name"])
+        for p in products:
             title = p.get("title", "")
             vendor = p.get("vendor", "") or ""
             feed = feed_for(title, vendor)
@@ -1003,9 +1027,17 @@ def check_store(store: dict, cache: dict) -> list:
                         "keys":  pkeys,
                 "local": store.get("local_sd", False),
                 "apparel": apparel,
+                # First time WE see it, but not a new drop: listed long ago (store seeded late,
+                # catalog only partly loaded before, ...) -> record silently.
+                "stale": _listing_age_days(p) > NEW_MAX_AGE_DAYS,
+                # Nothing buyable -> record silently; the NOW-AVAILABLE alert fires if sizes unlock.
+                "unbuyable": not in_stock,
             })
-    else:
-        for f in fetch_html(store):
+    elif not store.get("shopify_only"):
+        html_finds = fetch_html(store)
+        if html_finds:
+            fetched.add(store["name"])
+        for f in html_finds:
             if f["id"] not in seen:
                 finds.append({**f, "store": store["name"], "local": store.get("local_sd", False), "apparel": False,
                               "keys": shoe_keys(None, f["title"], f["id"])})
@@ -1034,6 +1066,14 @@ def run():
     first_run = len(cache["seen"]) == 0
     if first_run:
         log.info("First run — seeding cache silently. Only NEW drops will alert from here on.")
+    # One-time fix-up (Oct 22): the boutiques were marked "seeded" while their feeds weren't
+    # loading, so un-seed them; each gets a real silent seed pass the first time it loads.
+    if not cache.get("boutique_reseed", False):
+        cache["seeded_stores"] -= {s["name"] for s in STORES if s.get("shopify_only")}
+        for s in STORES:
+            if s.get("shopify_only"):
+                cache["shopify"].pop(s["url"].rstrip("/"), None)
+        cache["boutique_reseed"] = True
 
     all_finds = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
@@ -1054,15 +1094,26 @@ def run():
     # scoped per-store) so adding a store never floods alerts for its whole
     # existing catalog — only genuinely new drops alert from its second check on.
     checked_names = {store["name"] for store in STORES}
+    fetched = cache.pop("_fetched", set())
     new_stores = checked_names - cache["seeded_stores"]
-    if new_stores:
-        log.info("Silently seeding %d new store(s): %s", len(new_stores), ", ".join(sorted(new_stores)))
+    if new_stores & fetched:
+        log.info("Silently seeding %d new store(s): %s", len(new_stores & fetched), ", ".join(sorted(new_stores & fetched)))
     alertable_finds = [f for f in all_finds if f["store"] not in new_stores]
+    _dedup = {}
+    for f in alertable_finds:   # same listing can be found twice in one run — alert once
+        _dedup.setdefault((f["id"], bool(f.get("flip")), bool(f.get("restock")), bool(f.get("size_only"))), f)
+    alertable_finds = list(_dedup.values())
+    _quiet = [f for f in alertable_finds if f.get("stale") or (f.get("unbuyable") and not f.get("apparel"))]
+    if _quiet:
+        log.info("Recorded silently (old listing or nothing purchasable): %d — %s", len(_quiet), "; ".join(f["title"][:40] for f in _quiet[:15]))
+        alertable_finds = [f for f in alertable_finds if f not in _quiet]
     _muted_now = [f for f in alertable_finds if not f.get("apparel") and is_muted(f, cache)]
     if _muted_now:
         log.info("Muted: suppressing %d alert(s): %s", len(_muted_now), "; ".join(f["title"][:50] for f in _muted_now))
         alertable_finds = [f for f in alertable_finds if f not in _muted_now]
-    cache["seeded_stores"] |= checked_names
+    # Only a store whose catalog actually loaded counts as seeded — otherwise a store that
+    # fails on its seed run would dump its whole back catalog as "new" once it loads.
+    cache["seeded_stores"] |= (checked_names & fetched)
 
     # Regular (non-SB) Nike Dunks were never tracked before, so the first run after that
     # ships marks the ones already listed at existing stores as seen WITHOUT alerting —
