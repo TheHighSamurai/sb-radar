@@ -12676,7 +12676,8 @@
 "CCS::8561832788151": true,
 "No-Comply::15448005542073": true,
 "Coureur Goods::10375935820031": true,
-"Deli Skate Supply::15318610215161": true
+"Deli Skate Supply::15318610215161": true,
+"Brooklyn Projects::15790741291089": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -29475,6 +29476,10 @@
 },
 "Deli Skate Supply::15318610215161": {
 "a": "10|10.5|11|11.5|8.5|9|9.5",
+"m": {}
+},
+"Brooklyn Projects::15790741291089": {
+"a": "10|10.5|11|11.5|12|13|8|9|9.5",
 "m": {}
 }
 },
