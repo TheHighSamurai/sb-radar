@@ -670,6 +670,11 @@ _KIDS_RE = re.compile(r"\b(gs|bg|ps|td|tdv|psv|grade school|little kids?|big kid
 def is_kids(title: str) -> bool:
     return bool(_KIDS_RE.search(title or ""))
 
+_WOMENS_RE = re.compile(r"\b(women'?s?|womens|wmns|wms)\b|^\s*w\s+(nike|dunk|sb)\b|\(w\)|\bw nike\b", re.I)
+
+def is_womens(title: str) -> bool:
+    return bool(_WOMENS_RE.search(title or ""))
+
 def is_nike_dunk(title: str, vendor: str = "") -> bool:
     """Any Nike Dunk, SB or not (title says Nike, or the store lists Nike as the brand)."""
     t = (title or "").lower()
@@ -679,7 +684,9 @@ def feed_for(title: str, vendor: str = ""):
     """Which Discord channel a shoe belongs in:
     'dunks' -> #sb-drops: Nike Dunks + Nike SB Dunks (adult sizes) — and nothing else
     'sbs'   -> #sbs: every other Nike SB shoe (plus kids' SB Dunks)
-    None    -> not tracked (non-SB, non-Dunk, or a kids' non-SB Dunk)"""
+    None    -> not tracked (non-SB, non-Dunk, women's, or a kids' non-SB Dunk)"""
+    if is_womens(title):
+        return None
     if is_dunk(title) and (is_sb(title) or is_nike_dunk(title, vendor)) and not is_kids(title):
         return "dunks"
     if is_sb(title):
@@ -947,10 +954,13 @@ def check_store(store: dict, cache: dict) -> list:
                 rec = avail_prev.get(pid)
                 if isinstance(rec, list):            # legacy format [labels, t] from the first restock version
                     rec = {"a": rec[0], "m": {}}
+                if rec is not None and "l" not in rec and any("|" in l for l in labels):
+                    rec = None   # old "|"-joined record can't hold labels containing "|" — start fresh, no restock
                 if rec is None:
-                    new = {"a": "|".join(sorted(labels)), "m": {}}
+                    new = {"l": sorted(labels), "m": {}}
                 else:
-                    conf = set(rec["a"].split("|")) if rec.get("a") else set()
+                    # "l" = list of confirmed-available labels; "a" = legacy "|"-joined string
+                    conf = set(rec["l"]) if "l" in rec else (set(rec["a"].split("|")) if rec.get("a") else set())
                     miss = dict(rec.get("m", {}))
                     for l in list(conf):
                         if l in labels:
@@ -965,7 +975,7 @@ def check_store(store: dict, cache: dict) -> list:
                         if feed == "dunks":
                             size_back = sorted({watched_label(l) for l in newly if watched_label(l)}, key=float)
                     conf |= newly
-                    new = {"a": "|".join(sorted(conf)), "m": miss}
+                    new = {"l": sorted(conf), "m": miss}
                 aobs[pid] = new
             if pid in seen:
                 # Already alerted on this product. Re-alert only when it goes from
