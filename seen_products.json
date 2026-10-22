@@ -20898,7 +20898,7 @@
 "Rock City Kicks::8779679826078": {
 "a": "10|12|9.5",
 "m": {
-"10": 1
+"10": 2
 }
 },
 "Rock City Kicks::8776145862814": {
@@ -35543,12 +35543,8 @@
 "m": {}
 },
 "Xhibition::6899215892552": {
-"a": " Pale Ivory | Pink Foam|Cacao Wow |Cacao Wow | Pale Ivory | Pink Foam",
-"m": {
-"Cacao Wow ": 2,
-" Pink Foam": 2,
-" Pale Ivory ": 2
-}
+"a": "Cacao Wow | Pale Ivory | Pink Foam",
+"m": {}
 },
 "Xhibition::6986307043400": {
 "a": "",
@@ -44021,6 +44017,14 @@
 ],
 "title": "Women's Dunk Low",
 "t": 1792702918
+},
+"1562935298243960843": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Xhibition::6899215892552"
+],
+"title": "Women's Dunk Low",
+"t": 1792703213
 }
 },
 "nike_dunk_seeded": true,
