@@ -31235,7 +31235,7 @@
 "CCS::7769685131447": {
 "a": "10.0|10.5|11.0|11.5|12.0|13.0|14.0|15.0|6.0|6.5|7.5|8.0|8.5|9.0|9.5",
 "m": {
-"7.5": 1
+"7.5": 2
 }
 },
 "CCS::8603798798519": {
@@ -35543,8 +35543,12 @@
 "m": {}
 },
 "Xhibition::6899215892552": {
-"a": "Cacao Wow | Pale Ivory | Pink Foam",
-"m": {}
+"a": " Pale Ivory | Pink Foam|Cacao Wow |Cacao Wow | Pale Ivory | Pink Foam",
+"m": {
+"Cacao Wow ": 1,
+" Pink Foam": 1,
+" Pale Ivory ": 1
+}
 },
 "Xhibition::6986307043400": {
 "a": "",
@@ -44001,6 +44005,14 @@
 ],
 "title": "Women's Dunk High - Final Sale",
 "t": 1792701031
+},
+"1562932796375179425": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Xhibition::6899215892552"
+],
+"title": "Women's Dunk Low",
+"t": 1792702616
 }
 },
 "nike_dunk_seeded": true,
