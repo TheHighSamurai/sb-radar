@@ -20232,10 +20232,8 @@
 "m": {}
 },
 "Coureur Goods::9595299823871": {
-"a": "11|6|7|8|9.5",
-"m": {
-"8": 2
-}
+"a": "11|6|7|9.5",
+"m": {}
 },
 "Coureur Goods::9563234468095": {
 "a": "11.5|8|8.5",
@@ -35565,9 +35563,9 @@
 "Xhibition::6899215892552": {
 "a": " Pale Ivory | Pink Foam|Cacao Wow |Cacao Wow | Pale Ivory | Pink Foam",
 "m": {
-" Pale Ivory ": 1,
-"Cacao Wow ": 1,
-" Pink Foam": 1
+" Pale Ivory ": 2,
+"Cacao Wow ": 2,
+" Pink Foam": 2
 }
 },
 "Xhibition::6986307043400": {
@@ -44081,6 +44079,14 @@
 ],
 "title": "Women's Dunk Low",
 "t": 1792704420
+},
+"1562941604619358220": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Xhibition::6899215892552"
+],
+"title": "Women's Dunk Low",
+"t": 1792704717
 }
 },
 "nike_dunk_seeded": true,
