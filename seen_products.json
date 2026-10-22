@@ -6665,6 +6665,7 @@
 "Theory Skate Shop::15416161468603",
 "Theory Skate Shop::15417518424251",
 "Theory Skate Shop::15420193833147",
+"Theory Skate Shop::15434442997947",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
 "Theory Skate Shop::7914806542523",
@@ -8455,6 +8456,15 @@
 "sizes": "LG, XS",
 "link": "https://ccs.com/products/nike-sb-switch-drill-woven-pants-silver-lilac-palest-purple",
 "image": null,
+"local": false
+},
+{
+"store": "Theory Skate Shop",
+"title": "Nike SB \"Champagne Dunk\" Tee - White",
+"price": "45.00",
+"sizes": "XL, L",
+"link": "https://theoryskate.com/products/nike-sb-champagne-dunk-tee-white",
+"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/540648150.jpg?v=1792684270",
 "local": false
 }
 ],
@@ -12953,7 +12963,9 @@
 },
 "Doubler Kicks::15413622604061": {
 "a": "10|10.5|11|11.5|12|8.5|9|9.5",
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Doubler Kicks::9898101604637": {
 "a": "6|7",
@@ -25875,7 +25887,7 @@
 "Exodus Rideshop::9038372077686": {
 "a": "M 10 / W 11.5|M 10.5 / W 12|M 11 / W 12.5|M 11.5 / W 13|M 13 / W 14.5|M 8 / W 9.5|M 8.5 / W 10|M 9 / W 10.5|M 9.5 / W 11",
 "m": {
-"M 10.5 / W 12": 1
+"M 10.5 / W 12": 2
 }
 },
 "Exodus Rideshop::8265101443190": {
