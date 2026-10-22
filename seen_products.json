@@ -4597,6 +4597,7 @@
 "Olympia Skate Shop::15398624330035",
 "Olympia Skate Shop::15403997692211",
 "Olympia Skate Shop::15403998052659",
+"Olympia Skate Shop::15422049583411",
 "Olympia Skate Shop::15425472332083",
 "Olympia Skate Shop::15425515979059",
 "Olympia Skate Shop::15431113441587",
@@ -8477,6 +8478,15 @@
 "sizes": "S, L, M",
 "link": "https://www.nocomplyatx.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth-iz1853-687",
 "image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1792686634",
+"local": false
+},
+{
+"store": "Olympia Skate Shop",
+"title": "NIKE SB CHAMPAGNE TEE WHITE/GOLD",
+"price": "45.00",
+"sizes": "S, M, L",
+"link": "https://olympiaskateshop.com/products/nike-sb-champagne-tee-white-gold",
+"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/NIKESB-CHAMPANGE-WHT_1024x1024_2x_dee89669-1af6-41d4-a19d-9d39e0dee82c.webp?v=1792690257",
 "local": false
 }
 ],
