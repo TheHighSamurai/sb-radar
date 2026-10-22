@@ -82,6 +82,11 @@ OK_EMOJI          = "\u2705"       # ✅ the bot adds this once the mute is regi
 MSG_KEEP_SECONDS  = 7 * 86400       # how long an alert stays muteable via reaction
 MSG_PAGES         = 4               # channel history pages (100 msgs each) scanned per run
 
+# Channel routing: the primary webhook's channel (#sb-drops) gets Nike Dunks + Nike SB
+# Dunks ONLY. Every other SB shoe goes to #sbs, posted by the bot (needs DISCORD_BOT_TOKEN;
+# without it, or if that post fails, it falls back to the primary channel so nothing is lost).
+DISCORD_SBS_CHANNEL_ID = os.environ.get("DISCORD_SBS_CHANNEL_ID", "1562917305531506738").strip()
+
 def send_discord(find: dict):
     """Post to every configured webhook. Returns {"mid", "cid"} for the PRIMARY
     webhook's message when a bot token is configured (needed for reaction muting), else None."""
@@ -105,11 +110,32 @@ def send_discord(find: dict):
         content = "🔔 NOW AVAILABLE — sizes just unlocked"
     elif find.get("restock"):
         content = "🔁 RESTOCK — sizes back in stock"
+    elif find.get("store") == "Nike SNKRS":
+        content = "🗓️ SNKRS Dunk launch announced"
+    elif find.get("feed") == "dunks":
+        content = "🛹 New Dunk detected"
     else:
         content = "🛹 New SB's detected"
     primary_url = os.environ.get("DISCORD_WEBHOOK_URL")
     posted = None
+    to_sbs = find.get("feed") == "sbs" and bool(DISCORD_BOT_TOKEN and DISCORD_SBS_CHANNEL_ID)
+    if to_sbs:
+        e = dict(embed)
+        e["footer"] = {"text": f"React {MUTE_EMOJI} to mute this shoe (Discord + email)"}
+        try:
+            r = _bot("POST", f"/channels/{DISCORD_SBS_CHANNEL_ID}/messages", json={"content": content, "embeds": [e]})
+            if r.status_code < 300:
+                m = r.json()
+                posted = {"mid": m["id"], "cid": m["channel_id"]}
+            else:
+                log.warning("#sbs post failed (HTTP %s %s) — sending to the main channel instead", r.status_code, r.text[:160])
+                to_sbs = False
+        except (requests.RequestException, ValueError, KeyError) as ex:
+            log.warning("#sbs post failed (%s) — sending to the main channel instead", ex)
+            to_sbs = False
     for webhook_url in DISCORD_WEBHOOKS:
+        if to_sbs and webhook_url == primary_url:
+            continue   # already posted to #sbs by the bot
         is_primary = bool(DISCORD_BOT_TOKEN) and webhook_url == primary_url
         e = dict(embed)
         if is_primary:
@@ -557,6 +583,35 @@ STORES = [
     {"name": "303 Boards", "url": "https://303boards-com.myshopify.com"},
     {"name": "Cal Surf", "url": "https://cal-surf.com"},
     {"name": "Suite160", "url": "https://suite160.com"},
+    # Sneaker boutiques (Oct 2026) — carry regular Nike Dunks, not just SB. Each one
+    # was checked to serve a public Shopify /products.json before being added.
+    {"name": "Undefeated", "url": "https://undefeated.com"},
+    {"name": "Kith", "url": "https://kith.com"},
+    {"name": "Concepts", "url": "https://cncpts.com"},
+    {"name": "Bodega", "url": "https://bdgastore.com"},
+    {"name": "A Ma Maniere", "url": "https://www.a-ma-maniere.com"},
+    {"name": "Social Status", "url": "https://www.socialstatuspgh.com"},
+    {"name": "Lapstone & Hammer", "url": "https://www.lapstoneandhammer.com"},
+    {"name": "DTLR", "url": "https://www.dtlr.com"},
+    {"name": "Extra Butter", "url": "https://extrabutterny.com"},
+    {"name": "Packer Shoes", "url": "https://packershoes.com"},
+    {"name": "Sneaker Politics", "url": "https://sneakerpolitics.com"},
+    {"name": "Feature", "url": "https://www.featuresneakerboutique.com"},
+    {"name": "Notre", "url": "https://www.notre-shop.com"},
+    {"name": "Union LA", "url": "https://store.unionlosangeles.com"},
+    {"name": "Shoe Palace", "url": "https://www.shoepalace.com"},
+    {"name": "Xhibition", "url": "https://www.xhibition.co"},
+    {"name": "Oneness", "url": "https://www.onenessboutique.com"},
+    {"name": "Wish ATL", "url": "https://wishatl.com"},
+    {"name": "Nice Kicks", "url": "https://shopnicekicks.com"},
+    {"name": "Corporate", "url": "https://www.corporategotem.com"},
+    {"name": "Burn Rubber", "url": "https://burnrubbersneakers.com"},
+    {"name": "Sneakersnstuff", "url": "https://www.sneakersnstuff.com"},
+    {"name": "Bows and Arrows", "url": "https://www.bowsandarrowsberkeley.com"},
+    {"name": "Livestock", "url": "https://www.deadstock.ca"},
+    {"name": "Haven", "url": "https://shop.havenshop.com"},
+    # Nike's own SNKRS launch calendar (upcoming Dunk launches) — not Shopify.
+    {"name": "Nike SNKRS", "url": "https://www.nike.com/launch", "snkrs": True},
 ]
 
 # ── Cache ─────────────────────────────────────────────────────────────────────
@@ -578,6 +633,7 @@ def load_cache() -> dict:
             "avail": data.get("avail", {}),
             "muted": data.get("muted", {}),
             "msgs": data.get("msgs", {}),
+            "nike_dunk_seeded": data.get("nike_dunk_seeded", False),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
             "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}, "muted": {}, "msgs": {}}
@@ -595,6 +651,7 @@ def save_cache(cache: dict):
         "avail": cache.get("avail", {}),
         "muted": cache.get("muted", {}),
         "msgs": cache.get("msgs", {}),
+        "nike_dunk_seeded": cache.get("nike_dunk_seeded", False),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
@@ -605,6 +662,27 @@ def is_sb(text: str) -> bool:
 
 def is_dunk(text: str) -> bool:
     return "dunk" in text.lower()
+
+_KIDS_RE = re.compile(r"\b(gs|bg|ps|td|tdv|psv|grade school|little kids?|big kids?|older kids'?|younger kids'?|kids'?|toddlers?|pre-?school|infants?|baby)\b", re.I)
+
+def is_kids(title: str) -> bool:
+    return bool(_KIDS_RE.search(title or ""))
+
+def is_nike_dunk(title: str, vendor: str = "") -> bool:
+    """Any Nike Dunk, SB or not (title says Nike, or the store lists Nike as the brand)."""
+    t = (title or "").lower()
+    return "dunk" in t and ("nike" in t or "nike" in (vendor or "").lower())
+
+def feed_for(title: str, vendor: str = ""):
+    """Which Discord channel a shoe belongs in:
+    'dunks' -> #sb-drops: Nike Dunks + Nike SB Dunks (adult sizes) — and nothing else
+    'sbs'   -> #sbs: every other Nike SB shoe (plus kids' SB Dunks)
+    None    -> not tracked (non-SB, non-Dunk, or a kids' non-SB Dunk)"""
+    if is_dunk(title) and (is_sb(title) or is_nike_dunk(title, vendor)) and not is_kids(title):
+        return "dunks"
+    if is_sb(title):
+        return "sbs"
+    return None
 
 APPAREL_KEYWORDS = [
     "hoodie", "t-shirt", "tee", "shirt", "jacket", "crewneck", "sweatshirt",
@@ -684,7 +762,7 @@ def fetch_html(store: dict) -> list:
             candidates += re.findall(r'<h[123][^>]*>([^<]{5,100})</h[123]>', html, re.IGNORECASE)
             for c in candidates:
                 c = c.strip()
-                if is_sb(c) and not is_apparel(c):
+                if feed_for(c) and not is_apparel(c):
                     found.append({
                         "id":    f"{store['name']}::html::{c.lower()[:60]}",
                         "title": c,
@@ -736,6 +814,77 @@ def product_image(product: dict) -> str | None:
         return product["image"].get("src")
     return None
 
+SNKRS_FEED    = "https://api.nike.com/product_feed/threads/v3/"
+SNKRS_CHANNEL = "010794e5-35fe-4e32-aaff-cd2c74f89d61"   # Nike's SNKRS channel id (public)
+SNKRS_PAGES   = 2                                        # newest 100 launch threads
+
+def _snkrs_when(iso):
+    try:
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(DIGEST_TZ)
+        return "SNKRS launch " + dt.strftime("%a %b %d, %I:%M %p").replace(" 0", " ") + " PT"
+    except Exception:
+        return "On SNKRS — check app for launch time"
+
+def _snkrs_image(o: dict, pi: dict):
+    img = (pi.get("imageUrls") or {}).get("productImageUrl")
+    if img:
+        return img
+    for n in ((o.get("publishedContent") or {}).get("nodes") or []):
+        props = n.get("properties") or {}
+        for k in ("squarishURL", "portraitURL", "landscapeURL"):
+            if props.get(k):
+                return props[k]
+    return None
+
+def check_snkrs(store: dict, cache: dict) -> list:
+    """Upcoming Nike Dunk / SB Dunk launches from Nike's SNKRS feed. One alert per
+    launch (style code), the first time it shows up — no stock tracking."""
+    seen, finds, got = cache["seen"], [], set()
+    for page in range(SNKRS_PAGES):
+        try:
+            r = requests.get(SNKRS_FEED, headers=HEADERS, timeout=REQUEST_TIMEOUT * 2, params={
+                "anchor": page * 50, "count": 50,
+                "filter": ["marketplace(US)", "language(en)", f"channelId({SNKRS_CHANNEL})"]})
+            if r.status_code != 200:
+                log.warning("Nike SNKRS feed HTTP %s", r.status_code)
+                break
+            objs = r.json().get("objects", []) or []
+        except Exception as e:
+            log.warning("Nike SNKRS feed error: %s", e)
+            break
+        for o in objs:
+            slug = (((o.get("publishedContent") or {}).get("properties") or {}).get("seo") or {}).get("slug", "")
+            for pi in o.get("productInfo") or []:
+                pc    = pi.get("productContent") or {}
+                name  = pc.get("fullTitle") or pc.get("title") or ""
+                color = pc.get("colorDescription") or ""
+                title = f"{name} - {color}" if color else name
+                if feed_for(title, "Nike") != "dunks":
+                    continue
+                sc  = ((pi.get("merchProduct") or {}).get("styleColor") or "").upper()
+                pid = f"{store['name']}::{sc or slug}"
+                if pid in seen or pid in got:
+                    continue
+                got.add(pid)
+                keys = (["s:" + sc] if _STYLE_RE.fullmatch(sc) else []) + [k for k in [title_key(title)] if k] + ["p:" + pid]
+                finds.append({
+                    "id":    pid,
+                    "store": store["name"],
+                    "title": title,
+                    "price": (pi.get("merchPrice") or {}).get("currentPrice", "?"),
+                    "sizes": _snkrs_when((pi.get("launchView") or {}).get("startEntryDate")),
+                    "link":  f"https://www.nike.com/launch/t/{slug}" if slug else store["url"],
+                    "image": _snkrs_image(o, pi),
+                    "keys":  keys,
+                    "local": False,
+                    "apparel": False,
+                    "feed":  "dunks",
+                    "gr":    True,
+                })
+    for f in finds:
+        log.info(f"  NEW SNKRS [{store['name']}]: {f['title']} — {f['sizes']}")
+    return finds
+
 def check_store(store: dict, cache: dict) -> list:
     seen  = cache["seen"]
     stock = cache.get("stock", {})
@@ -743,14 +892,23 @@ def check_store(store: dict, cache: dict) -> list:
     aobs  = cache.setdefault("_avail_obs", {})   # debounced available-size state per SB shoe, observed this run
     avail_prev = cache.get("avail", {})
     finds = []
+    vendors = {}   # pid -> Shopify vendor, used to pick the channel for each find below
+
+    if store.get("snkrs"):
+        return check_snkrs(store, cache)
 
     if is_shopify(store["url"], cache):
         for p in fetch_shopify(store):
             title = p.get("title", "")
-            if not is_sb(title):
+            vendor = p.get("vendor", "") or ""
+            feed = feed_for(title, vendor)
+            if feed is None:
                 continue
             product_type = p.get("product_type", "")
             apparel = is_apparel(title, product_type)
+            if apparel and not is_sb(title):
+                continue   # the weekly digest is SB apparel only
+            vendors[f"{store['name']}::{p.get('id')}"] = vendor
             pid = f"{store['name']}::{p.get('id')}"
             pkeys = shoe_keys(p, title, pid)
             variants = p.get("variants", [])
@@ -780,7 +938,7 @@ def check_store(store: dict, cache: dict) -> list:
                     newly = labels - conf                # genuinely back (was confirmed sold out)
                     if pid in seen:
                         restock_sizes = sorted(newly, key=_num)
-                        if is_dunk(title):
+                        if feed == "dunks":
                             size_back = sorted({watched_label(l) for l in newly if watched_label(l)}, key=float)
                     conf |= newly
                     new = {"a": "|".join(sorted(conf)), "m": miss}
@@ -853,6 +1011,10 @@ def check_store(store: dict, cache: dict) -> list:
                               "keys": shoe_keys(None, f["title"], f["id"])})
 
     for f in finds:
+        f["feed"] = feed_for(f["title"], vendors.get(f["id"], ""))
+        f["gr"]   = not is_sb(f["title"])   # regular (non-SB) Nike Dunk — newly tracked as of Oct 2026
+
+    for f in finds:
         kind = "APPAREL" if f.get("apparel") else ("SIZE-RESTOCK" if f.get("size_only") else ("RESTOCK" if f.get("restock") else ("NOW-AVAILABLE" if f.get("flip") else "SB")))
         log.info(f"  NEW {kind} [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
@@ -901,6 +1063,15 @@ def run():
         log.info("Muted: suppressing %d alert(s): %s", len(_muted_now), "; ".join(f["title"][:50] for f in _muted_now))
         alertable_finds = [f for f in alertable_finds if f not in _muted_now]
     cache["seeded_stores"] |= checked_names
+
+    # Regular (non-SB) Nike Dunks were never tracked before, so the first run after that
+    # ships marks the ones already listed at existing stores as seen WITHOUT alerting —
+    # otherwise #sb-drops would get every GR Dunk currently in stock everywhere.
+    if not cache.get("nike_dunk_seeded", False):
+        n = sum(1 for f in alertable_finds if f.get("gr"))
+        log.info("Nike Dunk seed pass: marked %d existing non-SB Dunk listing(s) seen, no alerts.", n)
+        alertable_finds = [f for f in alertable_finds if not f.get("gr")]
+        cache["nike_dunk_seeded"] = True
 
     def _commit_state():
         for f in all_finds:
@@ -971,19 +1142,19 @@ def run():
         except Exception as e:
             log.error("Discord alert failed for %s: %s", f["title"], e)
 
-    dunk_finds = [f for f in shoe_finds if is_dunk(f["title"]) and not f.get("restock")]
+    dunk_finds = [f for f in shoe_finds if f.get("feed") == "dunks" and not f.get("restock")]
     if dunk_finds:
         n_live = sum(1 for f in dunk_finds if f.get("flip"))
-        subject = None
+        subject = f"SB Radar: {len(dunk_finds)} new Dunk(s) detected"
         if n_live:
-            subject = (f"SB Radar: {n_live} SB Dunk(s) NOW AVAILABLE" if n_live == len(dunk_finds)
-                       else f"SB Radar: {len(dunk_finds)} SB Dunk(s) — {n_live} now available")
+            subject = (f"SB Radar: {n_live} Dunk(s) NOW AVAILABLE" if n_live == len(dunk_finds)
+                       else f"SB Radar: {len(dunk_finds)} Dunk(s) — {n_live} now available")
         try:
             send_email(dunk_finds, subject)
         except Exception as e:
             log.error("Email alert failed: %s", e)
     else:
-        log.info("No SB Dunks this run (%d non-Dunk SB shoe find(s)) — email skipped, Discord still alerted.", len(shoe_finds))
+        log.info("No Dunks this run (%d non-Dunk SB shoe find(s) -> #sbs) — email skipped.", len(shoe_finds))
 
     # Alerts are out — now it is safe to mark everything seen / record stock state.
     _commit_state()
