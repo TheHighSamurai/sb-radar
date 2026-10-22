@@ -402,12 +402,17 @@
 "APB Store::11203936485412",
 "APB Store::7473875255332",
 "APB Store::7473875419172",
+"APB Store::7696203677732",
 "APB Store::7763982745636",
+"APB Store::7783153500196",
 "APB Store::7817568780324",
+"APB Store::7873833533476",
 "APB Store::7922520424484",
+"APB Store::7928726552612",
 "APB Store::7937330053156",
 "APB Store::8052943290404",
 "APB Store::8099307028516",
+"APB Store::8209012097060",
 "APB Store::8251819098148",
 "APB Store::8263009304612",
 "APB Store::8277019557924",
@@ -477,6 +482,7 @@
 "Arts & Rec::15552850133103",
 "Arts & Rec::15561629204591",
 "Arts & Rec::15565521518703",
+"Arts & Rec::15585678950511",
 "Arts & Rec::15604923072623",
 "Arts & Rec::15607105585263",
 "Arts & Rec::15610224115823",
@@ -489,6 +495,7 @@
 "Arts & Rec::7585375518831",
 "Arts & Rec::7587489382511",
 "Arts & Rec::7587498721391",
+"Arts & Rec::7588452335727",
 "Arts & Rec::7654871826543",
 "Arts & Rec::7681053229167",
 "Arts & Rec::7682428043375",
@@ -645,11 +652,18 @@
 "Black Sheep NC::7666480807982",
 "Black Sheep NC::7668280623150",
 "Black Sheep NC::7677563863086",
+"Blacklist::15415934779625",
 "Blacklist::8899439526121",
 "Blacklist::8899494543593",
 "Blacklist::8942782677225",
 "Blacklist::9062276399337",
 "Blacklist::9332653097193",
+"Blacklist::9343167725801",
+"Blacklist::9352181088489",
+"Blacklist::9358143258857",
+"Blue Flowers::11207066484903",
+"Blue Flowers::11207067467943",
+"Blue Flowers::11219876905127",
 "Bluetile Skateboards::15389278175458",
 "Bluetile Skateboards::15389309632738",
 "Bluetile Skateboards::15389321330914",
@@ -1288,6 +1302,7 @@
 "CCS::8672291324087",
 "CCS::8712875999415",
 "CCS::8738001092791",
+"Cal Surf::15432179155260",
 "Civil::10003216761120",
 "Civil::10006013313312",
 "Civil::10006179905824",
@@ -1906,20 +1921,27 @@
 "Doubler Kicks::10404361109789",
 "Doubler Kicks::10404373233949",
 "Doubler Kicks::10404382048541",
+"Doubler Kicks::15413619982621",
 "Doubler Kicks::15413622604061",
 "Doubler Kicks::15415942218013",
+"Doubler Kicks::15438362345757",
+"Doubler Kicks::15438368637213",
 "Doubler Kicks::8255938953501",
 "Doubler Kicks::8271036023069",
 "Doubler Kicks::8271037727005",
 "Doubler Kicks::8280131043613",
+"Doubler Kicks::8311142940957",
 "Doubler Kicks::8436450132253",
 "Doubler Kicks::8436516716829",
+"Doubler Kicks::8468317962525",
 "Doubler Kicks::8470534717725",
 "Doubler Kicks::8771663003933",
 "Doubler Kicks::9006146126109",
 "Doubler Kicks::9006154842397",
 "Doubler Kicks::9006170931485",
 "Doubler Kicks::9099473813789",
+"Doubler Kicks::9118035378461",
+"Doubler Kicks::9243853652253",
 "Doubler Kicks::9268987101469",
 "Doubler Kicks::9487013642525",
 "Doubler Kicks::9507709747485",
@@ -1927,6 +1949,7 @@
 "Doubler Kicks::9521320984861",
 "Doubler Kicks::9559335928093",
 "Doubler Kicks::9600310411549",
+"Doubler Kicks::9625629360413",
 "Doubler Kicks::9628663415069",
 "Doubler Kicks::9628672852253",
 "Doubler Kicks::9645443940637",
@@ -1934,7 +1957,9 @@
 "Doubler Kicks::9686511681821",
 "Doubler Kicks::9707232624925",
 "Doubler Kicks::9713396351261",
+"Doubler Kicks::9733094932765",
 "Doubler Kicks::9745799610653",
+"Doubler Kicks::9752236032285",
 "Doubler Kicks::9865843999005",
 "Doubler Kicks::9892764647709",
 "Doubler Kicks::9892768547101",
@@ -1944,6 +1969,7 @@
 "Doubler Kicks::9898101604637",
 "Doubler Kicks::9899076911389",
 "Doubler Kicks::9960080245021",
+"Drift House::10359110861055",
 "Drift House::9549998293247",
 "Embassy::15396620271671",
 "Embassy::15397628346423",
@@ -2610,12 +2636,15 @@
 "Familia Skateshop::10766038106424",
 "Familia Skateshop::10772350763320",
 "Familia Skateshop::10773643854136",
+"Familia Skateshop::10786823864632",
 "Familia Skateshop::10796172869944",
+"Familia Skateshop::10800033530168",
 "Familia Skateshop::10809346523448",
 "Familia Skateshop::10824892481848",
 "Familia Skateshop::10871460331832",
 "Familia Skateshop::10948869390648",
 "Familia Skateshop::10948870242616",
+"Familia Skateshop::10958035321144",
 "Familia Skateshop::10959985934648",
 "Familia Skateshop::10959988326712",
 "Familia Skateshop::9473564311864",
@@ -3538,14 +3567,22 @@
 "Flatspot::7814771278004",
 "Flatspot::7852850512052",
 "Flatspot::8593639559",
+"Furnace Skate::10012857303224",
+"Furnace Skate::10079499649208",
+"Furnace Skate::10211120382136",
 "Furnace Skate::10216053899448",
 "Furnace Skate::10216074117304",
 "Furnace Skate::10224036937912",
+"Furnace Skate::10356430143672",
 "Furnace Skate::10458848886968",
 "Furnace Skate::10458857439416",
+"Furnace Skate::10492060303544",
+"Furnace Skate::10497906802872",
+"Furnace Skate::10500836884664",
 "Furnace Skate::10530936193208",
 "Furnace Skate::10530956804280",
 "Furnace Skate::10532163453112",
+"Furnace Skate::10544100180152",
 "Furnace Skate::10544163127480",
 "Furnace Skate::10544164602040",
 "Furnace Skate::10574405828792",
@@ -3563,6 +3600,7 @@
 "Furnace Skate::9161208856760",
 "Furnace Skate::9178524745912",
 "Furnace Skate::9187200827576",
+"Furnace Skate::9202117279928",
 "Furnace Skate::9242493288632",
 "Furnace Skate::9250795716792",
 "Furnace Skate::9894454132920",
@@ -3720,6 +3758,7 @@
 "Humidity Skateshop::10299165999395",
 "Humidity Skateshop::10302271717667",
 "Humidity Skateshop::10312601207075",
+"Humidity Skateshop::10316789940515",
 "Humidity Skateshop::10316819333411",
 "Humidity Skateshop::10334600364323",
 "Humidity Skateshop::10337003897123",
@@ -4160,6 +4199,16 @@
 "LB Skate::9239368138908",
 "LB Skate::9277007462556",
 "LB Skate::9305344114844",
+"LICK NYC::10365863297279",
+"LICK NYC::8971657445631",
+"LICK NYC::8971686084863",
+"LICK NYC::9185654505727",
+"LICK NYC::9329729569023",
+"LICK NYC::9423024947455",
+"LICK NYC::9453908852991",
+"LICK NYC::9458866389247",
+"LICK NYC::9604484432127",
+"LICK NYC::9604485611775",
 "Labor Skate Shop::15399776321638",
 "Labor Skate Shop::15412660273254",
 "Labor Skate Shop::15436762120294",
@@ -4479,6 +4528,184 @@
 "NJ Skateshop::8678945685538",
 "NJ Skateshop::8681605857314",
 "New Yak City::7752338767914",
+"Nice Kicks::4789627289805",
+"Nice Kicks::6597822316749",
+"Nice Kicks::6696498233549",
+"Nice Kicks::6706930745549",
+"Nice Kicks::6716275785933",
+"Nice Kicks::6723822551245",
+"Nice Kicks::6750096097485",
+"Nice Kicks::6756913742029",
+"Nice Kicks::6770990645453",
+"Nice Kicks::6803493355725",
+"Nice Kicks::6810376143053",
+"Nice Kicks::6812216393933",
+"Nice Kicks::6815216632013",
+"Nice Kicks::6821461688525",
+"Nice Kicks::6835174998221",
+"Nice Kicks::6836475625677",
+"Nice Kicks::6848067502285",
+"Nice Kicks::6848846921933",
+"Nice Kicks::6897695719629",
+"Nice Kicks::6914960294093",
+"Nice Kicks::6919832600781",
+"Nice Kicks::6925018529997",
+"Nice Kicks::6926089453773",
+"Nice Kicks::6938033094861",
+"Nice Kicks::6938034602189",
+"Nice Kicks::6940878864589",
+"Nice Kicks::6948783161549",
+"Nice Kicks::6955179180237",
+"Nice Kicks::6966677209293",
+"Nice Kicks::6971389771981",
+"Nice Kicks::6991734276301",
+"Nice Kicks::6992851763405",
+"Nice Kicks::7011291463885",
+"Nice Kicks::7023708930253",
+"Nice Kicks::7024153854157",
+"Nice Kicks::7026393022669",
+"Nice Kicks::7026394366157",
+"Nice Kicks::7033454231757",
+"Nice Kicks::7034602389709",
+"Nice Kicks::7037197156557",
+"Nice Kicks::7074763473101",
+"Nice Kicks::7078889783501",
+"Nice Kicks::7086786609357",
+"Nice Kicks::7089586503885",
+"Nice Kicks::7094959046861",
+"Nice Kicks::7096199971021",
+"Nice Kicks::7101683466445",
+"Nice Kicks::7106225340621",
+"Nice Kicks::7106277015757",
+"Nice Kicks::7120134799565",
+"Nice Kicks::7122416369869",
+"Nice Kicks::7122416500941",
+"Nice Kicks::7122416533709",
+"Nice Kicks::7131231125709",
+"Nice Kicks::7131231649997",
+"Nice Kicks::7131270774989",
+"Nice Kicks::7135253496013",
+"Nice Kicks::7138193932493",
+"Nice Kicks::7156420542669",
+"Nice Kicks::7170272461005",
+"Nice Kicks::7173907841229",
+"Nice Kicks::7178375495885",
+"Nice Kicks::7182280655053",
+"Nice Kicks::7187000852685",
+"Nice Kicks::7191875485901",
+"Nice Kicks::7194996277453",
+"Nice Kicks::7197201957069",
+"Nice Kicks::7206306349261",
+"Nice Kicks::7207481442509",
+"Nice Kicks::7214997799117",
+"Nice Kicks::7217667014861",
+"Nice Kicks::7218836275405",
+"Nice Kicks::7218985238733",
+"Nice Kicks::7221229781197",
+"Nice Kicks::7227357266125",
+"Nice Kicks::7229778264269",
+"Nice Kicks::7234165506253",
+"Nice Kicks::7234519269581",
+"Nice Kicks::7240342405325",
+"Nice Kicks::7240342601933",
+"Nice Kicks::7242976788685",
+"Nice Kicks::7247038349517",
+"Nice Kicks::7250312102093",
+"Nice Kicks::7251603325133",
+"Nice Kicks::7255003070669",
+"Nice Kicks::7255662264525",
+"Nice Kicks::7256185602253",
+"Nice Kicks::7261472686285",
+"Nice Kicks::7262431183053",
+"Nice Kicks::7278106804429",
+"Nice Kicks::7279356510413",
+"Nice Kicks::7284276396237",
+"Nice Kicks::7291657453773",
+"Nice Kicks::7292734537933",
+"Nice Kicks::7295190466765",
+"Nice Kicks::7295235686605",
+"Nice Kicks::7295236145357",
+"Nice Kicks::7295236341965",
+"Nice Kicks::7301332795597",
+"Nice Kicks::7301333549261",
+"Nice Kicks::8723509018829",
+"Nice Kicks::8728441454797",
+"Nice Kicks::8728838439117",
+"Nice Kicks::8735942672589",
+"Nice Kicks::8742563446989",
+"Nice Kicks::8744362377421",
+"Nice Kicks::8747873337549",
+"Nice Kicks::8749167476941",
+"Nice Kicks::8754034671821",
+"Nice Kicks::8754034901197",
+"Nice Kicks::8754366382285",
+"Nice Kicks::8756969570509",
+"Nice Kicks::8757378580685",
+"Nice Kicks::8757378810061",
+"Nice Kicks::8757429567693",
+"Nice Kicks::8765849698509",
+"Nice Kicks::8767837405389",
+"Nice Kicks::8776307671245",
+"Nice Kicks::8781630505165",
+"Nice Kicks::8781670318285",
+"Nice Kicks::8783434907853",
+"Nice Kicks::8783531213005",
+"Nice Kicks::8786394185933",
+"Nice Kicks::8796559081677",
+"Nice Kicks::8796561998029",
+"Nice Kicks::8800694042829",
+"Nice Kicks::8800727072973",
+"Nice Kicks::8806187925709",
+"Nice Kicks::8806203293901",
+"Nice Kicks::8823555948749",
+"Nice Kicks::8830352031949",
+"Nice Kicks::8830358061261",
+"Nice Kicks::8851766739149",
+"Nice Kicks::8865343799501",
+"Nice Kicks::8897540849869",
+"Nice Kicks::8899772383437",
+"Nice Kicks::8899772481741",
+"Nice Kicks::8901845516493",
+"Nice Kicks::8907940036813",
+"Nice Kicks::8907974803661",
+"Nice Kicks::8909665140941",
+"Nice Kicks::8912656367821",
+"Nice Kicks::8931639394509",
+"Nice Kicks::8936966029517",
+"Nice Kicks::8937723003085",
+"Nice Kicks::8943700443341",
+"Nice Kicks::8943719645389",
+"Nice Kicks::8946416615629",
+"Nice Kicks::8948288061645",
+"Nice Kicks::8949093335245",
+"Nice Kicks::8949825503437",
+"Nice Kicks::8952059756749",
+"Nice Kicks::8952935186637",
+"Nice Kicks::8958386143437",
+"Nice Kicks::8958846140621",
+"Nice Kicks::8959349096653",
+"Nice Kicks::8959360663757",
+"Nice Kicks::8960697237709",
+"Nice Kicks::8963214409933",
+"Nice Kicks::8979994607821",
+"Nice Kicks::8982119645389",
+"Nice Kicks::8982122070221",
+"Nice Kicks::8982868820173",
+"Nice Kicks::8983931027661",
+"Nice Kicks::8984433426637",
+"Nice Kicks::8985676841165",
+"Nice Kicks::9001497755853",
+"Nice Kicks::9044330348749",
+"Nice Kicks::9047163535565",
+"Nice Kicks::9053574660301",
+"Nice Kicks::9053624664269",
+"Nice Kicks::9053625385165",
+"Nice Kicks::9083999092941",
+"Nice Kicks::9088917307597",
+"Nice Kicks::9089581940941",
+"Nice Kicks::9091535831245",
+"Nice Kicks::9098991042765",
+"Nike SNKRS::IQ3922-001",
 "No-Comply::15401020850361",
 "No-Comply::15414358311097",
 "No-Comply::15418118602937",
@@ -5278,8 +5505,20 @@
 "Premier MI::6971985690689",
 "Premier MI::6978124644417",
 "Premier MI::7332491952193",
+"Premier MI::7855437840449",
+"Premier MI::7864498454593",
+"Premier MI::7870035558465",
+"Premier MI::7883811127361",
+"Premier MI::7889012850753",
+"Premier MI::7901892149313",
+"Premier MI::7924650278977",
+"Premier MI::7950762737729",
+"Premier MI::7988703625281",
+"Premier MI::7996814491713",
+"Premier MI::8084398374977",
 "Proof Lab::6574718976136",
 "Recess Skate & Snow::9054617829634",
+"Recess Skate & Snow::9493076050178",
 "Relief Skate Supply::9111357489392",
 "Relief Skate Supply::9111388979440",
 "Relief Skate Supply::9111420174576",
@@ -5437,11 +5676,15 @@
 "Rock City Kicks::15355513307294",
 "Rock City Kicks::15368894808222",
 "Rock City Kicks::15368975417502",
+"Rock City Kicks::15408485990558",
 "Rock City Kicks::15410848432286",
+"Rock City Kicks::7034123714718",
 "Rock City Kicks::7101368500382",
 "Rock City Kicks::7156800127134",
 "Rock City Kicks::7186358173854",
 "Rock City Kicks::7340953665694",
+"Rock City Kicks::7347973521566",
+"Rock City Kicks::7425533411486",
 "Rock City Kicks::7446950969502",
 "Rock City Kicks::7508839366814",
 "Rock City Kicks::7536103784606",
@@ -5460,18 +5703,23 @@
 "Rock City Kicks::8407612784798",
 "Rock City Kicks::8470239248542",
 "Rock City Kicks::8513976107166",
+"Rock City Kicks::8523690999966",
 "Rock City Kicks::8525320585374",
 "Rock City Kicks::8525323796638",
 "Rock City Kicks::8580679794846",
 "Rock City Kicks::8580680253598",
+"Rock City Kicks::8581265621150",
+"Rock City Kicks::8581267357854",
 "Rock City Kicks::8583279345822",
 "Rock City Kicks::8617807282334",
+"Rock City Kicks::8622917288094",
 "Rock City Kicks::8640762773662",
 "Rock City Kicks::8640821428382",
 "Rock City Kicks::8640823001246",
 "Rock City Kicks::8665092456606",
 "Rock City Kicks::8667605958814",
 "Rock City Kicks::8685448364190",
+"Rock City Kicks::8699266039966",
 "Rock City Kicks::8699276099742",
 "Rock City Kicks::8699276329118",
 "Rock City Kicks::8699276853406",
@@ -5482,13 +5730,19 @@
 "Rock City Kicks::8767956910238",
 "Rock City Kicks::8775113277598",
 "Rock City Kicks::8775113474206",
+"Rock City Kicks::8776128331934",
+"Rock City Kicks::8776130199710",
+"Rock City Kicks::8776133116062",
 "Rock City Kicks::8776145862814",
 "Rock City Kicks::8776147501214",
 "Rock City Kicks::8778063282334",
+"Rock City Kicks::8779645681822",
 "Rock City Kicks::8779679826078",
 "Rock City Kicks::8780825985182",
 "Rock City Kicks::8780833915038",
 "Rock City Kicks::8784274981022",
+"Rock City Kicks::8785417011358",
+"Rock City Kicks::8785418420382",
 "Rock City Kicks::8802844344478",
 "Rock City Kicks::8814620278942",
 "Rock City Kicks::8821222801566",
@@ -6119,6 +6373,8 @@
 "Skaters Advocate::8638168334570",
 "Skaters Advocate::8639716163818",
 "Skaters Advocate::8644001759466",
+"Skaters Advocate::8680302215402",
+"Skaters Advocate::8680319189226",
 "Skaters Advocate::8681127837930",
 "Skaters Advocate::8689645813994",
 "Skaters Advocate::8690675876074",
@@ -6488,13 +6744,17 @@
 "Stratosphere::8757887697057",
 "Stratosphere::8771752132769",
 "Suite160::8231437074628",
+"Suite160::8267459985604",
 "Suite160::8271531671748",
 "Suite160::8297582723268",
 "Suite160::8304937238724",
 "Suite160::8309484421316",
 "Suite160::8313885098180",
+"Suite160::8373749022916",
+"Suite160::8373761179844",
 "Suite160::8635065958596",
 "Suite160::8635100496068",
+"Suite160::8649431875780",
 "Suite160::8661100495044",
 "Suite160::8661117927620",
 "Suite160::8670901600452",
@@ -6503,6 +6763,7 @@
 "Suite160::8670926995652",
 "Suite160::8675520839876",
 "Suite160::8694771351748",
+"Suite160::8701720592580",
 "Suite160::8701760012484",
 "Suite160::8701761159364",
 "Sun Diego Boardshop::10272462471360",
@@ -7207,6 +7468,10 @@
 "Unheardof::9252180230309",
 "Unheardof::9252183277733",
 "Unheardof::9252314382501",
+"Uprise Skateshop::15441772576983",
+"Uprise Skateshop::8818999427287",
+"Uprise Skateshop::9325835518167",
+"Uprise Skateshop::9350071451863",
 "VU Skate Shop::11126804283559",
 "VU Skate Shop::11126836854951",
 "VU Skate Shop::11126880207015",
@@ -7867,13 +8132,39 @@
 "https://detroitcityskateboards.com": true,
 "https://303boards-com.myshopify.com": true,
 "https://cal-surf.com": true,
-"https://suite160.com": true
+"https://suite160.com": true,
+"https://undefeated.com": false,
+"https://cncpts.com": false,
+"https://kith.com": false,
+"https://bdgastore.com": false,
+"https://www.a-ma-maniere.com": false,
+"https://www.lapstoneandhammer.com": false,
+"https://www.dtlr.com": false,
+"https://extrabutterny.com": false,
+"https://www.socialstatuspgh.com": false,
+"https://packershoes.com": false,
+"https://sneakerpolitics.com": false,
+"https://www.featuresneakerboutique.com": false,
+"https://www.notre-shop.com": false,
+"https://www.shoepalace.com": false,
+"https://store.unionlosangeles.com": false,
+"https://www.xhibition.co": false,
+"https://www.onenessboutique.com": false,
+"https://wishatl.com": false,
+"https://burnrubbersneakers.com": false,
+"https://www.sneakersnstuff.com": false,
+"https://www.corporategotem.com": false,
+"https://shopnicekicks.com": true,
+"https://www.bowsandarrowsberkeley.com": false,
+"https://www.deadstock.ca": false,
+"https://shop.havenshop.com": false
 },
 "seeded_stores": [
 "303 Annex",
 "303 Boards",
 "35th North",
 "510 Skateboarding",
+"A Ma Maniere",
 "APB Store",
 "After Hours Skateshop",
 "Alumni Skate",
@@ -7889,22 +8180,28 @@
 "Blue Flowers",
 "Bluetile Skateboards",
 "Boarders Topanga",
+"Bodega",
+"Bows and Arrows",
 "Brooklyn Projects",
 "Brush Alley",
 "Bunger Sayville",
+"Burn Rubber",
 "CCS",
 "Cal Surf",
 "Cal Surf MN",
 "Civil",
 "Clockwork Skate",
 "Comfort Skateshop",
+"Concepts",
 "Contenders",
 "Continuum Skate Shop",
 "Core Boardshop",
+"Corporate",
 "Coureur Goods",
 "Cowtown Skateboards",
 "Crown Apparel",
 "DLX SF",
+"DTLR",
 "Defy Boardshop",
 "Deli Skate Supply",
 "Detroit City Skateboards",
@@ -7914,14 +8211,17 @@
 "Embassy",
 "Endless Grind",
 "Exodus Rideshop",
+"Extra Butter",
 "FTC SF",
 "Familia Skateboard Shop",
 "Familia Skateshop",
 "Fargo Skate",
 "Fast Forward TX",
+"Feature",
 "Flatspot",
 "Furnace Skate",
 "Geometric Skate Shop",
+"Haven",
 "Heritage SKTBDS",
 "Home Base Skate Shop",
 "Homegrown NY",
@@ -7935,9 +8235,12 @@
 "Jerics Skate",
 "Kinetic",
 "Kingswell CA",
+"Kith",
 "LB Skate",
 "LICK NYC",
 "Labor Skate Shop",
+"Lapstone & Hammer",
+"Livestock",
 "Long Beach Skate",
 "Magnolia Skateshop",
 "Mainland",
@@ -7950,14 +8253,19 @@
 "NJ Skateshop",
 "New Star",
 "New Yak City",
+"Nice Kicks",
+"Nike SNKRS",
 "No Comply TX",
 "No-Comply",
 "Nocturnal Skate",
+"Notre",
 "Olympia Skate Shop",
 "One Love Skate",
+"Oneness",
 "Orchard",
 "Overload",
 "PLA Folsom",
+"Packer Shoes",
 "Pastime Skateshop",
 "Pawnshop Skate",
 "People Skate and Snowboard",
@@ -7981,6 +8289,7 @@
 "Seasons Skate Shop",
 "Select TX",
 "Sequence",
+"Shoe Palace",
 "Sidewalk Surfer",
 "Sixes and Sevens",
 "Skate Supply VA",
@@ -7989,6 +8298,9 @@
 "Skatepark of Tampa",
 "Skaters Advocate",
 "Slappy's Garage",
+"Sneaker Politics",
+"Sneakersnstuff",
+"Social Status",
 "Soul Grind SD",
 "Southside Boardshop",
 "Southside Skatepark",
@@ -8011,15 +8323,19 @@
 "Time Machine",
 "Transport Skate",
 "Travel Skate Shop",
+"Undefeated",
 "Underground Skateshop",
 "Unheardof",
+"Union LA",
 "Uprise Skateshop",
 "Urban Feet",
 "VU Skate Shop",
 "Val Surf",
 "Western Skate Co",
 "Westside Skate Shop",
+"Wish ATL",
 "Wonder Skate Shop",
+"Xhibition",
 "Xtreme"
 ],
 "weekly_digest": [
@@ -12715,7 +13031,271 @@
 "Skatepark of Tampa::15458130395409": false,
 "Coureur Goods::10353717018879": true,
 "Seasons Skate Shop::10427835023618": true,
-"Embassy::15412124221495": true
+"Embassy::15412124221495": true,
+"Doubler Kicks::15438368637213": true,
+"Doubler Kicks::15438362345757": true,
+"Doubler Kicks::9118035378461": true,
+"Doubler Kicks::9625629360413": true,
+"Doubler Kicks::9733094932765": true,
+"Doubler Kicks::8468317962525": true,
+"Doubler Kicks::8311142940957": true,
+"Doubler Kicks::9752236032285": true,
+"Doubler Kicks::9243853652253": true,
+"Doubler Kicks::15413619982621": true,
+"LICK NYC::10365863297279": true,
+"LICK NYC::9604485611775": true,
+"LICK NYC::9604484432127": true,
+"LICK NYC::9458866389247": true,
+"LICK NYC::9453908852991": true,
+"LICK NYC::9423024947455": false,
+"LICK NYC::9329729569023": true,
+"LICK NYC::9185654505727": true,
+"LICK NYC::8971686084863": true,
+"LICK NYC::8971657445631": true,
+"Humidity Skateshop::10316789940515": true,
+"Uprise Skateshop::15441772576983": true,
+"Uprise Skateshop::8818999427287": true,
+"Uprise Skateshop::9350071451863": true,
+"Uprise Skateshop::9325835518167": true,
+"Furnace Skate::10544100180152": false,
+"Furnace Skate::10500836884664": true,
+"Furnace Skate::10356430143672": true,
+"Furnace Skate::10497906802872": false,
+"Furnace Skate::10492060303544": true,
+"Furnace Skate::10211120382136": false,
+"Furnace Skate::10079499649208": false,
+"Furnace Skate::10012857303224": true,
+"Furnace Skate::9202117279928": false,
+"Familia Skateshop::10958035321144": true,
+"Familia Skateshop::10800033530168": true,
+"Familia Skateshop::10786823864632": true,
+"Blue Flowers::11219876905127": true,
+"Blue Flowers::11207067467943": true,
+"Blue Flowers::11207066484903": true,
+"Skaters Advocate::8680319189226": true,
+"Skaters Advocate::8680302215402": true,
+"Suite160::8701720592580": false,
+"Suite160::8649431875780": false,
+"Suite160::8373761179844": true,
+"Suite160::8267459985604": false,
+"Suite160::8373749022916": false,
+"Premier MI::8084398374977": false,
+"Premier MI::7996814491713": true,
+"Premier MI::7988703625281": false,
+"Premier MI::7950762737729": false,
+"Premier MI::7924650278977": false,
+"Premier MI::7901892149313": false,
+"Premier MI::7889012850753": false,
+"Premier MI::7883811127361": true,
+"Premier MI::7870035558465": false,
+"Premier MI::7864498454593": false,
+"Premier MI::7855437840449": false,
+"Rock City Kicks::15408485990558": true,
+"Rock City Kicks::8785418420382": true,
+"Rock City Kicks::8785417011358": true,
+"Rock City Kicks::8779645681822": true,
+"Rock City Kicks::8776133116062": true,
+"Rock City Kicks::8776130199710": true,
+"Rock City Kicks::8776128331934": true,
+"Rock City Kicks::8699266039966": true,
+"Rock City Kicks::8622917288094": true,
+"Rock City Kicks::8581265621150": true,
+"Rock City Kicks::8581267357854": true,
+"Rock City Kicks::8523690999966": true,
+"Rock City Kicks::7425533411486": true,
+"Rock City Kicks::7347973521566": true,
+"Rock City Kicks::7034123714718": true,
+"Blacklist::15415934779625": true,
+"Blacklist::9352181088489": true,
+"Blacklist::9358143258857": true,
+"Blacklist::9343167725801": true,
+"Arts & Rec::15585678950511": false,
+"Arts & Rec::7588452335727": true,
+"APB Store::7783153500196": false,
+"APB Store::7873833533476": true,
+"APB Store::8209012097060": true,
+"APB Store::7928726552612": true,
+"APB Store::7696203677732": false,
+"Drift House::10359110861055": true,
+"Cal Surf::15432179155260": true,
+"Recess Skate & Snow::9493076050178": true,
+"Nice Kicks::9098991042765": false,
+"Nice Kicks::9091535831245": false,
+"Nice Kicks::9089581940941": true,
+"Nice Kicks::9088917307597": false,
+"Nice Kicks::9083999092941": false,
+"Nice Kicks::9053574660301": false,
+"Nice Kicks::9053625385165": false,
+"Nice Kicks::9053624664269": false,
+"Nice Kicks::9047163535565": true,
+"Nice Kicks::9044330348749": false,
+"Nice Kicks::9001497755853": false,
+"Nice Kicks::8984433426637": false,
+"Nice Kicks::8985676841165": false,
+"Nice Kicks::8982119645389": false,
+"Nice Kicks::8979994607821": false,
+"Nice Kicks::8982868820173": false,
+"Nice Kicks::8982122070221": false,
+"Nice Kicks::8983931027661": false,
+"Nice Kicks::8960697237709": false,
+"Nice Kicks::8959349096653": false,
+"Nice Kicks::8963214409933": false,
+"Nice Kicks::8959360663757": false,
+"Nice Kicks::8958386143437": false,
+"Nice Kicks::8949093335245": false,
+"Nice Kicks::8952935186637": false,
+"Nice Kicks::8952059756749": false,
+"Nice Kicks::8949825503437": false,
+"Nice Kicks::8946416615629": false,
+"Nice Kicks::8948288061645": false,
+"Nice Kicks::8943700443341": false,
+"Nice Kicks::8958846140621": false,
+"Nice Kicks::8937723003085": false,
+"Nice Kicks::8936966029517": false,
+"Nice Kicks::8931639394509": false,
+"Nice Kicks::8943719645389": false,
+"Nice Kicks::8907940036813": false,
+"Nice Kicks::8909665140941": false,
+"Nice Kicks::8912656367821": false,
+"Nice Kicks::8907974803661": false,
+"Nice Kicks::8901845516493": false,
+"Nice Kicks::8899772481741": false,
+"Nice Kicks::8897540849869": false,
+"Nice Kicks::8899772383437": false,
+"Nice Kicks::8865343799501": false,
+"Nice Kicks::8851766739149": false,
+"Nice Kicks::8830352031949": false,
+"Nice Kicks::8823555948749": false,
+"Nice Kicks::8830358061261": false,
+"Nice Kicks::8806187925709": false,
+"Nice Kicks::8800694042829": false,
+"Nice Kicks::8806203293901": false,
+"Nice Kicks::8800727072973": false,
+"Nice Kicks::8783531213005": false,
+"Nice Kicks::8796561998029": false,
+"Nice Kicks::8786394185933": false,
+"Nice Kicks::8796559081677": false,
+"Nice Kicks::8776307671245": false,
+"Nice Kicks::8783434907853": false,
+"Nice Kicks::8781670318285": false,
+"Nice Kicks::8781630505165": false,
+"Nice Kicks::8767837405389": false,
+"Nice Kicks::8765849698509": false,
+"Nice Kicks::8757429567693": false,
+"Nice Kicks::8757378810061": false,
+"Nice Kicks::8757378580685": false,
+"Nice Kicks::8754034671821": false,
+"Nice Kicks::8756969570509": false,
+"Nice Kicks::8747873337549": false,
+"Nice Kicks::8754366382285": false,
+"Nice Kicks::8754034901197": false,
+"Nice Kicks::8744362377421": false,
+"Nice Kicks::8742563446989": false,
+"Nice Kicks::8749167476941": false,
+"Nice Kicks::7131231125709": false,
+"Nice Kicks::7301332795597": false,
+"Nice Kicks::7301333549261": false,
+"Nice Kicks::8728838439117": false,
+"Nice Kicks::8728441454797": false,
+"Nice Kicks::7295235686605": false,
+"Nice Kicks::7295236145357": false,
+"Nice Kicks::8723509018829": false,
+"Nice Kicks::7291657453773": false,
+"Nice Kicks::7295236341965": false,
+"Nice Kicks::7284276396237": false,
+"Nice Kicks::7279356510413": false,
+"Nice Kicks::7292734537933": false,
+"Nice Kicks::7278106804429": false,
+"Nice Kicks::7261472686285": false,
+"Nice Kicks::7262431183053": false,
+"Nice Kicks::7256185602253": false,
+"Nice Kicks::8735942672589": false,
+"Nice Kicks::7255662264525": false,
+"Nice Kicks::7295190466765": false,
+"Nice Kicks::7255003070669": false,
+"Nice Kicks::7250312102093": false,
+"Nice Kicks::7247038349517": false,
+"Nice Kicks::7242976788685": false,
+"Nice Kicks::7240342405325": false,
+"Nice Kicks::7240342601933": false,
+"Nice Kicks::7234165506253": false,
+"Nice Kicks::7234519269581": false,
+"Nice Kicks::7207481442509": false,
+"Nice Kicks::7227357266125": false,
+"Nice Kicks::7218836275405": false,
+"Nice Kicks::7221229781197": false,
+"Nice Kicks::7218985238733": false,
+"Nice Kicks::7229778264269": false,
+"Nice Kicks::7214997799117": false,
+"Nice Kicks::7217667014861": false,
+"Nice Kicks::7194996277453": false,
+"Nice Kicks::7206306349261": false,
+"Nice Kicks::7197201957069": false,
+"Nice Kicks::7191875485901": false,
+"Nice Kicks::7187000852685": false,
+"Nice Kicks::7182280655053": false,
+"Nice Kicks::7173907841229": false,
+"Nice Kicks::6810376143053": true,
+"Nice Kicks::7170272461005": false,
+"Nice Kicks::7178375495885": false,
+"Nice Kicks::7156420542669": false,
+"Nice Kicks::7135253496013": false,
+"Nice Kicks::7138193932493": false,
+"Nice Kicks::7131231649997": false,
+"Nice Kicks::7122416533709": false,
+"Nice Kicks::7131270774989": false,
+"Nice Kicks::7122416500941": false,
+"Nice Kicks::7122416369869": false,
+"Nice Kicks::7120134799565": false,
+"Nice Kicks::7101683466445": false,
+"Nice Kicks::7106225340621": false,
+"Nice Kicks::7096199971021": false,
+"Nice Kicks::7086786609357": false,
+"Nice Kicks::7106277015757": false,
+"Nice Kicks::7089586503885": false,
+"Nice Kicks::7094959046861": false,
+"Nice Kicks::7078889783501": false,
+"Nice Kicks::7037197156557": false,
+"Nice Kicks::7026393022669": false,
+"Nice Kicks::7033454231757": false,
+"Nice Kicks::7034602389709": false,
+"Nice Kicks::7026394366157": false,
+"Nice Kicks::7023708930253": false,
+"Nice Kicks::7074763473101": false,
+"Nice Kicks::7011291463885": false,
+"Nice Kicks::7024153854157": false,
+"Nice Kicks::6991734276301": false,
+"Nice Kicks::6948783161549": false,
+"Nice Kicks::6992851763405": false,
+"Nice Kicks::6938033094861": false,
+"Nice Kicks::6938034602189": false,
+"Nice Kicks::6940878864589": false,
+"Nice Kicks::6925018529997": false,
+"Nice Kicks::6926089453773": false,
+"Nice Kicks::6955179180237": false,
+"Nice Kicks::6919832600781": false,
+"Nice Kicks::6966677209293": false,
+"Nice Kicks::6897695719629": false,
+"Nice Kicks::6848846921933": false,
+"Nice Kicks::6848067502285": false,
+"Nice Kicks::6836475625677": false,
+"Nice Kicks::6835174998221": false,
+"Nice Kicks::6914960294093": false,
+"Nice Kicks::6971389771981": false,
+"Nice Kicks::6821461688525": false,
+"Nice Kicks::6815216632013": false,
+"Nice Kicks::6803493355725": false,
+"Nice Kicks::6770990645453": false,
+"Nice Kicks::6756913742029": false,
+"Nice Kicks::6750096097485": false,
+"Nice Kicks::6723822551245": false,
+"Nice Kicks::6696498233549": false,
+"Nice Kicks::6706930745549": false,
+"Nice Kicks::6716275785933": false,
+"Nice Kicks::6812216393933": false,
+"Nice Kicks::6597822316749": false,
+"Nice Kicks::7251603325133": true,
+"Nice Kicks::4789627289805": false
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -16706,10 +17286,8 @@
 "m": {}
 },
 "After Hours Skateshop::9643109908735": {
-"a": "11|6|6.5|7.5|8.5|9|9.5",
-"m": {
-"6": 2
-}
+"a": "11|6.5|7.5|8.5|9|9.5",
+"m": {}
 },
 "After Hours Skateshop::9613389594879": {
 "a": "10.5|11.5|12|7|7.5|8|8.5|9|9.5",
@@ -16740,10 +17318,8 @@
 "m": {}
 },
 "After Hours Skateshop::9364059160831": {
-"a": "11|9|9.5",
-"m": {
-"11": 2
-}
+"a": "9|9.5",
+"m": {}
 },
 "After Hours Skateshop::9364058505471": {
 "a": "10.5|8.5|9|9.5",
@@ -29537,6 +30113,1062 @@
 "Embassy::15412124221495": {
 "a": "Purple Dynasty / Black",
 "m": {}
+},
+"Doubler Kicks::15438368637213": {
+"a": "10|10.5|11|11.5|12|13|8.5|9|9.5",
+"m": {}
+},
+"Doubler Kicks::15438362345757": {
+"a": "10|10.5|11|11.5|12|13|8.5|9|9.5",
+"m": {}
+},
+"Doubler Kicks::9118035378461": {
+"a": "12.5|13.5|14.5|15.5",
+"m": {}
+},
+"Doubler Kicks::9625629360413": {
+"a": "10",
+"m": {}
+},
+"Doubler Kicks::9733094932765": {
+"a": "11",
+"m": {}
+},
+"Doubler Kicks::8468317962525": {
+"a": "7.5",
+"m": {}
+},
+"Doubler Kicks::8311142940957": {
+"a": "12",
+"m": {}
+},
+"Doubler Kicks::9752236032285": {
+"a": "11",
+"m": {}
+},
+"Doubler Kicks::9243853652253": {
+"a": "5|5.5",
+"m": {}
+},
+"Doubler Kicks::15413619982621": {
+"a": "10|11|11.5|13",
+"m": {}
+},
+"LICK NYC::10365863297279": {
+"a": "10.0|10.5|11.0|11.5|12.0|13.0|14.0|7.0|7.5|9.0|9.5",
+"m": {}
+},
+"LICK NYC::9604485611775": {
+"a": "10.0|10.5|7.5|8.0|9.0|9.5",
+"m": {}
+},
+"LICK NYC::9604484432127": {
+"a": "10.0|11.0|13.0|14.0",
+"m": {}
+},
+"LICK NYC::9458866389247": {
+"a": "7.0|8.0",
+"m": {}
+},
+"LICK NYC::9453908852991": {
+"a": "11.5|13.0|14.0",
+"m": {}
+},
+"LICK NYC::9423024947455": {
+"a": "",
+"m": {}
+},
+"LICK NYC::9329729569023": {
+"a": "8.0",
+"m": {}
+},
+"LICK NYC::9185654505727": {
+"a": "10.5|11.0|11.5|9.0|9.5",
+"m": {}
+},
+"LICK NYC::8971686084863": {
+"a": "14.0",
+"m": {}
+},
+"LICK NYC::8971657445631": {
+"a": "10.0|10.5|11.0|12.0|13.0|14.0|7.0|7.5|8.0|9.0|9.5",
+"m": {}
+},
+"Humidity Skateshop::10316789940515": {
+"a": "10|10.5|11|11.5|12|13|4|4.5|7.5|8|9|9.5",
+"m": {}
+},
+"Uprise Skateshop::15441772576983": {
+"a": "10.0|10.5|15.0|7.0|7.5|8.5|9.5",
+"m": {}
+},
+"Uprise Skateshop::8818999427287": {
+"a": "11.0|12.0|8.0|8.5",
+"m": {}
+},
+"Uprise Skateshop::9350071451863": {
+"a": "10.0|10.5|11.0|8.0|8.5|9.0|9.5",
+"m": {}
+},
+"Uprise Skateshop::9325835518167": {
+"a": "11.0|6.5",
+"m": {}
+},
+"Furnace Skate::10544100180152": {
+"a": "",
+"m": {}
+},
+"Furnace Skate::10500836884664": {
+"a": "11|9.5",
+"m": {}
+},
+"Furnace Skate::10356430143672": {
+"a": "11",
+"m": {}
+},
+"Furnace Skate::10497906802872": {
+"a": "",
+"m": {}
+},
+"Furnace Skate::10492060303544": {
+"a": "10.5|11|11.5|12|8.5|9|9.5",
+"m": {}
+},
+"Furnace Skate::10211120382136": {
+"a": "",
+"m": {}
+},
+"Furnace Skate::10079499649208": {
+"a": "",
+"m": {}
+},
+"Furnace Skate::10012857303224": {
+"a": "Dark Team Red/Burgundy Crush",
+"m": {}
+},
+"Furnace Skate::9202117279928": {
+"a": "",
+"m": {}
+},
+"Familia Skateshop::10958035321144": {
+"a": "9",
+"m": {}
+},
+"Familia Skateshop::10800033530168": {
+"a": "7",
+"m": {}
+},
+"Familia Skateshop::10786823864632": {
+"a": "10.5",
+"m": {}
+},
+"Blue Flowers::11219876905127": {
+"a": "13",
+"m": {}
+},
+"Blue Flowers::11207067467943": {
+"a": "10.5|11|11.5|6.5|7|8|9|9.5",
+"m": {}
+},
+"Blue Flowers::11207066484903": {
+"a": "10|10.5|11|11.5|6.5|7|7.5|8|8.5",
+"m": {}
+},
+"Skaters Advocate::8680319189226": {
+"a": "8|9",
+"m": {}
+},
+"Skaters Advocate::8680302215402": {
+"a": "7",
+"m": {}
+},
+"Suite160::8701720592580": {
+"a": "",
+"m": {}
+},
+"Suite160::8649431875780": {
+"a": "",
+"m": {}
+},
+"Suite160::8373761179844": {
+"a": "8.5|9.5",
+"m": {}
+},
+"Suite160::8267459985604": {
+"a": "",
+"m": {}
+},
+"Suite160::8373749022916": {
+"a": "",
+"m": {}
+},
+"Premier MI::8084398374977": {
+"a": "",
+"m": {}
+},
+"Premier MI::7996814491713": {
+"a": "10|8|8.5|9|9.5",
+"m": {}
+},
+"Premier MI::7988703625281": {
+"a": "",
+"m": {}
+},
+"Premier MI::7950762737729": {
+"a": "",
+"m": {}
+},
+"Premier MI::7924650278977": {
+"a": "",
+"m": {}
+},
+"Premier MI::7901892149313": {
+"a": "",
+"m": {}
+},
+"Premier MI::7889012850753": {
+"a": "",
+"m": {}
+},
+"Premier MI::7883811127361": {
+"a": "11",
+"m": {}
+},
+"Premier MI::7870035558465": {
+"a": "",
+"m": {}
+},
+"Premier MI::7864498454593": {
+"a": "",
+"m": {}
+},
+"Premier MI::7855437840449": {
+"a": "",
+"m": {}
+},
+"Rock City Kicks::15408485990558": {
+"a": "10|10.5|11|11.5|12|12.5|13|14|8|8.5|9|9.5",
+"m": {}
+},
+"Rock City Kicks::8785418420382": {
+"a": "10|10.5|11|11.5|12|13|8.5|9|9.5",
+"m": {}
+},
+"Rock City Kicks::8785417011358": {
+"a": "10|10.5|11|11.5|12|13|8.5|9|9.5",
+"m": {}
+},
+"Rock City Kicks::8779645681822": {
+"a": "10.5|11|12|13|9",
+"m": {}
+},
+"Rock City Kicks::8776133116062": {
+"a": "10|10.5|11.5|12|13|8.5|9|9.5",
+"m": {}
+},
+"Rock City Kicks::8776130199710": {
+"a": "10|11.5|13|9.5",
+"m": {}
+},
+"Rock City Kicks::8776128331934": {
+"a": "10.5|11|12",
+"m": {}
+},
+"Rock City Kicks::8699266039966": {
+"a": "10W|6.5W|6W|7.5W|7W|8.5W|8W|9W",
+"m": {}
+},
+"Rock City Kicks::8622917288094": {
+"a": "11|11.5|12|7.5",
+"m": {}
+},
+"Rock City Kicks::8581265621150": {
+"a": "11.5W|5.5W|6W",
+"m": {}
+},
+"Rock City Kicks::8581267357854": {
+"a": "10|8|8.5|9.5",
+"m": {}
+},
+"Rock City Kicks::8523690999966": {
+"a": "5.5W|6W",
+"m": {}
+},
+"Rock City Kicks::7425533411486": {
+"a": "5.5W|6W",
+"m": {}
+},
+"Rock City Kicks::7347973521566": {
+"a": "11",
+"m": {}
+},
+"Rock City Kicks::7034123714718": {
+"a": "5.5|6|9.5",
+"m": {}
+},
+"Blacklist::15415934779625": {
+"a": "10|6.5|7|7.5|8.5",
+"m": {}
+},
+"Blacklist::9352181088489": {
+"a": "11|11.5|5|5.5|8|8.5",
+"m": {}
+},
+"Blacklist::9358143258857": {
+"a": "10|10.5|11|11.5|12|13|5|5.5|6|6.5|7|7.5|8|8.5|9|9.5",
+"m": {}
+},
+"Blacklist::9343167725801": {
+"a": "10|10.5|11|11.5|12|13|8|8.5|9|9.5",
+"m": {}
+},
+"Arts & Rec::15585678950511": {
+"a": "",
+"m": {}
+},
+"Arts & Rec::7588452335727": {
+"a": "W 7",
+"m": {}
+},
+"APB Store::7783153500196": {
+"a": "",
+"m": {}
+},
+"APB Store::7873833533476": {
+"a": "8.5",
+"m": {}
+},
+"APB Store::8209012097060": {
+"a": "10|11.5|8.5",
+"m": {}
+},
+"APB Store::7928726552612": {
+"a": "10|10.5|11|11.5|12|6|7|7.5|9|9.5",
+"m": {}
+},
+"APB Store::7696203677732": {
+"a": "",
+"m": {}
+},
+"Drift House::10359110861055": {
+"a": "Filbert/Lt Chocolate",
+"m": {}
+},
+"Cal Surf::15432179155260": {
+"a": "10|10.5|11|11.5|12|13|8|8.5|9|9.5",
+"m": {}
+},
+"Recess Skate & Snow::9493076050178": {
+"a": "9.5",
+"m": {}
+},
+"Nice Kicks::9098991042765": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9091535831245": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9089581940941": {
+"a": "10|10.5|12|13|8|8.5|9|9.5",
+"m": {}
+},
+"Nice Kicks::9088917307597": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9083999092941": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9053574660301": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9053625385165": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9053624664269": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9047163535565": {
+"a": "10|10.5|11|13|8",
+"m": {}
+},
+"Nice Kicks::9044330348749": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::9001497755853": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8984433426637": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8985676841165": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8982119645389": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8979994607821": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8982868820173": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8982122070221": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8983931027661": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8960697237709": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8959349096653": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8963214409933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8959360663757": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8958386143437": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8949093335245": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8952935186637": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8952059756749": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8949825503437": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8946416615629": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8948288061645": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8943700443341": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8958846140621": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8937723003085": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8936966029517": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8931639394509": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8943719645389": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8907940036813": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8909665140941": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8912656367821": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8907974803661": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8901845516493": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8899772481741": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8897540849869": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8899772383437": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8865343799501": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8851766739149": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8830352031949": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8823555948749": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8830358061261": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8806187925709": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8800694042829": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8806203293901": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8800727072973": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8783531213005": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8796561998029": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8786394185933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8796559081677": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8776307671245": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8783434907853": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8781670318285": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8781630505165": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8767837405389": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8765849698509": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8757429567693": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8757378810061": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8757378580685": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8754034671821": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8756969570509": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8747873337549": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8754366382285": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8754034901197": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8744362377421": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8742563446989": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8749167476941": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7131231125709": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7301332795597": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7301333549261": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8728838439117": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8728441454797": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7295235686605": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7295236145357": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8723509018829": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7291657453773": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7295236341965": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7284276396237": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7279356510413": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7292734537933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7278106804429": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7261472686285": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7262431183053": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7256185602253": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::8735942672589": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7255662264525": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7295190466765": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7255003070669": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7250312102093": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7247038349517": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7242976788685": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7240342405325": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7240342601933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7234165506253": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7234519269581": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7207481442509": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7227357266125": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7218836275405": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7221229781197": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7218985238733": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7229778264269": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7214997799117": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7217667014861": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7194996277453": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7206306349261": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7197201957069": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7191875485901": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7187000852685": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7182280655053": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7173907841229": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6810376143053": {
+"a": "10|6|6.5|7|7.5|8|8.5|9|9.5",
+"m": {}
+},
+"Nice Kicks::7170272461005": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7178375495885": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7156420542669": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7135253496013": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7138193932493": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7131231649997": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7122416533709": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7131270774989": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7122416500941": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7122416369869": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7120134799565": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7101683466445": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7106225340621": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7096199971021": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7086786609357": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7106277015757": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7089586503885": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7094959046861": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7078889783501": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7037197156557": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7026393022669": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7033454231757": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7034602389709": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7026394366157": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7023708930253": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7074763473101": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7011291463885": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7024153854157": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6991734276301": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6948783161549": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6992851763405": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6938033094861": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6938034602189": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6940878864589": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6925018529997": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6926089453773": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6955179180237": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6919832600781": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6966677209293": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6897695719629": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6848846921933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6848067502285": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6836475625677": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6835174998221": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6914960294093": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6971389771981": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6821461688525": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6815216632013": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6803493355725": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6770990645453": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6756913742029": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6750096097485": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6723822551245": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6696498233549": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6706930745549": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6716275785933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6812216393933": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::6597822316749": {
+"a": "",
+"m": {}
+},
+"Nice Kicks::7251603325133": {
+"a": "10|10.5|11|12|13|9|9.5",
+"m": {}
+},
+"Nice Kicks::4789627289805": {
+"a": "",
+"m": {}
 }
 },
 "muted": {
@@ -30675,5 +32307,6 @@
 "title": "Nike SB Air Force 1 SE- Cool Grey/Court Green-Black-Court Green",
 "t": 1792693576
 }
-}
+},
+"nike_dunk_seeded": true
 }
