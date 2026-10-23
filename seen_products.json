@@ -4968,6 +4968,7 @@
 "Geometric Skate Shop::15417067503891",
 "Geometric Skate Shop::15417104335123",
 "Geometric Skate Shop::15417110692115",
+"Geometric Skate Shop::15423646499091",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -16816,7 +16817,8 @@
 "Pastime Skateshop::15934441029792": true,
 "After Hours Skateshop::10374586007807": true,
 "Southside Boardshop::15434655793469": true,
-"Embassy::15409958846519": true
+"Embassy::15409958846519": true,
+"Geometric Skate Shop::15423646499091": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -56762,6 +56764,26 @@
 "Cool Grey/Court Green/Black"
 ],
 "m": {}
+},
+"Geometric Skate Shop::15423646499091": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59685,6 +59707,15 @@
 ],
 "title": "AF1 Cool Grey Court Green Black IV5289003 Nike SB Suede Skateboarding Shoes",
 "t": 1792732013
+},
+"1563147977030111325": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 af1 city pack",
+"p:Geometric Skate Shop::15423646499091"
+],
+"title": "NIKE SB AIR FORCE 1 AF1 City Pack",
+"t": 1792753920
 }
 },
 "nike_dunk_seeded": true,
