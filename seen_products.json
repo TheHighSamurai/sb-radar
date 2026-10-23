@@ -16416,7 +16416,7 @@
 "Pastime Skateshop::15934439686304": true,
 "Pastime Skateshop::15934441029792": true,
 "After Hours Skateshop::10374586007807": true,
-"Southside Boardshop::15434655793469": true,
+"Southside Boardshop::15434655793469": false,
 "Embassy::15409958846519": true,
 "Geometric Skate Shop::15423646499091": true,
 "Brooklyn Projects::16379708768337": true,
@@ -16460,8 +16460,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Southside Boardshop::15434655793469": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -43404,7 +43403,9 @@
 "9.0",
 "9.5"
 ],
-"m": {}
+"m": {
+"6.5": 1
+}
 },
 "CCS::8447107662007": {
 "l": [
@@ -56331,12 +56332,8 @@
 "m": {}
 },
 "Southside Boardshop::15434655793469": {
-"l": [
-"9"
-],
-"m": {
-"9": 2
-}
+"l": [],
+"m": {}
 },
 "Embassy::15409958846519": {
 "l": [
@@ -56442,14 +56439,11 @@
 "11.5",
 "12",
 "13",
-"14",
 "8",
 "9",
 "9.5"
 ],
-"m": {
-"14": 2
-}
+"m": {}
 },
 "35th North::15439331688484": {
 "l": [
