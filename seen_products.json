@@ -1,5 +1,6 @@
 {
 "seen": [
+"303 Annex::10354597888065",
 "303 Annex::6558687363137",
 "303 Annex::6687252971585",
 "303 Annex::6717391601729",
@@ -150,6 +151,7 @@
 "303 Annex::8061917626433",
 "303 Annex::8061919330369",
 "303 Annex::8076374409281",
+"303 Boards::10354597888065",
 "303 Boards::6558687363137",
 "303 Boards::6687252971585",
 "303 Boards::6717391601729",
@@ -329,6 +331,7 @@
 "35th North::15411376422948",
 "35th North::15421015752740",
 "35th North::15432145666084",
+"35th North::15439331688484",
 "35th North::5046050029604",
 "35th North::7087622815780",
 "35th North::7227698446372",
@@ -374,6 +377,7 @@
 "510 Skateboarding::15387762589801",
 "510 Skateboarding::15402005102697",
 "510 Skateboarding::15402007625833",
+"510 Skateboarding::15414412836969",
 "510 Skateboarding::6740432355433",
 "510 Skateboarding::6894961852521",
 "510 Skateboarding::6942032560233",
@@ -660,6 +664,7 @@
 "Black Sheep NC::7666480807982",
 "Black Sheep NC::7668280623150",
 "Black Sheep NC::7677563863086",
+"Black Sheep NC::7678428938286",
 "Blacklist::15415934779625",
 "Blacklist::8841747923177",
 "Blacklist::8841748578537",
@@ -686,6 +691,7 @@
 "Bluetile Skateboards::15419484111074",
 "Bluetile Skateboards::15426937422050",
 "Bluetile Skateboards::15427070197986",
+"Bluetile Skateboards::15443411140834",
 "Bluetile Skateboards::6816775110814",
 "Bluetile Skateboards::6816780320926",
 "Bluetile Skateboards::6816780353694",
@@ -1462,6 +1468,7 @@
 "Civil::15454696571168",
 "Civil::15459711910176",
 "Civil::15460076355872",
+"Civil::15477491663136",
 "Civil::15489219658016",
 "Civil::15495013204256",
 "Civil::8630668820768",
@@ -1744,6 +1751,7 @@
 "Coureur Goods::10353717018879",
 "Coureur Goods::10353724752127",
 "Coureur Goods::10353725931775",
+"Coureur Goods::10375897284863",
 "Coureur Goods::10375935820031",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
@@ -6105,6 +6113,7 @@
 "No-Comply::15418135183545",
 "No-Comply::15430034587833",
 "No-Comply::15442647417017",
+"No-Comply::15442741657785",
 "No-Comply::15448005214393",
 "No-Comply::15448005542073",
 "No-Comply::4422398148748",
@@ -6707,6 +6716,7 @@
 "PLA Folsom::15387924594846",
 "PLA Folsom::15387939274910",
 "PLA Folsom::15393901281438",
+"PLA Folsom::15408364814494",
 "PLA Folsom::6704398106782",
 "PLA Folsom::7398563446942",
 "PLA Folsom::7470616903838",
@@ -6866,6 +6876,7 @@
 "Pawnshop Skate::15915379753120",
 "Pawnshop Skate::15931290747040",
 "Pawnshop Skate::15931338981536",
+"Pawnshop Skate::15934128914592",
 "People Skate and Snowboard::15420133146839",
 "People Skate and Snowboard::15420144353495",
 "People Skate and Snowboard::15420226011351",
@@ -8944,6 +8955,7 @@
 "Travel Skate Shop::15428089675853",
 "Travel Skate Shop::15428091150413",
 "Travel Skate Shop::15428092264525",
+"Travel Skate Shop::15436563185741",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -10183,505 +10195,9 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - Crest Tee White",
-"price": "44.99",
-"sizes": "Large, X-Large, Medium",
-"link": "https://deliskatesupply.com/products/nike-sb-crest-tee-white",
-"image": null,
-"local": false
-},
-{
-"store": "Civil",
-"title": "Nike SB Peak Beanie - Black",
-"price": "35.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://wearecivil.com/products/nike-sb-peak-beanie-black",
-"image": null,
-"local": false
-},
-{
-"store": "Stratosphere",
-"title": "Nike SB Logo Skate T-Shirt- Mosswood Brown",
-"price": "29.99",
-"sizes": "M",
-"link": "https://stratosphereskateboards.com/products/nike-sb-chest-icon-logo",
-"image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/DD9E94B9-BAA4-4640-A0F5-54B3F3B31D80.webp?v=1763158920",
-"local": false
-},
-{
-"store": "Civil",
-"title": "Nike SB Men's ACG Dolomiti Pants - Gridiron / Summit White (Copy)",
-"price": "115.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://wearecivil.com/products/nike-sb-mens-acg-dolomiti-pants-gridiron-summit-white-copy",
-"image": null,
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Fix It Track Jacket (Black)",
-"price": "85.00",
-"sizes": "L",
-"link": "https://kineticskateboarding.com/products/nike-sb-track-jacket-black",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Fix_It_Skate_Tracksuit_Black_3.webp?v=1772068444",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Fix It Track Pants (Black)",
-"price": "85.00",
-"sizes": "L, S",
-"link": "https://kineticskateboarding.com/products/nike-sb-fix-it-track-pants-black",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Fix_It_Skate_Tracksuit_Black_5.webp?v=1772068460",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Zoom Tennis Classic (Black/White/White)",
-"price": "95.00",
-"sizes": "7.5 M, 8.5 M, 9.0 M, 9.5 M, 10.0 M, 10.5 M, 11.0 M, 11.5 M, 12.0 M, 13.0 M",
-"link": "https://kineticskateboarding.com/products/nike-sb-zoom-tennis-classic-black-white-white",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Zoom_Tennis_Classic_Black_White_White.png?v=1785864832",
-"local": false
-},
-{
-"store": "Bluetile Skateboards",
-"title": "NIKE SB PEAK BEANIE BLACK",
-"price": "32.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://bluetilesc.com/products/nike-sb-peak-beanie-black",
-"image": null,
-"local": false
-},
-{
-"store": "Bluetile Skateboards",
-"title": "NIKE SB PEAK BEANIE CAMO GREEN",
-"price": "32.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://bluetilesc.com/products/nike-sb-peak-beanie-camo-green",
-"image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbbeaniepeakcamogreen.jpg?v=1792181218",
-"local": false
-},
-{
-"store": "Home Base Skate Shop",
-"title": "Nike SB T-Shirt",
-"price": "45.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://homebaseskateshop.com/products/nike-sb-t-shirt-1",
-"image": null,
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB PEAK CAMO GREEN BEANIE",
-"price": "32.00",
-"sizes": "GREEN",
-"link": "https://olympiaskateshop.com/products/nike-sb-peak-camo-green-beanie",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/nikesbbeanie.webp?v=1792255683",
-"local": false
-},
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - Peak Beanie Black",
-"price": "31.99",
-"sizes": "Check site",
-"link": "https://deliskatesupply.com/products/nike-sb-peak-beanie-black-1",
-"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/U_NK_PEAK_BEANIE_SB_HO26.png?v=1792256416",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Airmail Long Sleeve T-Shirt  (Black/Gray)",
-"price": "100.00",
-"sizes": "XL, L, M",
-"link": "https://kineticskateboarding.com/products/airmail-long-sleeve-t-shirt-black-gray",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Airmail_Long_Sleeve_T-Shirt_Black_Gray.webp?v=1792177789",
-"local": false
-},
-{
-"store": "Familia Skateshop",
-"title": "NIKE SB PEAK BEANIE - BLACK",
-"price": "32.00",
-"sizes": "One size",
-"link": "https://familiaskate.com/products/nike-sb-peak-beanie-black",
-"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-PEAK-BEANIE.jpg?v=1792305338",
-"local": false
-},
-{
-"store": "Familia Skateshop",
-"title": "NIKE SB PEAK BEANIE - GREEN",
-"price": "32.00",
-"sizes": "One size",
-"link": "https://familiaskate.com/products/nike-sb-peak-beanie-green",
-"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-PEAK-BEANIE-GRN.jpg?v=1792305383",
-"local": false
-},
-{
-"store": "Familia Skateshop",
-"title": "NIKE SB CHAMPAGNE TEE - BLACK",
-"price": "45.00",
-"sizes": "M, L, XL",
-"link": "https://familiaskate.com/products/nike-sb-champagne-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-CHAMPANGE-BLK.jpg?v=1792306378",
-"local": false
-},
-{
-"store": "Familia Skateshop",
-"title": "NIKE SB CHAMPAGNE DUNK TEE - WHITE",
-"price": "0.00",
-"sizes": "M",
-"link": "https://familiaskate.com/products/nike-sb-champagne-dunk-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-CHAMPANGE-WHT.jpg?v=1792306659",
-"local": false
-},
-{
-"store": "Furnace Skate",
-"title": "Nike SB Embroidered Logo Beanie",
-"price": "32.00",
-"sizes": "O/S",
-"link": "https://furnaceskate.com/products/nike-sb-embroidered-logo-beanie-2",
-"image": "https://cdn.shopify.com/s/files/1/0376/9217/files/beanie_ec0ae5ac-a7bb-4c04-bfa9-a611997f3835.jpg?v=1792370674",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Switch Drill Woven Pants Silver Lilac",
-"price": "104.95",
-"sizes": "M, XL, L",
-"link": "https://xbusa.com/products/nike-sb-switch-drill-woven-pants-silver-lilac",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/10_7d0189d3-62c7-4f34-bb8f-2b9bda9c3d12.png?v=1792374291",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Peak Skate Beanie Camo Green/White",
-"price": "31.95",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://xbusa.com/products/nike-sb-peak-skate-beanie-camo-green-white",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/12_23bada9d-55e2-4a37-981e-5d852774d1fd.png?v=1792373699",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Peak Skate Beanie Black/White",
-"price": "31.95",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://xbusa.com/products/nike-sb-peak-skate-beanie-black-white",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/12_645a0839-138d-4db4-8931-023bc01d7d57.png?v=1792371444",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Peak Beanie - Camo Green / White",
-"price": "39.00",
-"sizes": "One Size",
-"link": "https://www.flatspot.com/products/nike-sb-peak-beanie-camo-green-white",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-peak-beanie-camo-green-white--1.jpg?v=1792400289",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Essential Logo Hoodie - Silver Lilac / White",
-"price": "89.00",
-"sizes": "S, XL, L, M",
-"link": "https://www.flatspot.com/products/nike-sb-essential-logo-hoodie-silver-lilac-white",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-essential-logo-hoodie-silver-lilac-white--1.jpg?v=1792412575",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Loose Denim Pants - Black",
-"price": "173.00",
-"sizes": "W.36",
-"link": "https://www.flatspot.com/products/nike-sb-loose-denim-pants-black",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/NikeSBLooseDenimPants-Black-1.jpg?v=1792419749",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Switch Drill Woven Pant (Silver Lilac/ Palest Purple)",
-"price": "105.00",
-"sizes": "XL, M, XXL, S, L",
-"link": "https://kineticskateboarding.com/products/nike-sb-switch-drill-woven-pant-silver-lilac-palest-purple",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/DSCF9442_1024x1024_a3035139-581b-4b2a-a5bf-5da70741d21f.webp?v=1792426400",
-"local": false
-},
-{
-"store": "Bluetile Skateboards",
-"title": "NIKE SB AIRMAIL LONG SLEEVE TEE ANTHRACITE / BLACK / WHITE",
-"price": "50.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://bluetilesc.com/products/nike-sb-airmail-long-sleeve-tee-anthracite-black-white",
-"image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbairmaillongesleevetee.jpg?v=1792443347",
-"local": false
-},
-{
-"store": "Bluetile Skateboards",
-"title": "NIKE SB CREST SKATE TEE WHITE",
-"price": "45.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://bluetilesc.com/products/nike-sb-crest-skate-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbcrestteewhitetheskatetee.jpg?v=1792445165",
-"local": false
-},
-{
-"store": "Travel Skate Shop",
-"title": "Nike SB \"Champagne Dunk\" Tee",
-"price": "45.00",
-"sizes": "X-Large, Smal, Medium, Large",
-"link": "https://travelskateshop.com/products/nike-sb-champagne-dunk-tee",
-"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/540648150.jpg?v=1792448564",
-"local": false
-},
-{
-"store": "Travel Skate Shop",
-"title": "Nike SB \"Champagne Dunk\" Tee",
-"price": "45.00",
-"sizes": "X-Large, Medium, Large, Small",
-"link": "https://travelskateshop.com/products/nike-sb-champagne-dunk-tee-1",
-"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/7D335D95-606B-43C5-A907-D4B4CC742537.webp?v=1792448698",
-"local": false
-},
-{
-"store": "Travel Skate Shop",
-"title": "Nike SB Peak Beanie",
-"price": "31.00",
-"sizes": "Check site",
-"link": "https://travelskateshop.com/products/nike-sb-peak-beanie",
-"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/shopping-3_5e45c862-f5cf-4520-aae7-e6619b450dc9.webp?v=1792449166",
-"local": false
-},
-{
-"store": "Travel Skate Shop",
-"title": "Nike SB Peak Beanie",
-"price": "31.00",
-"sizes": "Check site",
-"link": "https://travelskateshop.com/products/nike-sb-peak-beanie-1",
-"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/shopping-2_c710f78c-f0ac-4baf-a363-0d5ed85f1d53.webp?v=1792449304",
-"local": false
-},
-{
-"store": "Innercity Skate",
-"title": "Nike SB Champagne Dunk T-Shirt",
-"price": "44.99",
-"sizes": "White, Gray",
-"link": "https://innercityskate.com/products/nike-sb-champagne-dunk-t-shirt",
-"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_25.jpg?v=1792441835",
-"local": false
-},
-{
-"store": "Arts & Rec",
-"title": "Nike SB Skate Top: ANTHRACITE/BLACK/WHITE",
-"price": "50.00",
-"sizes": "XX-Large, Medium",
-"link": "https://artsandrecstore.com/products/nike-sb-skate-top-anthracite-black-white",
-"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IM5430-060_PHSFM001-2000.jpg?v=1792455504",
-"local": true
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Skate Tee (Anthracite)",
-"price": "45.00",
-"sizes": "XXL, M, XL, S, L",
-"link": "https://kineticskateboarding.com/products/nike-sb-skate-tee-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Skate_Tee_Anthracite_2.jpg?v=1792427657",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Skate Tee (White)",
-"price": "45.00",
-"sizes": "XXL, M, XL, S, L",
-"link": "https://kineticskateboarding.com/products/nike-sb-skate-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/Nike_SB_Skate_Tee_White_1.jpg?v=1792427789",
-"local": false
-},
-{
-"store": "Geometric Skate Shop",
-"title": "Nike SB Switch Drill Woven Pant - Silver Lilac/Palest Purple'",
-"price": "105.00",
-"sizes": "M, S, L",
-"link": "https://geometricskateshop.com/products/nike-sb-switch-drill-woven-pant-silver-lilac-palest-purple",
-"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/DSCF9442_1913x_af083d9d-6e8a-4ac4-b6a8-92a33c64cbae.webp?v=1792520734",
-"local": false
-},
-{
-"store": "NJ Skateshop",
-"title": "Nike SB - Champagne Crest Tee",
-"price": "45.00",
-"sizes": "M, XL, S, L",
-"link": "https://njskateshop.com/products/nike-sb-crest-tee",
-"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/NIKESB-CHAMPANGE-WHT.webp?v=1792522742",
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB PEAK BEANIE BLACK",
-"price": "32.00",
-"sizes": "OSFA",
-"link": "https://olympiaskateshop.com/products/nike-sb-peak-beanie-black",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/AURORA_IX3086-010_PHSYD001-2000.webp?v=1792525118",
-"local": false
-},
-{
-"store": "35th North",
-"title": "Nike SB Airmail Long Sleeve T-Shirt - Black/Grey",
-"price": "0.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://35thnorth.com/products/nike-sb-airmail-long-sleeve-t-shirt-black-grey",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/nike-sb-airmail-long-sleeve-t-shirt-anthracite-black-white--1_1300x1500_crop_center.progressive_933889e7-5644-429e-b3db-fd0a2560a0f1.webp?v=1792539267",
-"local": false
-},
-{
-"store": "Rock City Kicks",
-"title": "Nike SB Fleece 1/2 Zip Skate Sweatshirt (Gym Red/Stealth)",
-"price": "80.00",
-"sizes": "XL",
-"link": "https://rockcitykicks.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBFleece1_2ZipSkateSweatshirt_GymRed_Stealth_IZ1853-6871.jpg?v=1792539960",
-"local": false
-},
-{
-"store": "Overload",
-"title": "Nike SB Champagne Dunk Tee - White",
-"price": "45.00",
-"sizes": "L, M, XL",
-"link": "https://shopoverload.com/products/nike-sb-champagne-dunk-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Champagne_Dunk_Tee_White_Front.jpg?v=1792541681",
-"local": true
-},
-{
-"store": "Overload",
-"title": "Nike SB Champagne Dunk Tee - Black",
-"price": "45.00",
-"sizes": "L, M, XXL, XL",
-"link": "https://shopoverload.com/products/nike-sb-champagne-dunk-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Champagne_Dunk_Tee_Black_Front.jpg?v=1792541651",
-"local": true
-},
-{
-"store": "Civil",
-"title": "Nike SB ACG Terra Beanie - Hyper Royal",
-"price": "35.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://wearecivil.com/products/nike-sb-acg-terra-beanie-hyper-royal",
-"image": null,
-"local": false
-},
-{
-"store": "Black Sheep NC",
-"title": "Nike SB Crest Graphic Skate T-Shirt White",
-"price": "44.95",
-"sizes": "X-Large, Medium, Large",
-"link": "https://blacksheepskateshop.com/products/nike-sb-crest-graphic-skate-t-shirt-white",
-"image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IW3134-100_PHSYM003-2000.png?v=1792605030",
-"local": false
-},
-{
-"store": "Exodus Rideshop",
-"title": "Nike SB Champange Crest Tee - White",
-"price": "45.00",
-"sizes": "M, XL, L",
-"link": "https://exodusrideshop.com/products/nike-sb-champange-crest-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IW3134-100_PHSFM001-2000.png?v=1792614102",
-"local": false
-},
-{
-"store": "Exodus Rideshop",
-"title": "Nike SB Airmail Long Sleeve Skate Tee - Anthracite/Black-White",
-"price": "50.00",
-"sizes": "XL, M, L, S",
-"link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-anthracite-black-white",
-"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5430-060_PHSFM001-2000.png?v=1792614442",
-"local": false
-},
-{
-"store": "The Block Skate Supply",
-"title": "Nike SB - Crest Skate T-Shirt - White",
-"price": "44.99",
-"sizes": "XL, Medium, Small, Large",
-"link": "https://theblockskatesupply.com/products/nike-sb-crest-skate-t-shirt-white",
-"image": "https://cdn.shopify.com/s/files/1/0694/1995/8487/files/AURORA_IW3134-100_PHSYM001-2000.jpg?v=1792616074",
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB Airmail Long Sleeve T-Shirt - Anthracite/Black/White",
-"price": "49.95",
-"sizes": "LG, MD, SM, XXL, XL",
-"link": "https://ccs.com/products/nike-sb-airmail-long-sleeve-t-shirt-anthracite-black-white",
-"image": null,
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB Switch Drill Woven Pants - Silver Lilac/Palest Purple",
-"price": "104.95",
-"sizes": "LG, XS",
-"link": "https://ccs.com/products/nike-sb-switch-drill-woven-pants-silver-lilac-palest-purple",
-"image": null,
-"local": false
-},
-{
-"store": "Theory Skate Shop",
-"title": "Nike SB \"Champagne Dunk\" Tee - White",
-"price": "45.00",
-"sizes": "XL, L",
-"link": "https://theoryskate.com/products/nike-sb-champagne-dunk-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/540648150.jpg?v=1792684270",
-"local": false
-},
-{
-"store": "No-Comply",
-"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt - Red",
-"price": "79.95",
-"sizes": "S, L, M",
-"link": "https://www.nocomplyatx.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth-iz1853-687",
-"image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1792686634",
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB CHAMPAGNE TEE WHITE/GOLD",
-"price": "45.00",
-"sizes": "S, M, L",
-"link": "https://olympiaskateshop.com/products/nike-sb-champagne-tee-white-gold",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/NIKESB-CHAMPANGE-WHT_1024x1024_2x_dee89669-1af6-41d4-a19d-9d39e0dee82c.webp?v=1792690257",
-"local": false
-},
-{
-"store": "Pawnshop Skate",
-"title": "Nike SB Switch Drill Woven Loose Fit Pants (Silver Lilac/Palest Purple)",
-"price": "105.00",
-"sizes": "Medium, Large, Small",
-"link": "https://pawnshopskate.com/products/nike-sb-switch-drill-woven-loose-fit-pants",
-"image": "https://cdn.shopify.com/s/files/1/0628/0852/2912/files/Photoroom_20261022_141037.jpg?v=1792703667",
-"local": false
-},
-{
-"store": "Pawnshop Skate",
-"title": "Nike SB Airmail L/S Tee",
-"price": "50.00",
-"sizes": "X Large, Medium, Large, Small",
-"link": "https://pawnshopskate.com/products/nike-sb-airmail-l-s",
-"image": "https://cdn.shopify.com/s/files/1/0628/0852/2912/files/Photoroom_20261022_141130.jpg?v=1792703607",
-"local": false
-},
-{
-"store": "Innercity Skate",
-"title": "Nike SB Fisherman Beanie",
-"price": "19.99",
-"sizes": "Check site",
-"link": "https://innercityskate.com/products/nike-sb-fisherman-beanie",
-"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/nike-628684-457-nike-sb-fisherman-beanie_4.jpg?v=1731966419",
-"local": false
-}
-],
+"weekly_digest": [],
 "apparel_seeded": true,
-"last_digest_date": "2026-10-16",
+"last_digest_date": "2026-10-23",
 "stock": {
 "Reset Mercantile::10280071758120": true,
 "Reset Mercantile::10139819737384": true,
@@ -14900,7 +14416,7 @@
 "Coureur Goods::10375935820031": true,
 "Deli Skate Supply::15318610215161": true,
 "Brooklyn Projects::15790741291089": true,
-"Skatepark of Tampa::15458130395409": false,
+"Skatepark of Tampa::15458130395409": true,
 "Coureur Goods::10353717018879": true,
 "Seasons Skate Shop::10427835023618": true,
 "Embassy::15412124221495": true,
@@ -16826,7 +16342,19 @@
 "Brooklyn Projects::16379708768337": true,
 "Innercity Skate::15454876533015": true,
 "Pharmacy Temecula::7679396413522": true,
-"Theory Skate Shop::15435653513403": true
+"Theory Skate Shop::15435653513403": true,
+"510 Skateboarding::15414412836969": true,
+"PLA Folsom::15408364814494": true,
+"Travel Skate Shop::15436563185741": true,
+"Pawnshop Skate::15934128914592": true,
+"35th North::15439331688484": true,
+"303 Annex::10354597888065": true,
+"No-Comply::15442741657785": true,
+"Black Sheep NC::7678428938286": true,
+"Coureur Goods::10375897284863": true,
+"303 Boards::10354597888065": true,
+"Civil::15477491663136": true,
+"Bluetile Skateboards::15443411140834": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -47459,7 +46987,9 @@
 "m": {}
 },
 "Skatepark of Tampa::15458130395409": {
-"l": [],
+"l": [
+"Cool Grey/ Court Green"
+],
 "m": {}
 },
 "Coureur Goods::10353717018879": {
@@ -47476,7 +47006,18 @@
 "m": {}
 },
 "Seasons Skate Shop::10427835023618": {
-"a": "10|10.5|11|11.5|12|13|8|8.5|9|9.5",
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
 "m": {}
 },
 "Embassy::15412124221495": {
@@ -48157,16 +47698,13 @@
 "l": [
 "10",
 "10.5",
-"12",
 "13",
 "8",
 "8.5",
 "9",
 "9.5"
 ],
-"m": {
-"12": 2
-}
+"m": {}
 },
 "Nice Kicks::9088917307597": {
 "l": [],
@@ -52058,7 +51596,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "DTLR::8778391978218": {
 "l": [
@@ -56716,7 +56256,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Pastime Skateshop::15934439686304": {
 "l": [
@@ -56834,7 +56376,185 @@
 "M7.5/W9",
 "M7/W8.5",
 "M8.5/W10",
-"M8/W9.5"
+"M8/W9.5",
+"M9.5/W11"
+],
+"m": {
+"M8.5/W10": 1,
+"M7.5/W9": 1
+}
+},
+"510 Skateboarding::15414412836969": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"PLA Folsom::15408364814494": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Travel Skate Shop::15436563185741": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Pawnshop Skate::15934128914592": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"8",
+"9",
+"9.5"
+],
+"m": {}
+},
+"35th North::15439331688484": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"303 Annex::10354597888065": {
+"l": [
+"Cool Grey/Court Green-Black-Court Green"
+],
+"m": {}
+},
+"No-Comply::15442741657785": {
+"l": [
+"M10.5=W12",
+"M10=W11.5",
+"M11.5=W13",
+"M11=W12.5",
+"M12=W13.5",
+"M13=W14.5",
+"M14=W15.5",
+"M15=W16.5",
+"M8.5=W10",
+"M8=W9.5",
+"M9.5=W11",
+"M9=W10.5"
+],
+"m": {}
+},
+"Black Sheep NC::7678428938286": {
+"l": [
+"10.0",
+"10.5",
+"11.0",
+"11.5",
+"12.0",
+"13.0",
+"14.0",
+"15.0",
+"6.0",
+"6.5",
+"7.5",
+"8.0",
+"8.5",
+"9.0",
+"9.5"
+],
+"m": {}
+},
+"Coureur Goods::10375897284863": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"9",
+"9.5"
+],
+"m": {}
+},
+"303 Boards::10354597888065": {
+"l": [
+"Cool Grey/Court Green-Black-Court Green"
+],
+"m": {}
+},
+"Civil::15477491663136": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Bluetile Skateboards::15443411140834": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 }
@@ -59814,6 +59534,81 @@
 ],
 "title": "Nike SB Zoom Air Force 1 SE",
 "t": 1792763502
+},
+"1563190812374863876": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 se cool grey court green",
+"p:PLA Folsom::15408364814494"
+],
+"title": "NIKE SB AIR FORCE 1 SE - COOL GREY/COURT GREEN",
+"t": 1792764133
+},
+"1563190819320631298": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 low se cool grey and court green",
+"p:Travel Skate Shop::15436563185741"
+],
+"title": "Nike SB Air Force 1 Low SE (Cool Grey and Court Green)",
+"t": 1792764134
+},
+"1563190826337570868": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IV5289-003",
+"t:air force 1 se cool grey court green black court green",
+"p:303 Annex::10354597888065"
+],
+"title": "Nike SB - Air Force 1 SE (Cool Grey/Court Green-Black-Court Green)",
+"t": 1792764136
+},
+"1563190832247607458": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IV5289-003",
+"t:air force 1 se city edition",
+"p:No-Comply::15442741657785"
+],
+"title": "Nike SB Air Force 1 SE City Edition Shoes",
+"t": 1792764137
+},
+"1563190836642979894": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IV5289-003",
+"t:air force 1 se cool grey court green black",
+"p:Coureur Goods::10375897284863"
+],
+"title": "Nike SB Air Force 1 SE Cool Grey/Court Green/Black",
+"t": 1792764138
+},
+"1563190843475759127": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IV5289-003",
+"t:air force 1 se cool grey court green black court green",
+"p:303 Boards::10354597888065"
+],
+"title": "Nike SB - Air Force 1 SE (Cool Grey/Court Green-Black-Court Green)",
+"t": 1792764140
+},
+"1563190849041342596": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 se cool grey court green",
+"p:Civil::15477491663136"
+],
+"title": "Nike SB Air Force 1 SE  - Cool Grey / Court Green",
+"t": 1792764141
+},
+"1563190854615572642": {
+"cid": "1562917305531506738",
+"keys": [
+"p:Skatepark of Tampa::15458130395409"
+],
+"title": "Nike SB Air Force 1 SE Shoes",
+"t": 1792764143
 }
 },
 "nike_dunk_seeded": true,
