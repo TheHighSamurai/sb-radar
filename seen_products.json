@@ -12980,7 +12980,7 @@
 "Rock City Kicks::8580680253598": false,
 "Rock City Kicks::8580679794846": true,
 "Rock City Kicks::8513976107166": true,
-"Rock City Kicks::8209842110622": true,
+"Rock City Kicks::8209842110622": false,
 "Rock City Kicks::7446950969502": true,
 "Rock City Kicks::8044906905758": true,
 "Rock City Kicks::7186358173854": true,
@@ -16827,8 +16827,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Rock City Kicks::8209842110622": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -26066,12 +26065,8 @@
 0
 ],
 "Rock City Kicks::8209842110622": {
-"l": [
-"9"
-],
-"m": {
-"9": 2
-}
+"l": [],
+"m": {}
 },
 "Rock City Kicks::7446950969502": {
 "a": "6W",
