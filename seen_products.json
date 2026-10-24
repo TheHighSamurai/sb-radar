@@ -14597,7 +14597,7 @@
 "Furnace Skate::9202117279928": false,
 "Familia Skateshop::10958035321144": false,
 "Familia Skateshop::10800033530168": false,
-"Familia Skateshop::10786823864632": true,
+"Familia Skateshop::10786823864632": false,
 "Blue Flowers::11219876905127": false,
 "Blue Flowers::11207067467943": true,
 "Blue Flowers::11207066484903": true,
@@ -16522,8 +16522,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Familia Skateshop::10786823864632": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -47404,12 +47403,8 @@
 "m": {}
 },
 "Familia Skateshop::10786823864632": {
-"l": [
-"10.5"
-],
-"m": {
-"10.5": 2
-}
+"l": [],
+"m": {}
 },
 "Blue Flowers::11219876905127": {
 "l": [],
