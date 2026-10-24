@@ -12455,7 +12455,7 @@
 "Deli Skate Supply::9007459074297": true,
 "Deli Skate Supply::8974045708537": true,
 "Deli Skate Supply::8974034665721": true,
-"Deli Skate Supply::8968395849977": true,
+"Deli Skate Supply::8968395849977": false,
 "Deli Skate Supply::8939605819641": true,
 "Deli Skate Supply::8894440308985": true,
 "Deli Skate Supply::8872615805177": true,
@@ -16531,7 +16531,7 @@
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
 "Xtreme::7222314401886": 1,
-"Deli Skate Supply::8968395849977": 2
+"Travel Skate Shop::7688678539341": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -18860,7 +18860,9 @@
 "l": [
 "11.5"
 ],
-"m": {}
+"m": {
+"11.5": 1
+}
 },
 "Travel Skate Shop::7676687319117": {
 "l": [
@@ -34954,12 +34956,8 @@
 "m": {}
 },
 "Deli Skate Supply::8968395849977": {
-"l": [
-"9.5"
-],
-"m": {
-"9.5": 2
-}
+"l": [],
+"m": {}
 },
 "Deli Skate Supply::8939605819641": {
 "l": [
@@ -49385,7 +49383,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"11": 1
+}
 },
 "Burn Rubber::7617471545390": {
 "l": [
@@ -56724,7 +56724,7 @@
 "9.5"
 ],
 "m": {
-"9.5": 1
+"9.5": 2
 }
 },
 "Skaters Advocate::8783548121322": {
