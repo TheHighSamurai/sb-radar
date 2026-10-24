@@ -13507,7 +13507,7 @@
 "Premier MI::6978124644417": false,
 "Premier MI::6951187578945": false,
 "Premier MI::6946715729985": false,
-"Skatepark of Tampa::15436195397905": true,
+"Skatepark of Tampa::15436195397905": false,
 "Skatepark of Tampa::15433991618833": true,
 "Skatepark of Tampa::15433988473105": true,
 "Skatepark of Tampa::15410234917137": true,
@@ -16526,8 +16526,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Skatepark of Tampa::15436195397905": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -17965,14 +17964,11 @@
 "10",
 "10.5",
 "11",
-"11.5",
 "12",
 "13",
 "9"
 ],
-"m": {
-"11.5": 2
-}
+"m": {}
 },
 "Unheardof::10647637852325": {
 "l": [],
@@ -39484,12 +39480,8 @@
 "m": {}
 },
 "Skatepark of Tampa::15436195397905": {
-"l": [
-"Filbert/ Lt Chocolate"
-],
-"m": {
-"Filbert/ Lt Chocolate": 2
-}
+"l": [],
+"m": {}
 },
 "Skatepark of Tampa::15433991618833": {
 "l": [
