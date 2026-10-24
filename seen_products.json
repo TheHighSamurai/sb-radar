@@ -14485,7 +14485,7 @@
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": true,
 "Travel Skate Shop::15418113163341": true,
-"Kinetic::9052143419494": false,
+"Kinetic::9052143419494": true,
 "Labor Skate Shop::7534535835750": false,
 "303 Annex::6971904753729": true,
 "303 Annex::7305965436993": true,
@@ -46333,7 +46333,16 @@
 "m": {}
 },
 "Kinetic::9052143419494": {
-"a": "",
+"l": [
+"10.0 M",
+"10.5 M",
+"11.0 M",
+"12.0 M",
+"13.0 M",
+"14.0 M",
+"9.0 M",
+"9.5 M"
+],
 "m": {}
 },
 "Labor Skate Shop::7534535835750": {
@@ -56621,7 +56630,7 @@
 "9.5"
 ],
 "m": {
-"11": 1
+"11": 2
 }
 },
 "Stolen Skate Shop::8636262875180": {
