@@ -47787,6 +47787,7 @@
 "l": [
 "10",
 "10.5",
+"12",
 "13",
 "8",
 "8.5",
@@ -59807,6 +59808,16 @@
 ],
 "title": "Nike Dunk Low x Union Men's Shoes - Bamboo/University Gold/Light Cream/Bamboo",
 "t": 1792797107
+},
+"1563493988902899784": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IB2267-001",
+"t:dunk low retro halloween lifestyle black grand purple artisan teal",
+"p:Nice Kicks::9089581940941"
+],
+"title": "Dunk Low Retro Halloween Mens Lifestyle Shoe - Black/Grand Purple/Artisan Teal",
+"t": 1792836416
 }
 },
 "nike_dunk_seeded": true,
