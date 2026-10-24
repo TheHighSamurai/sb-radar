@@ -5287,6 +5287,7 @@
 "Innercity Skate::15444134494487",
 "Innercity Skate::15454876533015",
 "Innercity Skate::15454967464215",
+"Innercity Skate::15460725063959",
 "Innercity Skate::8065331331351",
 "Innercity Skate::8205713637655",
 "Innercity Skate::8253827121431",
@@ -10338,6 +10339,15 @@
 "sizes": "M, L, XL",
 "link": "https://xbusa.com/products/nike-sb-champagne-dunk-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/1881/0779/files/5_c2ce3baa-8214-43f6-9ea6-6ef6867b02ca.png?v=1792785155",
+"local": false
+},
+{
+"store": "Innercity Skate",
+"title": "Nike SB Half-Zip Skate Sweatshirt - Gym Red/Stealth",
+"price": "79.99",
+"sizes": "X-Large, Medium, Large, Small",
+"link": "https://innercityskate.com/products/nike-sb-half-zip-skate-sweatshirt-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_27.jpg?v=1792883757",
 "local": false
 }
 ],
