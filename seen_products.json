@@ -4888,6 +4888,7 @@
 "Furnace Skate::10574406647992",
 "Furnace Skate::10578617499832",
 "Furnace Skate::10668903399608",
+"Furnace Skate::10681778634936",
 "Furnace Skate::7299934453944",
 "Furnace Skate::7299935043768",
 "Furnace Skate::7315759136952",
@@ -11247,7 +11248,7 @@
 "Stolen Skate Shop::8167239450668": true,
 "Stolen Skate Shop::8176107421740": true,
 "Stolen Skate Shop::8167235387436": true,
-"Stolen Skate Shop::8151953047596": true,
+"Stolen Skate Shop::8151953047596": false,
 "Stolen Skate Shop::8147981926444": true,
 "Stolen Skate Shop::8147981467692": false,
 "Stolen Skate Shop::8147967410220": true,
@@ -16517,7 +16518,8 @@
 "Pharmacy Temecula::7633299112018": true,
 "Xtreme::15477650980958": true,
 "Olympia Skate Shop::9644479185203": true,
-"Transport Skate::9646006829333": true
+"Transport Skate::9646006829333": true,
+"Furnace Skate::10681778634936": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -16526,26 +16528,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Stolen Skate Shop::8151953047596": 2,
-"Stratosphere::8771752132769": 1,
-"Stratosphere::8757887697057": 1,
-"Stratosphere::8712856305825": 1,
-"Stratosphere::8592830529697": 1,
-"Stratosphere::8586057351329": 1,
-"Stratosphere::8574740463777": 1,
-"Stratosphere::8574749245601": 1,
-"Stratosphere::8574756225185": 1,
-"Stratosphere::8574759665825": 1,
-"Stratosphere::8570952614049": 1,
-"Stratosphere::8570979549345": 1,
-"Stratosphere::8525650165921": 1,
-"Stratosphere::8505003376801": 1,
-"Stratosphere::8392815607969": 1,
-"Stratosphere::7846349668513": 1,
-"Stratosphere::8231609335969": 1,
-"Stratosphere::8196457365665": 1,
-"Stratosphere::8195525869729": 1
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -16596,17 +16579,13 @@
 "l": [
 "Black Spruce/Corduroy Brown"
 ],
-"m": {
-"Black Spruce/Corduroy Brown": 1
-}
+"m": {}
 },
 "Stratosphere::8757887697057": {
 "l": [
 "LT. British Tan/LT. British Tan"
 ],
-"m": {
-"LT. British Tan/LT. British Tan": 1
-}
+"m": {}
 },
 "Stratosphere::8712856305825": {
 "l": [
@@ -16619,16 +16598,7 @@
 "9.5M",
 "9M"
 ],
-"m": {
-"9M": 1,
-"10M": 1,
-"9.5M": 1,
-"12M": 1,
-"10.5M": 1,
-"11M": 1,
-"13M": 1,
-"11.5M": 1
-}
+"m": {}
 },
 "Stratosphere::8690928418977": {
 "a": "",
@@ -16638,17 +16608,13 @@
 "l": [
 "White/Ivory-Sand Dune"
 ],
-"m": {
-"White/Ivory-Sand Dune": 1
-}
+"m": {}
 },
 "Stratosphere::8586057351329": {
 "l": [
 "Sail/Black-Laser Orange"
 ],
-"m": {
-"Sail/Black-Laser Orange": 1
-}
+"m": {}
 },
 "Stratosphere::8574740463777": {
 "l": [
@@ -16659,14 +16625,7 @@
 "9.5M",
 "9M"
 ],
-"m": {
-"9M": 1,
-"8.5M": 1,
-"10M": 1,
-"8M": 1,
-"9.5M": 1,
-"10.5M": 1
-}
+"m": {}
 },
 "Stratosphere::8574749245601": {
 "l": [
@@ -16675,12 +16634,7 @@
 "11M",
 "9M"
 ],
-"m": {
-"11M": 1,
-"9M": 1,
-"10.5M": 1,
-"10M": 1
-}
+"m": {}
 },
 "Stratosphere::8574756225185": {
 "l": [
@@ -16690,13 +16644,7 @@
 "8M",
 "9.5M"
 ],
-"m": {
-"10M": 1,
-"8M": 1,
-"9.5M": 1,
-"10.5M": 1,
-"11M": 1
-}
+"m": {}
 },
 "Stratosphere::8574759665825": {
 "l": [
@@ -16706,13 +16654,7 @@
 "12M",
 "8M"
 ],
-"m": {
-"10M": 1,
-"8M": 1,
-"12M": 1,
-"10.5M": 1,
-"11M": 1
-}
+"m": {}
 },
 "Stratosphere::8570952614049": {
 "l": [
@@ -16722,37 +16664,25 @@
 "13M",
 "9.5M"
 ],
-"m": {
-"10M": 1,
-"9.5M": 1,
-"12M": 1,
-"13M": 1,
-"11.5M": 1
-}
+"m": {}
 },
 "Stratosphere::8570979549345": {
 "l": [
 "Blue Void/Blue Void-Sail"
 ],
-"m": {
-"Blue Void/Blue Void-Sail": 1
-}
+"m": {}
 },
 "Stratosphere::8525650165921": {
 "l": [
 "Flax/Flax-Black"
 ],
-"m": {
-"Flax/Flax-Black": 1
-}
+"m": {}
 },
 "Stratosphere::8505003376801": {
 "l": [
 "Black/Black-Black"
 ],
-"m": {
-"Black/Black-Black": 1
-}
+"m": {}
 },
 "Stratosphere::8324882268321": {
 "a": "",
@@ -16774,17 +16704,13 @@
 "l": [
 "Baroque Brown/Ivory Pale"
 ],
-"m": {
-"Baroque Brown/Ivory Pale": 1
-}
+"m": {}
 },
 "Stratosphere::7846349668513": {
 "l": [
 "Black/Black-Anthracite-Black"
 ],
-"m": {
-"Black/Black-Anthracite-Black": 1
-}
+"m": {}
 },
 "Sixes and Sevens::10313015328937": {
 "l": [
@@ -21140,12 +21066,8 @@
 "m": {}
 },
 "Stolen Skate Shop::8151953047596": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Stolen Skate Shop::8147981926444": {
 "l": [
@@ -46656,25 +46578,19 @@
 "l": [
 "Black/White/Gum"
 ],
-"m": {
-"Black/White/Gum": 1
-}
+"m": {}
 },
 "Stratosphere::8196457365665": {
 "l": [
 "White/Black"
 ],
-"m": {
-"White/Black": 1
-}
+"m": {}
 },
 "Stratosphere::8195525869729": {
 "l": [
 "Black/White-Black-Gum Light Brown"
 ],
-"m": {
-"Black/White-Black-Gum Light Brown": 1
-}
+"m": {}
 },
 "510 Skateboarding::15402007625833": {
 "l": [
@@ -56594,7 +56510,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"9.5": 1
+}
 },
 "Bluetile Skateboards::15443411140834": {
 "l": [
@@ -56786,6 +56704,19 @@
 "Transport Skate::9646006829333": {
 "l": [
 "Filbert /  Black"
+],
+"m": {}
+},
+"Furnace Skate::10681778634936": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 }
