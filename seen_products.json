@@ -14481,7 +14481,7 @@
 "Skaters Advocate::8777878110442": true,
 "Travel Skate Shop::15418007027789": true,
 "Geometric Skate Shop::15404847431955": true,
-"Arts & Rec::15604923072623": false,
+"Arts & Rec::15604923072623": true,
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": true,
 "Travel Skate Shop::15418113163341": true,
@@ -46302,7 +46302,9 @@
 "m": {}
 },
 "Arts & Rec::15604923072623": {
-"a": "",
+"l": [
+"11.5"
+],
 "m": {}
 },
 "Southside Boardshop::9805562609981": {
@@ -56623,15 +56625,12 @@
 },
 "Humidity Skateshop::10420406223139": {
 "l": [
-"11",
 "8",
 "8.5",
 "9",
 "9.5"
 ],
-"m": {
-"11": 2
-}
+"m": {}
 },
 "Stolen Skate Shop::8636262875180": {
 "l": [
@@ -59820,6 +59819,16 @@
 ],
 "title": "Dunk Low Retro Halloween Mens Lifestyle Shoe - Black/Grand Purple/Artisan Teal",
 "t": 1792836416
+},
+"1563552976772141087": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IV5289-003",
+"t:air force 1 se shop edition city pack 10 23",
+"p:Arts & Rec::15604923072623"
+],
+"title": "Nike SB Air Force 1 SE (Shop Edition) - \"City Pack\" (10/23)",
+"t": 1792850483
 }
 },
 "nike_dunk_seeded": true,
