@@ -14482,7 +14482,7 @@
 "Skaters Advocate::8777878110442": true,
 "Travel Skate Shop::15418007027789": true,
 "Geometric Skate Shop::15404847431955": true,
-"Arts & Rec::15604923072623": true,
+"Arts & Rec::15604923072623": false,
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": true,
 "Travel Skate Shop::15418113163341": true,
@@ -16524,8 +16524,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Arts & Rec::15604923072623": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -21191,7 +21190,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Stolen Skate Shop::7928996495404": {
 "l": [
@@ -46295,12 +46296,8 @@
 "m": {}
 },
 "Arts & Rec::15604923072623": {
-"l": [
-"11.5"
-],
-"m": {
-"11.5": 2
-}
+"l": [],
+"m": {}
 },
 "Southside Boardshop::9805562609981": {
 "l": [
@@ -56351,7 +56348,7 @@
 "9.5"
 ],
 "m": {
-"10": 1
+"10": 2
 }
 },
 "After Hours Skateshop::10374586007807": {
