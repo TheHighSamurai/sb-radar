@@ -9579,6 +9579,7 @@
 "Xtreme::15477663662174",
 "Xtreme::15477667233886",
 "Xtreme::15477671723102",
+"Xtreme::15477671886942",
 "Xtreme::4818859819102",
 "Xtreme::4826790297694",
 "Xtreme::6568085848158",
@@ -10324,6 +10325,15 @@
 "sizes": "XL, M, L",
 "link": "https://xbusa.com/products/nike-sb-switch-woven-top-silver-lilac-palest-purple",
 "image": "https://cdn.shopify.com/s/files/1/1881/0779/files/2_7d856f38-c5eb-46c1-bb2e-d7e1a27a5131.png?v=1792783461",
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Champagne Dunk T-Shirt White",
+"price": "44.95",
+"sizes": "M, L, XL",
+"link": "https://xbusa.com/products/nike-sb-champagne-dunk-t-shirt-white",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/5_c2ce3baa-8214-43f6-9ea6-6ef6867b02ca.png?v=1792785155",
 "local": false
 }
 ],
