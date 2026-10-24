@@ -9575,6 +9575,7 @@
 "Xtreme::15459369058398",
 "Xtreme::15459402874974",
 "Xtreme::15477650980958",
+"Xtreme::15477653897310",
 "Xtreme::4818859819102",
 "Xtreme::4826790297694",
 "Xtreme::6568085848158",
@@ -10284,6 +10285,15 @@
 "sizes": "Large",
 "link": "https://pawnshopskate.com/products/nike-sb-long-sleeve-skate-jersey",
 "image": null,
+"local": false
+},
+{
+"store": "Xtreme",
+"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt Gym Red/Stealth",
+"price": "79.95",
+"sizes": "XL, L, M",
+"link": "https://xbusa.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/2_718d4f8e-f90d-4cd8-b32e-57f6d602907e.png?v=1792782067",
 "local": false
 }
 ],
