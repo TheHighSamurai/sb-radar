@@ -8181,6 +8181,7 @@
 "Skaters Advocate::8776661041386",
 "Skaters Advocate::8777878110442",
 "Skaters Advocate::8780721619178",
+"Skaters Advocate::8783548121322",
 "Sneaker Politics::7414416277692",
 "Sneaker Politics::7514910785724",
 "Sneaker Politics::8741505827004",
@@ -16519,7 +16520,8 @@
 "Xtreme::15477650980958": true,
 "Olympia Skate Shop::9644479185203": true,
 "Transport Skate::9646006829333": true,
-"Furnace Skate::10681778634936": true
+"Furnace Skate::10681778634936": true,
+"Skaters Advocate::8783548121322": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -16528,7 +16530,8 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1
+"Xtreme::7222314401886": 1,
+"Deli Skate Supply::8968395849977": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -34950,7 +34953,9 @@
 "l": [
 "9.5"
 ],
-"m": {}
+"m": {
+"9.5": 1
+}
 },
 "Deli Skate Supply::8939605819641": {
 "l": [
@@ -56507,12 +56512,9 @@
 "12",
 "8",
 "8.5",
-"9",
-"9.5"
+"9"
 ],
-"m": {
-"9.5": 2
-}
+"m": {}
 },
 "Bluetile Skateboards::15443411140834": {
 "l": [
@@ -56709,7 +56711,6 @@
 },
 "Furnace Skate::10681778634936": {
 "l": [
-"10",
 "10.5",
 "11",
 "11.5",
@@ -56720,9 +56721,14 @@
 "9.5"
 ],
 "m": {
-"10": 2,
-"8": 1
+"8": 2
 }
+},
+"Skaters Advocate::8783548121322": {
+"l": [
+"11"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59870,6 +59876,15 @@
 ],
 "title": "NIKE SB AIR FORCE 1 YUTO HORIGOME WHITE IRON/GREY",
 "t": 1792866670
+},
+"1563662397489684534": {
+"cid": "1562917305531506738",
+"keys": [
+"t:zoom nyjah 4 white black",
+"p:Skaters Advocate::8783548121322"
+],
+"title": "Nike SB Zoom Nyjah 4 White & Black",
+"t": 1792876569
 }
 },
 "nike_dunk_seeded": true,
