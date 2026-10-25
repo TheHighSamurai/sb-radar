@@ -14468,7 +14468,7 @@
 "Embassy::7214212186167": false,
 "Embassy::6971257258039": true,
 "Embassy::7175876706359": false,
-"Embassy::6913467285559": true,
+"Embassy::6913467285559": false,
 "Embassy::7155202752567": true,
 "Richmond Hood::10663896023204": true,
 "Richmond Hood::10664016216228": true,
@@ -16545,8 +16545,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Embassy::6913467285559": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -24931,12 +24930,8 @@
 "m": {}
 },
 "Embassy::6913467285559": {
-"l": [
-"Black White"
-],
-"m": {
-"Black White": 2
-}
+"l": [],
+"m": {}
 },
 "Embassy::7155202752567": {
 "l": [
