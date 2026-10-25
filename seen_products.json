@@ -8753,6 +8753,7 @@
 "Theory Skate Shop::15420193833147",
 "Theory Skate Shop::15434442997947",
 "Theory Skate Shop::15435653513403",
+"Theory Skate Shop::15438637105339",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
 "Theory Skate Shop::7914806542523",
@@ -10350,6 +10351,15 @@
 "sizes": "X-Large, Medium, Large, Small",
 "link": "https://innercityskate.com/products/nike-sb-half-zip-skate-sweatshirt-gym-red-stealth",
 "image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_27.jpg?v=1792883757",
+"local": false
+},
+{
+"store": "Theory Skate Shop",
+"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt (Red)",
+"price": "79.95",
+"sizes": "XL, M, S, L",
+"link": "https://theoryskate.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-red",
+"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1792946266",
 "local": false
 }
 ],
@@ -30323,7 +30333,9 @@
 "8.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Orchard::10637239320741": {
 "l": [
@@ -56671,7 +56683,7 @@
 "9"
 ],
 "m": {
-"9": 1
+"9": 2
 }
 },
 "Skaters Advocate::8783548121322": {
