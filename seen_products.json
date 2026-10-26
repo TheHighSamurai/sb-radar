@@ -14566,7 +14566,7 @@
 "510 Skateboarding::15402007625833": true,
 "510 Skateboarding::15402005102697": true,
 "CCS::8563091865783": true,
-"Bluetile Skateboards::15419430961378": true,
+"Bluetile Skateboards::15419430961378": false,
 "Kinetic::8166366183526": true,
 "Kinetic::8136368095334": true,
 "Kinetic::8136345518182": true,
@@ -16579,8 +16579,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Bluetile Skateboards::15419430961378": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -46598,12 +46597,8 @@
 "m": {}
 },
 "Bluetile Skateboards::15419430961378": {
-"l": [
-"12"
-],
-"m": {
-"12": 2
-}
+"l": [],
+"m": {}
 },
 "Kinetic::8166366183526": {
 "l": [
