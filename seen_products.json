@@ -5382,6 +5382,7 @@
 "Kinetic::15422497620070",
 "Kinetic::15426594046054",
 "Kinetic::15434123083878",
+"Kinetic::15444537573478",
 "Kinetic::8081361338470",
 "Kinetic::8095107121254",
 "Kinetic::8095107907686",
@@ -10370,6 +10371,15 @@
 "sizes": "XL, S, L, M",
 "link": "https://njskateshop.com/products/nike-sb-gts-3-4-zip-up",
 "image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/oct26NikeSB12ZipStealthRed.webp?v=1793032734",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Woven Skate Top (Silver Lilac/Palest Purple)",
+"price": "110.00",
+"sizes": "XXL, M, XL, L",
+"link": "https://kineticskateboarding.com/products/nike-sb-woven-skate-top-silver-lilac-palest-purple",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/U_NK_SB_SWITCH_WOVEN_TOP.avif?v=1793032793",
 "local": false
 }
 ],
@@ -20623,7 +20633,7 @@
 "9.5"
 ],
 "m": {
-"13": 1
+"13": 2
 }
 },
 "Seasons Skate Shop::10338196881666": {
@@ -20634,8 +20644,8 @@
 "9.5"
 ],
 "m": {
-"13": 1,
-"11": 1
+"13": 2,
+"11": 2
 }
 },
 "Seasons Skate Shop::9612527304962": {
@@ -43263,6 +43273,7 @@
 "10.0",
 "10.5",
 "11.0",
+"11.5",
 "12.0",
 "15.0",
 "9.0",
@@ -46953,6 +46964,7 @@
 "12.0",
 "13.0",
 "14.0",
+"15.0",
 "6.0",
 "6.5",
 "7.0",
