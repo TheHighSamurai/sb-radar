@@ -10818,7 +10818,7 @@
 "Travel Skate Shop::7911046217805": true,
 "Travel Skate Shop::7910418546765": true,
 "Travel Skate Shop::7903448858701": true,
-"Travel Skate Shop::7901670408269": true,
+"Travel Skate Shop::7901670408269": false,
 "Travel Skate Shop::7880014561357": true,
 "Travel Skate Shop::7879998668877": true,
 "Travel Skate Shop::7879963312205": true,
@@ -13817,7 +13817,7 @@
 "Exodus Rideshop::7831068606582": true,
 "Exodus Rideshop::7831000711286": false,
 "Exodus Rideshop::7830924918902": true,
-"Exodus Rideshop::7830900310134": true,
+"Exodus Rideshop::7830900310134": false,
 "Exodus Rideshop::7830888120438": true,
 "Exodus Rideshop::7810198241398": false,
 "Exodus Rideshop::7804418850934": true,
@@ -16591,9 +16591,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Travel Skate Shop::7901670408269": 2,
-"Exodus Rideshop::7830900310134": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -18811,12 +18809,8 @@
 "m": {}
 },
 "Travel Skate Shop::7901670408269": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Travel Skate Shop::7880014561357": {
 "l": [
@@ -42150,12 +42144,8 @@
 "m": {}
 },
 "Exodus Rideshop::7830900310134": {
-"l": [
-"M 9.5 / W 11"
-],
-"m": {
-"M 9.5 / W 11": 2
-}
+"l": [],
+"m": {}
 },
 "Exodus Rideshop::7830888120438": {
 "l": [
@@ -47694,7 +47684,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Recess Skate & Snow::9493076050178": {
 "l": [
