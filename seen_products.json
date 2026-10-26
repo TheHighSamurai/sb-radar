@@ -5888,6 +5888,7 @@
 "NJ Skateshop::15419208990754",
 "NJ Skateshop::15421473587234",
 "NJ Skateshop::15442670845986",
+"NJ Skateshop::15473657708578",
 "NJ Skateshop::15477152415778",
 "NJ Skateshop::2256769581115",
 "NJ Skateshop::7781460181026",
@@ -10360,6 +10361,15 @@
 "sizes": "XL, M, S, L",
 "link": "https://theoryskate.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-red",
 "image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1792946266",
+"local": false
+},
+{
+"store": "NJ Skateshop",
+"title": "Nike SB - GTS 3/4 Zip Up",
+"price": "80.00",
+"sizes": "XL, S, L, M",
+"link": "https://njskateshop.com/products/nike-sb-gts-3-4-zip-up",
+"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/oct26NikeSB12ZipStealthRed.webp?v=1793032734",
 "local": false
 }
 ],
@@ -20612,7 +20622,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Seasons Skate Shop::10338196881666": {
 "l": [
@@ -20621,7 +20633,10 @@
 "13",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1,
+"11": 1
+}
 },
 "Seasons Skate Shop::9612527304962": {
 "l": [
