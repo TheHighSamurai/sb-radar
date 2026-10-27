@@ -10794,7 +10794,7 @@
 "Underground Skateshop::8320707035336": true,
 "Underground Skateshop::8313543393480": true,
 "Underground Skateshop::8316764848328": true,
-"Underground Skateshop::8312328978632": true,
+"Underground Skateshop::8312328978632": false,
 "Underground Skateshop::8312328257736": true,
 "Underground Skateshop::8310890102984": true,
 "Underground Skateshop::8310890430664": true,
@@ -16591,8 +16591,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Underground Skateshop::8312328978632": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -19943,12 +19942,9 @@
 "11",
 "11.5",
 "12",
-"8.5",
 "9"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "NJ Skateshop::8648421277730": {
 "l": [
@@ -46418,12 +46414,8 @@
 "m": {}
 },
 "Underground Skateshop::8312328978632": {
-"l": [
-"Grand Purple"
-],
-"m": {
-"Grand Purple": 2
-}
+"l": [],
+"m": {}
 },
 "Underground Skateshop::8312328257736": {
 "l": [
