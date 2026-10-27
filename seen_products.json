@@ -8188,6 +8188,7 @@
 "Skaters Advocate::8776659828970",
 "Skaters Advocate::8776661041386",
 "Skaters Advocate::8777878110442",
+"Skaters Advocate::8779895701738",
 "Skaters Advocate::8780721619178",
 "Skaters Advocate::8783548121322",
 "Sneaker Politics::7414416277692",
@@ -16584,7 +16585,8 @@
 "Extra Butter::8721187635383": true,
 "Premier MI::10372581294145": true,
 "Stratosphere::8807981973665": true,
-"Arts & Rec::15656780365935": true
+"Arts & Rec::15656780365935": true,
+"Skaters Advocate::8779895701738": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -56650,6 +56652,19 @@
 "7.5",
 "8",
 "8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Skaters Advocate::8779895701738": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
 "9",
 "9.5"
 ],
