@@ -1130,6 +1130,7 @@
 "Brooklyn Projects::16356494082129",
 "Brooklyn Projects::16379708768337",
 "Brooklyn Projects::16396521406545",
+"Brooklyn Projects::16408898928721",
 "Brooklyn Projects::4494849900625",
 "Brooklyn Projects::6603237654609",
 "Brooklyn Projects::6962319687761",
@@ -10438,6 +10439,15 @@
 "sizes": "Check site",
 "link": "https://southsideskateshop.com/products/rolled-black-beanie-nike-sb-headwear",
 "image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/HF7003010-Black-Rolled-Beanie-Nike-SB-Headwear-4.jpg?v=1737923004",
+"local": false
+},
+{
+"store": "Brooklyn Projects",
+"title": "Nike SB Crew Tennis Classic 1/2 Zip Fleece",
+"price": "80.00",
+"sizes": "XL",
+"link": "https://brooklynprojects.com/products/nike-sb-crew-tennis-classic-1-2-zip-fleece",
+"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/nike-sb-nike-sb-crew-tennis-classic-1-2-zip-fleece.jpg?v=1793142166",
 "local": false
 }
 ],
@@ -24756,6 +24766,7 @@
 "11.0 M",
 "11.5 M",
 "12.0 M",
+"13.0 M",
 "8.0 M",
 "8.5 M"
 ],
@@ -27792,13 +27803,10 @@
 },
 "Magnolia Skateshop::8694189949141": {
 "l": [
-"10.5",
 "8",
 "8.5"
 ],
-"m": {
-"10.5": 2
-}
+"m": {}
 },
 "Magnolia Skateshop::8694187589845": {
 "l": [
@@ -60035,6 +60043,15 @@
 ],
 "title": "NIKE SB P-ROD 1 ZOOM AIR LOW BLACK / BLACK-BLACK-GUM LIGHT BROWN",
 "t": 1793136405
+},
+"1564777386141290499": {
+"cid": "1562917305531506738",
+"keys": [
+"t:ps8 cobblestone monarch light orewood brown black",
+"p:Kinetic::8200614117478"
+],
+"title": "Nike SB PS8 (Cobblestone/Monarch/Light Orewood Brown/Black)",
+"t": 1793142402
 }
 },
 "nike_dunk_seeded": true,
