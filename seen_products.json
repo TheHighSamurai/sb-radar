@@ -42524,7 +42524,8 @@
 "Exodus Rideshop::7101765517430": {
 "l": [
 "M 5.5 / W 7",
-"M 6 / W 7.5"
+"M 6 / W 7.5",
+"M 6.5 / W 8"
 ],
 "m": {}
 },
@@ -59855,6 +59856,15 @@
 ],
 "title": "Nike Dunk Low Premium SE (Medium Olive/Sail-Gum Dark Brown)",
 "t": 1793112701
+},
+"1564654079433511019": {
+"cid": "1562917305531506738",
+"keys": [
+"t:zoom janoski slip skateboard black white black black",
+"p:Exodus Rideshop::7101765517430"
+],
+"title": "Nike SB Zoom Janoski+ Slip Skateboard Shoe - Black/White-Black-Black",
+"t": 1793113003
 }
 },
 "nike_dunk_seeded": true,
