@@ -41878,6 +41878,7 @@
 },
 "Exodus Rideshop::8078740127862": {
 "l": [
+"M 11 / W 12.5",
 "M 8.5 / W 10"
 ],
 "m": {}
@@ -59865,6 +59866,15 @@
 ],
 "title": "Nike SB Zoom Janoski+ Slip Skateboard Shoe - Black/White-Black-Black",
 "t": 1793113003
+},
+"1564659159318663250": {
+"cid": "1562917305531506738",
+"keys": [
+"t:ps8 skateboard black white anthracite gum yellow",
+"p:Exodus Rideshop::8078740127862"
+],
+"title": "Nike SB PS8 Skateboard Shoe - Black/White-Anthracite-Gum Yellow",
+"t": 1793114214
 }
 },
 "nike_dunk_seeded": true,
