@@ -13942,7 +13942,7 @@
 "Exodus Rideshop::6880217727094": false,
 "Exodus Rideshop::6880217104502": false,
 "Exodus Rideshop::6873891602550": false,
-"Exodus Rideshop::6871471718518": true,
+"Exodus Rideshop::6871471718518": false,
 "Exodus Rideshop::6871469195382": false,
 "Exodus Rideshop::6867248316534": false,
 "Exodus Rideshop::6857362538614": false,
@@ -16591,8 +16591,7 @@
 "No-Comply::8627392512185": 1,
 "No-Comply::8600865177785": 1,
 "NJ Skateshop::8544910180386": 1,
-"Xtreme::7222314401886": 1,
-"Exodus Rideshop::6871471718518": 2
+"Xtreme::7222314401886": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -42701,12 +42700,8 @@
 "m": {}
 },
 "Exodus Rideshop::6871471718518": {
-"l": [
-"6.5Y"
-],
-"m": {
-"6.5Y": 2
-}
+"l": [],
+"m": {}
 },
 "Exodus Rideshop::6871469195382": {
 "l": [],
