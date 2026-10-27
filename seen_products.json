@@ -8313,6 +8313,7 @@
 "Southside Boardshop::9478175392061",
 "Southside Boardshop::9668349460797",
 "Southside Boardshop::9698104705341",
+"Southside Boardshop::9730286125373",
 "Southside Boardshop::9773142573373",
 "Southside Boardshop::9773143687485",
 "Southside Boardshop::9779039732029",
@@ -10428,6 +10429,15 @@
 "sizes": "XXL",
 "link": "https://olympiaskateshop.com/products/nike-sb-nocturnal-af1-polo-black",
 "image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/unnamed_a148f6bd-3c32-43e2-b327-7e1af44626db.jpg?v=1793124541",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "IX3086010 Black Rolled Beanie Nike SB Headwear",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://southsideskateshop.com/products/rolled-black-beanie-nike-sb-headwear",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/HF7003010-Black-Rolled-Beanie-Nike-SB-Headwear-4.jpg?v=1737923004",
 "local": false
 }
 ],
@@ -46972,7 +46982,9 @@
 "8",
 "8.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "CCS::8561832788151": {
 "l": [
