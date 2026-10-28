@@ -6902,6 +6902,7 @@
 "Pawnshop Skate::15934128914592",
 "Pawnshop Skate::15935618646176",
 "Pawnshop Skate::15936326926496",
+"Pawnshop Skate::15941546475680",
 "People Skate and Snowboard::15420133146839",
 "People Skate and Snowboard::15420144353495",
 "People Skate and Snowboard::15420226011351",
@@ -10449,6 +10450,15 @@
 "sizes": "XL",
 "link": "https://brooklynprojects.com/products/nike-sb-crew-tennis-classic-1-2-zip-fleece",
 "image": "https://cdn.shopify.com/s/files/1/0711/2409/files/nike-sb-nike-sb-crew-tennis-classic-1-2-zip-fleece.jpg?v=1793142166",
+"local": false
+},
+{
+"store": "Pawnshop Skate",
+"title": "Nike SB 1/2 Zip Skate Sweatshirt",
+"price": "80.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://pawnshopskate.com/products/nike-sb-1-2-zip-skate-sweatshirt",
+"image": null,
 "local": false
 }
 ],
@@ -41181,7 +41191,9 @@
 "12",
 "13"
 ],
-"m": {}
+"m": {
+"11.5": 1
+}
 },
 "Bluetile Skateboards::7956400799970": [
 "",
@@ -56415,7 +56427,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"8": 1
+}
 },
 "303 Annex::10354597888065": {
 "l": [
