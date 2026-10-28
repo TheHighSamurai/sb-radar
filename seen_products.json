@@ -5391,6 +5391,7 @@
 "Kinetic::15426594046054",
 "Kinetic::15434123083878",
 "Kinetic::15444537573478",
+"Kinetic::15451436417126",
 "Kinetic::8081361338470",
 "Kinetic::8095107121254",
 "Kinetic::8095107907686",
@@ -10507,6 +10508,15 @@
 "sizes": "Black",
 "link": "https://undergroundskateshop.com/products/nike-sb-solid-break-af1-polo-black",
 "image": "https://cdn.shopify.com/s/files/1/0270/0309/files/nike-sb-solid-break-af1-polo-black-front.png?v=1793213722",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Skate Polo (Black/Court Green)",
+"price": "65.00",
+"sizes": "M, XL, XXL, S, L",
+"link": "https://kineticskateboarding.com/products/nike-sb-skate-polo-black-court-green",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IV0597-010_PHSYM001-2000.jpg?v=1793215097",
 "local": false
 }
 ],
@@ -48480,12 +48490,9 @@
 "11",
 "12",
 "13",
-"9",
 "9.5"
 ],
-"m": {
-"9": 2
-}
+"m": {}
 },
 "Nice Kicks::4789627289805": {
 "l": [],
