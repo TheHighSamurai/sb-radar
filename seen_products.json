@@ -15255,7 +15255,7 @@
 "Undefeated::6660648829189": true,
 "Undefeated::6660884922629": true,
 "Undefeated::6662346047749": true,
-"Undefeated::6660648796421": true,
+"Undefeated::6660648796421": false,
 "Undefeated::6662346146053": true,
 "Undefeated::6672335339781": true,
 "Undefeated::6662346080517": false,
@@ -16676,8 +16676,7 @@
 "Xtreme::7222314401886": 1,
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
-"No-Comply::8516437999801": 1,
-"Undefeated::6660648796421": 2
+"No-Comply::8516437999801": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -49989,12 +49988,8 @@
 "m": {}
 },
 "Undefeated::6660648796421": {
-"l": [
-"-"
-],
-"m": {
-"-": 2
-}
+"l": [],
+"m": {}
 },
 "Undefeated::6662346146053": {
 "l": [
