@@ -5898,6 +5898,7 @@
 "NJ Skateshop::15442670845986",
 "NJ Skateshop::15473657708578",
 "NJ Skateshop::15477152415778",
+"NJ Skateshop::15506384420898",
 "NJ Skateshop::2256769581115",
 "NJ Skateshop::7781460181026",
 "NJ Skateshop::7802310983714",
@@ -10478,6 +10479,15 @@
 "link": "https://deliskatesupply.com/products/nike-sb-solid-break-air-force-1-polo-black",
 "image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/Image10-28-26at11.14AM.png?v=1793204102",
 "local": false
+},
+{
+"store": "NJ Skateshop",
+"title": "Nike SB - Solid Break AF-1 Polo",
+"price": "65.00",
+"sizes": "L, M, XL, S",
+"link": "https://njskateshop.com/products/nike-sb-solid-break-af-1-polo",
+"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/10-27-26-NikeSBPoloBlck-1SolidBreak_1100x-removebg-preview.png?v=1793208513",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -14742,7 +14752,7 @@
 "Familia Skateshop::10800033530168": false,
 "Familia Skateshop::10786823864632": false,
 "Blue Flowers::11219876905127": false,
-"Blue Flowers::11207067467943": true,
+"Blue Flowers::11207067467943": false,
 "Blue Flowers::11207066484903": true,
 "Skaters Advocate::8680319189226": true,
 "Skaters Advocate::8680302215402": true,
@@ -16692,8 +16702,7 @@
 "Xtreme::7222314401886": 1,
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
-"No-Comply::8516437999801": 1,
-"Blue Flowers::11207067467943": 2
+"No-Comply::8516437999801": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -47387,14 +47396,8 @@
 "m": {}
 },
 "Blue Flowers::11207067467943": {
-"l": [
-"8",
-"9.5"
-],
-"m": {
-"8": 2,
-"9.5": 2
-}
+"l": [],
+"m": {}
 },
 "Blue Flowers::11207066484903": {
 "l": [
