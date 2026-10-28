@@ -2183,6 +2183,7 @@
 "Deli Skate Supply::15309211533561",
 "Deli Skate Supply::15318610215161",
 "Deli Skate Supply::15321407226105",
+"Deli Skate Supply::15330030420217",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10467,6 +10468,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://pawnshopskate.com/products/nike-sb-1-2-zip-skate-sweatshirt",
 "image": null,
+"local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Solid Break AF1 Polo Black",
+"price": "64.99",
+"sizes": "XX-Large, X-Large, Large, Medium, Small",
+"link": "https://deliskatesupply.com/products/nike-sb-solid-break-air-force-1-polo-black",
+"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/Image10-28-26at11.14AM.png?v=1793204102",
 "local": false
 }
 ],
@@ -47391,14 +47401,14 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"7": 1,
+"11.5": 1
+}
 },
 "Blue Flowers::11207066484903": {
 "l": [
-"10",
-"10.5",
 "11",
-"11.5",
 "6.5",
 "7",
 "7.5",
@@ -47406,9 +47416,10 @@
 "8.5"
 ],
 "m": {
-"11.5": 2,
-"10": 2,
-"10.5": 2
+"11": 1,
+"7": 1,
+"6.5": 1,
+"8.5": 1
 }
 },
 "Skaters Advocate::8680319189226": {
