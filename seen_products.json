@@ -1477,6 +1477,7 @@
 "Civil::15489219658016",
 "Civil::15495013204256",
 "Civil::15526254706976",
+"Civil::15532247941408",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -10487,6 +10488,15 @@
 "sizes": "L, M, XL, S",
 "link": "https://njskateshop.com/products/nike-sb-solid-break-af-1-polo",
 "image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/10-27-26-NikeSBPoloBlck-1SolidBreak_1100x-removebg-preview.png?v=1793208513",
+"local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Skate Polo - Noc Af1 Black",
+"price": "65.00",
+"sizes": "XL, Medium, Small, Large",
+"link": "https://wearecivil.com/products/nike-sb-skate-polo-noc-af1-black",
+"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IV0597-010_PHSFM001-2000.jpg?v=1793213410",
 "local": false
 }
 ],
@@ -33547,7 +33557,7 @@
 "8.5M"
 ],
 "m": {
-"8.5M": 1
+"8.5M": 2
 }
 },
 "Val Surf::13985685602464": {
