@@ -15529,7 +15529,7 @@
 "Shoe Palace::7545247137998": true,
 "Shoe Palace::7533585105102": true,
 "Shoe Palace::7533215744206": true,
-"Shoe Palace::7532733628622": true,
+"Shoe Palace::7532733628622": false,
 "Shoe Palace::7582245126350": false,
 "Shoe Palace::7588403347662": false,
 "Shoe Palace::7586028257486": true,
@@ -16782,8 +16782,7 @@
 "Xtreme::7222314401886": 1,
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
-"No-Comply::8516437999801": 1,
-"Shoe Palace::7532733628622": 2
+"No-Comply::8516437999801": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -51342,14 +51341,8 @@
 "m": {}
 },
 "Shoe Palace::7532733628622": {
-"l": [
-"13",
-"9"
-],
-"m": {
-"9": 2,
-"13": 2
-}
+"l": [],
+"m": {}
 },
 "Shoe Palace::7582245126350": {
 "l": [],
