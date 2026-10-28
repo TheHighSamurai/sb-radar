@@ -14608,7 +14608,7 @@
 "Val Surf::15277814612128": true,
 "Pawnshop Skate::15915379753120": true,
 "Mainland::8526765031509": true,
-"Skaters Advocate::8777878110442": true,
+"Skaters Advocate::8777878110442": false,
 "Travel Skate Shop::15418007027789": true,
 "Geometric Skate Shop::15404847431955": true,
 "Arts & Rec::15604923072623": false,
@@ -16676,8 +16676,7 @@
 "Xtreme::7222314401886": 1,
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
-"No-Comply::8516437999801": 1,
-"Skaters Advocate::8777878110442": 2
+"No-Comply::8516437999801": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -46278,12 +46277,8 @@
 "m": {}
 },
 "Skaters Advocate::8777878110442": {
-"l": [
-"9"
-],
-"m": {
-"9": 2
-}
+"l": [],
+"m": {}
 },
 "Travel Skate Shop::15418007027789": {
 "l": [
