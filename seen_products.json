@@ -8240,6 +8240,7 @@
 "Sneaker Politics::9352521515196",
 "Sneaker Politics::9352522858684",
 "Sneaker Politics::9352523743420",
+"Sneaker Politics::9430269558972",
 "Sneaker Politics::9436468773052",
 "Sneaker Politics::9476503109820",
 "Sneaker Politics::9476514513084",
@@ -16850,7 +16851,8 @@
 "Coureur Goods::9563229290751": true,
 "People Skate and Snowboard::15461352997079": true,
 "People Skate and Snowboard::15461352800471": true,
-"People Skate and Snowboard::15461352636631": true
+"People Skate and Snowboard::15461352636631": true,
+"Sneaker Politics::9430269558972": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57031,6 +57033,22 @@
 "Filbert / Black / Burgundy Ash / Light Chocolate"
 ],
 "m": {}
+},
+"Sneaker Politics::9430269558972": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -57940,14 +57958,6 @@
 }
 },
 "msgs": {
-"1562950351340965979": {
-"cid": "1550909316897177842",
-"keys": [
-"p:Xhibition::6899215892552"
-],
-"title": "Women's Dunk Low",
-"t": 1792706802
-},
 "1562951628485689385": {
 "cid": "1550909316897177842",
 "keys": [
@@ -59112,6 +59122,17 @@
 "title": "Dunk Low Mens Lifestyle Shoe - Black/White",
 "t": 1793306503,
 "link": "https://shopnicekicks.com/products/nike-dd1391-100-dunk-low-mens-lifestyle-shoe-black-white"
+},
+"1565488295432163591": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IQ3922-001",
+"t:kobe dunk low protro mamba eterno anthracite sundial",
+"p:Sneaker Politics::9430269558972"
+],
+"title": "Nike Kobe Dunk Low Protro 'Mamba Eterno' - Anthracite/Sundial",
+"t": 1793311895,
+"link": "https://sneakerpolitics.com/products/nike-kobe-dunk-low-protro-mamba-eterno-anthracite-sundial"
 }
 },
 "nike_dunk_seeded": true,
