@@ -15755,7 +15755,7 @@
 "DTLR::8482252357866": false,
 "DTLR::8481614364906": false,
 "DTLR::8472146870506": false,
-"DTLR::8473069027562": false,
+"DTLR::8473069027562": true,
 "DTLR::8476428468458": false,
 "DTLR::8476426502378": false,
 "DTLR::8471039738090": false,
@@ -16862,7 +16862,8 @@
 "Xtreme::7222314401886": 1,
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
-"No-Comply::8516437999801": 1
+"No-Comply::8516437999801": 1,
+"Shoe Palace::7652249305294": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -25358,7 +25359,10 @@
 "Renarts::7956328841259": {
 "l": [
 "12",
-"8.5"
+"8",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 },
@@ -51213,7 +51217,9 @@
 "l": [
 "13"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Shoe Palace::7665231593678": {
 "l": [
@@ -52080,7 +52086,9 @@
 "m": {}
 },
 "DTLR::8473069027562": {
-"l": [],
+"l": [
+"12"
+],
 "m": {}
 },
 "DTLR::8476428468458": {
@@ -60816,6 +60824,16 @@
 "title": "Nike SB Woven Skate Top - Silver Lilac / Palest Purple",
 "t": 1793295111,
 "link": "https://peopleskateandsnowboard.com/products/nike-sb-woven-skate-top-silver-lilac-palest-purple"
+},
+"1565441755749294161": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FQ1273-003",
+"p:Renarts::7956328841259"
+],
+"title": "Nike SB Mens Zoom Nyjah 4 Shoes",
+"t": 1793300800,
+"link": "https://renarts.com/products/nike-sb-mens-zoom-nyjah-4-shoes-fq1273-003"
 }
 },
 "nike_dunk_seeded": true,
