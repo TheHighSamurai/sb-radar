@@ -740,6 +740,11 @@ _WOMENS_RE = re.compile(r"\b(women'?s?|womens|wmns|wms)\b|^\s*w\s+(nike|dunk|sb)
 def is_womens(title: str) -> bool:
     return bool(_WOMENS_RE.search(title or ""))
 
+def is_sb_shoe(title: str, vendor: str = "") -> bool:
+    """Nike SB product: title says SB, or the store lists the brand as Nike SB
+    (some title SB Dunks just "Dunk Low Pro")."""
+    return is_sb(title) or "nike sb" in (vendor or "").lower()
+
 def is_nike_dunk(title: str, vendor: str = "") -> bool:
     """Any Nike Dunk, SB or not (title says Nike, or the store lists Nike as the brand)."""
     t = (title or "").lower()
@@ -957,6 +962,7 @@ def check_snkrs(store: dict, cache: dict) -> list:
                     "apparel": False,
                     "feed":  "dunks",
                     "gr":    True,
+                    "sb":    is_sb(title),
                 })
     for f in finds:
         log.info(f"  NEW SNKRS [{store['name']}]: {f['title']} — {f['sizes']}")
@@ -1039,7 +1045,7 @@ def check_store(store: dict, cache: dict) -> list:
                     newly = labels - conf                # genuinely back (was confirmed sold out)
                     if pid in seen:
                         restock_sizes = sorted(newly, key=_num)
-                        if feed == "dunks":
+                        if feed == "dunks" and is_sb_shoe(title, vendor):   # size-11 restock emails: SB Dunks only
                             size_back = sorted({watched_label(l) for l in newly if watched_label(l)}, key=float)
                     conf |= newly
                     new = {"l": sorted(conf), "m": miss}
@@ -1122,6 +1128,7 @@ def check_store(store: dict, cache: dict) -> list:
     for f in finds:
         f["feed"] = feed_for(f["title"], vendors.get(f["id"], ""))
         f["gr"]   = not is_sb(f["title"])   # regular (non-SB) Nike Dunk — newly tracked as of Oct 2026
+        f["sb"]   = is_sb_shoe(f["title"], vendors.get(f["id"], ""))
 
     for f in finds:
         kind = "APPAREL" if f.get("apparel") else ("SIZE-RESTOCK" if f.get("size_only") else ("RESTOCK" if f.get("restock") else ("NOW-AVAILABLE" if f.get("flip") else "SB")))
@@ -1281,13 +1288,14 @@ def run():
         except Exception as e:
             log.error("Discord alert failed for %s: %s", f["title"], e)
 
-    dunk_finds = [f for f in shoe_finds if f.get("feed") == "dunks" and not f.get("restock")]
+    # Email = Nike SB Dunks only (regular Nike Dunks go to Discord, not email).
+    dunk_finds = [f for f in shoe_finds if f.get("feed") == "dunks" and f.get("sb") and not f.get("restock")]
     if dunk_finds:
         n_live = sum(1 for f in dunk_finds if f.get("flip"))
-        subject = f"SB Radar: {len(dunk_finds)} new Dunk(s) detected"
+        subject = f"SB Radar: {len(dunk_finds)} new SB Dunk(s) detected"
         if n_live:
-            subject = (f"SB Radar: {n_live} Dunk(s) NOW AVAILABLE" if n_live == len(dunk_finds)
-                       else f"SB Radar: {len(dunk_finds)} Dunk(s) — {n_live} now available")
+            subject = (f"SB Radar: {n_live} SB Dunk(s) NOW AVAILABLE" if n_live == len(dunk_finds)
+                       else f"SB Radar: {len(dunk_finds)} SB Dunk(s) — {n_live} now available")
         try:
             send_email(dunk_finds, subject)
         except Exception as e:
