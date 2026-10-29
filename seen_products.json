@@ -15530,7 +15530,7 @@
 "Shoe Palace::7545247137998": true,
 "Shoe Palace::7533585105102": true,
 "Shoe Palace::7533215744206": true,
-"Shoe Palace::7532733628622": false,
+"Shoe Palace::7532733628622": true,
 "Shoe Palace::7582245126350": false,
 "Shoe Palace::7588403347662": false,
 "Shoe Palace::7586028257486": true,
@@ -38252,14 +38252,11 @@
 },
 "LB Skate::8467134382236": {
 "l": [
-"14",
 "4.5",
 "5.5",
 "6"
 ],
-"m": {
-"14": 2
-}
+"m": {}
 },
 "LB Skate::8559354839196": {
 "a": "10|10.5|11|11.5|12|7.5|8|8.5|9|9.5",
@@ -51338,7 +51335,9 @@
 "m": {}
 },
 "Shoe Palace::7532733628622": {
-"l": [],
+"l": [
+"13"
+],
 "m": {}
 },
 "Shoe Palace::7582245126350": {
@@ -60467,6 +60466,17 @@
 ],
 "title": "Dunk Low Mens Lifestyle Shoes (Midnight Navy/White)",
 "t": 1793232407,
+"link": "https://www.shoepalace.com/products/nike-hf5441-107-dunk-low-mens-lifestyle-shoes-midnight-navy-white"
+},
+"1565196429532856371": {
+"cid": "1550909316897177842",
+"keys": [
+"s:HF5441-107",
+"t:dunk low lifestyle midnight navy white",
+"p:Shoe Palace::7532733628622"
+],
+"title": "Dunk Low Mens Lifestyle Shoes (Midnight Navy/White)",
+"t": 1793242309,
 "link": "https://www.shoepalace.com/products/nike-hf5441-107-dunk-low-mens-lifestyle-shoes-midnight-navy-white"
 }
 },
