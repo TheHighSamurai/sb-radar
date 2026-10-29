@@ -15604,7 +15604,7 @@
 "Shoe Palace::7545247137998": true,
 "Shoe Palace::7533585105102": true,
 "Shoe Palace::7533215744206": true,
-"Shoe Palace::7532733628622": false,
+"Shoe Palace::7532733628622": true,
 "Shoe Palace::7582245126350": false,
 "Shoe Palace::7588403347662": false,
 "Shoe Palace::7586028257486": true,
@@ -48598,7 +48598,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Nice Kicks::4789627289805": {
 "l": [],
@@ -51400,7 +51402,10 @@
 "m": {}
 },
 "Shoe Palace::7532733628622": {
-"l": [],
+"l": [
+"11",
+"13"
+],
 "m": {}
 },
 "Shoe Palace::7582245126350": {
