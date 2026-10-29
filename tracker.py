@@ -172,24 +172,85 @@ def title_key(title: str):
 # the other's, AND the shared words include something beyond model names / basic colors
 # (e.g. "filbert") \u2014 so muting "Air Max Ishod Black" never mutes every black Ishod.
 NAME_MATCH_MIN_TOKENS = 2   # after dropping the words below, e.g. {dunk, filbert}
-_NAME_DROP    = {"sale", "low", "high", "mid", "pro", "og", "qs", "prm", "premium", "skateboard", "skateboarding", "skate"}
+_NAME_DROP    = {"sale", "low", "high", "mid", "pro", "og", "qs", "prm", "premium", "skateboard", "skateboarding", "skate",
+                 "se", "lifestyle", "copy", "online", "and", "x"}
+_NAME_NORMAL  = {"lite": "light", "lt": "light", "dk": "dark", "blk": "black", "wht": "white", "gry": "grey", "gray": "grey"}
 _GENERIC_WORDS = {
     "dunk", "zoom", "air", "max", "blazer", "janoski", "ishod", "nyjah", "force", "react", "leo", "tennis",
     "classic", "code", "vertebrae", "ps8", "paul", "rodriguez", "p", "rod", "iso", "dg", "l", "plus",
     "black", "white", "grey", "gray", "red", "blue", "green", "brown", "pink", "purple", "yellow", "orange",
     "gold", "silver", "navy", "tan", "cream", "sail", "gum", "light", "dark", "deep", "university",
     "varsity", "summit", "metallic", "royal", "medium", "pale", "team", "game",
+    "pogo", "chron", "bruin", "trainer", "adversary", "kobe", "protro", "retro", "baker", "slip", "wair",
+    "af1", "1", "2", "3", "4", "58", "gt", "sp", "nba", "off", "noir", "multi", "color", "anthracite", "wolf",
+    "womens", "wmns",
+}
+_COLOR_WORDS = {
+    "black", "white", "grey", "red", "blue", "green", "brown", "pink", "purple", "yellow", "orange", "gold",
+    "silver", "navy", "tan", "cream", "sail", "gum", "light", "dark", "deep", "university", "varsity", "summit",
+    "metallic", "royal", "medium", "pale", "wolf", "anthracite", "noir", "off", "multi", "color",
 }
 
 def _name_set(title: str) -> frozenset:
-    return frozenset(t for t in _title_tokens(title) if t not in _NAME_DROP)
+    toks = (_NAME_NORMAL.get(t, t) for t in _title_tokens(title))
+    return frozenset(t for t in toks if t not in _NAME_DROP)
 
-def names_match(a: str, b: str) -> bool:
-    sa, sb = _name_set(a), _name_set(b)
-    small, big = (sa, sb) if len(sa) <= len(sb) else (sb, sa)
-    if len(small) < NAME_MATCH_MIN_TOKENS or not small <= big:
-        return False
-    return any(t not in _GENERIC_WORDS and not t.isdigit() for t in small)
+def handle_text(link: str) -> str:
+    """Words from a product URL slug — vague titles ("Nike SB Air Force 1 Low Shoes") often
+    carry the colorway there (.../air-force-1-low-shoes-cool-grey-court-green). Shopify's
+    "-copy" / "-7" de-dupe suffixes are stripped."""
+    m = re.search(r"/(?:products|launch/t)/([^/?#]+)", link or "")
+    if not m:
+        return ""
+    h = m.group(1).lower()
+    if re.search(r"-copy(-\d+)?$", h):
+        return ""   # a duplicated old page — its slug often names a different colorway
+    while True:
+        h2 = re.sub(r"-(copy|online|\d{1,2})$", "", h)
+        if h2 == h:
+            break
+        h = h2
+    return h.replace("-", " ")
+
+def _full_name(title: str, link: str = "") -> frozenset:
+    """Title words, plus the URL's words ONLY when the title names no colorway at all
+    ("Nike SB PS8 Shoes") — when the title has one, it wins over a possibly stale URL."""
+    t = _name_set(title)
+    if any(w in _COLOR_WORDS or (w not in _GENERIC_WORDS and not w.isdigit()) for w in t):
+        return t
+    return t | _name_set(handle_text(link))
+
+def names_match(a, b) -> bool:
+    """a / b: a title string, or an already-built name set (title + URL words)."""
+    sa = a if isinstance(a, frozenset) else _name_set(a)
+    sb = b if isinstance(b, frozenset) else _name_set(b)
+    for small, big in ((sa, sb), (sb, sa)):
+        if len(small) >= NAME_MATCH_MIN_TOKENS and small <= big \
+                and any(t not in _GENERIC_WORDS and not t.isdigit() for t in small):
+            return True
+    return False
+
+_STYLE_LOOSE_RE = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4})-?(\d{3})(?!\d)")   # also "IR0460001"
+
+def style_code(p: dict):
+    """Nike style code (e.g. HQ1625-201) for a Shopify product: from the variant SKUs first,
+    else from tags, the URL handle, or the description — many stores leave SKUs blank."""
+    codes = Counter()
+    for v in p.get("variants", []) or []:
+        m = _STYLE_LOOSE_RE.search((v.get("sku") or "").upper())
+        if m:
+            codes[f"{m.group(1)}-{m.group(2)}"] += 1
+    if not codes:
+        tags = p.get("tags") or []
+        tags = ",".join(tags) if isinstance(tags, list) else str(tags)
+        handle = p.get("handle") or ""             # e.g. "nike-hf5441-107-dunk-low-..."
+        body = re.sub(r"<[^>]+>", " ", p.get("body_html") or "")
+        for text in (tags, handle, body):          # first source that has one wins
+            for m in _STYLE_RE.finditer(text.upper()):
+                codes[m.group(1)] += 1
+            if codes:
+                break
+    return codes.most_common(1)[0][0] if codes else None
 
 def shoe_keys(p, title: str, pid: str) -> list:
     """Identity keys for a find, strongest first: s: Nike style code from the SKUs
@@ -197,13 +258,9 @@ def shoe_keys(p, title: str, pid: str) -> list:
     only — never fuzzy), p: this exact store listing (always present)."""
     keys = []
     if p:
-        codes = Counter()
-        for v in p.get("variants", []) or []:
-            m = _STYLE_RE.search((v.get("sku") or "").upper())
-            if m:
-                codes[m.group(1)] += 1
-        if codes:
-            keys.append("s:" + codes.most_common(1)[0][0])
+        sc = style_code(p)
+        if sc:
+            keys.append("s:" + sc)
     tk = title_key(title)
     if tk:
         keys.append(tk)
@@ -214,7 +271,14 @@ def is_muted(find: dict, cache: dict) -> bool:
     muted = cache.get("muted", {})
     if any(k in muted for k in find.get("keys", [])):
         return True
-    return any(names_match(find.get("title", ""), t) for t in {e.get("title", "") for e in muted.values()})
+    title, link = find.get("title", ""), find.get("link", "")
+    mine = {_name_set(title), _full_name(title, link)}
+    theirs = set()
+    for e in muted.values():
+        theirs.add(_name_set(e.get("title", "")))
+        if e.get("link"):
+            theirs.add(_full_name(e.get("title", ""), e["link"]))
+    return any(names_match(a, b) for a in mine for b in theirs)
 
 def _bot(method: str, path: str, **kw):
     r = requests.request(method, DISCORD_API + path, headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}"}, timeout=10, **kw)
@@ -241,6 +305,7 @@ def record_alert(cache: dict, find: dict, posted):
         return
     cache.setdefault("msgs", {})[posted["mid"]] = {
         "cid": posted["cid"], "keys": find.get("keys", []), "title": find["title"], "t": int(time.time()),
+        "link": find.get("link", ""),
     }
     _react(posted["cid"], posted["mid"], MUTE_EMOJI)
 
@@ -296,7 +361,7 @@ def process_mutes(cache: dict):
             ok_me = bool(rx.get(OK_EMOJI, {}).get("me"))
             if others > 0:
                 for k in info["keys"]:
-                    ent = muted.setdefault(k, {"mids": [], "title": info.get("title", ""), "t": now})
+                    ent = muted.setdefault(k, {"mids": [], "title": info.get("title", ""), "link": info.get("link", ""), "t": now})
                     if mid not in ent["mids"]:
                         ent["mids"].append(mid)
                 if not ok_me:
@@ -933,8 +998,10 @@ def check_store(store: dict, cache: dict) -> list:
             title = p.get("title", "")
             vendor = p.get("vendor", "") or ""
             feed = feed_for(title, vendor)
-            if feed is None:
-                continue
+            if feed is None or is_womens((p.get("handle") or "").replace("-", " ")):
+                continue   # also catches women's listings that only say so in the URL
+            cache.setdefault("_links", {})[f"{store['name']}::{p.get('id')}"] = \
+                f"{store['url'].rstrip('/')}/products/{p.get('handle','')}"
             product_type = p.get("product_type", "")
             apparel = is_apparel(title, product_type)
             if apparel and not is_sb(title):
@@ -1095,6 +1162,17 @@ def run():
                 all_finds.extend(finds)
             except Exception as e:
                 log.error("Error on %s: %s", store["name"], e)
+
+    # Mutes made before links were saved: fill in the product link from this run's catalog
+    # (via the muted listing's p: key) so a vague muted title can match by its URL colorway.
+    links = cache.pop("_links", {})
+    pid_of_mid = {mid: k[2:] for k, e in cache.get("muted", {}).items() if k.startswith("p:") for mid in e.get("mids", [])}
+    for e in cache.get("muted", {}).values():
+        if not e.get("link"):
+            for mid in e.get("mids", []):
+                if links.get(pid_of_mid.get(mid)):
+                    e["link"] = links[pid_of_mid[mid]]
+                    break
 
     # NOTE: "seen"/stock state is committed to the cache only AFTER alerts are sent
     # (see below), so a run that dies mid-send re-alerts next run instead of
