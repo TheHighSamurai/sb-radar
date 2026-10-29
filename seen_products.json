@@ -8324,6 +8324,7 @@
 "Southside Boardshop::15434655793469",
 "Southside Boardshop::15441818943805",
 "Southside Boardshop::15441820811581",
+"Southside Boardshop::15466768105789",
 "Southside Boardshop::5959847968934",
 "Southside Boardshop::6922409443494",
 "Southside Boardshop::7119196061862",
@@ -10617,6 +10618,15 @@
 "sizes": "Silver Lilac / Palest Purple",
 "link": "https://peopleskateandsnowboard.com/products/nike-sb-woven-skate-pants-silver-lilac-palest-purple",
 "image": "https://cdn.shopify.com/s/files/1/0173/7776/files/nike-sb-woven-skate-pants-silver-lilac-palest-purple-front-fit.webp?v=1793294740",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "AF1 Black Court Green Solid Break Polo IV0597010 Polo Top Nike SB Skateboarding",
+"price": "65.00",
+"sizes": "MD, XL, XXL, LG, SM",
+"link": "https://southsideskateshop.com/products/af1-black-court-green-polo-iv0597010-polo-top-nike-sb-skateboarding",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/AF1-Black-Court-Green-Solid-Break-Polo-IV0597010-Polo-Top-Nike-SB-Skateboarding-2.jpg?v=1793288583",
 "local": false
 }
 ],
