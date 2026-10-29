@@ -6985,6 +6985,7 @@
 "Pharmacy Temecula::7673634881618",
 "Pharmacy Temecula::7679396413522",
 "Pharmacy Temecula::7681625063506",
+"Pharmacy Temecula::7684326948946",
 "Plus Skateboarding::html::nike sb blazer mid (black/white) - plus skateboarding",
 "Premier MI::10372581294145",
 "Premier MI::4528765829185",
@@ -10628,6 +10629,15 @@
 "link": "https://southsideskateshop.com/products/af1-black-court-green-polo-iv0597010-polo-top-nike-sb-skateboarding",
 "image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/AF1-Black-Court-Green-Solid-Break-Polo-IV0597010-Polo-Top-Nike-SB-Skateboarding-2.jpg?v=1793288583",
 "local": false
+},
+{
+"store": "Pharmacy Temecula",
+"title": "Nike SB Solid Break AF1 Polo",
+"price": "64.95",
+"sizes": "Green",
+"link": "https://pharmacyboardshop.com/products/nike-sb-solid-break-af1-polo",
+"image": "https://cdn.shopify.com/s/files/1/0039/4890/4521/files/SOlidbreakpolo1.png?v=1793297976",
+"local": true
 }
 ],
 "apparel_seeded": true,
