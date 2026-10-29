@@ -16784,7 +16784,8 @@
 "Xtreme::7222314401886": 1,
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
-"No-Comply::8516437999801": 1
+"No-Comply::8516437999801": 1,
+"DTLR::8473069027562": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -18374,7 +18375,7 @@
 "Light Chocolate/Black Chocolate"
 ],
 "m": {
-"Light Chocolate / Black Chocolate": 1
+"Light Chocolate / Black Chocolate": 2
 }
 },
 "Transport Skate::9585308008725": {
@@ -18383,7 +18384,7 @@
 "Green Noise/Light Curry/Off-Noir/Watermelon"
 ],
 "m": {
-"Green Noise / Light Curry/ Off-Noir / Watermelon": 1
+"Green Noise / Light Curry/ Off-Noir / Watermelon": 2
 }
 },
 "Transport Skate::9576729280789": {
@@ -18392,7 +18393,7 @@
 "White/Ivory/Sand Dune/Blue Void"
 ],
 "m": {
-"White / Ivory / Sand Dune / Blue Void": 1
+"White / Ivory / Sand Dune / Blue Void": 2
 }
 },
 "Transport Skate::9577042706709": {
@@ -18401,7 +18402,7 @@
 "Black/Summit White"
 ],
 "m": {
-"Black / Summit White": 1
+"Black / Summit White": 2
 }
 },
 "Transport Skate::9576098627861": {
@@ -18416,7 +18417,7 @@
 "Mineral Slate/Particle Rose"
 ],
 "m": {
-"Mineral Slate / Particle Rose": 1
+"Mineral Slate / Particle Rose": 2
 }
 },
 "Transport Skate::9576087453973": {
@@ -18425,7 +18426,7 @@
 "Safety Orange/Wolf Grey/Baroque Brown"
 ],
 "m": {
-"Safety Orange / Wolf Grey / Baroque Brown": 1
+"Safety Orange / Wolf Grey / Baroque Brown": 2
 }
 },
 "Transport Skate::9576083226901": {
@@ -18442,7 +18443,7 @@
 "Black/White"
 ],
 "m": {
-"Black / White": 1
+"Black / White": 2
 }
 },
 "Transport Skate::9575104348437": {
@@ -18451,7 +18452,7 @@
 "Black/White"
 ],
 "m": {
-"Black / White": 1
+"Black / White": 2
 }
 },
 "Transport Skate::9575097237781": {
@@ -18460,7 +18461,7 @@
 "Coastal Blue/Pale Yellow"
 ],
 "m": {
-"Coastal Blue / Pale Yellow": 1
+"Coastal Blue / Pale Yellow": 2
 }
 },
 "Transport Skate::9575095042325": {
@@ -18469,7 +18470,7 @@
 "Flax/Black"
 ],
 "m": {
-"Flax / Black": 1
+"Flax / Black": 2
 }
 },
 "Transport Skate::9574924976405": {
@@ -18478,7 +18479,7 @@
 "Sail/Laser Orange"
 ],
 "m": {
-"Sail / Laser Orange": 1
+"Sail / Laser Orange": 2
 }
 },
 "Transport Skate::9574922289429": {
@@ -18487,7 +18488,7 @@
 "Deep Pewter/Medium Olive"
 ],
 "m": {
-"Deep Pewter / Medium Olive": 1
+"Deep Pewter / Medium Olive": 2
 }
 },
 "Transport Skate::9574921470229": {
@@ -18496,7 +18497,7 @@
 "Hyper Pink/Black"
 ],
 "m": {
-"Hyper Pink / Black": 1
+"Hyper Pink / Black": 2
 }
 },
 "Transport Skate::9574918914325": {
@@ -18505,7 +18506,7 @@
 "Blue Void/Sail"
 ],
 "m": {
-"Blue Void / Sail": 1
+"Blue Void / Sail": 2
 }
 },
 "Pawnshop Skate::15795661570208": {
@@ -52058,7 +52059,11 @@
 "12",
 "9.5"
 ],
-"m": {}
+"m": {
+"11.5": 1,
+"12": 1,
+"9.5": 1
+}
 },
 "DTLR::8476428468458": {
 "l": [],
@@ -56730,7 +56735,7 @@
 "Filbert/Black"
 ],
 "m": {
-"Filbert /  Black": 1
+"Filbert /  Black": 2
 }
 },
 "Furnace Skate::10681778634936": {
@@ -56852,7 +56857,7 @@
 "Black/Gum/Light Brown"
 ],
 "m": {
-"Black / Gum / Light Brown": 1
+"Black / Gum / Light Brown": 2
 }
 },
 "Transport Skate::9657015304469": {
@@ -56867,7 +56872,7 @@
 "Black/Gum/White"
 ],
 "m": {
-"Black / Gum / White": 1
+"Black / Gum / White": 2
 }
 },
 "Black Sheep NC::7680973471790": {
@@ -56882,7 +56887,7 @@
 "Light Bone/Iron Gray"
 ],
 "m": {
-"Light Bone / Iron Gray": 1
+"Light Bone / Iron Gray": 2
 }
 },
 "Transport Skate::9657458458901": {
@@ -56891,7 +56896,7 @@
 "Cool Gray/Court Green"
 ],
 "m": {
-"Cool Gray / Court Green": 1
+"Cool Gray / Court Green": 2
 }
 },
 "Transport Skate::9657467109653": {
@@ -56900,7 +56905,7 @@
 "Black/Black/Off Noir"
 ],
 "m": {
-"Black / Black / Off Noir": 1
+"Black / Black / Off Noir": 2
 }
 },
 "Transport Skate::9657476808981": {
@@ -56909,7 +56914,7 @@
 "Black/Black/White"
 ],
 "m": {
-"Black / Black / White": 1
+"Black / Black / White": 2
 }
 },
 "Transport Skate::9657506660629": {
@@ -56918,7 +56923,7 @@
 "Cobblestone/Monarch/Light Orewood Brown/Black"
 ],
 "m": {
-"Cobblestone / Monarch / Light Orewood Brown / Black": 1
+"Cobblestone / Monarch / Light Orewood Brown / Black": 2
 }
 },
 "Union LA::15446356721741": {
