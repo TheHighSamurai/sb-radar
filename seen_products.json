@@ -16792,7 +16792,7 @@
 "Pastime Skateshop::15934441029792": true,
 "After Hours Skateshop::10374586007807": true,
 "Southside Boardshop::15434655793469": false,
-"Embassy::15409958846519": true,
+"Embassy::15409958846519": false,
 "Geometric Skate Shop::15423646499091": true,
 "Brooklyn Projects::16379708768337": true,
 "Innercity Skate::15454876533015": true,
@@ -16875,8 +16875,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Embassy::15409958846519": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -56433,12 +56432,8 @@
 "m": {}
 },
 "Embassy::15409958846519": {
-"l": [
-"Cool Grey/Court Green/Black"
-],
-"m": {
-"Cool Grey/Court Green/Black": 2
-}
+"l": [],
+"m": {}
 },
 "Geometric Skate Shop::15423646499091": {
 "l": [
