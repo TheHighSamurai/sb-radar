@@ -5000,6 +5000,7 @@
 "Geometric Skate Shop::15417104335123",
 "Geometric Skate Shop::15417110692115",
 "Geometric Skate Shop::15423646499091",
+"Geometric Skate Shop::15442908315923",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -10294,7 +10295,17 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB AF1 Solid Break City Pack Polo Top - Black/Court Green",
+"price": "65.00",
+"sizes": "2XL, L, XL, M, S",
+"link": "https://geometricskateshop.com/products/nike-sb-af1-polo-black-green",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/nike-sb-nike-sb-polo-solid-break-af1-s-s-black.webp?v=1793381055",
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-10-30",
 "stock": {
@@ -16524,7 +16535,8 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1
+"Icon Boardshop::10127126593832": 1,
+"Sneaker Politics::9352523743420": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -45954,7 +45966,7 @@
 "UK 9.5"
 ],
 "m": {
-"UK 10": 1
+"UK 10": 2
 }
 },
 "Flatspot::4553716662385": {
@@ -50224,7 +50236,9 @@
 "l": [
 "8.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Sneaker Politics::9263510421692": {
 "l": [],
