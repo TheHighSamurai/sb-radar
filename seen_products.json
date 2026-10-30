@@ -15713,7 +15713,7 @@
 "DTLR::8526455832810": false,
 "DTLR::8526443938026": false,
 "DTLR::8526440693994": false,
-"DTLR::8526421655786": false,
+"DTLR::8526421655786": true,
 "DTLR::8526420213994": false,
 "DTLR::8526401470698": false,
 "DTLR::8526399930602": false,
@@ -51872,7 +51872,9 @@
 "m": {}
 },
 "DTLR::8526421655786": {
-"l": [],
+"l": [
+"11"
+],
 "m": {}
 },
 "DTLR::8526420213994": {
@@ -59087,6 +59089,16 @@
 "title": "Nike Dunk Low Grade-School",
 "t": 1793338896,
 "link": "https://www.dtlr.com/products/nike-dunk-low-gs-fb9109-114-white-green"
+},
+"1565602804066689085": {
+"cid": "1550909316897177842",
+"keys": [
+"s:HF5441-106",
+"p:DTLR::8526421655786"
+],
+"title": "Nike Dunk Low Retro",
+"t": 1793339196,
+"link": "https://www.dtlr.com/products/nike-nike-dunk-low-retro-mens-pale-ivory-safety-orange-shoe-ma-orange-hf5441-106"
 }
 },
 "nike_dunk_seeded": true,
