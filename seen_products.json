@@ -403,6 +403,7 @@
 "510 Skateboarding::9432518525033",
 "510 Skateboarding::9459256492137",
 "510 Skateboarding::9465524322409",
+"A Ma Maniere::10634547757237",
 "A Ma Maniere::6203398095029",
 "A Ma Maniere::7415350722741",
 "A Ma Maniere::7594988896437",
@@ -1211,6 +1212,7 @@
 "Burn Rubber::7571802587182",
 "Burn Rubber::7602621055022",
 "Burn Rubber::7617471545390",
+"Burn Rubber::7670064414766",
 "CCS::6566660309175",
 "CCS::6761045065911",
 "CCS::6761045622967",
@@ -7363,6 +7365,7 @@
 "Rock City Kicks::15355513307294",
 "Rock City Kicks::15368894808222",
 "Rock City Kicks::15368975417502",
+"Rock City Kicks::15371939545246",
 "Rock City Kicks::15408485990558",
 "Rock City Kicks::15410848432286",
 "Rock City Kicks::7034123714718",
@@ -10289,370 +10292,9 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [
-{
-"store": "Southside Boardshop",
-"title": "Tee White IW3134100 T-Shirt Nike SB Skateboarding",
-"price": "45.00",
-"sizes": "LG, MD, XL",
-"link": "https://southsideskateshop.com/products/tee-white-iw3134100-t-shirt-nike-sb-skateboarding",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Tee-White-IW3134100-T-Shirt-Nike-SB-Skateboarding-1.jpg?v=1792767872",
-"local": false
-},
-{
-"store": "Southside Boardshop",
-"title": "Tee Black IW3134060 T-Shirt Nike SB Skateboarding",
-"price": "45.00",
-"sizes": "LG, XL, XXL, MD",
-"link": "https://southsideskateshop.com/products/tee-black-iw3134060-t-shirt-nike-sb-skateboarding",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Tee-Black-IW3134060-T-Shirt-Nike-SB-Skateboarding-3.jpg?v=1792767929",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Everyday Elevated White Skate Socks (3 Pairs)",
-"price": "26.00",
-"sizes": "L",
-"link": "https://kineticskateboarding.com/products/nike-sb-everyday-elevated-white-skate-socks-3-pairs",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IR1328-910_PHCFH001-2000.jpg?v=1782921937",
-"local": false
-},
-{
-"store": "Swellophonic",
-"title": "Nike SB Yuto Horigome Air Force 1 Skate Tee - Black",
-"price": "55.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://chane.com/products/nike-sb-yuto-horigome-air-force-1-skate-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/1310/3457/files/studioshots_71d7e3e2-c9fc-465e-9bca-d42580268ee8.png?v=1792779992",
-"local": false
-},
-{
-"store": "Swellophonic",
-"title": "Nike SB Peak Skate Beanie - Camo Green/White",
-"price": "32.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://chane.com/products/nike-sb-peak-skate-beanie-camo-green-white",
-"image": null,
-"local": false
-},
-{
-"store": "Pharmacy Temecula",
-"title": "Nike SB Loose Denim Pant",
-"price": "109.95",
-"sizes": "Grey",
-"link": "https://pharmacyboardshop.com/products/nike-sb-loose-denim-pant",
-"image": null,
-"local": true
-},
-{
-"store": "Pawnshop Skate",
-"title": "Nike SB Long Sleeve Skate Jersey",
-"price": "110.00",
-"sizes": "Large",
-"link": "https://pawnshopskate.com/products/nike-sb-long-sleeve-skate-jersey",
-"image": null,
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt Gym Red/Stealth",
-"price": "79.95",
-"sizes": "XL, L, M",
-"link": "https://xbusa.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/2_718d4f8e-f90d-4cd8-b32e-57f6d602907e.png?v=1792782067",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Champagne Dunk T-Shirt Black",
-"price": "44.95",
-"sizes": "XL, M, XXL, L",
-"link": "https://xbusa.com/products/nike-sb-champagne-dunk-t-shirt-black",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/2_99112d56-9738-4dae-a0c9-1ecf83827301.png?v=1792784900",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Airmail Long Sleeve T-Shirt Anthracite/Black",
-"price": "49.95",
-"sizes": "XL, M, S, L",
-"link": "https://xbusa.com/products/nike-sb-airmail-long-sleeve-t-shirt-anthracite-black",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/2_da94464c-db3e-4d63-84a2-5dc703a87511.png?v=1792784195",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Switch Woven Top Silver Lilac/Palest Purple",
-"price": "109.95",
-"sizes": "XL, M, L",
-"link": "https://xbusa.com/products/nike-sb-switch-woven-top-silver-lilac-palest-purple",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/2_7d856f38-c5eb-46c1-bb2e-d7e1a27a5131.png?v=1792783461",
-"local": false
-},
-{
-"store": "Xtreme",
-"title": "Nike SB Champagne Dunk T-Shirt White",
-"price": "44.95",
-"sizes": "M, L, XL",
-"link": "https://xbusa.com/products/nike-sb-champagne-dunk-t-shirt-white",
-"image": "https://cdn.shopify.com/s/files/1/1881/0779/files/5_c2ce3baa-8214-43f6-9ea6-6ef6867b02ca.png?v=1792785155",
-"local": false
-},
-{
-"store": "Innercity Skate",
-"title": "Nike SB Half-Zip Skate Sweatshirt - Gym Red/Stealth",
-"price": "79.99",
-"sizes": "X-Large, Medium, Large, Small",
-"link": "https://innercityskate.com/products/nike-sb-half-zip-skate-sweatshirt-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_27.jpg?v=1792883757",
-"local": false
-},
-{
-"store": "Theory Skate Shop",
-"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt (Red)",
-"price": "79.95",
-"sizes": "XL, M, S, L",
-"link": "https://theoryskate.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-red",
-"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1792946266",
-"local": false
-},
-{
-"store": "NJ Skateshop",
-"title": "Nike SB - GTS 3/4 Zip Up",
-"price": "80.00",
-"sizes": "XL, S, L, M",
-"link": "https://njskateshop.com/products/nike-sb-gts-3-4-zip-up",
-"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/oct26NikeSB12ZipStealthRed.webp?v=1793032734",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Woven Skate Top (Silver Lilac/Palest Purple)",
-"price": "110.00",
-"sizes": "XXL, M, XL, L",
-"link": "https://kineticskateboarding.com/products/nike-sb-woven-skate-top-silver-lilac-palest-purple",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/U_NK_SB_SWITCH_WOVEN_TOP.avif?v=1793032793",
-"local": false
-},
-{
-"store": "Time Machine",
-"title": "Nike SB Muni Fast Pass Tee - Black",
-"price": "45.00",
-"sizes": "M, L, XL",
-"link": "https://timemachineskateshop.com/products/nike-sb-muni-fast-pass-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0583/5266/4726/files/Nike-SB-Muni-Fast-Pass-Tee-Black.png?v=1793042242",
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB Fleece Half Zip Sweatshirt - Gym Red/Stealth",
-"price": "79.95",
-"sizes": "XL, LG",
-"link": "https://ccs.com/products/nike-sb-fleece-half-zip-sweatshirt-gym-red-stealth",
-"image": null,
-"local": false
-},
-{
-"store": "Civil",
-"title": "Nike SB ACG Fly Cap - Orange",
-"price": "40.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://wearecivil.com/products/nike-sb-acg-fly-cap-orange",
-"image": null,
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB NOCTURNAL AF1 POLO BLACK",
-"price": "65.00",
-"sizes": "XXL",
-"link": "https://olympiaskateshop.com/products/nike-sb-nocturnal-af1-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/unnamed_a148f6bd-3c32-43e2-b327-7e1af44626db.jpg?v=1793124541",
-"local": false
-},
-{
-"store": "Southside Boardshop",
-"title": "IX3086010 Black Rolled Beanie Nike SB Headwear",
-"price": "32.00",
-"sizes": "Check site",
-"link": "https://southsideskateshop.com/products/rolled-black-beanie-nike-sb-headwear",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/HF7003010-Black-Rolled-Beanie-Nike-SB-Headwear-4.jpg?v=1737923004",
-"local": false
-},
-{
-"store": "Brooklyn Projects",
-"title": "Nike SB Crew Tennis Classic 1/2 Zip Fleece",
-"price": "80.00",
-"sizes": "XL",
-"link": "https://brooklynprojects.com/products/nike-sb-crew-tennis-classic-1-2-zip-fleece",
-"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/nike-sb-nike-sb-crew-tennis-classic-1-2-zip-fleece.jpg?v=1793142166",
-"local": false
-},
-{
-"store": "Pawnshop Skate",
-"title": "Nike SB 1/2 Zip Skate Sweatshirt",
-"price": "80.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://pawnshopskate.com/products/nike-sb-1-2-zip-skate-sweatshirt",
-"image": null,
-"local": false
-},
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - Solid Break AF1 Polo Black",
-"price": "64.99",
-"sizes": "XX-Large, X-Large, Large, Medium, Small",
-"link": "https://deliskatesupply.com/products/nike-sb-solid-break-air-force-1-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/Image10-28-26at11.14AM.png?v=1793204102",
-"local": false
-},
-{
-"store": "NJ Skateshop",
-"title": "Nike SB - Solid Break AF-1 Polo",
-"price": "65.00",
-"sizes": "L, M, XL, S",
-"link": "https://njskateshop.com/products/nike-sb-solid-break-af-1-polo",
-"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/10-27-26-NikeSBPoloBlck-1SolidBreak_1100x-removebg-preview.png?v=1793208513",
-"local": false
-},
-{
-"store": "Civil",
-"title": "Nike SB Skate Polo - Noc Af1 Black",
-"price": "65.00",
-"sizes": "XL, Medium, Small, Large",
-"link": "https://wearecivil.com/products/nike-sb-skate-polo-noc-af1-black",
-"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IV0597-010_PHSFM001-2000.jpg?v=1793213410",
-"local": false
-},
-{
-"store": "Underground Skateshop",
-"title": "Nike SB Solid Break AF1 Polo - Black",
-"price": "65.00",
-"sizes": "Black",
-"link": "https://undergroundskateshop.com/products/nike-sb-solid-break-af1-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/0270/0309/files/nike-sb-solid-break-af1-polo-black-front.png?v=1793213722",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Skate Polo (Black/Court Green)",
-"price": "65.00",
-"sizes": "M, XL, XXL, S, L",
-"link": "https://kineticskateboarding.com/products/nike-sb-skate-polo-black-court-green",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IV0597-010_PHSYM001-2000.jpg?v=1793215097",
-"local": false
-},
-{
-"store": "Seasons Skate Shop",
-"title": "Nike SB Airmail Long Sleeve Tee- Black/Dark Russet-White",
-"price": "50.00",
-"sizes": "L, M",
-"link": "https://seasonsskateshop.com/products/nike-sb-skate-top",
-"image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/IMG_0851-Photoroom.jpg?v=1793217145",
-"local": false
-},
-{
-"store": "Seasons Skate Shop",
-"title": "Nike SB Solid Break AF1 Polo- Black/Court Green",
-"price": "65.00",
-"sizes": "S, L, XL, M",
-"link": "https://seasonsskateshop.com/products/nike-sb-skate-polo-black-court-green",
-"image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/IMG_0850-Photoroom.jpg?v=1793217119",
-"local": false
-},
-{
-"store": "Travel Skate Shop",
-"title": "Nike SB Solid Break Air Force 1 Polo Black",
-"price": "65.00",
-"sizes": "Medium, Large, Small, X-Large",
-"link": "https://travelskateshop.com/products/nike-sb-solid-break-air-force-1-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/Screenshot2026-10-28at3.57.56PM.png?v=1793217651",
-"local": false
-},
-{
-"store": "Exodus Rideshop",
-"title": "Nike SB Solid Break AF1 City Pack Polo Tee - Black/Court Green",
-"price": "65.00",
-"sizes": "2XL, L, S, M, XL",
-"link": "https://exodusrideshop.com/products/nike-sb-solid-break-af1-city-pack-polo-tee-black-court-green",
-"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/e5b252c3-ed82-4a82-8b73-b8815d1f2a20.jpg?v=1793217913",
-"local": false
-},
-{
-"store": "No-Comply",
-"title": "Nike SB Switch Drill Woven Skate Top - Grey",
-"price": "110.00",
-"sizes": "S, M, L",
-"link": "https://www.nocomplyatx.com/products/nike-sb-switch-drill-woven-skate-top-grey-silver-lilac-palest-purple-iq6263-022",
-"image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IQ6263-022_PHSFM001-2000.webp?v=1792785378",
-"local": false
-},
-{
-"store": "Mainland",
-"title": "Nike SB AF1 DRI-FIT Skate Polo Shirt",
-"price": "65.00",
-"sizes": "Black/Court Green",
-"link": "https://mainlandskateandsurf.com/products/nike-sb-af1-dri-fit-skate-polo-shirt",
-"image": "https://cdn.shopify.com/s/files/1/1230/8246/files/nike-sb-polo-shirt-nike-sb-skate-polo-noc-af1-black-IV0597-010.png?v=1793290354",
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB x Nocturnal Air Force 1 SE T-Shirt - Black/Court Green",
-"price": "64.95",
-"sizes": "SM, MD, XL, XXL, LG",
-"link": "https://ccs.com/products/nike-sb-x-nocturnal-air-force-1-se-t-shirt-black-court-green",
-"image": null,
-"local": false
-},
-{
-"store": "Bluetile Skateboards",
-"title": "NIKE SB FLEECE 1/2-ZIP SKATE SWEATSHIRT GYM RED/STEALTH",
-"price": "94.99",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://bluetilesc.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/NIKESBFLEECEHALF-ZIPSKATESWEATSHIRTGYMRED.jpg?v=1793293074",
-"local": false
-},
-{
-"store": "People Skate and Snowboard",
-"title": "Nike SB Woven Skate Pants - Silver Lilac / Palest Purple",
-"price": "104.95",
-"sizes": "Silver Lilac / Palest Purple",
-"link": "https://peopleskateandsnowboard.com/products/nike-sb-woven-skate-pants-silver-lilac-palest-purple",
-"image": "https://cdn.shopify.com/s/files/1/0173/7776/files/nike-sb-woven-skate-pants-silver-lilac-palest-purple-front-fit.webp?v=1793294740",
-"local": false
-},
-{
-"store": "Southside Boardshop",
-"title": "AF1 Black Court Green Solid Break Polo IV0597010 Polo Top Nike SB Skateboarding",
-"price": "65.00",
-"sizes": "MD, XL, XXL, LG, SM",
-"link": "https://southsideskateshop.com/products/af1-black-court-green-polo-iv0597010-polo-top-nike-sb-skateboarding",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/AF1-Black-Court-Green-Solid-Break-Polo-IV0597010-Polo-Top-Nike-SB-Skateboarding-2.jpg?v=1793288583",
-"local": false
-},
-{
-"store": "Pharmacy Temecula",
-"title": "Nike SB Solid Break AF1 Polo",
-"price": "64.95",
-"sizes": "Green",
-"link": "https://pharmacyboardshop.com/products/nike-sb-solid-break-af1-polo",
-"image": "https://cdn.shopify.com/s/files/1/0039/4890/4521/files/SOlidbreakpolo1.png?v=1793297976",
-"local": true
-},
-{
-"store": "35th North",
-"title": "Nike SB Air Force 1 Nocturnal Polo Shirt",
-"price": "65.00",
-"sizes": "S, L, XXL, M, XL",
-"link": "https://35thnorth.com/products/nike-sb-air-force-1-nocturnal-polo-shirt",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/Polo.webp?v=1793321714",
-"local": false
-}
-],
+"weekly_digest": [],
 "apparel_seeded": true,
-"last_digest_date": "2026-10-23",
+"last_digest_date": "2026-10-30",
 "stock": {
 "Reset Mercantile::10280071758120": true,
 "Reset Mercantile::10139819737384": true,
@@ -16862,7 +16504,10 @@
 "People Skate and Snowboard::15461352997079": true,
 "People Skate and Snowboard::15461352800471": true,
 "People Skate and Snowboard::15461352636631": true,
-"Sneaker Politics::9430269558972": true
+"Sneaker Politics::9430269558972": true,
+"Burn Rubber::7670064414766": true,
+"Rock City Kicks::15371939545246": true,
+"A Ma Maniere::10634547757237": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57045,6 +56690,41 @@
 "9.5"
 ],
 "m": {}
+},
+"Burn Rubber::7670064414766": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Rock City Kicks::15371939545246": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"A Ma Maniere::10634547757237": {
+"l": [
+"7"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59057,6 +58737,39 @@
 "title": "Nike SB PS8 Shoes - Black / White - Black - Black",
 "t": 1793362614,
 "link": "https://www.flatspot.com/products/nike-sb-ps8-shoes-black-white-black-black"
+},
+"1565727440880402506": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IQ3922-001",
+"t:kobe dunk low protro anthracite anthracite sundial",
+"p:Burn Rubber::7670064414766"
+],
+"title": "Nike Kobe Dunk Low Protro (Anthracite/Anthracite-Sundial)",
+"t": 1793368913,
+"link": "https://burnrubbersneakers.com/products/nike-dunk-low-protro-anthracite-anthracite-sundial"
+},
+"1565727450703470763": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IQ3922-001",
+"t:kobe dunk low protro anthracite anthracite sundial",
+"p:Rock City Kicks::15371939545246"
+],
+"title": "Nike Kobe Dunk Low Protro (Anthracite/Anthracite-Sundial)",
+"t": 1793368914,
+"link": "https://rockcitykicks.com/products/nike-kobe-dunk-low-protro-anthracite-anthracite-sundial"
+},
+"1565727455405408339": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IF7380-200",
+"t:dunk low x union la",
+"p:A Ma Maniere::10634547757237"
+],
+"title": "NIKE DUNK LOW X UNION LA",
+"t": 1793368915,
+"link": "https://www.a-ma-maniere.com/products/nike-dunk-low-x-union-la"
 }
 },
 "nike_dunk_seeded": true,
