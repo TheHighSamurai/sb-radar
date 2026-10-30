@@ -15163,7 +15163,7 @@
 "Lapstone & Hammer::6947111469113": true,
 "Lapstone & Hammer::6942160715833": true,
 "Sneaker Politics::9629041819836": false,
-"Sneaker Politics::9352523743420": true,
+"Sneaker Politics::9352523743420": false,
 "Sneaker Politics::9263510421692": false,
 "Sneaker Politics::9352456044732": true,
 "Sneaker Politics::9352453849276": true,
@@ -16535,8 +16535,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Sneaker Politics::9352523743420": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -50230,12 +50229,8 @@
 "m": {}
 },
 "Sneaker Politics::9352523743420": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Sneaker Politics::9263510421692": {
 "l": [],
