@@ -5003,6 +5003,7 @@
 "Geometric Skate Shop::15417067503891",
 "Geometric Skate Shop::15417104335123",
 "Geometric Skate Shop::15417110692115",
+"Geometric Skate Shop::15419046691091",
 "Geometric Skate Shop::15423646499091",
 "Geometric Skate Shop::15442908315923",
 "Geometric Skate Shop::4486451134518",
@@ -16582,7 +16583,8 @@
 "Rock City Kicks::15371939545246": true,
 "A Ma Maniere::10634547757237": true,
 "APB Store::15418668318756": true,
-"Undefeated::6702825111813": true
+"Undefeated::6702825111813": true,
+"Geometric Skate Shop::15419046691091": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -34972,12 +34974,9 @@
 "10",
 "13",
 "5",
-"7",
-"8.5"
+"7"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "Deli Skate Supply::8222024597753": {
 "l": [
@@ -56783,6 +56782,21 @@
 "Undefeated::6702825111813": {
 "l": [
 "-"
+],
+"m": {}
+},
+"Geometric Skate Shop::15419046691091": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 }
