@@ -2195,6 +2195,7 @@
 "Deli Skate Supply::15318610215161",
 "Deli Skate Supply::15321407226105",
 "Deli Skate Supply::15330030420217",
+"Deli Skate Supply::15337126199545",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10344,6 +10345,15 @@
 "link": "https://undergroundskateshop.com/products/nike-sb-champagne-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBChampagneT-Shirt-White.jpg?v=1793390063",
 "local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Champagne Crest Tee Charcoal",
+"price": "44.99",
+"sizes": "X-Large, Medium, Large",
+"link": "https://deliskatesupply.com/products/nike-sb-crest-tee-charcoal",
+"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/nike-sb-champagne-dunk-tee-black-nike-sb-champagne-dunk-tee-black-1263831242.jpg?v=1793390714",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -10994,7 +11004,7 @@
 "Richmond Hood::10389075493028": true,
 "Richmond Hood::10389078573220": true,
 "Richmond Hood::10389060812964": true,
-"Richmond Hood::10382133166244": true,
+"Richmond Hood::10382133166244": false,
 "Richmond Hood::10368776175780": true,
 "Richmond Hood::10363049345188": true,
 "Richmond Hood::10363346682020": true,
@@ -16575,8 +16585,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Richmond Hood::10382133166244": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -20106,12 +20115,9 @@
 "11.5",
 "12",
 "13",
-"8.5",
-"9"
+"8.5"
 ],
-"m": {
-"9": 2
-}
+"m": {}
 },
 "Richmond Hood::7517379526820": {
 "l": [
@@ -20167,12 +20173,8 @@
 "m": {}
 },
 "Richmond Hood::10382133166244": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Richmond Hood::10368776175780": {
 "l": [
@@ -21916,13 +21918,10 @@
 "10.5",
 "11",
 "12",
-"13",
 "9",
 "9.5"
 ],
-"m": {
-"13": 2
-}
+"m": {}
 },
 "Stardust Skate Shop::9244517794004": {
 "l": [
