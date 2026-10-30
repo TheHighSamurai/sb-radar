@@ -14896,7 +14896,7 @@
 "LICK NYC::8971686084863": true,
 "LICK NYC::8971657445631": true,
 "Humidity Skateshop::10316789940515": true,
-"Uprise Skateshop::15441772576983": true,
+"Uprise Skateshop::15441772576983": false,
 "Uprise Skateshop::8818999427287": true,
 "Uprise Skateshop::9350071451863": true,
 "Uprise Skateshop::9325835518167": true,
@@ -16875,8 +16875,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Uprise Skateshop::15441772576983": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -47443,12 +47442,8 @@
 "m": {}
 },
 "Uprise Skateshop::15441772576983": {
-"l": [
-"10.0"
-],
-"m": {
-"10.0": 2
-}
+"l": [],
+"m": {}
 },
 "Uprise Skateshop::8818999427287": {
 "l": [
