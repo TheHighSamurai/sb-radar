@@ -24391,12 +24391,9 @@
 "Coureur Goods::9556576534783": {
 "l": [
 "11.5",
-"9",
-"9.5"
+"9"
 ],
-"m": {
-"9.5": 2
-}
+"m": {}
 },
 "Coureur Goods::9556577321215": {
 "l": [
@@ -57961,15 +57958,6 @@
 }
 },
 "msgs": {
-"1563056093662421065": {
-"cid": "1562917305531506738",
-"keys": [
-"t:af1 cool grey court green black iv5289003 suede skateboarding",
-"p:Southside Boardshop::15434655793469"
-],
-"title": "AF1 Cool Grey Court Green Black IV5289003 Nike SB Suede Skateboarding Shoes",
-"t": 1792732013
-},
 "1563147977030111325": {
 "cid": "1562917305531506738",
 "keys": [
