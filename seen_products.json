@@ -12182,7 +12182,7 @@
 "Geometric Skate Shop::10446460584211": true,
 "Geometric Skate Shop::10294252175635": true,
 "Geometric Skate Shop::10488144167187": true,
-"Geometric Skate Shop::10472320663827": true,
+"Geometric Skate Shop::10472320663827": false,
 "Geometric Skate Shop::10479355101459": true,
 "Geometric Skate Shop::10447509618963": true,
 "Geometric Skate Shop::10439799898387": true,
@@ -16524,8 +16524,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Geometric Skate Shop::10472320663827": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -21450,7 +21449,7 @@
 "9.5"
 ],
 "m": {
-"11.5": 1
+"11.5": 2
 }
 },
 "The Block Skate Supply::8872694153431": {
@@ -31007,12 +31006,8 @@
 "m": {}
 },
 "Geometric Skate Shop::10472320663827": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Geometric Skate Shop::10479355101459": {
 "l": [
