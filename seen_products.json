@@ -15757,7 +15757,7 @@
 "DTLR::8536660312298": false,
 "DTLR::8536621482218": false,
 "DTLR::8517554077930": false,
-"DTLR::8514633597162": false,
+"DTLR::8514633597162": true,
 "DTLR::8511340642538": false,
 "DTLR::8502106128618": false,
 "DTLR::8491148214506": false,
@@ -52048,7 +52048,9 @@
 "m": {}
 },
 "DTLR::8514633597162": {
-"l": [],
+"l": [
+"6.5"
+],
 "m": {}
 },
 "DTLR::8511340642538": {
@@ -52085,7 +52087,9 @@
 },
 "DTLR::8473069027562": {
 "l": [
-"12"
+"10",
+"12",
+"9"
 ],
 "m": {}
 },
@@ -59073,6 +59077,16 @@
 "title": "Nike Kobe Dunk Low Protro 'Mamba Eterno' - Anthracite/Sundial",
 "t": 1793311895,
 "link": "https://sneakerpolitics.com/products/nike-kobe-dunk-low-protro-mamba-eterno-anthracite-sundial"
+},
+"1565601541442904125": {
+"cid": "1550909316897177842",
+"keys": [
+"s:FB9109-114",
+"p:DTLR::8514633597162"
+],
+"title": "Nike Dunk Low Grade-School",
+"t": 1793338896,
+"link": "https://www.dtlr.com/products/nike-dunk-low-gs-fb9109-114-white-green"
 }
 },
 "nike_dunk_seeded": true,
