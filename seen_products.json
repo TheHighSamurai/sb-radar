@@ -17515,15 +17515,12 @@
 "10.5",
 "11.5",
 "12",
-"13",
 "8",
 "8.5",
 "9",
 "9.5"
 ],
-"m": {
-"13": 2
-}
+"m": {}
 },
 "PLA Folsom::8821298397342": {
 "l": [
@@ -47038,7 +47035,7 @@
 "9.5"
 ],
 "m": {
-"9.0": 1
+"9.0": 2
 }
 },
 "LICK NYC::9604485611775": {
@@ -56723,7 +56720,7 @@
 "Filbert / Black / Burgundy Ash / Light Chocolate"
 ],
 "m": {
-"Filbert / Black / Burgundy Ash / Light Chocolate": 1
+"Filbert / Black / Burgundy Ash / Light Chocolate": 2
 }
 },
 "Sneaker Politics::9430269558972": {
