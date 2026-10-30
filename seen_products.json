@@ -48597,6 +48597,7 @@
 "l": [
 "10",
 "10.5",
+"11",
 "12",
 "13",
 "9.5"
@@ -59093,6 +59094,17 @@
 "title": "Nike Dunk Low Retro",
 "t": 1793339196,
 "link": "https://www.dtlr.com/products/nike-nike-dunk-low-retro-mens-pale-ivory-safety-orange-shoe-ma-orange-hf5441-106"
+},
+"1565668226040467477": {
+"cid": "1550909316897177842",
+"keys": [
+"s:DD1391-100",
+"t:dunk low lifestyle black white",
+"p:Nice Kicks::7251603325133"
+],
+"title": "Dunk Low Mens Lifestyle Shoe - Black/White",
+"t": 1793354795,
+"link": "https://shopnicekicks.com/products/nike-dd1391-100-dunk-low-mens-lifestyle-shoe-black-white"
 }
 },
 "nike_dunk_seeded": true,
