@@ -12539,7 +12539,7 @@
 "Theory Skate Shop::8530919522491": true,
 "Theory Skate Shop::8523533516987": true,
 "Theory Skate Shop::8518242730171": true,
-"Theory Skate Shop::8505237110971": true,
+"Theory Skate Shop::8505237110971": false,
 "Theory Skate Shop::8467224592571": true,
 "Theory Skate Shop::8486324306107": true,
 "Theory Skate Shop::8486298124475": true,
@@ -16629,8 +16629,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Theory Skate Shop::8505237110971": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35256,12 +35255,8 @@
 "m": {}
 },
 "Theory Skate Shop::8505237110971": {
-"l": [
-"M11.5/W13"
-],
-"m": {
-"M11.5/W13": 2
-}
+"l": [],
+"m": {}
 },
 "Theory Skate Shop::8467224592571": {
 "l": [
@@ -40475,7 +40470,7 @@
 "9.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "Bluetile Skateboards::15389321330914": {
