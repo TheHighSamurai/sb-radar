@@ -16615,7 +16615,7 @@
 "Rock City Kicks::15371939545246": true,
 "A Ma Maniere::10634547757237": true,
 "APB Store::15418668318756": true,
-"Undefeated::6702825111813": true,
+"Undefeated::6702825111813": false,
 "Geometric Skate Shop::15419046691091": true,
 "Time Machine::8687794618518": true,
 "Overload::10040087871735": true
@@ -16631,8 +16631,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Undefeated::6702825111813": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -56476,7 +56475,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"10.5": 1
+}
 },
 "CCS::8859858829495": {
 "l": [
@@ -56792,12 +56793,8 @@
 "m": {}
 },
 "Undefeated::6702825111813": {
-"l": [
-"-"
-],
-"m": {
-"-": 2
-}
+"l": [],
+"m": {}
 },
 "Geometric Skate Shop::15419046691091": {
 "l": [
