@@ -5319,6 +5319,7 @@
 "Innercity Skate::15454967464215",
 "Innercity Skate::15460725063959",
 "Innercity Skate::15478570090775",
+"Innercity Skate::15478642737431",
 "Innercity Skate::8065331331351",
 "Innercity Skate::8205713637655",
 "Innercity Skate::8253827121431",
@@ -10397,6 +10398,15 @@
 "sizes": "Gym Red/Stealth",
 "link": "https://iconboardshop.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
 "image": "https://cdn.shopify.com/s/files/1/0681/2106/7816/files/1_96cd6b44-c512-4c7e-a17f-3f8b13e6df5c.jpg?v=1793407526",
+"local": false
+},
+{
+"store": "Innercity Skate",
+"title": "Nike SB Switch Drill Woven Pants - Silver Lilac/Palest Purple",
+"price": "104.99",
+"sizes": "Large, Small, X-Large, Medium",
+"link": "https://innercityskate.com/products/nike-sb-switch-drill-woven-pants-silver-lilac-palest-purple",
+"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_35.jpg?v=1793479478",
 "local": false
 }
 ],
@@ -33100,14 +33110,11 @@
 "10.5",
 "11",
 "7.5",
-"8",
 "8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "Southside Boardshop::10413890470205": {
 "l": [
