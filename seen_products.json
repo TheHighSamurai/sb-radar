@@ -46576,7 +46576,13 @@
 "m": {}
 },
 "Kinetic::8126132551782": {
-"a": "10.5 M|11.0 M|11.5 M|13.0 M|9.5 M",
+"l": [
+"10.5 M",
+"11.0 M",
+"11.5 M",
+"13.0 M",
+"9.5 M"
+],
 "m": {}
 },
 "Bluetile Skateboards::15419445313762": {
@@ -57052,21 +57058,24 @@
 "1560731869631488122"
 ],
 "title": "Nike SB Dunk Low Pro WC (Saffron Quartz/Saffron Quartz-Pear)",
-"t": 1792178114
+"t": 1792178114,
+"link": "https://kineticskateboarding.com/products/nike-sb-dunk-low-pro-saffron-quartz-saffron-quartz-pear"
 },
 "t:dunk low pro wc saffron quartz saffron quartz pear": {
 "mids": [
 "1560731869631488122"
 ],
 "title": "Nike SB Dunk Low Pro WC (Saffron Quartz/Saffron Quartz-Pear)",
-"t": 1792178114
+"t": 1792178114,
+"link": "https://kineticskateboarding.com/products/nike-sb-dunk-low-pro-saffron-quartz-saffron-quartz-pear"
 },
 "p:Kinetic::8126132551782": {
 "mids": [
 "1560731869631488122"
 ],
 "title": "Nike SB Dunk Low Pro WC (Saffron Quartz/Saffron Quartz-Pear)",
-"t": 1792178114
+"t": 1792178114,
+"link": "https://kineticskateboarding.com/products/nike-sb-dunk-low-pro-saffron-quartz-saffron-quartz-pear"
 },
 "t:zoom tennis classic deep pewter medium olive": {
 "mids": [
