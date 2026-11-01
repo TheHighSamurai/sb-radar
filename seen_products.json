@@ -5006,6 +5006,7 @@
 "Geometric Skate Shop::15419046691091",
 "Geometric Skate Shop::15423646499091",
 "Geometric Skate Shop::15442908315923",
+"Geometric Skate Shop::15444498022675",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -10417,6 +10418,15 @@
 "sizes": "X-Large, Small, Medium, Large",
 "link": "https://innercityskate.com/products/nike-sb-af1-solid-polo-shirt-black-court-green",
 "image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_38.jpg?v=1793484297",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Champagne Dunk Tee",
+"price": "45.00",
+"sizes": "2XL, Small, Large, Medium, XL",
+"link": "https://geometricskateshop.com/products/nike-sb-champagne-dunk-tee",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/Tee-Black-IW3134060-T-Shirt-Nike-SB-Skateboarding-8_1.jpg?v=1793493438",
 "local": false
 }
 ],
@@ -16653,7 +16663,8 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1
+"Icon Boardshop::10127126593832": 1,
+"Overload::9995576213751": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35689,7 +35700,9 @@
 "l": [
 "M10.5 / W12"
 ],
-"m": {}
+"m": {
+"M10.5 / W12": 1
+}
 },
 "Overload::9984663191799": {
 "l": [
