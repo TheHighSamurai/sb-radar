@@ -16627,7 +16627,7 @@
 "Innercity Skate::15454876533015": true,
 "Pharmacy Temecula::7679396413522": true,
 "Theory Skate Shop::15435653513403": true,
-"510 Skateboarding::15414412836969": true,
+"510 Skateboarding::15414412836969": false,
 "PLA Folsom::15408364814494": true,
 "Travel Skate Shop::15436563185741": true,
 "Pawnshop Skate::15934128914592": true,
@@ -16714,8 +16714,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"510 Skateboarding::15414412836969": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -56218,12 +56217,8 @@
 "m": {}
 },
 "510 Skateboarding::15414412836969": {
-"l": [
-"12"
-],
-"m": {
-"12": 2
-}
+"l": [],
+"m": {}
 },
 "PLA Folsom::15408364814494": {
 "l": [
