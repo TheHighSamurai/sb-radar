@@ -677,6 +677,8 @@ STORES = [
     {"name": "Haven", "url": "https://shop.havenshop.com", "shopify_only": True},
     # Nike's own SNKRS launch calendar (upcoming Dunk launches) — not Shopify.
     {"name": "Nike SNKRS", "url": "https://www.nike.com/launch", "snkrs": True},
+    # Nike.com's own Dunk page, newest first — general releases that skip SNKRS.
+    {"name": "Nike.com", "url": "https://www.nike.com/w/dunk-shoes-90aohzy7ok?sortby=newest", "nike_wall": True},
 ]
 
 # ── Cache ─────────────────────────────────────────────────────────────────────
@@ -968,7 +970,110 @@ def check_snkrs(store: dict, cache: dict) -> list:
         log.info(f"  NEW SNKRS [{store['name']}]: {f['title']} — {f['sizes']}")
     return finds
 
-NEW_MAX_AGE_DAYS = 10   # a never-seen listing older than this is back-catalog, not a new drop
+NIKE_API = "https://api.nike.com"
+NIKE_WALL_PAGES = 3   # newest-first; 24 styles per page, each with several colorways
+
+def _nike_wall_page(store: dict):
+    """(products, next_path) from Nike's Dunk page, sorted newest first."""
+    r = requests.get(store["url"], headers=HEADERS, timeout=REQUEST_TIMEOUT * 3)
+    if r.status_code != 200:
+        log.warning("Nike.com Dunk page HTTP %s", r.status_code)
+        return [], None
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+    wall = json.loads(m.group(1))["props"]["pageProps"]["initialState"]["Wall"]
+    return [p for g in wall.get("productGroupings") or [] for p in g.get("products") or []], (wall.get("pageData") or {}).get("next")
+
+def check_nike_wall(store: dict, cache: dict) -> list:
+    """Dunks sold directly on Nike.com (general releases that never appear on SNKRS).
+    One alert per style code, the first time it shows up. Nike's page has no size data."""
+    seen, finds, got = cache["seen"], [], set()
+    try:
+        products, nxt = _nike_wall_page(store)
+    except Exception as e:
+        log.warning("Nike.com Dunk page error: %s", e)
+        return []
+    if not products:
+        return []
+    cache.setdefault("_fetched", set()).add(store["name"])
+    for _ in range(NIKE_WALL_PAGES - 1):       # later pages are best-effort
+        if not nxt:
+            break
+        try:
+            r = requests.get(NIKE_API + nxt, timeout=REQUEST_TIMEOUT * 2,
+                             headers={**HEADERS, "nike-api-caller-id": "com.nike.commerce.nikedotcom.web"})
+            if r.status_code != 200:
+                break
+            d = r.json()
+            products += [p for g in d.get("productGroupings") or [] for p in g.get("products") or []]
+            nxt = (d.get("pages") or {}).get("next")
+        except Exception as e:
+            log.warning("Nike.com next page error: %s", e)
+            break
+    for p in products:
+        copy  = p.get("copy") or {}
+        name  = (copy.get("title") or "").strip()
+        sub   = copy.get("subTitle") or ""
+        code  = (p.get("productCode") or "").upper()
+        pid   = f"{store['name']}::{code}"
+        color = (p.get("displayColors") or {}).get("colorDescription") or ""
+        if not code or p.get("customization") or "by you" in name.lower():
+            continue
+        if feed_for(f"{name} {sub}", "Nike") != "dunks" or pid in seen or pid in got or f"Nike SNKRS::{code}" in seen:
+            continue
+        got.add(pid)
+        title = f"{name} - {color}" if color else name
+        keys = (["s:" + code] if _STYLE_RE.fullmatch(code) else []) + [k for k in [title_key(title)] if k] + ["p:" + pid]
+        finds.append({
+            "id":    pid,
+            "store": store["name"],
+            "title": title,
+            "price": (p.get("prices") or {}).get("currentPrice", "?"),
+            "sizes": "New on Nike.com — check site for sizes",
+            "link":  (p.get("pdpUrl") or {}).get("url") or store["url"],
+            "image": (p.get("colorwayImages") or {}).get("squarishURL"),
+            "keys":  keys,
+            "local": False,
+            "apparel": False,
+            "feed":  "dunks",
+            "gr":    True,
+            "sb":    is_sb(name),
+        })
+    for f in finds:
+        log.info(f"  NEW NIKE.COM [{store['name']}]: {f['title']} — ${f['price']}")
+    return finds
+
+def live_sizes(find: dict):
+    """Sizes buyable right now, from the store's product endpoint (products.json is a cached
+    feed and can lag on a hot drop). None = couldn't check; [] = nothing buyable."""
+    if "/products/" not in find.get("link", ""):
+        return None
+    try:
+        r = requests.get(find["link"].split("?")[0] + ".js", headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        if r.status_code != 200:
+            return None
+        return [v for v in r.json().get("variants", []) if v.get("available")]
+    except Exception:
+        return None
+
+def refresh_sizes(finds: list, cache: dict) -> list:
+    """Re-check sizes just before alerting. Returns the finds still worth sending; one that
+    sold out in the meantime is recorded as sold out, so NOW-AVAILABLE fires if sizes return."""
+    todo = [f for f in finds if not (f.get("restock") or f.get("size_only"))]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as ex:
+        results = dict(zip([f["id"] for f in todo], ex.map(live_sizes, todo)))
+    keep = []
+    for f in finds:
+        v = results.get(f["id"])
+        if v is not None and f in todo:
+            if not v:
+                log.info("Sold out before alert went out: %s", f["title"])
+                cache.setdefault("_stock_obs", {})[f["id"]] = False
+                continue
+            f["sizes"] = format_sizes({"variants": v})
+        keep.append(f)
+    return keep
+
+NEW_MAX_AGE_DAYS = 10  # a never-seen listing older than this is back-catalog, not a new drop
 
 def _listing_age_days(p: dict) -> float:
     ts = p.get("published_at") or p.get("created_at")
@@ -993,6 +1098,8 @@ def check_store(store: dict, cache: dict) -> list:
 
     if store.get("snkrs"):
         return check_snkrs(store, cache)
+    if store.get("nike_wall"):
+        return check_nike_wall(store, cache)
 
     # Boutiques: Shopify feed only, re-tried every run (never cached as "not Shopify",
     # never homepage-scraped — scraping them produced duplicate, priceless junk alerts).
@@ -1245,6 +1352,8 @@ def run():
     apparel_seed_run = not cache.get("apparel_seeded", False)
     size_finds    = [f for f in alertable_finds if f.get("size_only")]   # email-only (Dunk size 11/11.5 restock)
     shoe_finds    = [f for f in alertable_finds if not f.get("apparel") and not f.get("size_only")]
+    if not first_run:
+        shoe_finds = refresh_sizes(shoe_finds, cache)
     apparel_finds = [] if (first_run or apparel_seed_run) else [f for f in alertable_finds if f.get("apparel")]
     if apparel_seed_run:
         n = sum(1 for f in all_finds if f.get("apparel"))
