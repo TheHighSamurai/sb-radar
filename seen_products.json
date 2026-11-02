@@ -9418,6 +9418,7 @@
 "Underground Skateshop::8348937978056",
 "Underground Skateshop::8350287134920",
 "Underground Skateshop::8351180783816",
+"Underground Skateshop::8351447449800",
 "Unheardof::10434272985253",
 "Unheardof::10434274361509",
 "Unheardof::10438519029925",
@@ -10501,6 +10502,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://coureurgoods.com/products/nike-sb-skate-tee-champagne-dunk-anthracite",
 "image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-nike-sb-tee-loose-champagne-dunk-s-s-black_447f58db-3fa5-4b6d-85fd-7ce792bb3e2b.webp?v=1793633678",
+"local": false
+},
+{
+"store": "Underground Skateshop",
+"title": "Nike SB Champagne T-Shirt - Vintage Black",
+"price": "45.00",
+"sizes": "Washed Black",
+"link": "https://undergroundskateshop.com/products/nike-sb-champagne-t-shirt-vintage-black",
+"image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBChampagneT-Shirt-VintageBlack.jpg?v=1793650053",
 "local": false
 }
 ],
@@ -16741,7 +16751,8 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1
+"Icon Boardshop::10127126593832": 1,
+"Theory Skate Shop::8441311592635": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35429,7 +35440,10 @@
 "8",
 "M8/W9.5"
 ],
-"m": {}
+"m": {
+"M8/W9.5": 1,
+"8": 1
+}
 },
 "Theory Skate Shop::8436831355067": {
 "l": [
