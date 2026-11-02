@@ -12665,7 +12665,7 @@
 "Theory Skate Shop::8467387351227": true,
 "Theory Skate Shop::8466153373883": true,
 "Theory Skate Shop::8442105430203": true,
-"Theory Skate Shop::8441311592635": true,
+"Theory Skate Shop::8441311592635": false,
 "Theory Skate Shop::8436831355067": true,
 "Theory Skate Shop::7910936936635": true,
 "Theory Skate Shop::8364322128059": true,
@@ -16751,8 +16751,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Theory Skate Shop::8441311592635": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35436,14 +35435,8 @@
 "m": {}
 },
 "Theory Skate Shop::8441311592635": {
-"l": [
-"8",
-"M8/W9.5"
-],
-"m": {
-"M8/W9.5": 2,
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Theory Skate Shop::8436831355067": {
 "l": [
