@@ -3052,6 +3052,7 @@
 "Exodus Rideshop::9075266289782",
 "Exodus Rideshop::9075267043446",
 "Exodus Rideshop::9089881178230",
+"Exodus Rideshop::9103052734582",
 "Extra Butter::4435481198640",
 "Extra Butter::4463487877168",
 "Extra Butter::4463489581104",
@@ -10522,6 +10523,15 @@
 "sizes": "Small, Medium, XL, Large, XXL",
 "link": "https://wearecivil.com/products/nike-sb-skate-t-shirt-anthracite",
 "image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IW3134-060_PHSFM001-2000.jpg?v=1793651951",
+"local": false
+},
+{
+"store": "Exodus Rideshop",
+"title": "Nike SB Airmail Long Sleeve Skate Tee - Black/Dark Russet-White",
+"price": "50.00",
+"sizes": "L, M",
+"link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-black-dark-russet-white",
+"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5430-010_PHSFM001-2000.png?v=1793652877",
 "local": false
 }
 ],
@@ -22569,7 +22579,9 @@
 "7",
 "9"
 ],
-"m": {}
+"m": {
+"12": 1
+}
 },
 "Humidity Skateshop::10281813803299": {
 "l": [
@@ -32770,7 +32782,7 @@
 "M9=W10.5"
 ],
 "m": {
-"M13=W14.5": 1
+"M13=W14.5": 2
 }
 },
 "No-Comply::8583957119161": {
