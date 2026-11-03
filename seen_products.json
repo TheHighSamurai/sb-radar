@@ -2203,6 +2203,7 @@
 "Deli Skate Supply::15330030420217",
 "Deli Skate Supply::15337126199545",
 "Deli Skate Supply::15337137668345",
+"Deli Skate Supply::15349105918201",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10553,6 +10554,15 @@
 "sizes": "2XL, L, M, S, XL",
 "link": "https://familiaskate.com/products/nike-sb-solid-break-af1-polo",
 "image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-POLO-AF1.jpg?v=1793682535",
+"local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Essentials Fleece Pullover Lavender",
+"price": "84.99",
+"sizes": "X-Large, Large",
+"link": "https://deliskatesupply.com/products/nike-sb-essentials-fleece-pullover-lavender",
+"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/shopping_b18029c6-e3c5-4d94-ae2d-08c52306dfbc.jpg?v=1793724504",
 "local": false
 }
 ],
