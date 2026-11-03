@@ -504,6 +504,7 @@
 "Arts & Rec::15627099439215",
 "Arts & Rec::15656780365935",
 "Arts & Rec::15702306979951",
+"Arts & Rec::15712110116975",
 "Arts & Rec::7121500209263",
 "Arts & Rec::7128968986735",
 "Arts & Rec::7525986730095",
@@ -686,6 +687,7 @@
 "Blue Flowers::11207066484903",
 "Blue Flowers::11207067467943",
 "Blue Flowers::11219876905127",
+"Blue Flowers::11283864256679",
 "Bluetile Skateboards::15389278175458",
 "Bluetile Skateboards::15389309632738",
 "Bluetile Skateboards::15389321330914",
@@ -10640,6 +10642,15 @@
 "link": "https://www.nocomplyatx.com/products/nike-sb-af1-skate-polo-black",
 "image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IV0597-010_PHSFM001-2000.webp?v=1793745038",
 "local": false
+},
+{
+"store": "Arts & Rec",
+"title": "Nike SB Skate Top: BLACK/DARK RUSSET/WHITE",
+"price": "50.00",
+"sizes": "X-Large, Medium, Large",
+"link": "https://artsandrecstore.com/products/nike-sb-skate-top-black-dark-russet-white",
+"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IM5430-010_PHSFM001-2000.jpg?v=1793745571",
+"local": true
 }
 ],
 "apparel_seeded": true,
@@ -16884,7 +16895,8 @@
 "Reset Mercantile::10184301642024": true,
 "Reset Mercantile::10272975782184": true,
 "Val Surf::15246133264544": true,
-"Underground Skateshop::8351435489480": true
+"Underground Skateshop::8351435489480": true,
+"Blue Flowers::11283864256679": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57164,6 +57176,23 @@
 "11.5",
 "12",
 "13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Blue Flowers::11283864256679": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
 "8",
 "8.5",
 "9",
