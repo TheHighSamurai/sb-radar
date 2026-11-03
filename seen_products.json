@@ -1772,6 +1772,7 @@
 "Coureur Goods::10353725931775",
 "Coureur Goods::10375897284863",
 "Coureur Goods::10375935820031",
+"Coureur Goods::10410400219391",
 "Coureur Goods::10410456809727",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
@@ -10533,6 +10534,15 @@
 "link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-black-dark-russet-white",
 "image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5430-010_PHSFM001-2000.png?v=1793652877",
 "local": false
+},
+{
+"store": "Coureur Goods",
+"title": "Nike SB Solid Break Polo AF1 Black",
+"price": "65.00",
+"sizes": "L, S, M, XL",
+"link": "https://coureurgoods.com/products/nike-sb-solid-break-polo-af1-black",
+"image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-solid-break-polo-af1-black-shirts-nike-sb-172938.jpg?v=1793639276",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -16773,7 +16783,8 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1
+"Icon Boardshop::10127126593832": 1,
+"LB Skate::8766622761116": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -38139,7 +38150,9 @@
 "l": [
 "8.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "LB Skate::8467134382236": {
 "l": [
