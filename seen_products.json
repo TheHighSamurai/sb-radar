@@ -7337,6 +7337,9 @@
 "Reset Mercantile::10139819737384",
 "Reset Mercantile::10280071758120",
 "Reset Mercantile::10285408616744",
+"Reset Mercantile::10437293375784",
+"Reset Mercantile::15405973373224",
+"Reset Mercantile::15434230563112",
 "Reset Mercantile::9718612295976",
 "Reset Mercantile::9723621474600",
 "Reset Mercantile::9848867553576",
@@ -8632,6 +8635,7 @@
 "Stratosphere::8195525869729",
 "Stratosphere::8196457365665",
 "Stratosphere::8199285440673",
+"Stratosphere::8217902678177",
 "Stratosphere::8221672046753",
 "Stratosphere::8231609335969",
 "Stratosphere::8314406174881",
@@ -10585,6 +10589,15 @@
 "sizes": "L",
 "link": "https://stratosphereskateboards.com/products/nike-sb-logo-tee-lbr",
 "image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/AURORA_DC7817-113_PHSFM001-2000.jpg?v=1793735408",
+"local": false
+},
+{
+"store": "Stratosphere",
+"title": "Nike SB Logo Skate Tee-Aluminum",
+"price": "29.99",
+"sizes": "XL",
+"link": "https://stratosphereskateboards.com/products/nike-sb-logo-tee-hbr-1",
+"image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/IMG_2573.webp?v=1793736475",
 "local": false
 }
 ],
@@ -16816,7 +16829,10 @@
 "Civil::15531955323168": true,
 "Arts & Rec::15702306979951": false,
 "Stratosphere::8630840131745": true,
-"Stratosphere::8696778621089": true
+"Stratosphere::8696778621089": true,
+"Reset Mercantile::10437293375784": true,
+"Reset Mercantile::15405973373224": true,
+"Reset Mercantile::15434230563112": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17771,7 +17787,7 @@
 "9.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "PLA Folsom::8821280014494": {
@@ -56965,6 +56981,48 @@
 "Stratosphere::8696778621089": {
 "l": [
 "Black/White-White"
+],
+"m": {}
+},
+"Reset Mercantile::10437293375784": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Reset Mercantile::15405973373224": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Reset Mercantile::15434230563112": {
+"l": [
+"10",
+"10.5",
+"11",
+"12",
+"13",
+"9",
+"9.5"
 ],
 "m": {}
 }
