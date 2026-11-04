@@ -8318,6 +8318,7 @@
 "Skaters Advocate::8779895701738",
 "Skaters Advocate::8780721619178",
 "Skaters Advocate::8783548121322",
+"Skaters Advocate::8796666527978",
 "Skaters Advocate::8796668133610",
 "Sneaker Politics::7414416277692",
 "Sneaker Politics::7514910785724",
@@ -10725,6 +10726,15 @@
 "sizes": "S, XL, M, L",
 "link": "https://skatersadvocate.com/products/nike-sb-skate-t-shirt-anthracite",
 "image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/AURORA_IW3134-060_PHSYM003-2000.jpg?v=1793728036",
+"local": false
+},
+{
+"store": "Skaters Advocate",
+"title": "Nike SB Skate T-Shirt White",
+"price": "45.00",
+"sizes": "M, XL, S, L",
+"link": "https://skatersadvocate.com/products/nike-sb-civil-east-greenwich",
+"image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/AURORA_IW3134-100_PHSYM003-2000.webp?v=1793726584",
 "local": false
 }
 ],
