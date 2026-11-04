@@ -43589,7 +43589,7 @@
 "9.5"
 ],
 "m": {
-"6.5": 1
+"6.5": 2
 }
 },
 "CCS::8447107858615": {
@@ -43823,6 +43823,7 @@
 },
 "CCS::8623021097143": {
 "l": [
+"11.0",
 "8.5"
 ],
 "m": {}
@@ -56499,7 +56500,7 @@
 "8.5"
 ],
 "m": {
-"8.5": 1
+"8.5": 2
 }
 },
 "Humidity Skateshop::10420406223139": {
@@ -59125,6 +59126,16 @@
 "title": "Nike SB Force 58 - Baroque Brown/Mosswood Brown",
 "t": 1793750795,
 "link": "https://valsurf.com/products/nike-sb-force-58-baroque-brown-mosswood-brown"
+},
+"1567335526141264066": {
+"cid": "1562917305531506738",
+"keys": [
+"t:x rassvet zoom tennis classic blue void blue void sail",
+"p:CCS::8623021097143"
+],
+"title": "Nike SB x Rassvet Zoom Tennis Classic Shoes - Blue Void/Blue Void/Sail",
+"t": 1793752309,
+"link": "https://ccs.com/products/nike-sb-x-rassvet-zoom-tennis-classic-shoes-blue-void-blue-void-sail"
 }
 },
 "nike_dunk_seeded": true,
