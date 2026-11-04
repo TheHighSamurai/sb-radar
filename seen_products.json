@@ -10973,7 +10973,7 @@
 "Doubler Kicks::9645443940637": true,
 "Doubler Kicks::9487013642525": true,
 "Doubler Kicks::9268987101469": true,
-"Doubler Kicks::15415942218013": true,
+"Doubler Kicks::15415942218013": false,
 "Doubler Kicks::15413622604061": true,
 "Doubler Kicks::9898101604637": true,
 "Doubler Kicks::10403075522845": false,
@@ -17067,8 +17067,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"Doubler Kicks::15415942218013": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -17523,12 +17522,8 @@
 "m": {}
 },
 "Doubler Kicks::15415942218013": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Doubler Kicks::15413622604061": {
 "l": [
