@@ -6744,6 +6744,7 @@
 "Overload::10157022773495",
 "Overload::10157031063799",
 "Overload::10157031620855",
+"Overload::10178523889911",
 "Overload::7533907378423",
 "Overload::7569332830455",
 "Overload::7724310069495",
@@ -10684,6 +10685,15 @@
 "link": "https://510skateboarding.com/products/nike-sb-champage-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/0225/3861/files/champagne-tee-white.jpg?v=1793754960",
 "local": false
+},
+{
+"store": "Overload",
+"title": "Nike SB Skate Polo - Black",
+"price": "65.00",
+"sizes": "M, L, XL",
+"link": "https://shopoverload.com/products/nike-sb-skate-polo",
+"image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Skate_Polo_Black_Front.jpg?v=1793758030",
+"local": true
 }
 ],
 "apparel_seeded": true,
@@ -57241,7 +57251,7 @@
 "9.5"
 ],
 "m": {
-"13": 1
+"13": 2
 }
 }
 },
