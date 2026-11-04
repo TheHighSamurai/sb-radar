@@ -8431,6 +8431,7 @@
 "Southside Boardshop::15434655793469",
 "Southside Boardshop::15441818943805",
 "Southside Boardshop::15441820811581",
+"Southside Boardshop::15456433865021",
 "Southside Boardshop::15466768105789",
 "Southside Boardshop::5959847968934",
 "Southside Boardshop::6922409443494",
@@ -17015,7 +17016,8 @@
 "Blue Flowers::11283864256679": true,
 "Rock City Kicks::15441305501854": true,
 "Rock City Kicks::15441304387742": true,
-"Stratosphere::8860845899937": true
+"Stratosphere::8860845899937": true,
+"Southside Boardshop::15456433865021": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57356,6 +57358,21 @@
 "Navy/Black-Navy"
 ],
 "m": {}
+},
+"Southside Boardshop::15456433865021": {
+"l": [
+"10",
+"11",
+"11.5",
+"12",
+"13",
+"7",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59315,6 +59332,16 @@
 "title": "Nike Dunk Low Retro 'Varsity' - Sail/University Gold",
 "t": 1793825766,
 "link": "https://sneakerpolitics.com/products/nike-dunk-low-retro-varsity-sail-university-gold"
+},
+"1567654966020022374": {
+"cid": "1562917305531506738",
+"keys": [
+"t:mystery box 2 pairs of skateboarding final sale no refunds no exchanges",
+"p:Southside Boardshop::15456433865021"
+],
+"title": "Nike SB Mystery Box 2 Pairs of Skateboarding Shoes FINAL SALE NO REFUNDS NO EXCHANGES",
+"t": 1793828470,
+"link": "https://southsideskateshop.com/products/nike-sb-mystery-box-2-pairs-of-skateboarding-shoes"
 }
 },
 "nike_dunk_seeded": true,
