@@ -16914,7 +16914,7 @@
 "Labor Skate Shop::15437920895078": true,
 "Swellophonic::7678304190546": false,
 "Olympia Skate Shop::15440417685811": true,
-"Humidity Skateshop::10420406223139": true,
+"Humidity Skateshop::10420406223139": false,
 "Stolen Skate Shop::8636262875180": true,
 "Xtreme::15453065478238": true,
 "Overload::10156933316855": true,
@@ -17007,8 +17007,7 @@
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
-"Humidity Skateshop::10420406223139": 2,
-"Arts & Rec::15027906642031": 1
+"Arts & Rec::15027906642031": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -27267,7 +27266,7 @@
 "8"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Arts & Rec::7724287852655": {
@@ -42779,12 +42778,9 @@
 "Exodus Rideshop::7101765517430": {
 "l": [
 "M 5.5 / W 7",
-"M 6 / W 7.5",
-"M 6.5 / W 8"
+"M 6 / W 7.5"
 ],
-"m": {
-"M 6.5 / W 8": 2
-}
+"m": {}
 },
 "Exodus Rideshop::7097344295030": {
 "l": [],
@@ -56581,12 +56577,8 @@
 "m": {}
 },
 "Humidity Skateshop::10420406223139": {
-"l": [
-"9.5"
-],
-"m": {
-"9.5": 2
-}
+"l": [],
+"m": {}
 },
 "Stolen Skate Shop::8636262875180": {
 "l": [
