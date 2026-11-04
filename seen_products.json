@@ -5064,6 +5064,7 @@
 "Geometric Skate Shop::9922446950675",
 "Geometric Skate Shop::9925522129171",
 "Home Base Skate Shop::15450352386202",
+"Home Base Skate Shop::15483276361882",
 "Humidity Skateshop::10011064271139",
 "Humidity Skateshop::10011065975075",
 "Humidity Skateshop::10011681390883",
@@ -17054,7 +17055,8 @@
 "Stratosphere::7846358876321": true,
 "Stratosphere::7864156356769": true,
 "Val Surf::14967100702880": true,
-"Val Surf::15658134569120": true
+"Val Surf::15658134569120": true,
+"Home Base Skate Shop::15483276361882": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57470,6 +57472,12 @@
 "12M"
 ],
 "m": {}
+},
+"Home Base Skate Shop::15483276361882": {
+"l": [
+"Black Spruce/Metallic Gold"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59523,6 +59531,15 @@
 "title": "Nike SB Prod Zoom Air Low - Flint Grey/Deep Royal Blue",
 "t": 1793832664,
 "link": "https://valsurf.com/products/nike-sb-prod-zoom-air-low-flint-grey-deep-royal-blue"
+},
+"1567682644962181153": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Home Base Skate Shop::15483276361882"
+],
+"title": "Dunk Low Pro Shoe",
+"t": 1793835069,
+"link": "https://homebaseskateshop.com/products/dunk-low-pro-shoe"
 }
 },
 "nike_dunk_seeded": true,
