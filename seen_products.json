@@ -6998,6 +6998,7 @@
 "Pawnshop Skate::15935618646176",
 "Pawnshop Skate::15936326926496",
 "Pawnshop Skate::15941546475680",
+"Pawnshop Skate::15943778500768",
 "People Skate and Snowboard::15420133146839",
 "People Skate and Snowboard::15420144353495",
 "People Skate and Snowboard::15420226011351",
@@ -10694,6 +10695,15 @@
 "link": "https://shopoverload.com/products/nike-sb-skate-polo",
 "image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Skate_Polo_Black_Front.jpg?v=1793758030",
 "local": true
+},
+{
+"store": "Pawnshop Skate",
+"title": "Nike SB Skate Polo",
+"price": "65.00",
+"sizes": "Medium, Small, X Large, Large",
+"link": "https://pawnshopskate.com/products/nike-sb-skate-polo",
+"image": "https://cdn.shopify.com/s/files/1/0628/0852/2912/files/Photoroom_20261103_183348.jpg?v=1793759665",
+"local": false
 }
 ],
 "apparel_seeded": true,
