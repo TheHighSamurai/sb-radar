@@ -7466,6 +7466,7 @@
 "Rock City Kicks::15410848432286",
 "Rock City Kicks::15441304387742",
 "Rock City Kicks::15441305501854",
+"Rock City Kicks::15443118358686",
 "Rock City Kicks::7034123714718",
 "Rock City Kicks::7101368500382",
 "Rock City Kicks::7156800127134",
@@ -10767,6 +10768,15 @@
 "sizes": "XL, M, L",
 "link": "https://undergroundskateshop.com/products/nike-sb-enforcer-skate-jersey-black",
 "image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBEnforcerSkateJersey-BlackFront.jpg?v=1793825875",
+"local": false
+},
+{
+"store": "Rock City Kicks",
+"title": "Nike SB Woven Oversized Crewneck (Burnt Orange)",
+"price": "110.00",
+"sizes": "L, M, XL",
+"link": "https://rockcitykicks.com/products/nike-sb-woven-oversized-crewneck-burnt-orange",
+"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBWovenOversizedCrewneck_BurntOrange_IQ6263-2461.jpg?v=1793829386",
 "local": false
 }
 ],
@@ -36067,7 +36077,9 @@
 "M11.5 / W13",
 "M8 / W9.5"
 ],
-"m": {}
+"m": {
+"M11 / W12.5": 1
+}
 },
 "Overload::9890301706487": {
 "l": [
@@ -36270,7 +36282,9 @@
 "M9 / W10.5",
 "M9.5 / W11"
 ],
-"m": {}
+"m": {
+"M10.5 / W12": 1
+}
 },
 "Overload::8409230311671": {
 "l": [],
@@ -41086,7 +41100,7 @@
 "9.5"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Bluetile Skateboards::7450658144482": {
