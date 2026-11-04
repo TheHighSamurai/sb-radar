@@ -9669,6 +9669,7 @@
 "Val Surf::14707858014368",
 "Val Surf::14707871940768",
 "Val Surf::14906632306848",
+"Val Surf::14967100702880",
 "Val Surf::15020784222368",
 "Val Surf::15035547222176",
 "Val Surf::15047880474784",
@@ -9703,6 +9704,7 @@
 "Val Surf::15644204794016",
 "Val Surf::15644216361120",
 "Val Surf::15653881512096",
+"Val Surf::15658134569120",
 "Val Surf::15658215440544",
 "Val Surf::15660144263328",
 "Val Surf::15663199518880",
@@ -17050,7 +17052,9 @@
 "Stratosphere::8063532105889": true,
 "Stratosphere::7854126465185": true,
 "Stratosphere::7846358876321": true,
-"Stratosphere::7864156356769": true
+"Stratosphere::7864156356769": true,
+"Val Surf::14967100702880": true,
+"Val Surf::15658134569120": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17063,7 +17067,8 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1
+"Icon Boardshop::10127126593832": 1,
+"Doubler Kicks::15415942218013": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -17521,7 +17526,9 @@
 "l": [
 "8.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Doubler Kicks::15413622604061": {
 "l": [
@@ -44040,16 +44047,13 @@
 "10.0",
 "11.0",
 "11.5",
-"12.0",
 "4.5",
 "6.5",
 "7.0",
 "9.0",
 "9.5"
 ],
-"m": {
-"12.0": 2
-}
+"m": {}
 },
 "CCS::8193627652279": {
 "l": [
@@ -45226,7 +45230,7 @@
 "UK 9.5"
 ],
 "m": {
-"UK 8.5": 1
+"UK 8.5": 2
 }
 },
 "Flatspot::7422084284596": {
@@ -51394,7 +51398,8 @@
 "9"
 ],
 "m": {
-"12": 1
+"12": 2,
+"8.5": 1
 }
 },
 "Shoe Palace::7582245126350": {
@@ -57463,6 +57468,18 @@
 "WHITE/BLACK-WHITE-WHITE"
 ],
 "m": {}
+},
+"Val Surf::14967100702880": {
+"l": [
+"12M"
+],
+"m": {}
+},
+"Val Surf::15658134569120": {
+"l": [
+"12M"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59486,6 +59503,26 @@
 "title": "Nike Dunk Low SP Brazil",
 "t": 1793831467,
 "link": "https://doublerkicks.com/products/nike-dunk-low-sp-brazil"
+},
+"1567671382207365293": {
+"cid": "1550909316897177842",
+"keys": [
+"t:dunk low pro prm sonics fir white university gold fire red",
+"p:Val Surf::14967100702880"
+],
+"title": "Nike SB Dunk Low Pro PRM (Sonics) - Fir/White-University Gold-Fire Red",
+"t": 1793832385,
+"link": "https://valsurf.com/products/nike-sb-dunk-low-pro-prm-sonics-fir-white-university-gold-fire-red"
+},
+"1567671391396823063": {
+"cid": "1550909316897177842",
+"keys": [
+"t:dunk low pro alexis sablone oil green desert moss white",
+"p:Val Surf::15658134569120"
+],
+"title": "Nike SB Dunk Low Pro (Alexis Sablone) - Oil Green/Desert Moss-White",
+"t": 1793832386,
+"link": "https://valsurf.com/products/nike-sb-dunk-low-pro-alexis-sablone-oil-green-desert-moss-white"
 }
 },
 "nike_dunk_seeded": true,
