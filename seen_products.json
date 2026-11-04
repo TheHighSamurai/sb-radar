@@ -17068,7 +17068,7 @@
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
-"Doubler Kicks::15415942218013": 1
+"Doubler Kicks::15415942218013": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -17527,7 +17527,7 @@
 "8.5"
 ],
 "m": {
-"8.5": 1
+"8.5": 2
 }
 },
 "Doubler Kicks::15413622604061": {
@@ -33920,6 +33920,7 @@
 },
 "Val Surf::15750115164320": {
 "l": [
+"12M",
 "8.5M"
 ],
 "m": {}
@@ -59523,6 +59524,16 @@
 "title": "Nike SB Dunk Low Pro (Alexis Sablone) - Oil Green/Desert Moss-White",
 "t": 1793832386,
 "link": "https://valsurf.com/products/nike-sb-dunk-low-pro-alexis-sablone-oil-green-desert-moss-white"
+},
+"1567672558906646629": {
+"cid": "1562917305531506738",
+"keys": [
+"t:prod zoom air low flint grey deep royal blue",
+"p:Val Surf::15750115164320"
+],
+"title": "Nike SB Prod Zoom Air Low - Flint Grey/Deep Royal Blue",
+"t": 1793832664,
+"link": "https://valsurf.com/products/nike-sb-prod-zoom-air-low-flint-grey-deep-royal-blue"
 }
 },
 "nike_dunk_seeded": true,
