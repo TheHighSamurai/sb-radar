@@ -12332,7 +12332,7 @@
 "VU Skate Shop::11148008521895": true,
 "VU Skate Shop::11136181174439": true,
 "VU Skate Shop::11136161677479": true,
-"VU Skate Shop::11136153125031": true,
+"VU Skate Shop::11136153125031": false,
 "VU Skate Shop::11136150864039": false,
 "VU Skate Shop::11136147488935": true,
 "VU Skate Shop::11128298111143": true,
@@ -17006,8 +17006,7 @@
 "No-Comply::8577503264953": 1,
 "No-Comply::8540790980793": 1,
 "No-Comply::8516437999801": 1,
-"Icon Boardshop::10127126593832": 1,
-"VU Skate Shop::11136153125031": 2
+"Icon Boardshop::10127126593832": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -19365,7 +19364,7 @@
 "9.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "Travel Skate Shop::7602142707789": {
@@ -29868,12 +29867,8 @@
 "m": {}
 },
 "VU Skate Shop::11136153125031": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "VU Skate Shop::11136150864039": {
 "a": "",
