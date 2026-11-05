@@ -38217,6 +38217,7 @@
 "LB Skate::9305344114844": {
 "l": [
 "10",
+"10.5",
 "11.5",
 "12",
 "9.5"
@@ -59368,6 +59369,17 @@
 "title": "Nike SB Air Force 1 - Navy / Black-Navy (11/13)",
 "t": 1793903769,
 "link": "https://artsandrecstore.com/products/nike-sb-air-force-1-navy-black-navy"
+},
+"1567987132709085326": {
+"cid": "1562917305531506738",
+"keys": [
+"s:DV5477-204",
+"t:force 58 shadow brown black burgundy ash dv5477 204",
+"p:LB Skate::9305344114844"
+],
+"title": "Nike SB Force 58 Shadow Brown/Black-Burgundy Ash Shoes (DV5477-204)",
+"t": 1793907665,
+"link": "https://lbskate.com/products/nike-sb-force-58-shadow-brown-black-burgundy-ash-shoes"
 }
 },
 "nike_dunk_seeded": true,
