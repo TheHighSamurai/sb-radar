@@ -6840,6 +6840,7 @@
 "PLA Folsom::15393901281438",
 "PLA Folsom::15408364814494",
 "PLA Folsom::15443275415710",
+"PLA Folsom::15443278332062",
 "PLA Folsom::15443278594206",
 "PLA Folsom::15443278987422",
 "PLA Folsom::6704398106782",
@@ -10824,6 +10825,15 @@
 "sizes": "L, M",
 "link": "https://plaskate.com/products/nike-sb-yuto-skate-jersey-black-anthracite-im5465-010",
 "image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-yuto-skate-jersey-black-anthracite-im5465-010_88265f14-477c-475a-bb65-74cd16abe78f.jpg?v=1793837011",
+"local": false
+},
+{
+"store": "PLA Folsom",
+"title": "NIKE SB AIRMAIL LONG SLEEVE SHIRT - ANTHRACITE/BLACK",
+"price": "50.00",
+"sizes": "M, XL, L",
+"link": "https://plaskate.com/products/nike-sb-airmail-long-sleeve-shirt-anthracite-black-im5430-060",
+"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-airmail-long-sleeve-shirt-anthracite-black-im5430-060.jpg?v=1793837925",
 "local": false
 }
 ],
@@ -40851,7 +40861,7 @@
 "9.5"
 ],
 "m": {
-"5": 1
+"5": 2
 }
 },
 "Bluetile Skateboards::9309556736226": {
