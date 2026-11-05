@@ -1496,6 +1496,7 @@
 "Civil::15531955323168",
 "Civil::15532247941408",
 "Civil::15556237984032",
+"Civil::15569871044896",
 "Civil::15569934975264",
 "Civil::8630668820768",
 "Civil::9157701173536",
@@ -2212,6 +2213,7 @@
 "Deli Skate Supply::15337126199545",
 "Deli Skate Supply::15337137668345",
 "Deli Skate Supply::15349105918201",
+"Deli Skate Supply::15354726908153",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10861,6 +10863,15 @@
 "link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-black-black",
 "image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5426-010_PHSFM001-2000.png?v=1793899065",
 "local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt - Gym Red / Stealth",
+"price": "80.00",
+"sizes": "XXL",
+"link": "https://wearecivil.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IZ1853-687_PHSYM001-2000.jpg?v=1793910504",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -17128,7 +17139,8 @@
 "Transport Skate::9663297093909": true,
 "Arts & Rec::15721329295471": false,
 "Civil::15569934975264": true,
-"Oneness::10278397182036": true
+"Oneness::10278397182036": true,
+"Deli Skate Supply::15354726908153": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57576,6 +57588,19 @@
 "l": [
 "10.5",
 "6"
+],
+"m": {}
+},
+"Deli Skate Supply::15354726908153": {
+"l": [
+"10",
+"10.5",
+"11",
+"12",
+"13",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 }
