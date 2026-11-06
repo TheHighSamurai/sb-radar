@@ -7480,6 +7480,7 @@
 "Richmond Hood::10663896023204",
 "Richmond Hood::10664016216228",
 "Richmond Hood::15777797374116",
+"Richmond Hood::15781407752356",
 "Richmond Hood::6729235824804",
 "Richmond Hood::6770489393316",
 "Richmond Hood::6840894423204",
@@ -10585,6 +10586,15 @@
 "sizes": "L, XL, M, S",
 "link": "https://35thnorth.com/products/nike-sb-champagne-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/champagnetee_white.webp?v=1793997307",
+"local": false
+},
+{
+"store": "Richmond Hood",
+"title": "Nike SB Long-Sleeve Skate Jersey",
+"price": "125.00",
+"sizes": "Large, Medium, XL, Small",
+"link": "https://richmondhood.com/products/untitled-nov-6-at-3-59-pm",
+"image": "https://cdn.shopify.com/s/files/1/0493/5748/8292/files/IMG_1399.jpg?v=1794000088",
 "local": false
 }
 ],
@@ -57413,7 +57423,9 @@
 "9.0 M",
 "9.5 M"
 ],
-"m": {}
+"m": {
+"9.0 M": 1
+}
 },
 "Theory Skate Shop::15478159671483": {
 "l": [
@@ -57815,7 +57827,6 @@
 "Skaters Advocate::8796385870058": {
 "l": [
 "10",
-"10.5",
 "11",
 "11.5",
 "12",
@@ -57826,9 +57837,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"10.5": 2
-}
+"m": {}
 },
 "Drift House::10413166919935": {
 "l": [
