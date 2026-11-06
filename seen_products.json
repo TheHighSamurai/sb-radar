@@ -14833,7 +14833,7 @@
 "LICK NYC::8971686084863": true,
 "LICK NYC::8971657445631": true,
 "Humidity Skateshop::10316789940515": true,
-"Uprise Skateshop::15441772576983": false,
+"Uprise Skateshop::15441772576983": true,
 "Uprise Skateshop::8818999427287": true,
 "Uprise Skateshop::9350071451863": true,
 "Uprise Skateshop::9325835518167": true,
@@ -47224,7 +47224,9 @@
 "m": {}
 },
 "Uprise Skateshop::15441772576983": {
-"l": [],
+"l": [
+"12.0"
+],
 "m": {}
 },
 "Uprise Skateshop::8818999427287": {
@@ -50406,7 +50408,9 @@
 "8.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"11": 1
+}
 },
 "Sneaker Politics::9352454504636": {
 "l": [
@@ -57640,12 +57644,9 @@
 "10",
 "12",
 "8",
-"8.5",
-"9"
+"8.5"
 ],
-"m": {
-"9": 2
-}
+"m": {}
 },
 "Pharmacy Temecula::7679861719122": {
 "l": [
