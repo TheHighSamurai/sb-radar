@@ -13954,7 +13954,7 @@
 "Exodus Rideshop::7776500416630": false,
 "Exodus Rideshop::7778633056374": false,
 "Exodus Rideshop::7768746033270": false,
-"Exodus Rideshop::7774563369078": true,
+"Exodus Rideshop::7774563369078": false,
 "Exodus Rideshop::7774550950006": false,
 "Exodus Rideshop::7774542463094": false,
 "Exodus Rideshop::7764827635830": false,
@@ -16787,7 +16787,7 @@
 "Skatepark of Tampa::15481063604497": true,
 "Bluetile Skateboards::15479552868578": true,
 "Swellophonic::7688196554834": false,
-"Southside Boardshop::15477219950909": true,
+"Southside Boardshop::15477219950909": false,
 "Pastime Skateshop::15958864265376": true,
 "Barewires::15475182600445": true,
 "Blue Flowers::11283959120039": true,
@@ -16836,9 +16836,7 @@
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
-"NJ Skateshop::15549605675042": 1,
-"Exodus Rideshop::7774563369078": 2,
-"Southside Boardshop::15477219950909": 2
+"NJ Skateshop::15549605675042": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -42240,12 +42238,8 @@
 "m": {}
 },
 "Exodus Rideshop::7774563369078": {
-"l": [
-"7Y"
-],
-"m": {
-"7Y": 2
-}
+"l": [],
+"m": {}
 },
 "Exodus Rideshop::7774550950006": {
 "l": [],
@@ -56326,12 +56320,9 @@
 "Stardust Skate Shop::15435823677652": {
 "l": [
 "10",
-"12",
 "13"
 ],
-"m": {
-"12": 2
-}
+"m": {}
 },
 "Exodus Rideshop::9071716302966": {
 "l": [
@@ -57291,12 +57282,8 @@
 "m": {}
 },
 "Southside Boardshop::15477219950909": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Pastime Skateshop::15958864265376": {
 "l": [
@@ -57389,7 +57376,7 @@
 "9.5 M"
 ],
 "m": {
-"14.0 M": 1
+"14.0 M": 2
 }
 },
 "Theory Skate Shop::15478159671483": {
@@ -57559,7 +57546,7 @@
 "M9=W10.5"
 ],
 "m": {
-"M6.5=W8": 1
+"M6.5=W8": 2
 }
 },
 "Coureur Goods::10410401366271": {
@@ -57627,7 +57614,6 @@
 "Premier MI::10391998791745": {
 "l": [
 "10",
-"10.5",
 "11",
 "11.5",
 "5",
@@ -57641,9 +57627,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"10.5": 2
-}
+"m": {}
 },
 "Extra Butter::8857228705975": {
 "l": [
@@ -57760,7 +57744,7 @@
 "9.5"
 ],
 "m": {
-"10": 1
+"10": 2
 }
 }
 },
