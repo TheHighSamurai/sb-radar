@@ -5447,6 +5447,7 @@
 "Kinetic::15434123083878",
 "Kinetic::15444537573478",
 "Kinetic::15451436417126",
+"Kinetic::15462286917734",
 "Kinetic::8081361338470",
 "Kinetic::8095107121254",
 "Kinetic::8095107907686",
@@ -8944,6 +8945,7 @@
 "Theory Skate Shop::15434442997947",
 "Theory Skate Shop::15435653513403",
 "Theory Skate Shop::15438637105339",
+"Theory Skate Shop::15478159671483",
 "Theory Skate Shop::15482445529275",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
@@ -17200,7 +17202,9 @@
 "Blue Flowers::11283959120039": true,
 "Recess Skate & Snow::10461308322050": false,
 "Renarts::15429569871915": true,
-"Icon Boardshop::15467452629288": true
+"Icon Boardshop::15467452629288": true,
+"Kinetic::15462286917734": true,
+"Theory Skate Shop::15478159671483": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -25614,16 +25618,13 @@
 "11.5",
 "4",
 "4.5",
-"5",
 "5.5",
 "7.5",
 "8",
 "9",
 "9.5"
 ],
-"m": {
-"5": 2
-}
+"m": {}
 },
 "Renarts::7956328841259": {
 "l": [
@@ -57738,6 +57739,42 @@
 "Black Spruce/Metallic Gold"
 ],
 "m": {}
+},
+"Kinetic::15462286917734": {
+"l": [
+"10.0 M",
+"10.5 M",
+"11.0 M",
+"11.5 M",
+"12.0 M",
+"13.0 M",
+"14.0 M",
+"9.0 M",
+"9.5 M"
+],
+"m": {}
+},
+"Theory Skate Shop::15478159671483": {
+"l": [
+"M10.5/W12",
+"M10/W11.5",
+"M11.5/W13",
+"M11/W12.5",
+"M12/W13.5",
+"M13/W14.5",
+"M14/W15.5",
+"M15/W16.5",
+"M5.5/W7",
+"M5/W6.5",
+"M6.5/W8",
+"M7.5/W9",
+"M7/W8.5",
+"M8.5/W10",
+"M8/W9.5",
+"M9.5/W11",
+"M9/W10.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59554,6 +59591,16 @@
 "title": "NIKE SB DUNK LOW PRO PRM WC \"CHAMPAGNE\"",
 "t": 1793967963,
 "link": "https://pastimeskateshop.com/products/nike-sb-dunk-low-pro-prm-wc-champagne"
+},
+"1568277795392463014": {
+"cid": "1550909316897177842",
+"keys": [
+"t:dunk low pro premium black spuce metallic gold black",
+"p:Theory Skate Shop::15478159671483"
+],
+"title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
+"t": 1793976964,
+"link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black"
 }
 },
 "nike_dunk_seeded": true,
