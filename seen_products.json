@@ -8453,6 +8453,7 @@
 "Southside Boardshop::15441820811581",
 "Southside Boardshop::15456433865021",
 "Southside Boardshop::15466768105789",
+"Southside Boardshop::15477219950909",
 "Southside Boardshop::5959847968934",
 "Southside Boardshop::6922409443494",
 "Southside Boardshop::7119196061862",
@@ -17176,7 +17177,8 @@
 "Deli Skate Supply::15354726908153": true,
 "Skatepark of Tampa::15481063604497": false,
 "Bluetile Skateboards::15479552868578": false,
-"Swellophonic::7688196554834": false
+"Swellophonic::7688196554834": false,
+"Southside Boardshop::15477219950909": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57639,6 +57641,24 @@
 },
 "Swellophonic::7688196554834": {
 "l": [],
+"m": {}
+},
+"Southside Boardshop::15477219950909": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
 "m": {}
 }
 },
