@@ -5348,6 +5348,7 @@
 "Innercity Skate::15478570090775",
 "Innercity Skate::15478642737431",
 "Innercity Skate::15478804218135",
+"Innercity Skate::15488903414039",
 "Innercity Skate::8065331331351",
 "Innercity Skate::8205713637655",
 "Innercity Skate::8253827121431",
@@ -10884,6 +10885,15 @@
 "sizes": "2XL, Small, Medium, Large, XL",
 "link": "https://geometricskateshop.com/products/nike-sb-champagne-dunk-tee-white-gold",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/champagne-tee-white_2048x_ae93543d-7dbf-4731-9208-d8c3bcac889d.webp?v=1793925079",
+"local": false
+},
+{
+"store": "Innercity Skate",
+"title": "Nike SB Everyday Elevated Skate Socks (3 Pairs) \u2013 Multi-Color",
+"price": "24.99",
+"sizes": "White",
+"link": "https://innercityskate.com/products/nike-sb-everyday-elevated-skate-socks-3-pairs-multi-color",
+"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/AURORA_IR1328-910_PHSYD001-2000.jpg?v=1793930018",
 "local": false
 }
 ],
@@ -36030,13 +36040,10 @@
 "M11.5 / W13",
 "M12 / W13.5",
 "M14 / W15.5",
-"M8 / W9.5",
 "M9 / W10.5",
 "M9.5 / W11"
 ],
-"m": {
-"M8 / W9.5": 2
-}
+"m": {}
 },
 "Overload::10019810083063": {
 "l": [
