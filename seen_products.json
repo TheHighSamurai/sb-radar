@@ -7479,6 +7479,7 @@
 "Rock City Kicks::15368894808222",
 "Rock City Kicks::15368975417502",
 "Rock City Kicks::15371939545246",
+"Rock City Kicks::15387942486174",
 "Rock City Kicks::15408485990558",
 "Rock City Kicks::15410848432286",
 "Rock City Kicks::15441304387742",
@@ -10894,6 +10895,15 @@
 "sizes": "White",
 "link": "https://innercityskate.com/products/nike-sb-everyday-elevated-skate-socks-3-pairs-multi-color",
 "image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/AURORA_IR1328-910_PHSYD001-2000.jpg?v=1793930018",
+"local": false
+},
+{
+"store": "Rock City Kicks",
+"title": "Nike SB T-Shirt (Charcoal)",
+"price": "45.00",
+"sizes": "L, XL, M",
+"link": "https://rockcitykicks.com/products/nike-sb-t-shirt-charcol",
+"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBT-Shirt_Charcoal_IW3134-0601.jpg?v=1792419296",
 "local": false
 }
 ],
