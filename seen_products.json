@@ -333,6 +333,7 @@
 "35th North::15432145666084",
 "35th North::15439331688484",
 "35th North::15463410040868",
+"35th North::15487947374628",
 "35th North::5046050029604",
 "35th North::7087622815780",
 "35th North::7227698446372",
@@ -379,6 +380,7 @@
 "510 Skateboarding::15402005102697",
 "510 Skateboarding::15402007625833",
 "510 Skateboarding::15414412836969",
+"510 Skateboarding::15443307266153",
 "510 Skateboarding::15443524354153",
 "510 Skateboarding::15443556860009",
 "510 Skateboarding::6740432355433",
@@ -1498,6 +1500,7 @@
 "Civil::15526254706976",
 "Civil::15531955323168",
 "Civil::15532247941408",
+"Civil::15546998784288",
 "Civil::15556237984032",
 "Civil::15569871044896",
 "Civil::15569934975264",
@@ -1786,6 +1789,7 @@
 "Coureur Goods::10375897284863",
 "Coureur Goods::10375935820031",
 "Coureur Goods::10410400219391",
+"Coureur Goods::10410401366271",
 "Coureur Goods::10410456809727",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
@@ -2217,6 +2221,7 @@
 "Deli Skate Supply::15337137668345",
 "Deli Skate Supply::15349105918201",
 "Deli Skate Supply::15354726908153",
+"Deli Skate Supply::15354757611769",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -3730,6 +3735,7 @@
 "Extra Butter::8721187635383",
 "Extra Butter::8735956926647",
 "Extra Butter::8735965774007",
+"Extra Butter::8857228705975",
 "Extra Butter::html::nike sb",
 "Extra Butter::html::nike sb mens air max ishod premium shoes",
 "Extra Butter::html::nike sb mens air max ishod prm shoes",
@@ -4937,6 +4943,7 @@
 "Furnace Skate::10578617499832",
 "Furnace Skate::10668903399608",
 "Furnace Skate::10681778634936",
+"Furnace Skate::10697833742520",
 "Furnace Skate::7299934453944",
 "Furnace Skate::7299935043768",
 "Furnace Skate::7315759136952",
@@ -5588,6 +5595,7 @@
 "LB Skate::9003895816348",
 "LB Skate::9003897782428",
 "LB Skate::9003897946268",
+"LB Skate::9003899388060",
 "LB Skate::9004480495772",
 "LB Skate::9010519539868",
 "LB Skate::9012475101340",
@@ -5659,6 +5667,7 @@
 "Labor Skate Shop::15412660273254",
 "Labor Skate Shop::15436762120294",
 "Labor Skate Shop::15437920895078",
+"Labor Skate Shop::15464638054502",
 "Labor Skate Shop::7303666532454",
 "Labor Skate Shop::7534535835750",
 "Labor Skate Shop::7545787088998",
@@ -5955,6 +5964,7 @@
 "Mainland::8526765031509",
 "Mainland::8546035859541",
 "Mainland::8561524605013",
+"Mainland::8586652385365",
 "NJ Skateshop::15396784046114",
 "NJ Skateshop::15419208990754",
 "NJ Skateshop::15421473587234",
@@ -5962,6 +5972,7 @@
 "NJ Skateshop::15473657708578",
 "NJ Skateshop::15477152415778",
 "NJ Skateshop::15506384420898",
+"NJ Skateshop::15542471295010",
 "NJ Skateshop::15549605675042",
 "NJ Skateshop::15549618585634",
 "NJ Skateshop::2256769581115",
@@ -6245,6 +6256,7 @@
 "No-Comply::15448005542073",
 "No-Comply::15454763057337",
 "No-Comply::15469752811705",
+"No-Comply::15485538730169",
 "No-Comply::15490926608569",
 "No-Comply::4422398148748",
 "No-Comply::5394328879258",
@@ -6855,6 +6867,7 @@
 "PLA Folsom::15387939274910",
 "PLA Folsom::15393901281438",
 "PLA Folsom::15408364814494",
+"PLA Folsom::15439759507614",
 "PLA Folsom::15443275415710",
 "PLA Folsom::15443278332062",
 "PLA Folsom::15443278594206",
@@ -7019,11 +7032,13 @@
 "Pawnshop Skate::15915379753120",
 "Pawnshop Skate::15931290747040",
 "Pawnshop Skate::15931338981536",
+"Pawnshop Skate::15931349663904",
 "Pawnshop Skate::15934128914592",
 "Pawnshop Skate::15935618646176",
 "Pawnshop Skate::15936326926496",
 "Pawnshop Skate::15941546475680",
 "Pawnshop Skate::15943778500768",
+"Pawnshop Skate::15953317396640",
 "People Skate and Snowboard::15420133146839",
 "People Skate and Snowboard::15420144353495",
 "People Skate and Snowboard::15420226011351",
@@ -7096,6 +7111,7 @@
 "Pharmacy Temecula::7684326948946",
 "Plus Skateboarding::html::nike sb blazer mid (black/white) - plus skateboarding",
 "Premier MI::10372581294145",
+"Premier MI::10391998791745",
 "Premier MI::4528765829185",
 "Premier MI::4568302026817",
 "Premier MI::4608065470529",
@@ -7491,6 +7507,7 @@
 "Rock City Kicks::15410848432286",
 "Rock City Kicks::15441304387742",
 "Rock City Kicks::15441305501854",
+"Rock City Kicks::15443007799454",
 "Rock City Kicks::15443118358686",
 "Rock City Kicks::7034123714718",
 "Rock City Kicks::7101368500382",
@@ -7624,6 +7641,8 @@
 "Seasons Skate Shop::10430025957634",
 "Seasons Skate Shop::10443068276994",
 "Seasons Skate Shop::10443072143618",
+"Seasons Skate Shop::10453475688706",
+"Seasons Skate Shop::10453475918082",
 "Seasons Skate Shop::8001557987586",
 "Seasons Skate Shop::9113496781058",
 "Seasons Skate Shop::9123955081474",
@@ -9194,6 +9213,7 @@
 "Travel Skate Shop::15428092264525",
 "Travel Skate Shop::15436563185741",
 "Travel Skate Shop::15448619876429",
+"Travel Skate Shop::15467840766029",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -9583,6 +9603,7 @@
 "Union LA::15446356492365",
 "Union LA::15446356721741",
 "Uprise Skateshop::15441772576983",
+"Uprise Skateshop::15473056907479",
 "Uprise Skateshop::8818999427287",
 "Uprise Skateshop::9325835518167",
 "Uprise Skateshop::9350071451863",
@@ -10456,478 +10477,9 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [
-{
-"store": "Geometric Skate Shop",
-"title": "Nike SB AF1 Solid Break City Pack Polo Top - Black/Court Green",
-"price": "65.00",
-"sizes": "2XL, L, XL, M, S",
-"link": "https://geometricskateshop.com/products/nike-sb-af1-polo-black-green",
-"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/nike-sb-nike-sb-polo-solid-break-af1-s-s-black.webp?v=1793381055",
-"local": false
-},
-{
-"store": "Concepts",
-"title": "Nike SB Max90 Skate T-Shirt (Black)",
-"price": "45.00",
-"sizes": "XXL",
-"link": "https://cncpts.com/products/nike-sb-max90-skate-t-shirt-hj0893-010-black",
-"image": "https://cdn.shopify.com/s/files/1/0043/5673/5045/files/197862431285-1.jpg?v=1744377304",
-"local": false
-},
-{
-"store": "Concepts",
-"title": "Nike SB Double-Knee Twill Skate Pants (Black)",
-"price": "80.00",
-"sizes": "L",
-"link": "https://cncpts.com/products/nike-sb-double-knee-twill-skate-pants-fv7349-010-black",
-"image": "https://cdn.shopify.com/s/files/1/0043/5673/5045/files/197601390996-1.jpg?v=1743107400",
-"local": false
-},
-{
-"store": "Humidity Skateshop",
-"title": "Nike SB - Solid Break AF-1 Polo (Black/Court Green)",
-"price": "65.00",
-"sizes": "L, XL, M, XXL, S",
-"link": "https://humiditynola.com/products/nike-sb-solid-break-af-1-polo-black-court-green",
-"image": "https://cdn.shopify.com/s/files/1/0816/5336/7075/files/4c7f86b3-c7f4-4f36-954f-914bf552bdab.jpg?v=1793388644",
-"local": false
-},
-{
-"store": "Underground Skateshop",
-"title": "Nike SB Champagne T-Shirt - White",
-"price": "45.00",
-"sizes": "White",
-"link": "https://undergroundskateshop.com/products/nike-sb-champagne-t-shirt-white",
-"image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBChampagneT-Shirt-White.jpg?v=1793390063",
-"local": false
-},
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - Champagne Crest Tee Charcoal",
-"price": "44.99",
-"sizes": "X-Large, Medium, Large",
-"link": "https://deliskatesupply.com/products/nike-sb-crest-tee-charcoal",
-"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/nike-sb-champagne-dunk-tee-black-nike-sb-champagne-dunk-tee-black-1263831242.jpg?v=1793390714",
-"local": false
-},
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - Champagne Crest Tee White",
-"price": "44.99",
-"sizes": "Medium, Large, X-Large",
-"link": "https://deliskatesupply.com/products/nike-sb-champagne-crest-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/shopping_7f506b73-d662-4496-91d6-d31944c23419.jpg?v=1793390639",
-"local": false
-},
-{
-"store": "Icon Boardshop",
-"title": "Nike SB Solid Break AF1 Polo - Black",
-"price": "64.99",
-"sizes": "Black",
-"link": "https://iconboardshop.com/products/nike-sb-solid-break-af1-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/0681/2106/7816/files/1_b586181c-67e7-4d75-803e-d57a8f73a87a.jpg?v=1793406763",
-"local": false
-},
-{
-"store": "Icon Boardshop",
-"title": "Nike SB Switch Woven Top - Silver Lilac",
-"price": "109.99",
-"sizes": "Silver Lilac",
-"link": "https://iconboardshop.com/products/nike-sb-switch-doven-top-silver-lilac",
-"image": "https://cdn.shopify.com/s/files/1/0681/2106/7816/files/1_2_4efbbfc4-1a17-4526-b63f-2cd54857f7b1.jpg?v=1793407409",
-"local": false
-},
-{
-"store": "Icon Boardshop",
-"title": "Nike SB Fleece 1/2 Zip Skate Sweatshirt - Gym Red/Stealth",
-"price": "79.99",
-"sizes": "Gym Red/Stealth",
-"link": "https://iconboardshop.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/0681/2106/7816/files/1_96cd6b44-c512-4c7e-a17f-3f8b13e6df5c.jpg?v=1793407526",
-"local": false
-},
-{
-"store": "Innercity Skate",
-"title": "Nike SB Switch Drill Woven Pants - Silver Lilac/Palest Purple",
-"price": "104.99",
-"sizes": "Large, Small, X-Large, Medium",
-"link": "https://innercityskate.com/products/nike-sb-switch-drill-woven-pants-silver-lilac-palest-purple",
-"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_35.jpg?v=1793479478",
-"local": false
-},
-{
-"store": "Innercity Skate",
-"title": "Nike SB AF1 Solid Polo Shirt - Black/Court Green",
-"price": "64.99",
-"sizes": "X-Large, Small, Medium, Large",
-"link": "https://innercityskate.com/products/nike-sb-af1-solid-polo-shirt-black-court-green",
-"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/2048x2048_38.jpg?v=1793484297",
-"local": false
-},
-{
-"store": "Geometric Skate Shop",
-"title": "Nike SB Champagne Dunk Tee",
-"price": "45.00",
-"sizes": "2XL, Small, Large, Medium, XL",
-"link": "https://geometricskateshop.com/products/nike-sb-champagne-dunk-tee",
-"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/Tee-Black-IW3134060-T-Shirt-Nike-SB-Skateboarding-8_1.jpg?v=1793493438",
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB CHAMPAGNE TEE CHARCOAL/GOLD",
-"price": "45.00",
-"sizes": "M, XL",
-"link": "https://olympiaskateshop.com/products/nike-sb-champagne-tee-charcoal-gold",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/nike-sb-nike-sb-tee-loose-champagne-dunk-s-s-black.webp?v=1793560113",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Yuto Jersey - Black / Anthracite",
-"price": "96.00",
-"sizes": "XL, M, S, L",
-"link": "https://www.flatspot.com/products/nike-sb-yuto-jersey-black-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-yuto-jersey-black-anthracite--1.jpg?v=1793627141",
-"local": false
-},
-{
-"store": "Coureur Goods",
-"title": "Nike SB Skate Tee Champagne Dunk Anthracite",
-"price": "45.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://coureurgoods.com/products/nike-sb-skate-tee-champagne-dunk-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-nike-sb-tee-loose-champagne-dunk-s-s-black_447f58db-3fa5-4b6d-85fd-7ce792bb3e2b.webp?v=1793633678",
-"local": false
-},
-{
-"store": "Underground Skateshop",
-"title": "Nike SB Champagne T-Shirt - Vintage Black",
-"price": "45.00",
-"sizes": "Washed Black",
-"link": "https://undergroundskateshop.com/products/nike-sb-champagne-t-shirt-vintage-black",
-"image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBChampagneT-Shirt-VintageBlack.jpg?v=1793650053",
-"local": false
-},
-{
-"store": "Civil",
-"title": "Nike SB Skate T-Shirt - Anthracite",
-"price": "45.00",
-"sizes": "Small, Medium, XL, Large, XXL",
-"link": "https://wearecivil.com/products/nike-sb-skate-t-shirt-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IW3134-060_PHSFM001-2000.jpg?v=1793651951",
-"local": false
-},
-{
-"store": "Exodus Rideshop",
-"title": "Nike SB Airmail Long Sleeve Skate Tee - Black/Dark Russet-White",
-"price": "50.00",
-"sizes": "L, M",
-"link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-black-dark-russet-white",
-"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5430-010_PHSFM001-2000.png?v=1793652877",
-"local": false
-},
-{
-"store": "Coureur Goods",
-"title": "Nike SB Solid Break Polo AF1 Black",
-"price": "65.00",
-"sizes": "L, S, M, XL",
-"link": "https://coureurgoods.com/products/nike-sb-solid-break-polo-af1-black",
-"image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-solid-break-polo-af1-black-shirts-nike-sb-172938.jpg?v=1793639276",
-"local": false
-},
-{
-"store": "Familia Skateshop",
-"title": "NIKE SB SOLID BREAK AF1 POLO",
-"price": "65.00",
-"sizes": "2XL, L, M, S, XL",
-"link": "https://familiaskate.com/products/nike-sb-solid-break-af1-polo",
-"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKESB-POLO-AF1.jpg?v=1793682535",
-"local": false
-},
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - Essentials Fleece Pullover Lavender",
-"price": "84.99",
-"sizes": "X-Large, Large",
-"link": "https://deliskatesupply.com/products/nike-sb-essentials-fleece-pullover-lavender",
-"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/shopping_b18029c6-e3c5-4d94-ae2d-08c52306dfbc.jpg?v=1793724504",
-"local": false
-},
-{
-"store": "Stratosphere",
-"title": "Nike SB x Yuto AF1 Tee Shirt",
-"price": "50.00",
-"sizes": "M, XXL, S, XL, L",
-"link": "https://stratosphereskateboards.com/products/nike-air-force-1-tee",
-"image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/AURORA_IM4432-010_PHCYM001-2000.jpg?v=1793734457",
-"local": false
-},
-{
-"store": "Stratosphere",
-"title": "Nike SB - Logo Tee LBR",
-"price": "37.00",
-"sizes": "L",
-"link": "https://stratosphereskateboards.com/products/nike-sb-logo-tee-lbr",
-"image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/AURORA_DC7817-113_PHSFM001-2000.jpg?v=1793735408",
-"local": false
-},
-{
-"store": "Stratosphere",
-"title": "Nike SB Logo Skate Tee-Aluminum",
-"price": "29.99",
-"sizes": "XL",
-"link": "https://stratosphereskateboards.com/products/nike-sb-logo-tee-hbr-1",
-"image": "https://cdn.shopify.com/s/files/1/0400/3420/5857/files/IMG_2573.webp?v=1793736475",
-"local": false
-},
-{
-"store": "Reset Mercantile",
-"title": "Nike SB Max90 Tee",
-"price": "45.00",
-"sizes": "Large, Medium",
-"link": "https://resetmercantile.com/products/nike-sb-max90-tee",
-"image": "https://cdn.shopify.com/s/files/1/0730/0261/5080/files/NIKESBMax90Teewhite.png?v=1751397680",
-"local": false
-},
-{
-"store": "Reset Mercantile",
-"title": "Nike SB Ishod Wair Tee",
-"price": "55.00",
-"sizes": "Extra Large, Large, Small, Medium",
-"link": "https://resetmercantile.com/products/nike-sb-ishod-wair-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0730/0261/5080/files/NIKESBIshodWairTeeBlack_e6bb0281-3c40-4588-b5bf-3d39d0a89c02.png?v=1768249062",
-"local": false
-},
-{
-"store": "No-Comply",
-"title": "Nike SB AF1 Skate Polo - Black",
-"price": "64.95",
-"sizes": "M, S, L, XL, XXL",
-"link": "https://www.nocomplyatx.com/products/nike-sb-af1-skate-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IV0597-010_PHSFM001-2000.webp?v=1793745038",
-"local": false
-},
-{
-"store": "Arts & Rec",
-"title": "Nike SB Skate Top: BLACK/DARK RUSSET/WHITE",
-"price": "50.00",
-"sizes": "X-Large, Medium, Large",
-"link": "https://artsandrecstore.com/products/nike-sb-skate-top-black-dark-russet-white",
-"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IM5430-010_PHSFM001-2000.jpg?v=1793745571",
-"local": true
-},
-{
-"store": "Humidity Skateshop",
-"title": "Nike SB Enforcer Long Sleeve Jersey (Black/Black)",
-"price": "125.00",
-"sizes": "Lrg, Med",
-"link": "https://humiditynola.com/products/nike-sb-enforcer-long-sleeve-jersey-black-black",
-"image": "https://cdn.shopify.com/s/files/1/0816/5336/7075/files/e412d4fa-9186-45a8-ac84-8287a8927ee9.jpg?v=1793748508",
-"local": false
-},
-{
-"store": "510 Skateboarding",
-"title": "Nike SB Champagne Tee (Dark Grey)",
-"price": "45.00",
-"sizes": "LARGE, X-LARGE, MEDIUM",
-"link": "https://510skateboarding.com/products/nike-sb-champagne-tee-dark-grey",
-"image": "https://cdn.shopify.com/s/files/1/0225/3861/files/champagne-tee-black.jpg?v=1793755009",
-"local": false
-},
-{
-"store": "510 Skateboarding",
-"title": "Nike SB Champagne Tee (White)",
-"price": "45.00",
-"sizes": "LARGE, X-LARGE, MEDIUM",
-"link": "https://510skateboarding.com/products/nike-sb-champage-shirt-white",
-"image": "https://cdn.shopify.com/s/files/1/0225/3861/files/champagne-tee-white.jpg?v=1793754960",
-"local": false
-},
-{
-"store": "Overload",
-"title": "Nike SB Skate Polo - Black",
-"price": "65.00",
-"sizes": "M, L, XL",
-"link": "https://shopoverload.com/products/nike-sb-skate-polo",
-"image": "https://cdn.shopify.com/s/files/1/0556/6729/4386/files/Nike_SB_Skate_Polo_Black_Front.jpg?v=1793758030",
-"local": true
-},
-{
-"store": "Pawnshop Skate",
-"title": "Nike SB Skate Polo",
-"price": "65.00",
-"sizes": "Medium, Small, X Large, Large",
-"link": "https://pawnshopskate.com/products/nike-sb-skate-polo",
-"image": "https://cdn.shopify.com/s/files/1/0628/0852/2912/files/Photoroom_20261103_183348.jpg?v=1793759665",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Entarsia Coach Jacket - Black / Summit White",
-"price": "117.00",
-"sizes": "S, M, XL, L",
-"link": "https://www.flatspot.com/products/nike-sb-entarsia-coach-jacket-black-summit-white",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-entarsia-coach-jacket-black-summit-white--1.jpg?v=1793808694",
-"local": false
-},
-{
-"store": "Skaters Advocate",
-"title": "Nike SB Skate T-Shirt - Anthracite",
-"price": "45.00",
-"sizes": "S, XL, M, L",
-"link": "https://skatersadvocate.com/products/nike-sb-skate-t-shirt-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/AURORA_IW3134-060_PHSYM003-2000.jpg?v=1793728036",
-"local": false
-},
-{
-"store": "Skaters Advocate",
-"title": "Nike SB Skate T-Shirt White",
-"price": "45.00",
-"sizes": "M, XL, S, L",
-"link": "https://skatersadvocate.com/products/nike-sb-civil-east-greenwich",
-"image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/AURORA_IW3134-100_PHSYM003-2000.webp?v=1793726584",
-"local": false
-},
-{
-"store": "Black Sheep NC",
-"title": "Nike SB Champagne Crest Graphic Skate T-Shirt Anthracite",
-"price": "44.95",
-"sizes": "2X-Large, X-Large, Medium, Large",
-"link": "https://blacksheepskateshop.com/products/nike-sb-champagne-crest-graphic-skate-t-shirt-black",
-"image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IW3134-060_PHSYM001-2000.png?v=1793814690",
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB Woven Skate Sweatshirt - Silver Lilac/Palest Purple",
-"price": "109.95",
-"sizes": "XXL, LG, SM, XL, MD",
-"link": "https://ccs.com/products/nike-sb-woven-skate-sweatshirt-silver-lilac-palest-purple",
-"image": null,
-"local": false
-},
-{
-"store": "Underground Skateshop",
-"title": "Nike SB Enforcer Skate Jersey - Black",
-"price": "125.00",
-"sizes": "XL, M, L",
-"link": "https://undergroundskateshop.com/products/nike-sb-enforcer-skate-jersey-black",
-"image": "https://cdn.shopify.com/s/files/1/0270/0309/files/NikeSBEnforcerSkateJersey-BlackFront.jpg?v=1793825875",
-"local": false
-},
-{
-"store": "Rock City Kicks",
-"title": "Nike SB Woven Oversized Crewneck (Burnt Orange)",
-"price": "110.00",
-"sizes": "L, M, XL",
-"link": "https://rockcitykicks.com/products/nike-sb-woven-oversized-crewneck-burnt-orange",
-"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBWovenOversizedCrewneck_BurntOrange_IQ6263-2461.jpg?v=1793829386",
-"local": false
-},
-{
-"store": "PLA Folsom",
-"title": "NIKE SB SWITCH WOVEN TOP - SILVER LILAC",
-"price": "110.00",
-"sizes": "XL, L, M",
-"link": "https://plaskate.com/products/nike-sb-switch-woven-top-silver-lilac-iq6263-022",
-"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-switch-woven-top-silver-lilac-iq6263-022.jpg?v=1793836956",
-"local": false
-},
-{
-"store": "PLA Folsom",
-"title": "NIKE SB AIRMAIL LONG SLEEVE SHIRT - BLACK/DARK RUSSET",
-"price": "50.00",
-"sizes": "XL, L, M",
-"link": "https://plaskate.com/products/nike-sb-airmail-long-sleeve-shirt-black-dark-russet-im5430-010",
-"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-airmail-long-sleeve-shirt-black-dark-russet-im5430-010.jpg?v=1793836916",
-"local": false
-},
-{
-"store": "PLA Folsom",
-"title": "NIKE SB YUTO SKATE JERSEY - BLACK/ANTHRACITE",
-"price": "95.00",
-"sizes": "L, M",
-"link": "https://plaskate.com/products/nike-sb-yuto-skate-jersey-black-anthracite-im5465-010",
-"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-yuto-skate-jersey-black-anthracite-im5465-010_88265f14-477c-475a-bb65-74cd16abe78f.jpg?v=1793837011",
-"local": false
-},
-{
-"store": "PLA Folsom",
-"title": "NIKE SB AIRMAIL LONG SLEEVE SHIRT - ANTHRACITE/BLACK",
-"price": "50.00",
-"sizes": "M, XL, L",
-"link": "https://plaskate.com/products/nike-sb-airmail-long-sleeve-shirt-anthracite-black-im5430-060",
-"image": "https://cdn.shopify.com/s/files/1/0736/4771/files/nike-sb-airmail-long-sleeve-shirt-anthracite-black-im5430-060.jpg?v=1793837925",
-"local": false
-},
-{
-"store": "No-Comply",
-"title": "Nike SB LS Skate Jersey - Black",
-"price": "124.95",
-"sizes": "L, S, M",
-"link": "https://www.nocomplyatx.com/products/nike-sb-ls-skate-jersey-black-im5426-010",
-"image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IM5426-010_PHSFM001-2000.webp?v=1793845221",
-"local": false
-},
-{
-"store": "Exodus Rideshop",
-"title": "Nike SB Long Sleeve Skate Jersey - Black/Black",
-"price": "125.00",
-"sizes": "S, M, XL, L",
-"link": "https://exodusrideshop.com/products/nike-sb-airmail-long-sleeve-skate-tee-black-black",
-"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IM5426-010_PHSFM001-2000.png?v=1793899065",
-"local": false
-},
-{
-"store": "Civil",
-"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt - Gym Red / Stealth",
-"price": "80.00",
-"sizes": "XXL",
-"link": "https://wearecivil.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IZ1853-687_PHSYM001-2000.jpg?v=1793910504",
-"local": false
-},
-{
-"store": "Geometric Skate Shop",
-"title": "Nike SB Champagne Dunk Tee - White/Gold",
-"price": "45.00",
-"sizes": "2XL, Small, Medium, Large, XL",
-"link": "https://geometricskateshop.com/products/nike-sb-champagne-dunk-tee-white-gold",
-"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/champagne-tee-white_2048x_ae93543d-7dbf-4731-9208-d8c3bcac889d.webp?v=1793925079",
-"local": false
-},
-{
-"store": "Innercity Skate",
-"title": "Nike SB Everyday Elevated Skate Socks (3 Pairs) \u2013 Multi-Color",
-"price": "24.99",
-"sizes": "White",
-"link": "https://innercityskate.com/products/nike-sb-everyday-elevated-skate-socks-3-pairs-multi-color",
-"image": "https://cdn.shopify.com/s/files/1/0098/6716/5762/files/AURORA_IR1328-910_PHSYD001-2000.jpg?v=1793930018",
-"local": false
-},
-{
-"store": "Rock City Kicks",
-"title": "Nike SB T-Shirt (Charcoal)",
-"price": "45.00",
-"sizes": "L, XL, M",
-"link": "https://rockcitykicks.com/products/nike-sb-t-shirt-charcol",
-"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBT-Shirt_Charcoal_IW3134-0601.jpg?v=1792419296",
-"local": false
-},
-{
-"store": "Theory Skate Shop",
-"title": "Nike SB \"Champagne Dunk\" Tee - Grey",
-"price": "45.00",
-"sizes": "S, L, XL, M",
-"link": "https://theoryskate.com/products/nike-sb-champagne-dunk-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/NikeSBChampagneT-Shirt-VintageBlack.webp?v=1793975971",
-"local": false
-}
-],
+"weekly_digest": [],
 "apparel_seeded": true,
-"last_digest_date": "2026-10-30",
+"last_digest_date": "2026-11-06",
 "stock": {
 "Reset Mercantile::10280071758120": true,
 "Reset Mercantile::10139819737384": true,
@@ -17152,7 +16704,7 @@
 "Kinetic::8095787057254": true,
 "Kinetic::8113959534694": true,
 "Civil::15531955323168": true,
-"Arts & Rec::15702306979951": false,
+"Arts & Rec::15702306979951": true,
 "Stratosphere::8630840131745": true,
 "Stratosphere::8696778621089": true,
 "Reset Mercantile::10437293375784": true,
@@ -17193,18 +16745,36 @@
 "Civil::15569934975264": true,
 "Oneness::10278397182036": true,
 "Deli Skate Supply::15354726908153": true,
-"Skatepark of Tampa::15481063604497": false,
-"Bluetile Skateboards::15479552868578": false,
+"Skatepark of Tampa::15481063604497": true,
+"Bluetile Skateboards::15479552868578": true,
 "Swellophonic::7688196554834": false,
 "Southside Boardshop::15477219950909": true,
 "Pastime Skateshop::15958864265376": true,
 "Barewires::15475182600445": true,
 "Blue Flowers::11283959120039": true,
-"Recess Skate & Snow::10461308322050": false,
+"Recess Skate & Snow::10461308322050": true,
 "Renarts::15429569871915": true,
 "Icon Boardshop::15467452629288": true,
 "Kinetic::15462286917734": true,
-"Theory Skate Shop::15478159671483": true
+"Theory Skate Shop::15478159671483": true,
+"510 Skateboarding::15443307266153": true,
+"PLA Folsom::15439759507614": true,
+"Uprise Skateshop::15473056907479": true,
+"Travel Skate Shop::15467840766029": true,
+"NJ Skateshop::15542471295010": true,
+"35th North::15487947374628": true,
+"Pawnshop Skate::15953317396640": true,
+"Furnace Skate::10697833742520": true,
+"Labor Skate Shop::15464638054502": true,
+"Rock City Kicks::15443007799454": true,
+"No-Comply::15485538730169": true,
+"Coureur Goods::10410401366271": true,
+"Deli Skate Supply::15354757611769": true,
+"Mainland::8586652385365": true,
+"LB Skate::9003899388060": true,
+"Civil::15546998784288": true,
+"Premier MI::10391998791745": true,
+"Extra Butter::8857228705975": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57283,7 +56853,14 @@
 "m": {}
 },
 "Arts & Rec::15702306979951": {
-"l": [],
+"l": [
+"10",
+"11.5",
+"7",
+"8",
+"9",
+"9.5"
+],
 "m": {}
 },
 "Stratosphere::8630840131745": {
@@ -57438,8 +57015,8 @@
 "9.5"
 ],
 "m": {
-"13": 1,
-"11.5": 1
+"13": 2,
+"11.5": 2
 }
 },
 "Blue Flowers::11283864256679": {
@@ -57651,11 +57228,24 @@
 "m": {}
 },
 "Skatepark of Tampa::15481063604497": {
-"l": [],
+"l": [
+"Black Spruce/ Metallic Gold"
+],
 "m": {}
 },
 "Bluetile Skateboards::15479552868578": {
-"l": [],
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
 "m": {}
 },
 "Swellophonic::7688196554834": {
@@ -57709,7 +57299,15 @@
 "m": {}
 },
 "Recess Skate & Snow::10461308322050": {
-"l": [],
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"13",
+"14",
+"9.5"
+],
 "m": {}
 },
 "Renarts::15429569871915": {
@@ -57752,7 +57350,10 @@
 "9.0 M",
 "9.5 M"
 ],
-"m": {}
+"m": {
+"13.0 M": 1,
+"11.5 M": 1
+}
 },
 "Theory Skate Shop::15478159671483": {
 "l": [
@@ -57773,6 +57374,304 @@
 "M8/W9.5",
 "M9.5/W11",
 "M9/W10.5"
+],
+"m": {}
+},
+"510 Skateboarding::15443307266153": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"PLA Folsom::15439759507614": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Uprise Skateshop::15473056907479": {
+"l": [
+"10.0",
+"10.5",
+"11.0",
+"11.5",
+"12.0",
+"13.0",
+"15.0",
+"6.5",
+"7.5",
+"8.0",
+"8.5",
+"9.0",
+"9.5"
+],
+"m": {}
+},
+"Travel Skate Shop::15467840766029": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"NJ Skateshop::15542471295010": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"13",
+"6.5",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"35th North::15487947374628": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"14",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Pawnshop Skate::15953317396640": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"14",
+"15",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Furnace Skate::10697833742520": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Labor Skate Shop::15464638054502": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Rock City Kicks::15443007799454": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"No-Comply::15485538730169": {
+"l": [
+"M10.5=W12",
+"M10=W11.5",
+"M11.5=W13",
+"M11=W12.5",
+"M12=W13.5",
+"M14=W15.5",
+"M5.5=W7",
+"M6.5=W8",
+"M7.5=W9",
+"M7=W8.5",
+"M8.5=W10",
+"M8=W9.5",
+"M9.5=W11",
+"M9=W10.5"
+],
+"m": {}
+},
+"Coureur Goods::10410401366271": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Deli Skate Supply::15354757611769": {
+"l": [
+"10.5",
+"11",
+"12"
+],
+"m": {}
+},
+"Mainland::8586652385365": {
+"l": [
+"Black Spruce/Metallic Gold"
+],
+"m": {}
+},
+"LB Skate::9003899388060": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"4.5",
+"5",
+"5.5",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Civil::15546998784288": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Premier MI::10391998791745": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"5",
+"5.5",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Extra Butter::8857228705975": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 }
@@ -59601,6 +59500,34 @@
 "title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
 "t": 1793976964,
 "link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black"
+},
+"1568279266515353713": {
+"cid": "1550909316897177842",
+"keys": [
+"t:dunk low pro prm wc champagne",
+"p:Pawnshop Skate::15953317396640"
+],
+"title": "Nike SB Dunk Low Pro PRM WC (Champagne)",
+"t": 1793977315,
+"link": "https://pawnshopskate.com/products/test"
+},
+"1568279272823455898": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Deli Skate Supply::15354757611769"
+],
+"title": "NIKE SB - Dunk Low Pro \"Champagne\"",
+"t": 1793977316,
+"link": "https://deliskatesupply.com/products/nike-sb-dunk-low-pro-champagne"
+},
+"1568279277240324300": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Recess Skate & Snow::10461308322050"
+],
+"title": "Dunk Low Pro \"Champagne\"",
+"t": 1793977317,
+"link": "https://recessrideshop.com/products/dunk-low-pro-champagne"
 }
 },
 "nike_dunk_seeded": true,
