@@ -5030,6 +5030,7 @@
 "Geometric Skate Shop::15423646499091",
 "Geometric Skate Shop::15442908315923",
 "Geometric Skate Shop::15444498022675",
+"Geometric Skate Shop::15454760894739",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -10874,6 +10875,15 @@
 "sizes": "XXL",
 "link": "https://wearecivil.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-gym-red-stealth",
 "image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IZ1853-687_PHSYM001-2000.jpg?v=1793910504",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Champagne Dunk Tee - White/Gold",
+"price": "45.00",
+"sizes": "2XL, Small, Medium, Large, XL",
+"link": "https://geometricskateshop.com/products/nike-sb-champagne-dunk-tee-white-gold",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/champagne-tee-white_2048x_ae93543d-7dbf-4731-9208-d8c3bcac889d.webp?v=1793925079",
 "local": false
 }
 ],
