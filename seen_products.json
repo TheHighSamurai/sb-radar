@@ -8977,6 +8977,7 @@
 "Theory Skate Shop::15438637105339",
 "Theory Skate Shop::15478159671483",
 "Theory Skate Shop::15482445529275",
+"Theory Skate Shop::15482548912315",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
 "Theory Skate Shop::7914806542523",
@@ -10515,6 +10516,15 @@
 "sizes": "Anthracite",
 "link": "https://embassyboardshop.com/products/nike-sb-champagne-dunk-tee-anthracite-iw3134-060",
 "image": "https://cdn.shopify.com/s/files/1/2032/9159/files/Nike_SB_Champ_Dunk_00.png?v=1793982311",
+"local": false
+},
+{
+"store": "Theory Skate Shop",
+"title": "Nike SB AF1 Skate Polo - Black",
+"price": "50.00",
+"sizes": "M, L, XL",
+"link": "https://theoryskate.com/products/nike-sb-af1-skate-polo-black",
+"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/oct26NikeSBAF1SolidBreakPoloBlack.webp?v=1793984902",
 "local": false
 }
 ],
@@ -16839,7 +16849,7 @@
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
 "NJ Skateshop::15549605675042": 1,
-"Deli Skate Supply::15354757611769": 1
+"Deli Skate Supply::15354757611769": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -37134,7 +37144,9 @@
 "13",
 "8"
 ],
-"m": {}
+"m": {
+"8": 1
+}
 },
 "Xtreme::7444254031966": {
 "l": [],
@@ -57276,7 +57288,9 @@
 "8.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Swellophonic::7688196554834": {
 "l": [],
@@ -57300,7 +57314,7 @@
 "9.5"
 ],
 "m": {
-"11": 1
+"11": 2
 }
 },
 "Barewires::15475182600445": {
@@ -57410,7 +57424,10 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"12": 1,
+"13": 1
+}
 },
 "PLA Folsom::15439759507614": {
 "l": [
@@ -57560,7 +57577,7 @@
 "11"
 ],
 "m": {
-"11": 1
+"11": 2
 }
 },
 "Mainland::8586652385365": {
@@ -57652,7 +57669,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"10.5": 1
+}
 },
 "Pharmacy Temecula::7679861719122": {
 "l": [
@@ -57721,7 +57740,7 @@
 "9.5"
 ],
 "m": {
-"11": 1
+"11": 2
 }
 },
 "Unheardof::10861506691237": {
@@ -57752,7 +57771,9 @@
 "M 9 / W 10.5",
 "M 9.5 / W 11"
 ],
-"m": {}
+"m": {
+"M 9 / W 10.5": 1
+}
 }
 },
 "muted": {
