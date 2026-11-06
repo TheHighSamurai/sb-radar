@@ -14789,7 +14789,7 @@
 "LICK NYC::8971686084863": true,
 "LICK NYC::8971657445631": true,
 "Humidity Skateshop::10316789940515": true,
-"Uprise Skateshop::15441772576983": true,
+"Uprise Skateshop::15441772576983": false,
 "Uprise Skateshop::8818999427287": true,
 "Uprise Skateshop::9350071451863": true,
 "Uprise Skateshop::9325835518167": true,
@@ -16870,8 +16870,7 @@
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
-"NJ Skateshop::15549605675042": 1,
-"Uprise Skateshop::15441772576983": 2
+"NJ Skateshop::15549605675042": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -27819,7 +27818,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Magnolia Skateshop::9314777891029": {
 "l": [],
@@ -47191,12 +47192,8 @@
 "m": {}
 },
 "Uprise Skateshop::15441772576983": {
-"l": [
-"10.0"
-],
-"m": {
-"10.0": 2
-}
+"l": [],
+"m": {}
 },
 "Uprise Skateshop::8818999427287": {
 "l": [
@@ -57404,8 +57401,8 @@
 "M11.5/W13",
 "M11/W12.5",
 "M12/W13.5",
+"M13/W14.5",
 "M14/W15.5",
-"M15/W16.5",
 "M5.5/W7",
 "M5/W6.5",
 "M6.5/W8",
@@ -57417,9 +57414,7 @@
 "M9.5/W11",
 "M9/W10.5"
 ],
-"m": {
-"M15/W16.5": 2
-}
+"m": {}
 },
 "510 Skateboarding::15443307266153": {
 "l": [
@@ -57444,7 +57439,6 @@
 "l": [
 "10.0",
 "10.5",
-"11.0",
 "11.5",
 "12.0",
 "6.0",
@@ -57456,8 +57450,7 @@
 "9.5"
 ],
 "m": {
-"11.0": 2,
-"11.5": 1
+"11.5": 2
 }
 },
 "Travel Skate Shop::15467840766029": {
@@ -57500,7 +57493,7 @@
 "9.5"
 ],
 "m": {
-"10": 1
+"10": 2
 }
 },
 "Pawnshop Skate::15953317396640": {
@@ -57623,7 +57616,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "Premier MI::10391998791745": {
 "l": [
@@ -57716,12 +57711,9 @@
 "l": [
 "10",
 "10.5",
-"9",
 "9.5"
 ],
-"m": {
-"9": 2
-}
+"m": {}
 },
 "Stolen Skate Shop::8665633914924": {
 "l": [
@@ -59741,6 +59733,16 @@
 ],
 "title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
 "t": 1793988365,
+"link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black"
+},
+"1568331918569767013": {
+"cid": "1550909316897177842",
+"keys": [
+"t:dunk low pro premium black spuce metallic gold black",
+"p:Theory Skate Shop::15478159671483"
+],
+"title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
+"t": 1793989868,
 "link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black"
 }
 },
