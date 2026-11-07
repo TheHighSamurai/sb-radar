@@ -10948,7 +10948,7 @@
 "NJ Skateshop::8681605857314": true,
 "NJ Skateshop::8678945685538": true,
 "NJ Skateshop::8493856292898": true,
-"NJ Skateshop::8648172208162": true,
+"NJ Skateshop::8648172208162": false,
 "NJ Skateshop::8563372556322": false,
 "NJ Skateshop::8544910180386": true,
 "NJ Skateshop::8648421277730": true,
@@ -14773,7 +14773,7 @@
 "Skaters Advocate::8776259829994": true,
 "Skaters Advocate::8776248688874": true,
 "Humidity Skateshop::10404518887715": true,
-"NJ Skateshop::8678870777890": true,
+"NJ Skateshop::8678870777890": false,
 "PLA Folsom::15387924594846": true,
 "PLA Folsom::15387939274910": true,
 "Theory Skate Shop::15417518424251": true,
@@ -16979,9 +16979,7 @@
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
-"NJ Skateshop::15549605675042": 1,
-"NJ Skateshop::8648172208162": 2,
-"NJ Skateshop::8678870777890": 2
+"NJ Skateshop::15549605675042": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -20273,14 +20271,8 @@
 "m": {}
 },
 "NJ Skateshop::8648172208162": {
-"l": [
-"11.5",
-"12"
-],
-"m": {
-"12": 2,
-"11.5": 2
-}
+"l": [],
+"m": {}
 },
 "NJ Skateshop::8648421277730": {
 "l": [
@@ -46936,12 +46928,8 @@
 "m": {}
 },
 "NJ Skateshop::8678870777890": {
-"l": [
-"9.5"
-],
-"m": {
-"9.5": 2
-}
+"l": [],
+"m": {}
 },
 "Overload::10157022773495": {
 "l": [
@@ -57592,13 +57580,10 @@
 "Coureur Goods::10410401366271": {
 "l": [
 "10",
-"8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "Deli Skate Supply::15354757611769": {
 "l": [],
