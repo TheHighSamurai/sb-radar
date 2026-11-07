@@ -43975,7 +43975,10 @@
 "8.5",
 "9.0"
 ],
-"m": {}
+"m": {
+"8.5": 1,
+"11.0": 1
+}
 },
 "CCS::7080600371383": {
 "l": [
@@ -58951,7 +58954,8 @@
 },
 "t:dunk low pro premium black spuce metallic gold black": {
 "mids": [
-"1568277795392463014"
+"1568277795392463014",
+"1568331918569767013"
 ],
 "title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
 "link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black",
@@ -58959,11 +58963,84 @@
 },
 "p:Theory Skate Shop::15478159671483": {
 "mids": [
-"1568277795392463014"
+"1568277795392463014",
+"1568331918569767013"
 ],
 "title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
 "link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black",
 "t": 1793990113
+},
+"p:After Hours Skateshop::10422111142143": {
+"mids": [
+"1568431298853339308"
+],
+"title": "Nike SB Dunk Low Pro Champagne",
+"link": "https://afterhoursskateshop.com/products/nike-sb-dunk-low-pro-champagne",
+"t": 1794021318
+},
+"s:IB2258-001": {
+"mids": [
+"1568386003587178580"
+],
+"title": "Nike Dunk Low Retro - Metallic Silver/College Grey/Cave Stone/Off Noir",
+"link": "https://www.nike.com/t/dunk-low-retro-shoes-wlaYvsTw/IB2258-001",
+"t": 1794021318
+},
+"t:dunk low retro metallic silver college grey cave stone off noir": {
+"mids": [
+"1568386003587178580"
+],
+"title": "Nike Dunk Low Retro - Metallic Silver/College Grey/Cave Stone/Off Noir",
+"link": "https://www.nike.com/t/dunk-low-retro-shoes-wlaYvsTw/IB2258-001",
+"t": 1794021318
+},
+"p:Nike.com::IB2258-001": {
+"mids": [
+"1568386003587178580"
+],
+"title": "Nike Dunk Low Retro - Metallic Silver/College Grey/Cave Stone/Off Noir",
+"link": "https://www.nike.com/t/dunk-low-retro-shoes-wlaYvsTw/IB2258-001",
+"t": 1794021318
+},
+"t:dunk low x muni fast pass safety orange wolf grey": {
+"mids": [
+"1568375933197353105"
+],
+"title": "Nike SB Dunk Low x Muni Fast Pass - Safety Orange/Wolf Grey",
+"link": "https://richmondhood.com/products/nike-sb-dunk-low-x-muni-fast-pass",
+"t": 1794021318
+},
+"p:Richmond Hood::10338401288356": {
+"mids": [
+"1568375933197353105"
+],
+"title": "Nike SB Dunk Low x Muni Fast Pass - Safety Orange/Wolf Grey",
+"link": "https://richmondhood.com/products/nike-sb-dunk-low-x-muni-fast-pass",
+"t": 1794021318
+},
+"t:dunk low pro prm wc champagne": {
+"mids": [
+"1568354577231913155"
+],
+"title": "Nike SB Dunk Low Pro PRM WC - \"Champagne\"",
+"link": "https://shopoverload.com/products/nike-sb-dunk-low-pro-prm-wc-champagne",
+"t": 1794021318
+},
+"p:Overload::10182877839607": {
+"mids": [
+"1568354577231913155"
+],
+"title": "Nike SB Dunk Low Pro PRM WC - \"Champagne\"",
+"link": "https://shopoverload.com/products/nike-sb-dunk-low-pro-prm-wc-champagne",
+"t": 1794021318
+},
+"p:Brooklyn Projects::16427690786897": {
+"mids": [
+"1568353287152074934"
+],
+"title": "Nike SB Champagne Dunk Low",
+"link": "https://brooklynprojects.com/products/nike-sb-champagne-dunk-low",
+"t": 1794021318
 }
 },
 "msgs": {
