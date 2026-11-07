@@ -8944,6 +8944,7 @@
 "The Block Skate Supply::15420117745879",
 "The Block Skate Supply::15440309518551",
 "The Block Skate Supply::15444958347479",
+"The Block Skate Supply::15465988522199",
 "The Block Skate Supply::8654116454615",
 "The Block Skate Supply::8654117929175",
 "The Block Skate Supply::8655340798167",
@@ -16960,7 +16961,8 @@
 "Brooklyn Projects::16427690786897": true,
 "Overload::10182877839607": true,
 "Val Surf::15956656586912": true,
-"CCS::8561832689847": true
+"CCS::8561832689847": true,
+"The Block Skate Supply::15465988522199": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57472,13 +57474,10 @@
 "10",
 "7",
 "8",
-"8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "PLA Folsom::15439759507614": {
 "l": [],
@@ -57901,6 +57900,19 @@
 "8.0",
 "8.5",
 "9.0",
+"9.5"
+],
+"m": {}
+},
+"The Block Skate Supply::15465988522199": {
+"l": [
+"10.5",
+"11",
+"11.5",
+"13",
+"14",
+"8.5",
+"9",
 "9.5"
 ],
 "m": {}
