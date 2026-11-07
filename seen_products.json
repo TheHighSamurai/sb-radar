@@ -17013,7 +17013,7 @@
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
 "NJ Skateshop::15549605675042": 1,
-"Recess Skate & Snow::10461308322050": 1
+"Recess Skate & Snow::10461308322050": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -32816,14 +32816,11 @@
 "M5=W6.5",
 "M6=W7.5",
 "M7.5=W9",
-"M8.5=W10",
 "M8=W9.5",
 "M9.5=W11",
 "M9=W10.5"
 ],
-"m": {
-"M8.5=W10": 2
-}
+"m": {}
 },
 "No-Comply::8577432977593": {
 "l": [
@@ -46310,9 +46307,12 @@
 "13",
 "7.5",
 "8",
-"9"
+"9",
+"9.5"
 ],
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Geometric Skate Shop::15404847431955": {
 "l": [
@@ -52925,7 +52925,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"14": 1
+}
 },
 "Extra Butter::8735956926647": {
 "l": [],
@@ -57411,7 +57413,7 @@
 "10.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "Renarts::15429569871915": {
@@ -59976,6 +59978,16 @@
 "title": "Nike SB Dunk Low Pro &quot;Muni Fast Pass&quot;",
 "t": 1794083763,
 "link": "https://jerics.com"
+},
+"1568758462236729506": {
+"cid": "1562917305531506738",
+"keys": [
+"t:paul rodriguez zoom air low",
+"p:Travel Skate Shop::15418007027789"
+],
+"title": "Nike SB Paul Rodriguez Zoom Air Low",
+"t": 1794091564,
+"link": "https://travelskateshop.com/products/nike-sb-paul-rodriguez-zoom-air-low"
 }
 },
 "nike_dunk_seeded": true,
