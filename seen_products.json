@@ -16910,7 +16910,7 @@
 "Transport Skate::9663297093909": true,
 "Arts & Rec::15721329295471": false,
 "Civil::15569934975264": true,
-"Oneness::10278397182036": true,
+"Oneness::10278397182036": false,
 "Deli Skate Supply::15354726908153": true,
 "Skatepark of Tampa::15481063604497": true,
 "Bluetile Skateboards::15479552868578": true,
@@ -16977,8 +16977,7 @@
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
-"NJ Skateshop::15549605675042": 1,
-"Oneness::10278397182036": 2
+"NJ Skateshop::15549605675042": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -57329,14 +57328,8 @@
 "m": {}
 },
 "Oneness::10278397182036": {
-"l": [
-"10.5",
-"6"
-],
-"m": {
-"10.5": 2,
-"6": 2
-}
+"l": [],
+"m": {}
 },
 "Deli Skate Supply::15354726908153": {
 "l": [
