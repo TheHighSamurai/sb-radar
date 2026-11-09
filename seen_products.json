@@ -2241,6 +2241,7 @@
 "Deli Skate Supply::15354726908153",
 "Deli Skate Supply::15354757611769",
 "Deli Skate Supply::15366323241209",
+"Deli Skate Supply::15366658228473",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -17070,7 +17071,8 @@
 "Brooklyn Projects::16448304316497": true,
 "Xtreme::15506855952478": true,
 "Flatspot::15851366482293": true,
-"Deli Skate Supply::15366323241209": true
+"Deli Skate Supply::15366323241209": true,
+"Deli Skate Supply::15366658228473": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17085,7 +17087,7 @@
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
 "NJ Skateshop::15549605675042": 1,
-"Flatspot::14974396858741": 1
+"Flatspot::14974396858741": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35844,7 +35846,7 @@
 "M9.5 / W11"
 ],
 "m": {
-"M10.5 / W12": 1
+"M10.5 / W12": 2
 }
 },
 "Overload::10019810083063": {
@@ -44643,7 +44645,7 @@
 "UK 9.5"
 ],
 "m": {
-"UK 9.5": 1
+"UK 9.5": 2
 }
 },
 "Flatspot::14974397022581": {
@@ -50436,7 +50438,11 @@
 "8",
 "9.5"
 ],
-"m": {}
+"m": {
+"10": 1,
+"13": 1,
+"8": 1
+}
 },
 "Sneaker Politics::9352456798396": {
 "a": "W5|W5.5|W6|W6.5|W7|W7.5|W8|W8.5|W9",
@@ -57950,6 +57956,12 @@
 "8.5",
 "9",
 "9.5"
+],
+"m": {}
+},
+"Deli Skate Supply::15366658228473": {
+"l": [
+"8.5"
 ],
 "m": {}
 }
