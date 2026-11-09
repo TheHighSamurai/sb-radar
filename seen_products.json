@@ -6431,6 +6431,7 @@
 "Olympia Skate Shop::8727158456627",
 "Olympia Skate Shop::8886678159667",
 "Olympia Skate Shop::8893170843955",
+"Olympia Skate Shop::8899337912627",
 "Olympia Skate Shop::9003714871603",
 "Olympia Skate Shop::9021675897139",
 "Olympia Skate Shop::9050482737459",
@@ -10721,6 +10722,15 @@
 "sizes": "XXL",
 "link": "https://cncpts.com/products/nike-sb-logo-skate-t-shirt-dc7817-104-lt-orewood-brn",
 "image": "https://cdn.shopify.com/s/files/1/0043/5673/5045/files/197598525302-1.jpg?v=1721402014",
+"local": false
+},
+{
+"store": "Olympia Skate Shop",
+"title": "NIKE SB CITY OF LOVE LONG SLEEVE TEE COCONUT MILK",
+"price": "50.00",
+"sizes": "S",
+"link": "https://olympiaskateshop.com/products/nike-sb-city-of-love-long-sleeve-tee",
+"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/FQ7681-113-1.jpg?v=1707863866",
 "local": false
 }
 ],
