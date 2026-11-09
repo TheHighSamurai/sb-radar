@@ -6416,6 +6416,7 @@
 "Olympia Skate Shop::15447178019123",
 "Olympia Skate Shop::15460895129907",
 "Olympia Skate Shop::15465745285427",
+"Olympia Skate Shop::15476347273523",
 "Olympia Skate Shop::8070557958451",
 "Olympia Skate Shop::8087628022067",
 "Olympia Skate Shop::8087698964787",
@@ -10732,6 +10733,15 @@
 "sizes": "S",
 "link": "https://olympiaskateshop.com/products/nike-sb-city-of-love-long-sleeve-tee",
 "image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/FQ7681-113-1.jpg?v=1707863866",
+"local": false
+},
+{
+"store": "Olympia Skate Shop",
+"title": "NIKE SB 1/4 ZIP PULLOVER GYM RED/STEALTH",
+"price": "80.00",
+"sizes": "S, L, M, XL",
+"link": "https://olympiaskateshop.com/products/nike-sb-1-4-zip-pullover-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/oct26NikeSB12ZipStealthRed.webp?v=1794245447",
 "local": false
 }
 ],
