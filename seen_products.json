@@ -14915,7 +14915,7 @@
 "Brooklyn Projects::15790741291089": true,
 "Skatepark of Tampa::15458130395409": true,
 "Coureur Goods::10353717018879": true,
-"Seasons Skate Shop::10427835023618": true,
+"Seasons Skate Shop::10427835023618": false,
 "Embassy::15412124221495": true,
 "Doubler Kicks::15438368637213": true,
 "Doubler Kicks::15438362345757": true,
@@ -17030,8 +17030,7 @@
 "No-Comply::8516437999801": 1,
 "Icon Boardshop::10127126593832": 1,
 "NJ Skateshop::15549618585634": 1,
-"NJ Skateshop::15549605675042": 1,
-"Seasons Skate Shop::10427835023618": 2
+"NJ Skateshop::15549605675042": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -47046,12 +47045,8 @@
 "m": {}
 },
 "Seasons Skate Shop::10427835023618": {
-"l": [
-"11"
-],
-"m": {
-"11": 2
-}
+"l": [],
+"m": {}
 },
 "Embassy::15412124221495": {
 "l": [
