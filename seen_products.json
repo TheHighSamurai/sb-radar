@@ -5587,6 +5587,7 @@
 "LB Skate::7665846157468",
 "LB Skate::7898080739484",
 "LB Skate::7898086703260",
+"LB Skate::7955003441308",
 "LB Skate::8219329593500",
 "LB Skate::8248353947804",
 "LB Skate::8294056722588",
@@ -10819,6 +10820,15 @@
 "sizes": "XL",
 "link": "https://ccs.com/products/nike-sb-enforcer-long-sleeve-jersey-black-black",
 "image": null,
+"local": false
+},
+{
+"store": "LB Skate",
+"title": "Nike SB Midnight Navy/Court Blue Reversible Basketball Jersey",
+"price": "52.46",
+"sizes": "L, S",
+"link": "https://lbskate.com/products/nike-sb-midnight-navy-court-blue-reversible-basketball-jersey",
+"image": "https://cdn.shopify.com/s/files/1/0013/8795/4221/files/AURORA_FN2597-410_PHCFM001-2000.jpg?v=1762490782",
 "local": false
 }
 ],
