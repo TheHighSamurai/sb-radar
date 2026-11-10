@@ -2245,6 +2245,7 @@
 "Deli Skate Supply::15354757611769",
 "Deli Skate Supply::15366323241209",
 "Deli Skate Supply::15366658228473",
+"Deli Skate Supply::15369540960505",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10798,6 +10799,15 @@
 "sizes": "30, 32, 34, 36",
 "link": "https://kineticskateboarding.com/products/nike-sb-yuto-crest-denim-pant-obsidian",
 "image": "https://cdn.shopify.com/s/files/1/0267/3063/files/DSCF9455_1013fa41-b9dd-43b0-8699-8679bb664063.webp?v=1794341099",
+"local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - 1/2 Zip Fleece Grey/Red",
+"price": "79.99",
+"sizes": "Medium, X-Large, Large",
+"link": "https://deliskatesupply.com/products/nike-sb-1-2-zip-fleece-grey-red",
+"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/AURORA_IZ1853-687_PHSFM001-2000_1296x_4753fad6-55ff-4b94-8ea4-8db19c7aac5d.webp?v=1794344210",
 "local": false
 }
 ],
@@ -57432,7 +57442,7 @@
 "11.0 M"
 ],
 "m": {
-"10.5 M": 1
+"10.5 M": 2
 }
 },
 "Theory Skate Shop::15478159671483": {
