@@ -12997,7 +12997,7 @@
 "Theory Skate Shop::8441311592635": false,
 "Theory Skate Shop::8436831355067": true,
 "Theory Skate Shop::7910936936635": true,
-"Theory Skate Shop::8364322128059": true,
+"Theory Skate Shop::8364322128059": false,
 "Theory Skate Shop::8387944087739": true,
 "Theory Skate Shop::8384572752059": true,
 "Theory Skate Shop::8375235444923": true,
@@ -17197,8 +17197,7 @@
 "Overload::9799245431031": 2,
 "Overload::9799238418679": 2,
 "Overload::9734418956535": 2,
-"Overload::9613020889335": 2,
-"Theory Skate Shop::8364322128059": 2
+"Overload::9613020889335": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35720,12 +35719,8 @@
 "m": {}
 },
 "Theory Skate Shop::8364322128059": {
-"l": [
-"M11.5/W13"
-],
-"m": {
-"M11.5/W13": 2
-}
+"l": [],
+"m": {}
 },
 "Theory Skate Shop::8387944087739": {
 "l": [
