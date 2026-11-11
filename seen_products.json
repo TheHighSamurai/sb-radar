@@ -7569,6 +7569,7 @@
 "Rock City Kicks::15441305501854",
 "Rock City Kicks::15443007799454",
 "Rock City Kicks::15443118358686",
+"Rock City Kicks::15455413076126",
 "Rock City Kicks::7034123714718",
 "Rock City Kicks::7101368500382",
 "Rock City Kicks::7156800127134",
@@ -17164,7 +17165,8 @@
 "Olympia Skate Shop::9842380669235": true,
 "Olympia Skate Shop::8098999370035": true,
 "Civil::15596700795168": true,
-"Lapstone & Hammer::10433532624953": false
+"Lapstone & Hammer::10433532624953": false,
+"Rock City Kicks::15455413076126": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -35191,12 +35193,9 @@
 },
 "Deli Skate Supply::10091530486009": {
 "l": [
-"8",
-"8.5"
+"8"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "Deli Skate Supply::10082159100153": {
 "a": "10|11|12",
@@ -35850,7 +35849,7 @@
 "M8.5 / W10"
 ],
 "m": {
-"M8.5 / W10": 1
+"M8.5 / W10": 2
 }
 },
 "Overload::10121167306999": {
@@ -58033,6 +58032,23 @@
 "Lapstone & Hammer::10433532624953": {
 "l": [],
 "m": {}
+},
+"Rock City Kicks::15455413076126": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"12.5",
+"13",
+"14",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -60151,6 +60167,17 @@
 "title": "Nike SB Prod Zoom Air Low - Flint Grey/Deep Royal Blue",
 "t": 1794351065,
 "link": "https://valsurf.com/products/nike-sb-prod-zoom-air-low-flint-grey-deep-royal-blue"
+},
+"1569868281131569223": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IM4415-800",
+"t:dunk low retro campfire orange",
+"p:Rock City Kicks::15455413076126"
+],
+"title": "Nike Dunk Low Retro (Campfire Orange)",
+"t": 1794356165,
+"link": "https://rockcitykicks.com/products/nike-dunk-low-retro-campfire-orange"
 }
 },
 "nike_dunk_seeded": true,
