@@ -17266,7 +17266,9 @@
 "Overload::9799238418679": 2,
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
-"Southside Boardshop::10399462818109": 2
+"Southside Boardshop::10399462818109": 2,
+"Olympia Skate Shop::10301701325107": 1,
+"Olympia Skate Shop::10069811626291": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -29920,7 +29922,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "VU Skate Shop::11192062574759": {
 "l": [
@@ -30194,7 +30198,9 @@
 "13",
 "8.5"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "VU Skate Shop::8569674530983": {
 "l": [
@@ -30257,7 +30263,9 @@
 "8.5",
 "9"
 ],
-"m": {}
+"m": {
+"8.5": 1
+}
 },
 "VU Skate Shop::8489737715879": {
 "l": [
@@ -32073,7 +32081,11 @@
 "10.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"10.5": 1,
+"10": 1,
+"9.5": 1
+}
 },
 "Olympia Skate Shop::10338863087923": {
 "l": [
@@ -32154,7 +32166,10 @@
 "11",
 "8.5"
 ],
-"m": {}
+"m": {
+"8.5": 1,
+"11": 1
+}
 },
 "Olympia Skate Shop::10135488201011": {
 "l": [
@@ -59595,26 +59610,6 @@
 }
 },
 "msgs": {
-"1567671382207365293": {
-"cid": "1550909316897177842",
-"keys": [
-"t:dunk low pro prm sonics fir white university gold fire red",
-"p:Val Surf::14967100702880"
-],
-"title": "Nike SB Dunk Low Pro PRM (Sonics) - Fir/White-University Gold-Fire Red",
-"t": 1793832385,
-"link": "https://valsurf.com/products/nike-sb-dunk-low-pro-prm-sonics-fir-white-university-gold-fire-red"
-},
-"1567671391396823063": {
-"cid": "1550909316897177842",
-"keys": [
-"t:dunk low pro alexis sablone oil green desert moss white",
-"p:Val Surf::15658134569120"
-],
-"title": "Nike SB Dunk Low Pro (Alexis Sablone) - Oil Green/Desert Moss-White",
-"t": 1793832386,
-"link": "https://valsurf.com/products/nike-sb-dunk-low-pro-alexis-sablone-oil-green-desert-moss-white"
-},
 "1567672558906646629": {
 "cid": "1562917305531506738",
 "keys": [
