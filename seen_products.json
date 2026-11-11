@@ -3109,6 +3109,7 @@
 "Exodus Rideshop::9103049130102",
 "Exodus Rideshop::9103052734582",
 "Exodus Rideshop::9112034410614",
+"Exodus Rideshop::9126366249078",
 "Extra Butter::4435481198640",
 "Extra Butter::4463487877168",
 "Extra Butter::4463489581104",
@@ -17220,7 +17221,8 @@
 "Humidity Skateshop::10442625941795": true,
 "Black Sheep NC::7688002764846": true,
 "NJ Skateshop::15602942410786": true,
-"Embassy::15431454588983": true
+"Embassy::15431454588983": true,
+"Exodus Rideshop::9126366249078": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57464,13 +57466,10 @@
 "Barewires::15475182600445": {
 "l": [
 "11",
-"11.5",
 "12",
 "9.5"
 ],
-"m": {
-"11.5": 2
-}
+"m": {}
 },
 "Blue Flowers::11283959120039": {
 "l": [
@@ -57708,8 +57707,8 @@
 "8.5"
 ],
 "m": {
-"10": 1,
-"12": 1
+"10": 2,
+"12": 2
 }
 },
 "Pharmacy Temecula::7679861719122": {
@@ -58159,6 +58158,21 @@
 "Embassy::15431454588983": {
 "l": [
 "Black Spruce/Gum"
+],
+"m": {}
+},
+"Exodus Rideshop::9126366249078": {
+"l": [
+"M 10 / W 11.5",
+"M 10.5 / W 12",
+"M 11 / W 12.5",
+"M 11.5 / W 13",
+"M 12 / W 13.5",
+"M 13 / W 14.5",
+"M 8 / W 9.5",
+"M 8.5 / W 10",
+"M 9 / W 10.5",
+"M 9.5 / W 11"
 ],
 "m": {}
 }
@@ -60289,6 +60303,17 @@
 "title": "Nike SB x Rassvet Zoom Tennis Classic Shoes - Blue Void/Blue Void/Sail",
 "t": 1794420071,
 "link": "https://ccs.com/products/nike-sb-x-rassvet-zoom-tennis-classic-shoes-blue-void-blue-void-sail"
+},
+"1570142577733402766": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IO0667-300",
+"t:blazer mid skateboard black spruce corduroy brown black spruce",
+"p:Exodus Rideshop::9126366249078"
+],
+"title": "Nike SB Blazer Mid Skateboard Shoe - Black Spruce/Corduroy Brown-Black Spruce",
+"t": 1794421562,
+"link": "https://exodusrideshop.com/products/nike-sb-blazer-mid-skateboard-shoe-black-spruce-corduroy-brown-black-spruce"
 }
 },
 "nike_dunk_seeded": true,
