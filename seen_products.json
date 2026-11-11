@@ -50473,12 +50473,9 @@
 "10.5",
 "11.5",
 "12",
-"13",
-"7.5"
+"13"
 ],
-"m": {
-"7.5": 2
-}
+"m": {}
 },
 "Sneaker Politics::9352453849276": {
 "l": [
@@ -50497,6 +50494,7 @@
 },
 "Sneaker Politics::9352454504636": {
 "l": [
+"10",
 "10.5",
 "11",
 "11.5",
@@ -60158,6 +60156,17 @@
 "title": "Nike SB Air Max Ishod Shoes - Black/Black/Black",
 "t": 1794360099,
 "link": "https://ccs.com/products/nike-sb-air-max-ishod-shoes-black-black-black"
+},
+"1569889728088506430": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IM4413-001",
+"t:dunk low retro varsity metallic silver black",
+"p:Sneaker Politics::9352454504636"
+],
+"title": "Nike Dunk Low Retro 'Varsity' - Metallic Silver/Black",
+"t": 1794361278,
+"link": "https://sneakerpolitics.com/products/nike-dunk-low-retro-varsity-metallic-silver-black"
 }
 },
 "nike_dunk_seeded": true,
