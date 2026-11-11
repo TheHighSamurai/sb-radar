@@ -2455,6 +2455,7 @@
 "Embassy::15412124221495",
 "Embassy::15424495779895",
 "Embassy::15425930461239",
+"Embassy::15431454588983",
 "Embassy::6828415942711",
 "Embassy::6828416204855",
 "Embassy::6913467285559",
@@ -17218,7 +17219,8 @@
 "Arts & Rec::15764139049071": false,
 "Humidity Skateshop::10442625941795": true,
 "Black Sheep NC::7688002764846": true,
-"NJ Skateshop::15602942410786": true
+"NJ Skateshop::15602942410786": true,
+"Embassy::15431454588983": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -58147,6 +58149,12 @@
 "l": [
 "9",
 "9.5"
+],
+"m": {}
+},
+"Embassy::15431454588983": {
+"l": [
+"Black Spruce/Gum"
 ],
 "m": {}
 }
