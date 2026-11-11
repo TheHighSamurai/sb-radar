@@ -7886,6 +7886,7 @@
 "Shoe Palace::8823601365198",
 "Shoe Palace::8839665352910",
 "Shoe Palace::8839675248846",
+"Shoe Palace::8855807197390",
 "Sixes and Sevens::10307807510697",
 "Sixes and Sevens::10313015328937",
 "Sixes and Sevens::8375088414889",
@@ -17259,7 +17260,8 @@
 "CCS::8563092029623": true,
 "Olympia Skate Shop::15480640143667": true,
 "Unheardof::10873385812133": true,
-"Unheardof::10861490471077": true
+"Unheardof::10861490471077": true,
+"Shoe Palace::8855807197390": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -47417,7 +47419,8 @@
 },
 "Uprise Skateshop::15441772576983": {
 "l": [
-"12.0"
+"12.0",
+"8.0"
 ],
 "m": {}
 },
@@ -58317,6 +58320,20 @@
 "XL"
 ],
 "m": {}
+},
+"Shoe Palace::8855807197390": {
+"l": [
+"10",
+"10.5",
+"11",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -59618,15 +59635,6 @@
 }
 },
 "msgs": {
-"1567682644962181153": {
-"cid": "1550909316897177842",
-"keys": [
-"p:Home Base Skate Shop::15483276361882"
-],
-"title": "Dunk Low Pro Shoe",
-"t": 1793835069,
-"link": "https://homebaseskateshop.com/products/dunk-low-pro-shoe"
-},
 "1567783360217219134": {
 "cid": "1562917305531506738",
 "keys": [
