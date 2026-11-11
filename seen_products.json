@@ -17219,7 +17219,7 @@
 "Rock City Kicks::15455413076126": true,
 "Flatspot::15851366646133": true,
 "Flatspot::15851366678901": true,
-"Arts & Rec::15764139049071": false,
+"Arts & Rec::15764139049071": true,
 "Humidity Skateshop::10442625941795": true,
 "Black Sheep NC::7688002764846": true,
 "NJ Skateshop::15602942410786": true,
@@ -17247,7 +17247,8 @@
 "Overload::9799245431031": 2,
 "Overload::9799238418679": 2,
 "Overload::9734418956535": 2,
-"Overload::9613020889335": 2
+"Overload::9613020889335": 2,
+"Southside Boardshop::10399462818109": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -33568,7 +33569,16 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1,
+"12": 1,
+"9": 1,
+"11": 1,
+"11.5": 1,
+"14": 1,
+"8.5": 1,
+"9.5": 1
+}
 },
 "Southside Boardshop::10397856235837": {
 "l": [
@@ -35716,7 +35726,9 @@
 "M9.5/W11",
 "M9/W10.5"
 ],
-"m": {}
+"m": {
+"M12/W13.5": 1
+}
 },
 "Theory Skate Shop::8466153373883": {
 "l": [
@@ -44350,7 +44362,9 @@
 "UK 9",
 "UK 9.5"
 ],
-"m": {}
+"m": {
+"UK 12": 1
+}
 },
 "Flatspot::15850383868277": {
 "l": [
@@ -58117,7 +58131,19 @@
 "m": {}
 },
 "Arts & Rec::15764139049071": {
-"l": [],
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
 "m": {}
 },
 "Humidity Skateshop::10442625941795": {
@@ -60434,6 +60460,17 @@
 "title": "Nike SB - Blazer Mid (Black Spruce/Corduroy Brown)",
 "t": 1794421868,
 "link": "https://njskateshop.com/products/nike-sb-blazer-mid-black-spruce-corduroy-brown"
+},
+"1570152649934905405": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IO0667-300",
+"t:blazer mid black spruce corduroy brown",
+"p:Arts & Rec::15764139049071"
+],
+"title": "Nike SB Blazer MID - Black Spruce / Corduroy Brown",
+"t": 1794423964,
+"link": "https://artsandrecstore.com/products/nike-sb-blazer-mid-black-spruce-corduroy-brown-black-spruce"
 }
 },
 "nike_dunk_seeded": true,
