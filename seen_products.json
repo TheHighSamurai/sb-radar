@@ -1161,6 +1161,7 @@
 "Brooklyn Projects::16408898928721",
 "Brooklyn Projects::16427690786897",
 "Brooklyn Projects::16448304316497",
+"Brooklyn Projects::16455140245585",
 "Brooklyn Projects::4494849900625",
 "Brooklyn Projects::6603237654609",
 "Brooklyn Projects::6962319687761",
@@ -10830,6 +10831,15 @@
 "sizes": "L, S",
 "link": "https://lbskate.com/products/nike-sb-midnight-navy-court-blue-reversible-basketball-jersey",
 "image": "https://cdn.shopify.com/s/files/1/0013/8795/4221/files/AURORA_FN2597-410_PHCFM001-2000.jpg?v=1762490782",
+"local": false
+},
+{
+"store": "Brooklyn Projects",
+"title": "Nike SB Socks 3 Pack",
+"price": "26.00",
+"sizes": "Check site",
+"link": "https://brooklynprojects.com/products/nike-sb-socks-3-pack",
+"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2026-11-10at6.22.48PM.png?v=1794363847",
 "local": false
 }
 ],
