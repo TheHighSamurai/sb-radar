@@ -5081,6 +5081,7 @@
 "Geometric Skate Shop::15444498022675",
 "Geometric Skate Shop::15454618943763",
 "Geometric Skate Shop::15454760894739",
+"Geometric Skate Shop::15462201721107",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -10866,6 +10867,15 @@
 "link": "https://furnaceskate.com/products/nike-sb-champagne-tee",
 "image": "https://cdn.shopify.com/s/files/1/0376/9217/files/champagne.jpg?v=1793914967",
 "local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Fleece Quarter Zip",
+"price": "80.00",
+"sizes": "2XL, XL, L, M",
+"link": "https://geometricskateshop.com/products/nike-sb-fleece-quarter-zip",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1794260477",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -14995,7 +15005,7 @@
 "Skaters Advocate::8776259829994": true,
 "Skaters Advocate::8776248688874": true,
 "Humidity Skateshop::10404518887715": true,
-"NJ Skateshop::8678870777890": false,
+"NJ Skateshop::8678870777890": true,
 "PLA Folsom::15387924594846": true,
 "PLA Folsom::15387939274910": true,
 "Theory Skate Shop::15417518424251": true,
@@ -47059,7 +47069,9 @@
 "m": {}
 },
 "NJ Skateshop::8678870777890": {
-"l": [],
+"l": [
+"8"
+],
 "m": {}
 },
 "Overload::10157022773495": {
