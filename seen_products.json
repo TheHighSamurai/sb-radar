@@ -8565,6 +8565,7 @@
 "Southside Boardshop::6922409443494",
 "Southside Boardshop::7119196061862",
 "Southside Boardshop::7322844397734",
+"Southside Boardshop::7457767391398",
 "Southside Boardshop::8073184936253",
 "Southside Boardshop::8080551313725",
 "Southside Boardshop::8121250447677",
@@ -10881,6 +10882,15 @@
 "sizes": "2XL, XL, L, M",
 "link": "https://geometricskateshop.com/products/nike-sb-fleece-quarter-zip",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1794260477",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "DR7763010 Nike SB Tee Black Skate Trademark",
+"price": "28.00",
+"sizes": "XXL",
+"link": "https://southsideskateshop.com/products/nike-sb-tee-skate-trademark-black",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/products/nike-sb-trademark-black-1.jpg?v=1658194696",
 "local": false
 }
 ],
@@ -17228,7 +17238,7 @@
 "Exodus Rideshop::9126366249078": true,
 "Kinetic::15503914631270": true,
 "Exodus Rideshop::9126376439926": true,
-"Innercity Skate::15518781407511": false
+"Innercity Skate::15518781407511": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -58235,7 +58245,15 @@
 "m": {}
 },
 "Innercity Skate::15518781407511": {
-"l": [],
+"l": [
+"10.5",
+"11",
+"12",
+"14",
+"7",
+"7.5",
+"8.5"
+],
 "m": {}
 }
 },
