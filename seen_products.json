@@ -43985,6 +43985,7 @@
 "CCS::8191069028535": {
 "l": [
 "10.0",
+"13.0",
 "14.0",
 "6.0",
 "6.5",
@@ -50501,17 +50502,11 @@
 "12",
 "13",
 "7.5",
-"8",
-"8.5",
-"9",
-"9.5"
+"9"
 ],
 "m": {
-"9.5": 2,
-"8.5": 2,
-"8": 2,
-"7.5": 1,
-"9": 1
+"7.5": 2,
+"9": 2
 }
 },
 "Sneaker Politics::9352461549756": {
@@ -57513,16 +57508,13 @@
 "11",
 "11.5",
 "12",
-"13",
 "15",
 "7.5",
 "8",
 "9",
 "9.5"
 ],
-"m": {
-"13": 2
-}
+"m": {}
 },
 "NJ Skateshop::15542471295010": {
 "l": [
@@ -60160,6 +60152,16 @@
 "title": "Nike Dunk Low Retro (Campfire Orange)",
 "t": 1794356165,
 "link": "https://rockcitykicks.com/products/nike-dunk-low-retro-campfire-orange"
+},
+"1569884781318250598": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air max ishod black black black",
+"p:CCS::8191069028535"
+],
+"title": "Nike SB Air Max Ishod Shoes - Black/Black/Black",
+"t": 1794360099,
+"link": "https://ccs.com/products/nike-sb-air-max-ishod-shoes-black-black-black"
 }
 },
 "nike_dunk_seeded": true,
