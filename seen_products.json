@@ -4978,6 +4978,7 @@
 "Furnace Skate::10668903399608",
 "Furnace Skate::10681778634936",
 "Furnace Skate::10697833742520",
+"Furnace Skate::10714619379896",
 "Furnace Skate::7299934453944",
 "Furnace Skate::7299935043768",
 "Furnace Skate::7315759136952",
@@ -10840,6 +10841,15 @@
 "sizes": "Check site",
 "link": "https://brooklynprojects.com/products/nike-sb-socks-3-pack",
 "image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2026-11-10at6.22.48PM.png?v=1794363847",
+"local": false
+},
+{
+"store": "Furnace Skate",
+"title": "Nike Sb Champagne Tee",
+"price": "45.00",
+"sizes": "XXL, L, XL, M",
+"link": "https://furnaceskate.com/products/nike-sb-champagne-tee-1",
+"image": null,
 "local": false
 }
 ],
