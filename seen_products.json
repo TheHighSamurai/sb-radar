@@ -15182,7 +15182,7 @@
 "Sun Diego Boardshop::10272462471360": true,
 "No-Comply::15442647417017": true,
 "Overload::10153844637943": true,
-"Deli Skate Supply::8677741854969": true,
+"Deli Skate Supply::8677741854969": false,
 "Kinetic::15414625599590": true,
 "Geometric Skate Shop::15417104335123": true,
 "Geometric Skate Shop::15417110692115": true,
@@ -17357,8 +17357,7 @@
 "Overload::9799238418679": 2,
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
-"Southside Boardshop::10399462818109": 2,
-"Deli Skate Supply::8677741854969": 2
+"Southside Boardshop::10399462818109": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -35292,13 +35291,10 @@
 "Deli Skate Supply::10147314270457": {
 "l": [
 "11.5",
-"12",
 "9",
 "9.5"
 ],
-"m": {
-"12": 2
-}
+"m": {}
 },
 "Deli Skate Supply::10144048808185": {
 "l": [
@@ -47106,12 +47102,8 @@
 "m": {}
 },
 "Deli Skate Supply::8677741854969": {
-"l": [
-"11.5"
-],
-"m": {
-"11.5": 2
-}
+"l": [],
+"m": {}
 },
 "Kinetic::15414625599590": {
 "a": "10.0 M|10.5 M|11.0 M|11.5 M|12.0 M|13.0 M|14.0 M|15.0 M|9.5 M",
