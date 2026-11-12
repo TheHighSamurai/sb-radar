@@ -50541,7 +50541,8 @@
 "10.5",
 "11.5",
 "12",
-"13"
+"13",
+"7.5"
 ],
 "m": {}
 },
@@ -60383,6 +60384,17 @@
 "title": "Nike SB Air Force 1 - Flax/Black/Gum",
 "t": 1794443166,
 "link": "https://valsurf.com/products/nike-sb-air-force-1-flax-black-gum"
+},
+"1570453483449098271": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IM4411-100",
+"t:dunk low retro premium sail light bone",
+"p:Sneaker Politics::9352456044732"
+],
+"title": "Nike Dunk Low Retro Premium - Sail/Light Bone",
+"t": 1794495688,
+"link": "https://sneakerpolitics.com/products/nike-dunk-low-retro-premium-sail-light-bone"
 }
 },
 "nike_dunk_seeded": true,
