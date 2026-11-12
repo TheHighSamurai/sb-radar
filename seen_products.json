@@ -12019,7 +12019,7 @@
 "Olympia Skate Shop::9649940791603": false,
 "Olympia Skate Shop::9924706566451": true,
 "Olympia Skate Shop::9859493921075": true,
-"Olympia Skate Shop::9887613485363": true,
+"Olympia Skate Shop::9887613485363": false,
 "Olympia Skate Shop::9887603523891": true,
 "Olympia Skate Shop::9887597396275": true,
 "Olympia Skate Shop::9810548293939": false,
@@ -15105,7 +15105,7 @@
 "Arts & Rec::15610224115823": true,
 "Xtreme::15449359843422": true,
 "Exodus Rideshop::9062389088374": false,
-"Olympia Skate Shop::15425515979059": true,
+"Olympia Skate Shop::15425515979059": false,
 "Orchard::10825142173861": true,
 "Xtreme::15453558702174": true,
 "Xtreme::15459206987870": true,
@@ -17284,9 +17284,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Olympia Skate Shop::15425515979059": 2,
-"Olympia Skate Shop::9887613485363": 2,
-"Overload::9965411893495": 1
+"Overload::9965411893495": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -32295,16 +32293,8 @@
 0
 ],
 "Olympia Skate Shop::9887613485363": {
-"l": [
-"7.5",
-"8",
-"9"
-],
-"m": {
-"9": 2,
-"7.5": 2,
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Olympia Skate Shop::9887603523891": {
 "l": [
@@ -35944,7 +35934,7 @@
 "M8 / W9.5"
 ],
 "m": {
-"M8 / W9.5": 1
+"M8 / W9.5": 2
 }
 },
 "Overload::10121167306999": {
@@ -46950,16 +46940,8 @@
 "m": {}
 },
 "Olympia Skate Shop::15425515979059": {
-"l": [
-"12",
-"8",
-"9"
-],
-"m": {
-"9": 2,
-"12": 2,
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Orchard::10825142173861": {
 "l": [
@@ -56334,7 +56316,7 @@
 "9.5"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Pastime Skateshop::15934439686304": {
