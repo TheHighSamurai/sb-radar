@@ -8206,6 +8206,7 @@
 "Skatepark of Tampa::15458130395409",
 "Skatepark of Tampa::15478224126225",
 "Skatepark of Tampa::15481063604497",
+"Skatepark of Tampa::15518912250129",
 "Skatepark of Tampa::9228785123601",
 "Skatepark of Tampa::9228793708817",
 "Skatepark of Tampa::9228931432721",
@@ -17271,7 +17272,8 @@
 "Olympia Skate Shop::15480640143667": true,
 "Unheardof::10873385812133": true,
 "Unheardof::10861490471077": true,
-"Shoe Palace::8855807197390": true
+"Shoe Palace::8855807197390": true,
+"Skatepark of Tampa::15518912250129": false
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17294,7 +17296,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"DTLR::8473069027562": 1
+"DTLR::8473069027562": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -52015,7 +52017,7 @@
 "9"
 ],
 "m": {
-"9": 1
+"9": 2
 }
 },
 "DTLR::8476428468458": {
@@ -58331,6 +58333,10 @@
 "9",
 "9.5"
 ],
+"m": {}
+},
+"Skatepark of Tampa::15518912250129": {
+"l": [],
 "m": {}
 }
 },
