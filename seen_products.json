@@ -8208,6 +8208,7 @@
 "Skatepark of Tampa::15478224126225",
 "Skatepark of Tampa::15481063604497",
 "Skatepark of Tampa::15518912250129",
+"Skatepark of Tampa::15518973100305",
 "Skatepark of Tampa::9228785123601",
 "Skatepark of Tampa::9228793708817",
 "Skatepark of Tampa::9228931432721",
@@ -10921,6 +10922,15 @@
 "sizes": "L, M, S, XL",
 "link": "https://www.flatspot.com/products/nike-sb-bleacher-crewneck-sweatshirt-black-white",
 "image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-bleacher-crewneck-sweatshirt-black-white--1.jpg?v=1794496554",
+"local": false
+},
+{
+"store": "Skatepark of Tampa",
+"title": "Nike SB Yuto Skate Denim Pants",
+"price": "200.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://skateparkoftampa.com/products/nike-sb-yuto-skate-denim-pants",
+"image": "https://cdn.shopify.com/s/files/1/0783/8856/0145/files/AURORA_IQ6992-451_PHSFM001-2000.jpg?v=1794502521",
 "local": false
 }
 ],
