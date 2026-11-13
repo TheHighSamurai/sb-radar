@@ -5103,6 +5103,7 @@
 "Geometric Skate Shop::15454618943763",
 "Geometric Skate Shop::15454760894739",
 "Geometric Skate Shop::15462201721107",
+"Geometric Skate Shop::15469374865683",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -17111,7 +17112,8 @@
 "After Hours Skateshop::10433920368895": true,
 "Overload::10189338935543": true,
 "The Block Skate Supply::15488602210519": true,
-"Stratosphere::8856848728225": true
+"Stratosphere::8856848728225": true,
+"Geometric Skate Shop::15469374865683": false
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17134,8 +17136,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Lapstone & Hammer::10436526374969": 1
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -58577,7 +58578,6 @@
 "13",
 "14",
 "15",
-"4",
 "4.5",
 "5",
 "5.5",
@@ -58590,9 +58590,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"4": 2
-}
+"m": {}
 },
 "Kinetic::15465940451430": {
 "l": [
@@ -58651,7 +58649,9 @@
 "8.5",
 "9"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Theory Skate Shop::15497931653307": {
 "l": [
@@ -58700,26 +58700,16 @@
 "l": [
 "10",
 "10.5",
-"11",
-"11.5",
 "6",
 "7.5",
-"8",
-"8.5",
 "9",
 "9.5"
 ],
 "m": {
-"7.5": 2,
-"8.5": 2,
-"6": 2,
-"8": 2,
-"11.5": 2,
-"11": 2,
-"9.5": 1,
-"9": 1,
-"10": 1,
-"10.5": 1
+"9.5": 2,
+"9": 2,
+"10": 2,
+"10.5": 2
 }
 },
 "Bluetile Skateboards::15499331240162": {
@@ -58928,6 +58918,10 @@
 "l": [
 "BLACK SPRUCE/METALLIC GOLD-BLACK"
 ],
+"m": {}
+},
+"Geometric Skate Shop::15469374865683": {
+"l": [],
 "m": {}
 }
 },
