@@ -7063,6 +7063,7 @@
 "Pastime Skateshop::15971826368672",
 "Pastime Skateshop::15971858874528",
 "Pastime Skateshop::15971862708384",
+"Pastime Skateshop::15972047880352",
 "Pawnshop Skate::12388095885472",
 "Pawnshop Skate::12389112938656",
 "Pawnshop Skate::12532708966560",
@@ -10998,6 +10999,15 @@
 "sizes": "34",
 "link": "https://plaskate.com/products/nike-sb-yuto-denim-skate-pants-obsidian",
 "image": null,
+"local": false
+},
+{
+"store": "Pastime Skateshop",
+"title": "Nike SB - Peak Beanie - ( Green )",
+"price": "32.00",
+"sizes": "Check site",
+"link": "https://pastimeskateshop.com/products/nike-sb-peak-beanie-green",
+"image": "https://cdn.shopify.com/s/files/1/0561/6943/1200/files/shopping_725b684c-9076-4f19-9476-6b4ff3f47141.webp?v=1794527967",
 "local": false
 }
 ],
