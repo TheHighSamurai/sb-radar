@@ -8535,6 +8535,7 @@
 "Sneaker Politics::9352522858684",
 "Sneaker Politics::9352523743420",
 "Sneaker Politics::9430269558972",
+"Sneaker Politics::9436406055100",
 "Sneaker Politics::9436468773052",
 "Sneaker Politics::9476503109820",
 "Sneaker Politics::9476514513084",
@@ -17113,7 +17114,8 @@
 "Overload::10189338935543": true,
 "The Block Skate Supply::15488602210519": true,
 "Stratosphere::8856848728225": true,
-"Geometric Skate Shop::15469374865683": false
+"Geometric Skate Shop::15469374865683": true,
+"Sneaker Politics::9436406055100": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -42615,7 +42617,9 @@
 "M 6.5 / W 8",
 "M 7 / W 8.5"
 ],
-"m": {}
+"m": {
+"M 6.5 / W 8": 1
+}
 },
 "Exodus Rideshop::7391996739702": {
 "l": [],
@@ -58535,7 +58539,9 @@
 "11.5",
 "8"
 ],
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Travel Skate Shop::15486858461261": {
 "l": [
@@ -58650,7 +58656,7 @@
 "9"
 ],
 "m": {
-"13": 1
+"13": 2
 }
 },
 "Theory Skate Shop::15497931653307": {
@@ -58698,19 +58704,10 @@
 },
 "Lapstone & Hammer::10436526374969": {
 "l": [
-"10",
-"10.5",
 "6",
-"7.5",
-"9",
-"9.5"
+"7.5"
 ],
-"m": {
-"9.5": 2,
-"9": 2,
-"10": 2,
-"10.5": 2
-}
+"m": {}
 },
 "Bluetile Skateboards::15499331240162": {
 "l": [
@@ -58921,7 +58918,29 @@
 "m": {}
 },
 "Geometric Skate Shop::15469374865683": {
-"l": [],
+"l": [
+"7",
+"7.5",
+"8",
+"8.5",
+"9"
+],
+"m": {}
+},
+"Sneaker Politics::9436406055100": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
 "m": {}
 }
 },
@@ -60224,15 +60243,6 @@
 }
 },
 "msgs": {
-"1568353287152074934": {
-"cid": "1550909316897177842",
-"keys": [
-"p:Brooklyn Projects::16427690786897"
-],
-"title": "Nike SB Champagne Dunk Low",
-"t": 1793994962,
-"link": "https://brooklynprojects.com/products/nike-sb-champagne-dunk-low"
-},
 "1568354577231913155": {
 "cid": "1550909316897177842",
 "keys": [
@@ -61498,6 +61508,16 @@
 "title": "Nike Dunk Low Retro Premium - Sail/Light Bone",
 "t": 1794599473,
 "link": "https://sneakerpolitics.com/products/nike-dunk-low-retro-premium-sail-light-bone"
+},
+"1570891367708622960": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 navy black",
+"p:Geometric Skate Shop::15469374865683"
+],
+"title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
+"t": 1794600088,
+"link": "https://geometricskateshop.com/products/nike-sb-air-force-1-navy-black"
 }
 },
 "nike_dunk_seeded": true,
