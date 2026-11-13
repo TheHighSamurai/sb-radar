@@ -42618,7 +42618,7 @@
 "M 7 / W 8.5"
 ],
 "m": {
-"M 6.5 / W 8": 1
+"M 6.5 / W 8": 2
 }
 },
 "Exodus Rideshop::7391996739702": {
@@ -58330,7 +58330,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Theory Skate Shop::15498247405755": {
 "l": [
@@ -58423,7 +58425,8 @@
 "5.5",
 "6.5",
 "8",
-"8.5"
+"8.5",
+"9"
 ],
 "m": {}
 },
@@ -58540,7 +58543,7 @@
 "8"
 ],
 "m": {
-"10": 1
+"10": 2
 }
 },
 "Travel Skate Shop::15486858461261": {
@@ -58651,13 +58654,10 @@
 "11",
 "11.5",
 "12",
-"13",
 "8.5",
 "9"
 ],
-"m": {
-"13": 2
-}
+"m": {}
 },
 "Theory Skate Shop::15497931653307": {
 "l": [
@@ -58919,11 +58919,19 @@
 },
 "Geometric Skate Shop::15469374865683": {
 "l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
 "7",
 "7.5",
 "8",
 "8.5",
-"9"
+"9",
+"9.5"
 ],
 "m": {}
 },
@@ -60243,16 +60251,6 @@
 }
 },
 "msgs": {
-"1568354577231913155": {
-"cid": "1550909316897177842",
-"keys": [
-"t:dunk low pro prm wc champagne",
-"p:Overload::10182877839607"
-],
-"title": "Nike SB Dunk Low Pro PRM WC - \"Champagne\"",
-"t": 1793995270,
-"link": "https://shopoverload.com/products/nike-sb-dunk-low-pro-prm-wc-champagne"
-},
 "1568365878188179507": {
 "cid": "1562917305531506738",
 "keys": [
@@ -61517,6 +61515,27 @@
 ],
 "title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
 "t": 1794600088,
+"link": "https://geometricskateshop.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570892582622335017": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black",
+"p:Richmond Hood::15781174870180"
+],
+"title": "Nike SB Air Force 1 - Navy/Black",
+"t": 1794600377,
+"link": "https://richmondhood.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570892587135537296": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 navy black",
+"p:Geometric Skate Shop::15469374865683"
+],
+"title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
+"t": 1794600379,
 "link": "https://geometricskateshop.com/products/nike-sb-air-force-1-navy-black"
 }
 },
