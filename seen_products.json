@@ -447,6 +447,7 @@
 "After Hours Skateshop::10422111142143",
 "After Hours Skateshop::10433920368895",
 "After Hours Skateshop::10434355298559",
+"After Hours Skateshop::10434360148223",
 "After Hours Skateshop::9364057915647",
 "After Hours Skateshop::9364057981183",
 "After Hours Skateshop::9364058013951",
@@ -10752,6 +10753,15 @@
 "link": "https://afterhoursskateshop.com/products/nike-sb-1-4-zip-gym-red-stealth",
 "image": "https://cdn.shopify.com/s/files/1/0799/8989/9519/files/ScreenShot2026-11-13at4.42.01PM.png?v=1794609734",
 "local": false
+},
+{
+"store": "After Hours Skateshop",
+"title": "Nike SB Airmail Long Sleeve Tee",
+"price": "50.00",
+"sizes": "XL, Large, Medium",
+"link": "https://afterhoursskateshop.com/products/nike-sb-airmail-long-sleeve-tee",
+"image": "https://cdn.shopify.com/s/files/1/0799/8989/9519/files/ScreenShot2026-11-13at4.45.47PM.png?v=1794609994",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -11845,7 +11855,7 @@
 "Olympia Skate Shop::10274521284915": true,
 "Olympia Skate Shop::10212304191795": true,
 "Olympia Skate Shop::9095486308659": true,
-"Olympia Skate Shop::9544943239475": true,
+"Olympia Skate Shop::9544943239475": false,
 "Olympia Skate Shop::10069811626291": true,
 "Olympia Skate Shop::10135488201011": true,
 "Olympia Skate Shop::10110445912371": true,
@@ -17192,8 +17202,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Olympia Skate Shop::9544943239475": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -32022,18 +32031,8 @@
 "m": {}
 },
 "Olympia Skate Shop::9544943239475": {
-"l": [
-"11",
-"11.5",
-"12",
-"9"
-],
-"m": {
-"11.5": 2,
-"11": 2,
-"9": 2,
-"12": 2
-}
+"l": [],
+"m": {}
 },
 "Olympia Skate Shop::10069811626291": {
 "l": [
