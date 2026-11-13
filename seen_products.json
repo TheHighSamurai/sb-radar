@@ -3118,6 +3118,7 @@
 "Exodus Rideshop::9102642217078",
 "Exodus Rideshop::9103049130102",
 "Exodus Rideshop::9103052734582",
+"Exodus Rideshop::9112011702390",
 "Exodus Rideshop::9112034410614",
 "Exodus Rideshop::9126366249078",
 "Exodus Rideshop::9126376439926",
@@ -17029,7 +17030,8 @@
 "Pawnshop Skate::15971803824288": true,
 "Pharmacy Temecula::7694018412626": true,
 "Deli Skate Supply::15374645821689": true,
-"Stardust Skate Shop::15461334843604": true
+"Stardust Skate Shop::15461334843604": true,
+"Exodus Rideshop::9112011702390": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17052,7 +17054,8 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1
+"Drift House::9327544467711": 1,
+"Familia Skateshop::10958035321144": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -47231,7 +47234,9 @@
 "l": [
 "8"
 ],
-"m": {}
+"m": {
+"8": 1
+}
 },
 "Familia Skateshop::10800033530168": {
 "l": [],
@@ -57169,7 +57174,7 @@
 "9.5"
 ],
 "m": {
-"14": 1
+"14": 2
 }
 },
 "Oneness::10278397182036": {
@@ -58630,7 +58635,7 @@
 "9.5"
 ],
 "m": {
-"5.5": 1
+"5.5": 2
 }
 },
 "Lapstone & Hammer::10436526374969": {
@@ -58650,7 +58655,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"12": 1
+}
 },
 "Bluetile Skateboards::15499331240162": {
 "l": [
@@ -58720,6 +58727,21 @@
 "11.5",
 "12",
 "9"
+],
+"m": {}
+},
+"Exodus Rideshop::9112011702390": {
+"l": [
+"M 10 / W 11.5",
+"M 10.5 / W 12",
+"M 11 / W 12.5",
+"M 11.5 / W 13",
+"M 12 / W 13.5",
+"M 13 / W 14.5",
+"M 7.5 / W 9",
+"M 8 / W 9.5",
+"M 9 / W 10.5",
+"M 9.5 / W 11"
 ],
 "m": {}
 }
@@ -61179,6 +61201,17 @@
 "title": "UNION X NIKE DUNK LOW SP \"FATIGUE\"",
 "t": 1794588065,
 "link": "https://www.lapstoneandhammer.com/products/if7380_200"
+},
+"1570846061029883957": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 skateboard navy black navy",
+"p:Exodus Rideshop::9112011702390"
+],
+"title": "Nike SB Air Force 1 Skateboard Shoe - Navy/Black-Navy",
+"t": 1794589286,
+"link": "https://exodusrideshop.com/products/nike-sb-air-force-1-skateboard-shoe-navy-black-navy"
 }
 },
 "nike_dunk_seeded": true,
