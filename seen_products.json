@@ -446,6 +446,7 @@
 "After Hours Skateshop::10374586007807",
 "After Hours Skateshop::10422111142143",
 "After Hours Skateshop::10433920368895",
+"After Hours Skateshop::10434355298559",
 "After Hours Skateshop::9364057915647",
 "After Hours Skateshop::9364057981183",
 "After Hours Skateshop::9364058013951",
@@ -10742,6 +10743,15 @@
 "link": "https://35thnorth.com/products/nike-sb-airmail-long-sleeve-skate-tee-black-dark-russet-white",
 "image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/nike-sb-airmail-long-sleeve-shirt-black-dark-russet-im5430-010_1024x1024_3145963e-b29e-4f04-90bb-beb87c0f590b.webp?v=1794607821",
 "local": false
+},
+{
+"store": "After Hours Skateshop",
+"title": "Nike SB 1/4 Zip (Gym Red/Stealth)",
+"price": "80.00",
+"sizes": "Medium, Small, Large, XL",
+"link": "https://afterhoursskateshop.com/products/nike-sb-1-4-zip-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0799/8989/9519/files/ScreenShot2026-11-13at4.42.01PM.png?v=1794609734",
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -17183,7 +17193,7 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Olympia Skate Shop::9544943239475": 1
+"Olympia Skate Shop::9544943239475": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -31921,7 +31931,6 @@
 "11",
 "11.5",
 "12",
-"13",
 "15",
 "5",
 "5.5",
@@ -31934,9 +31943,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"13": 2
-}
+"m": {}
 },
 "Olympia Skate Shop::10351804612915": {
 "l": [
@@ -32022,10 +32029,10 @@
 "9"
 ],
 "m": {
-"11.5": 1,
-"11": 1,
-"9": 1,
-"12": 1
+"11.5": 2,
+"11": 2,
+"9": 2,
+"12": 2
 }
 },
 "Olympia Skate Shop::10069811626291": {
@@ -32115,13 +32122,10 @@
 "10.5",
 "11",
 "12",
-"8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "Olympia Skate Shop::10069811429683": {
 "l": [
@@ -58882,14 +58886,11 @@
 "Olympia Skate Shop::15478791110963": {
 "l": [
 "10",
-"11",
 "11.5",
 "7.5",
 "9.5"
 ],
-"m": {
-"11": 2
-}
+"m": {}
 },
 "Brooklyn Projects::16434649497681": {
 "l": [
