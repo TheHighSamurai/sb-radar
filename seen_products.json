@@ -6303,6 +6303,7 @@
 "Nike.com::HJ4131-200",
 "Nike.com::HQ2053-001",
 "Nike.com::HQ2053-002",
+"Nike.com::HQ2053-003",
 "Nike.com::HQ2053-100",
 "Nike.com::HQ2053-300",
 "Nike.com::IB2258-001",
@@ -12111,9 +12112,9 @@
 "Orchard::10720391266469": true,
 "Orchard::10720389628069": true,
 "Orchard::10720389005477": true,
-"Orchard::10675024232613": true,
+"Orchard::10675024232613": false,
 "Orchard::10558801871013": true,
-"Orchard::10666330095781": true,
+"Orchard::10666330095781": false,
 "Orchard::10662389809317": false,
 "Orchard::10637239058597": true,
 "Orchard::10637239320741": true,
@@ -17107,9 +17108,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Orchard::10675024232613": 2,
-"Orchard::10666330095781": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -30541,18 +30540,8 @@
 "m": {}
 },
 "Orchard::10675024232613": {
-"l": [
-"11",
-"11.5",
-"12",
-"9.5"
-],
-"m": {
-"11": 2,
-"9.5": 2,
-"11.5": 2,
-"12": 2
-}
+"l": [],
+"m": {}
 },
 "Orchard::10558801871013": {
 "l": [
@@ -30561,18 +30550,8 @@
 "m": {}
 },
 "Orchard::10666330095781": {
-"l": [
-"10",
-"12",
-"9",
-"9.5"
-],
-"m": {
-"10": 2,
-"9.5": 2,
-"9": 2,
-"12": 2
-}
+"l": [],
+"m": {}
 },
 "Orchard::10662389809317": {
 "l": [],
@@ -35242,14 +35221,11 @@
 },
 "Deli Skate Supply::8479000428793": {
 "l": [
-"10",
 "13",
 "5",
 "7"
 ],
-"m": {
-"10": 2
-}
+"m": {}
 },
 "Deli Skate Supply::8222024597753": {
 "l": [
@@ -58622,7 +58598,7 @@
 "9.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "No-Comply::15488264929465": {
@@ -58852,7 +58828,7 @@
 "9.5"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Olympia Skate Shop::15478791110963": {
@@ -61406,6 +61382,17 @@
 "title": "Nike SB Air Force 1 (Navy/Black)",
 "t": 1794594066,
 "link": "https://afterhoursskateshop.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570872477410660378": {
+"cid": "1550909316897177842",
+"keys": [
+"s:HQ2053-003",
+"t:dunk low gore tex oil grey dove grey black summit white",
+"p:Nike.com::HQ2053-003"
+],
+"title": "Nike Dunk Low GORE-TEX - Oil Grey/Dove Grey/Black/Summit White",
+"t": 1794595584,
+"link": "https://www.nike.com/t/dunk-low-gore-tex-mens-waterproof-shoes-hbKMFmET/HQ2053-003"
 }
 },
 "nike_dunk_seeded": true,
