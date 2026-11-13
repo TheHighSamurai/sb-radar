@@ -8621,6 +8621,7 @@
 "Southside Boardshop::15477224735037",
 "Southside Boardshop::15502112457021",
 "Southside Boardshop::15502395769149",
+"Southside Boardshop::15510678110525",
 "Southside Boardshop::5959847968934",
 "Southside Boardshop::6922409443494",
 "Southside Boardshop::7119196061862",
@@ -10668,6 +10669,15 @@
 "sizes": "Medium, XL, Large, Small, XXL",
 "link": "https://wearecivil.com/products/nike-sb-airmail-long-sleeve-t-shirt-anthracite-black",
 "image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IM5430-060_PHSYM001-2000.jpg?v=1794594618",
+"local": false
+},
+{
+"store": "Southside Boardshop",
+"title": "Airmail Longsleeve IM5430010 Black Dark Russet White Skate Longsleeve T-Shirt SB Tee Skate Nike SB Skateboarding",
+"price": "50.00",
+"sizes": "XL, XXL, MD, LG",
+"link": "https://southsideskateshop.com/products/airmail-longsleeve-im5430010-black-dark-russet-white-skate-longsleeve-t-shirt-sb-tee-skate-nike-sb-skateboarding",
+"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/Airmail-Longsleeve-IM5430010-Black-Dark-Russet-White-Skate-Longsleeve-T-Shirt-SB-Tee-Skate-Nike-SB-Skateboarding-front_7254d55d-96f0-42e1-86ba-aa558080c705.jpg?v=1794512927",
 "local": false
 }
 ],
@@ -17098,8 +17108,8 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Orchard::10675024232613": 1,
-"Orchard::10666330095781": 1
+"Orchard::10675024232613": 2,
+"Orchard::10666330095781": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -30538,10 +30548,10 @@
 "9.5"
 ],
 "m": {
-"11": 1,
-"9.5": 1,
-"11.5": 1,
-"12": 1
+"11": 2,
+"9.5": 2,
+"11.5": 2,
+"12": 2
 }
 },
 "Orchard::10558801871013": {
@@ -30558,10 +30568,10 @@
 "9.5"
 ],
 "m": {
-"10": 1,
-"9.5": 1,
-"9": 1,
-"12": 1
+"10": 2,
+"9.5": 2,
+"9": 2,
+"12": 2
 }
 },
 "Orchard::10662389809317": {
@@ -35238,7 +35248,7 @@
 "7"
 ],
 "m": {
-"10": 1
+"10": 2
 }
 },
 "Deli Skate Supply::8222024597753": {
@@ -58611,7 +58621,9 @@
 "8",
 "9.5"
 ],
-"m": {}
+"m": {
+"10.5": 1
+}
 },
 "No-Comply::15488264929465": {
 "l": [
@@ -58839,7 +58851,9 @@
 "8.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"8": 1
+}
 },
 "Olympia Skate Shop::15478791110963": {
 "l": [
