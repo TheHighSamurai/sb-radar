@@ -1535,6 +1535,7 @@
 "Civil::15569934975264",
 "Civil::15594599579936",
 "Civil::15596700795168",
+"Civil::15611826536736",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -5526,6 +5527,8 @@
 "Kinetic::15503914631270",
 "Kinetic::15509403533414",
 "Kinetic::15509405433958",
+"Kinetic::15514159022182",
+"Kinetic::15514160562278",
 "Kinetic::8081361338470",
 "Kinetic::8095107121254",
 "Kinetic::8095107907686",
@@ -10639,7 +10642,35 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "Kinetic",
+"title": "Nike SB Skate Crewneck (Navy/White)",
+"price": "75.00",
+"sizes": "XL, L, M",
+"link": "https://kineticskateboarding.com/products/nike-sb-skate-crewneck-navy-white",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IQ6568-477_PHSFM001-2000.jpg?v=1794594904",
+"local": false
+},
+{
+"store": "Kinetic",
+"title": "Nike SB Skate Crewneck (Black/White)",
+"price": "75.00",
+"sizes": "XL, L, M",
+"link": "https://kineticskateboarding.com/products/nike-sb-skate-crewneck-black-white",
+"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IQ6568-010_PHSFM001-2000.jpg?v=1794594633",
+"local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Airmail Long-Sleeve T-Shirt - Anthracite / Black",
+"price": "50.00",
+"sizes": "Medium, XL, Large, Small, XXL",
+"link": "https://wearecivil.com/products/nike-sb-airmail-long-sleeve-t-shirt-anthracite-black",
+"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IM5430-060_PHSYM001-2000.jpg?v=1794594618",
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-11-13",
 "stock": {
@@ -17066,7 +17097,9 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1
+"Drift House::9327544467711": 1,
+"Orchard::10675024232613": 1,
+"Orchard::10666330095781": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -30504,7 +30537,12 @@
 "12",
 "9.5"
 ],
-"m": {}
+"m": {
+"11": 1,
+"9.5": 1,
+"11.5": 1,
+"12": 1
+}
 },
 "Orchard::10558801871013": {
 "l": [
@@ -30519,7 +30557,12 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"10": 1,
+"9.5": 1,
+"9": 1,
+"12": 1
+}
 },
 "Orchard::10662389809317": {
 "l": [],
@@ -32034,6 +32077,8 @@
 "11.5",
 "12",
 "13",
+"14",
+"15",
 "5",
 "5.5",
 "6.5",
@@ -60139,16 +60184,6 @@
 }
 },
 "msgs": {
-"1568331918569767013": {
-"cid": "1550909316897177842",
-"keys": [
-"t:dunk low pro premium black spuce metallic gold black",
-"p:Theory Skate Shop::15478159671483"
-],
-"title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
-"t": 1793989868,
-"link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black"
-},
 "1568353287152074934": {
 "cid": "1550909316897177842",
 "keys": [
