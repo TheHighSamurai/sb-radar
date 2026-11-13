@@ -9380,6 +9380,7 @@
 "Travel Skate Shop::15448619876429",
 "Travel Skate Shop::15467840766029",
 "Travel Skate Shop::15486858461261",
+"Travel Skate Shop::15489217265741",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -17127,7 +17128,8 @@
 "Stratosphere::8856848728225": true,
 "Geometric Skate Shop::15469374865683": true,
 "Sneaker Politics::9436406055100": true,
-"Richmond Hood::15783055196324": true
+"Richmond Hood::15783055196324": true,
+"Travel Skate Shop::15489217265741": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -24717,7 +24719,7 @@
 "9"
 ],
 "m": {
-"8.5": 1
+"8.5": 2
 }
 },
 "Rose Street Encinitas::8621500629191": {
@@ -58967,6 +58969,23 @@
 "11.5",
 "12",
 "8.5",
+"9.5"
+],
+"m": {}
+},
+"Travel Skate Shop::15489217265741": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"7.5",
+"8",
+"8.5",
+"9",
 "9.5"
 ],
 "m": {}
