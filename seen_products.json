@@ -521,6 +521,7 @@
 "Arts & Rec::15712110116975",
 "Arts & Rec::15721329295471",
 "Arts & Rec::15764139049071",
+"Arts & Rec::15789598179439",
 "Arts & Rec::7121500209263",
 "Arts & Rec::7128968986735",
 "Arts & Rec::7525986730095",
@@ -10717,6 +10718,15 @@
 "link": "https://blacksheepskateshop.com/products/nike-sb-x-nocturnal-air-force-1-city-pack-skate-polo-shirt-black-court-green",
 "image": "https://cdn.shopify.com/s/files/1/1696/5669/files/AURORA_IV0597-010_PHSYM003-2000.png?v=1794601570",
 "local": false
+},
+{
+"store": "Arts & Rec",
+"title": "NIKE SB Skate Polo - BLUE ECLIPSE/NEW SLATE/WHITE",
+"price": "70.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://artsandrecstore.com/products/nike-sb-solid-break-polo-af1-city-pack-10-23-copy",
+"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/AURORA_IM5432-477_PHSFM001-2000.jpg?v=1794607348",
+"local": true
 }
 ],
 "apparel_seeded": true,
@@ -20752,6 +20762,7 @@
 },
 "Richmond Hood::10355524010148": {
 "l": [
+"11",
 "8.5",
 "9"
 ],
@@ -61543,6 +61554,16 @@
 "title": "Nike SB Air Force 1 - Navy/Black",
 "t": 1794600664,
 "link": "https://valsurf.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570922785688002591": {
+"cid": "1562917305531506738",
+"keys": [
+"t:paul rodriguez prod zoom air low flint grey and blue",
+"p:Richmond Hood::10355524010148"
+],
+"title": "Nike SB Paul Rodriguez PRod Zoom Air Low - Flint Grey and Blue",
+"t": 1794607579,
+"link": "https://richmondhood.com/products/nike-sb-paul-rodriguez-prod-zoom-air-low-flint-grey-and-blue"
 }
 },
 "nike_dunk_seeded": true,
