@@ -8591,6 +8591,7 @@
 "Southside Boardshop::15456433865021",
 "Southside Boardshop::15466768105789",
 "Southside Boardshop::15477219950909",
+"Southside Boardshop::15477224735037",
 "Southside Boardshop::15502112457021",
 "Southside Boardshop::15502395769149",
 "Southside Boardshop::5959847968934",
@@ -17383,7 +17384,8 @@
 "Pastime Skateshop::15971862708384": true,
 "NJ Skateshop::15591446151202": true,
 "People Skate and Snowboard::15476212236503": true,
-"Richmond Hood::15781174870180": true
+"Richmond Hood::15781174870180": true,
+"Southside Boardshop::15477224735037": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -58703,6 +58705,22 @@
 "8.5"
 ],
 "m": {}
+},
+"Southside Boardshop::15477224735037": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -60004,16 +60022,6 @@
 }
 },
 "msgs": {
-"1568240044370694216": {
-"cid": "1550909316897177842",
-"keys": [
-"t:dunk low pro prm wc champagne",
-"p:Pastime Skateshop::15958864265376"
-],
-"title": "NIKE SB DUNK LOW PRO PRM WC \"CHAMPAGNE\"",
-"t": 1793967963,
-"link": "https://pastimeskateshop.com/products/nike-sb-dunk-low-pro-prm-wc-champagne"
-},
 "1568277795392463014": {
 "cid": "1550909316897177842",
 "keys": [
@@ -60900,6 +60908,16 @@
 "title": "Nike SB Air Force 1 - Navy/Black",
 "t": 1794549963,
 "link": "https://richmondhood.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570778094334119999": {
+"cid": "1562917305531506738",
+"keys": [
+"t:af1 navy black hm8517400 suede skateboarding",
+"p:Southside Boardshop::15477224735037"
+],
+"title": "AF1 Navy Black HM8517400 Nike SB Suede Skateboarding Shoes",
+"t": 1794573082,
+"link": "https://southsideskateshop.com/products/af1-navy-black-navy-hm8517400-nike-sb-suede-skateboarding-shoes"
 }
 },
 "nike_dunk_seeded": true,
