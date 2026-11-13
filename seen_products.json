@@ -339,6 +339,7 @@
 "35th North::15491554312228",
 "35th North::15491565453348",
 "35th North::15496395161636",
+"35th North::15506344214564",
 "35th North::5046050029604",
 "35th North::7087622815780",
 "35th North::7227698446372",
@@ -388,6 +389,7 @@
 "510 Skateboarding::15443307266153",
 "510 Skateboarding::15443524354153",
 "510 Skateboarding::15443556860009",
+"510 Skateboarding::15454308827241",
 "510 Skateboarding::6740432355433",
 "510 Skateboarding::6894961852521",
 "510 Skateboarding::6942032560233",
@@ -722,6 +724,7 @@
 "Bluetile Skateboards::15464508293346",
 "Bluetile Skateboards::15479552868578",
 "Bluetile Skateboards::15490439446754",
+"Bluetile Skateboards::15499331240162",
 "Bluetile Skateboards::6816775110814",
 "Bluetile Skateboards::6816780320926",
 "Bluetile Skateboards::6816780353694",
@@ -1819,6 +1822,7 @@
 "Coureur Goods::10410400219391",
 "Coureur Goods::10410401366271",
 "Coureur Goods::10410456809727",
+"Coureur Goods::10427726561535",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
 "Coureur Goods::8375408197887",
@@ -2459,6 +2463,7 @@
 "Embassy::15412124221495",
 "Embassy::15424495779895",
 "Embassy::15425930461239",
+"Embassy::15430556287031",
 "Embassy::15431454588983",
 "Embassy::6828415942711",
 "Embassy::6828416204855",
@@ -5511,6 +5516,7 @@
 "Kinetic::15444537573478",
 "Kinetic::15451436417126",
 "Kinetic::15462286917734",
+"Kinetic::15465940451430",
 "Kinetic::15498381459558",
 "Kinetic::15503914631270",
 "Kinetic::15509403533414",
@@ -5656,6 +5662,7 @@
 "LB Skate::9003895816348",
 "LB Skate::9003897782428",
 "LB Skate::9003897946268",
+"LB Skate::9003899355292",
 "LB Skate::9003899388060",
 "LB Skate::9004480495772",
 "LB Skate::9010519539868",
@@ -5730,6 +5737,7 @@
 "Labor Skate Shop::15436762120294",
 "Labor Skate Shop::15437920895078",
 "Labor Skate Shop::15464638054502",
+"Labor Skate Shop::15464722661478",
 "Labor Skate Shop::7303666532454",
 "Labor Skate Shop::7534535835750",
 "Labor Skate Shop::7545787088998",
@@ -5763,6 +5771,7 @@
 "Labor Skate Shop::8206224785510",
 "Labor Skate Shop::8221748723814",
 "Lapstone & Hammer::10433532624953",
+"Lapstone & Hammer::10436526374969",
 "Lapstone & Hammer::6568250507321",
 "Lapstone & Hammer::6663653457977",
 "Lapstone & Hammer::6709307637817",
@@ -6030,6 +6039,7 @@
 "Mainland::8561524605013",
 "Mainland::8586652385365",
 "Mainland::8599459397717",
+"Mainland::8606834327637",
 "NJ Skateshop::15396784046114",
 "NJ Skateshop::15419208990754",
 "NJ Skateshop::15421473587234",
@@ -6331,6 +6341,7 @@
 "No-Comply::15454763057337",
 "No-Comply::15469752811705",
 "No-Comply::15485538730169",
+"No-Comply::15488264929465",
 "No-Comply::15490926608569",
 "No-Comply::15491009249465",
 "No-Comply::15509646770361",
@@ -6955,6 +6966,7 @@
 "PLA Folsom::15443278332062",
 "PLA Folsom::15443278594206",
 "PLA Folsom::15443278987422",
+"PLA Folsom::15445075558558",
 "PLA Folsom::15465224143006",
 "PLA Folsom::15465343189150",
 "PLA Folsom::6704398106782",
@@ -9092,6 +9104,7 @@
 "Theory Skate Shop::15478159671483",
 "Theory Skate Shop::15482445529275",
 "Theory Skate Shop::15482548912315",
+"Theory Skate Shop::15497931653307",
 "Theory Skate Shop::15498247405755",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
@@ -9341,6 +9354,7 @@
 "Travel Skate Shop::15436563185741",
 "Travel Skate Shop::15448619876429",
 "Travel Skate Shop::15467840766029",
+"Travel Skate Shop::15486858461261",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -9559,6 +9573,7 @@
 "Undefeated::6702769078533",
 "Undefeated::6702785069317",
 "Undefeated::6702825111813",
+"Undefeated::6702828159237",
 "Underground Skateshop::4541167992931",
 "Underground Skateshop::8127413977288",
 "Underground Skateshop::8127414993096",
@@ -10613,415 +10628,9 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [
-{
-"store": "No-Comply",
-"title": "Nike SB LSE Champagne Dunk Skate Tee Shirt - White",
-"price": "45.00",
-"sizes": "XL, L, M, S",
-"link": "https://www.nocomplyatx.com/products/nike-sb-lse-champagne-dunk-skate-tee-shirt-white-iw3134-100",
-"image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IW3134-100_PHSFM001-2000.webp?v=1791903303",
-"local": false
-},
-{
-"store": "No-Comply",
-"title": "Nike SB LSE Champagne Dunk Skate Shirt - Black",
-"price": "44.95",
-"sizes": "XL, L, M, S",
-"link": "https://www.nocomplyatx.com/products/nike-sb-lse-champagne-dunk-skate-shirt-black",
-"image": "https://cdn.shopify.com/s/files/1/2919/3396/files/AURORA_IW3134-060_PHSFM001-2000.webp?v=1793838334",
-"local": false
-},
-{
-"store": "Embassy",
-"title": "Nike SB Champagne Dunk Tee - Anthracite",
-"price": "45.00",
-"sizes": "Anthracite",
-"link": "https://embassyboardshop.com/products/nike-sb-champagne-dunk-tee-anthracite-iw3134-060",
-"image": "https://cdn.shopify.com/s/files/1/2032/9159/files/Nike_SB_Champ_Dunk_00.png?v=1793982311",
-"local": false
-},
-{
-"store": "Theory Skate Shop",
-"title": "Nike SB AF1 Skate Polo - Black",
-"price": "50.00",
-"sizes": "M, L, XL",
-"link": "https://theoryskate.com/products/nike-sb-af1-skate-polo-black",
-"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/oct26NikeSBAF1SolidBreakPoloBlack.webp?v=1793984902",
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB Everyday Elevated Crew 3 Pack Of Socks - Multi-Color II",
-"price": "25.95",
-"sizes": "LG, MD",
-"link": "https://ccs.com/products/nike-sb-everyday-elevated-crew-3-pack-of-socks-multi-color-ii",
-"image": "https://cdn.shopify.com/s/files/1/0519/1388/3831/files/198730320014-1.jpg?v=1784163282",
-"local": false
-},
-{
-"store": "Concepts",
-"title": "Nike SB Denim Full-Zip Track Jacket (Medium Olive/White",
-"price": "112.00",
-"sizes": "XL",
-"link": "https://cncpts.com/products/nike-sb-denim-full-zip-track-jacket-ih1988-222-medium-olive-white",
-"image": "https://cdn.shopify.com/s/files/1/0043/5673/5045/files/198481954391-1.jpg?v=1755183399",
-"local": false
-},
-{
-"store": "Exodus Rideshop",
-"title": "Nike SB Champagne Tee- Anthracite",
-"price": "45.00",
-"sizes": "XL, M, L, S",
-"link": "https://exodusrideshop.com/products/nike-sb-champagne-tee-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0018/1832/9147/files/AURORA_IW3134-060_PHSFM001-2000.png?v=1793652510",
-"local": false
-},
-{
-"store": "35th North",
-"title": "Nike SB Champagne T-Shirt - Vintage Black",
-"price": "45.00",
-"sizes": "M, S, L",
-"link": "https://35thnorth.com/products/nike-sb-champagne-t-shirt-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/champagnetee_anthracite.webp?v=1793997020",
-"local": false
-},
-{
-"store": "35th North",
-"title": "Nike SB Champagne T-Shirt - White",
-"price": "45.00",
-"sizes": "L, XL, M, S",
-"link": "https://35thnorth.com/products/nike-sb-champagne-t-shirt-white",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/champagnetee_white.webp?v=1793997307",
-"local": false
-},
-{
-"store": "Richmond Hood",
-"title": "Nike SB Long-Sleeve Skate Jersey",
-"price": "125.00",
-"sizes": "Large, Medium, XL, Small",
-"link": "https://richmondhood.com/products/untitled-nov-6-at-3-59-pm",
-"image": "https://cdn.shopify.com/s/files/1/0493/5748/8292/files/IMG_1399.jpg?v=1794000088",
-"local": false
-},
-{
-"store": "35th North",
-"title": "Nike SB Yuto Short Sleeve Skate Jersey - Black/ Anthracite",
-"price": "95.00",
-"sizes": "M, S, L, XL",
-"link": "https://35thnorth.com/products/nike-sb-yuto-short-sleeve-skate-jersey-black-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/Screen_Shot_2026-11-06_at_1.53.14_PM.png?v=1794002114",
-"local": false
-},
-{
-"store": "35th North",
-"title": "Nike SB Fleece 1/2 Zip Skate Sweatshirt - Gym Red",
-"price": "80.00",
-"sizes": "Large, Extra large, Medium",
-"link": "https://35thnorth.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt-red",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/nike_fleecehalfzip.webp?v=1794002650",
-"local": false
-},
-{
-"store": "Icon Boardshop",
-"title": "Nike SB Champagne Dunk Skate Tee - Anthracite",
-"price": "44.99",
-"sizes": "Anthracite",
-"link": "https://iconboardshop.com/products/nike-sb-champagne-dunk-skate-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0681/2106/7816/files/AURORA_IW3134-060_PHSYM001-2000.jpg?v=1794004876",
-"local": false
-},
-{
-"store": "Icon Boardshop",
-"title": "Nike SB Champagne Dunk Skate Tee - White",
-"price": "44.99",
-"sizes": "White",
-"link": "https://iconboardshop.com/products/nike-sb-champagne-dunk-skate-tee-white",
-"image": "https://cdn.shopify.com/s/files/1/0681/2106/7816/files/AURORA_IW3134-100_PHSYM003-2000.jpg?v=1794004885",
-"local": false
-},
-{
-"store": "People Skate and Snowboard",
-"title": "Nike SB Champagne Crest Skate T-Shirt - Anthracite",
-"price": "44.95",
-"sizes": "Gray",
-"link": "https://peopleskateandsnowboard.com/products/nike-sb-champagne-crest-skate-t-shirt-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0173/7776/files/nike-sb-champagne-crest-tee-anthracite-front.webp?v=1794079372",
-"local": false
-},
-{
-"store": "Seasons Skate Shop",
-"title": "Nike SB Long-Sleeve Skate Jersey- Black/Black",
-"price": "125.00",
-"sizes": "Large, Medium, XL",
-"link": "https://seasonsskateshop.com/products/carpet-wall-clock",
-"image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/Photoroom_20261107_150702.jpg?v=1794082083",
-"local": false
-},
-{
-"store": "Brooklyn Projects",
-"title": "Nike Sb Champagne Dunk Tee Black",
-"price": "45.00",
-"sizes": "XL, M, L",
-"link": "https://brooklynprojects.com/products/nike-sb-champagne-dunk-tee-black",
-"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/nike-sb-nike-sb-tee-loose-champagne-dunk-s-s-black.jpg?v=1793149081",
-"local": false
-},
-{
-"store": "35th North",
-"title": "Nike SB Beanie - Black",
-"price": "32.00",
-"sizes": "Check site",
-"link": "https://35thnorth.com/products/nike-sb-beanie-black-copy",
-"image": "https://cdn.shopify.com/s/files/1/0248/7857/9748/files/IMG-0105.webp?v=1791315699",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Peak Beanie - Black / White",
-"price": "39.00",
-"sizes": "One Size",
-"link": "https://www.flatspot.com/products/nike-sb-peak-beanie-black-white",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-peak-beanie-black-white--1.jpg?v=1794228061",
-"local": false
-},
-{
-"store": "Concepts",
-"title": "Nike SB Skate T-Shirt (White)",
-"price": "30.00",
-"sizes": "XXL",
-"link": "https://cncpts.com/products/nike-nike-sb-db9975-100-white",
-"image": "https://cdn.shopify.com/s/files/1/0043/5673/5045/products/Nike_SBWHITE_DB9975-100_1.jpg?v=1637068462",
-"local": false
-},
-{
-"store": "Concepts",
-"title": "Nike SB Logo Skate T-Shirt (Light Orewood Brown)",
-"price": "28.00",
-"sizes": "XXL",
-"link": "https://cncpts.com/products/nike-sb-logo-skate-t-shirt-dc7817-104-lt-orewood-brn",
-"image": "https://cdn.shopify.com/s/files/1/0043/5673/5045/files/197598525302-1.jpg?v=1721402014",
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB CITY OF LOVE LONG SLEEVE TEE COCONUT MILK",
-"price": "50.00",
-"sizes": "S",
-"link": "https://olympiaskateshop.com/products/nike-sb-city-of-love-long-sleeve-tee",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/FQ7681-113-1.jpg?v=1707863866",
-"local": false
-},
-{
-"store": "Olympia Skate Shop",
-"title": "NIKE SB 1/4 ZIP PULLOVER GYM RED/STEALTH",
-"price": "80.00",
-"sizes": "S, L, M, XL",
-"link": "https://olympiaskateshop.com/products/nike-sb-1-4-zip-pullover-gym-red-stealth",
-"image": "https://cdn.shopify.com/s/files/1/0691/0414/0595/files/oct26NikeSB12ZipStealthRed.webp?v=1794245447",
-"local": false
-},
-{
-"store": "Southside Boardshop",
-"title": "SB Enforcer Longsleeve Jersey IM5426-010 Top Nike SB Skateboarding",
-"price": "125.00",
-"sizes": "LG, MD, XL",
-"link": "https://southsideskateshop.com/products/sb-enforcer-longsleeve-jersey-im5426-010-top-nike-sb-skateboarding",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/SB-Enforcer-Longsleeve-Jersey-IM5426-010-Top-Nike-SB-Skateboarding-2.jpg?v=1794248095",
-"local": false
-},
-{
-"store": "Southside Boardshop",
-"title": "SB Switch Woven Top Gray IQ6263-022 Top Nike SB Skateboarding",
-"price": "110.00",
-"sizes": "MD",
-"link": "https://southsideskateshop.com/products/sb-switch-woven-top-gray-iq6263-022-top-nike-sb-skateboarding",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/files/SB-Switch-Woven-Top-Gray-IQ6263-022-Top-Nike-SB-Skateboarding-front-2.jpg?v=1794248181",
-"local": false
-},
-{
-"store": "Mainland",
-"title": "Nike SB Airmail Long Sleeve Skate Top",
-"price": "49.99",
-"sizes": "Anthracite/Black",
-"link": "https://mainlandskateandsurf.com/products/nike-sb-airmail-long-sleeve-skate-top",
-"image": "https://cdn.shopify.com/s/files/1/1230/8246/files/nike-sb-tee-nike-sb-airmail-longsleeve-skate-top-anthracite-black-white-IM5430-060.png?v=1794271104",
-"local": false
-},
-{
-"store": "Bluetile Skateboards",
-"title": "NIKE SB CREST SKATE TEE ANTHRACITE",
-"price": "45.00",
-"sizes": "X LARGE, LARGE, SMALL, MEDIUM, XX LARGE",
-"link": "https://bluetilesc.com/products/nike-sb-crest-skate-tee-anthracite",
-"image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbChampagneSkateTeeAnthracite.jpg?v=1794329073",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Yuto Crest Denim Pant (Obsidian)",
-"price": "200.00",
-"sizes": "30, 32, 34, 36",
-"link": "https://kineticskateboarding.com/products/nike-sb-yuto-crest-denim-pant-obsidian",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/DSCF9455_1013fa41-b9dd-43b0-8699-8679bb664063.webp?v=1794341099",
-"local": false
-},
-{
-"store": "Deli Skate Supply",
-"title": "NIKE SB - 1/2 Zip Fleece Grey/Red",
-"price": "79.99",
-"sizes": "Medium, X-Large, Large",
-"link": "https://deliskatesupply.com/products/nike-sb-1-2-zip-fleece-grey-red",
-"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/AURORA_IZ1853-687_PHSFM001-2000_1296x_4753fad6-55ff-4b94-8ea4-8db19c7aac5d.webp?v=1794344210",
-"local": false
-},
-{
-"store": "CCS",
-"title": "Nike SB Enforcer Long Sleeve Jersey - Black/Black",
-"price": "124.95",
-"sizes": "XL",
-"link": "https://ccs.com/products/nike-sb-enforcer-long-sleeve-jersey-black-black",
-"image": null,
-"local": false
-},
-{
-"store": "LB Skate",
-"title": "Nike SB Midnight Navy/Court Blue Reversible Basketball Jersey",
-"price": "52.46",
-"sizes": "L, S",
-"link": "https://lbskate.com/products/nike-sb-midnight-navy-court-blue-reversible-basketball-jersey",
-"image": "https://cdn.shopify.com/s/files/1/0013/8795/4221/files/AURORA_FN2597-410_PHCFM001-2000.jpg?v=1762490782",
-"local": false
-},
-{
-"store": "Brooklyn Projects",
-"title": "Nike SB Socks 3 Pack",
-"price": "26.00",
-"sizes": "Check site",
-"link": "https://brooklynprojects.com/products/nike-sb-socks-3-pack",
-"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2026-11-10at6.22.48PM.png?v=1794363847",
-"local": false
-},
-{
-"store": "Furnace Skate",
-"title": "Nike Sb Champagne Tee",
-"price": "45.00",
-"sizes": "XXL, L, XL, M",
-"link": "https://furnaceskate.com/products/nike-sb-champagne-tee-1",
-"image": null,
-"local": false
-},
-{
-"store": "Furnace Skate",
-"title": "Nike Sb Champagne Tee",
-"price": "45.00",
-"sizes": "XL, M, L",
-"link": "https://furnaceskate.com/products/nike-sb-champagne-tee",
-"image": "https://cdn.shopify.com/s/files/1/0376/9217/files/champagne.jpg?v=1793914967",
-"local": false
-},
-{
-"store": "Geometric Skate Shop",
-"title": "Nike SB Fleece Quarter Zip",
-"price": "80.00",
-"sizes": "2XL, XL, L, M",
-"link": "https://geometricskateshop.com/products/nike-sb-fleece-quarter-zip",
-"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/AURORA_IZ1853-687_PHSFM001-2000.webp?v=1794260477",
-"local": false
-},
-{
-"store": "Southside Boardshop",
-"title": "DR7763010 Nike SB Tee Black Skate Trademark",
-"price": "28.00",
-"sizes": "XXL",
-"link": "https://southsideskateshop.com/products/nike-sb-tee-skate-trademark-black",
-"image": "https://cdn.shopify.com/s/files/1/0488/6482/1414/products/nike-sb-trademark-black-1.jpg?v=1658194696",
-"local": false
-},
-{
-"store": "Unheardof",
-"title": "Nike SB Enforcer Longsleeve Skate Jersey 'Black'",
-"price": "125.00",
-"sizes": "XL, M, L",
-"link": "https://unheardofbrand.com/products/u-nk-sb-enforcer-ls-jersey-im5426-010",
-"image": "https://cdn.shopify.com/s/files/1/2401/2333/files/DSCF2815.jpg?v=1794437450",
-"local": false
-},
-{
-"store": "Flatspot",
-"title": "Nike SB Bleacher Crewneck Sweatshirt - Black / White",
-"price": "109.00",
-"sizes": "L, M, S, XL",
-"link": "https://www.flatspot.com/products/nike-sb-bleacher-crewneck-sweatshirt-black-white",
-"image": "https://cdn.shopify.com/s/files/1/1202/6102/files/nike-sb-bleacher-crewneck-sweatshirt-black-white--1.jpg?v=1794496554",
-"local": false
-},
-{
-"store": "Skatepark of Tampa",
-"title": "Nike SB Yuto Skate Denim Pants",
-"price": "200.00",
-"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
-"link": "https://skateparkoftampa.com/products/nike-sb-yuto-skate-denim-pants",
-"image": "https://cdn.shopify.com/s/files/1/0783/8856/0145/files/AURORA_IQ6992-451_PHSFM001-2000.jpg?v=1794502521",
-"local": false
-},
-{
-"store": "Stolen Skate Shop",
-"title": "Nike SB - Air Force 1 \"Solid Break\" Shirt - ( Black )",
-"price": "65.00",
-"sizes": "Large, Medium, X - Large, Small",
-"link": "https://stolenskateshop.com/products/nike-sb-air-force-1-solid-break-shirt-black",
-"image": "https://cdn.shopify.com/s/files/1/0359/9279/7228/files/af1.png?v=1794510311",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB Skate Top LS Tee (Black/Dark Russet/White)",
-"price": "50.00",
-"sizes": "M, XL, L",
-"link": "https://kineticskateboarding.com/products/nike-sb-skate-top-ls-tee-black-dark-russet-white",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/AURORA_IM5430-010_PHSFM001-2000.jpg?v=1794513217",
-"local": false
-},
-{
-"store": "Kinetic",
-"title": "Nike SB ACG Daymax Backpack (Black/College Grey)",
-"price": "145.00",
-"sizes": "Check site",
-"link": "https://kineticskateboarding.com/products/nike-sb-acg-daymax-backpack-black-college-grey",
-"image": "https://cdn.shopify.com/s/files/1/0267/3063/files/nike-acg-acg-daymax-backpack-black-college-grey.webp?v=1794513044",
-"local": false
-},
-{
-"store": "Brooklyn Projects",
-"title": "Nike Sb Peak Beanie",
-"price": "32.00",
-"sizes": "Check site",
-"link": "https://brooklynprojects.com/products/nike-sb-beanie",
-"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2026-11-12at12.04.59PM.png?v=1794513947",
-"local": false
-},
-{
-"store": "PLA Folsom",
-"title": "NIKE SB YUTO DENIM SKATE PANTS - OBSIDIAN",
-"price": "115.00",
-"sizes": "34",
-"link": "https://plaskate.com/products/nike-sb-yuto-denim-skate-pants-obsidian",
-"image": null,
-"local": false
-},
-{
-"store": "Pastime Skateshop",
-"title": "Nike SB - Peak Beanie - ( Green )",
-"price": "32.00",
-"sizes": "Check site",
-"link": "https://pastimeskateshop.com/products/nike-sb-peak-beanie-green",
-"image": "https://cdn.shopify.com/s/files/1/0561/6943/1200/files/shopping_725b684c-9076-4f19-9476-6b4ff3f47141.webp?v=1794527967",
-"local": false
-}
-],
+"weekly_digest": [],
 "apparel_seeded": true,
-"last_digest_date": "2026-11-06",
+"last_digest_date": "2026-11-13",
 "stock": {
 "Reset Mercantile::10280071758120": true,
 "Reset Mercantile::10139819737384": true,
@@ -17283,7 +16892,7 @@
 "NJ Skateshop::15549605675042": true,
 "NJ Skateshop::15549618585634": true,
 "Transport Skate::9663297093909": true,
-"Arts & Rec::15721329295471": false,
+"Arts & Rec::15721329295471": true,
 "Civil::15569934975264": true,
 "Oneness::10278397182036": false,
 "Deli Skate Supply::15354726908153": true,
@@ -17370,7 +16979,7 @@
 "Unheardof::10873385812133": true,
 "Unheardof::10861490471077": true,
 "Shoe Palace::8855807197390": true,
-"Skatepark of Tampa::15518912250129": false,
+"Skatepark of Tampa::15518912250129": true,
 "No-Comply::15509646770361": true,
 "Livestock::7559482540117": true,
 "Seasons Skate Shop::10451464323330": true,
@@ -17397,7 +17006,22 @@
 "Val Surf::15967994577056": true,
 "Swellophonic::7687527137362": false,
 "Seasons Skate Shop::10476684214530": true,
-"Black Sheep NC::7688558084142": true
+"Black Sheep NC::7688558084142": true,
+"510 Skateboarding::15454308827241": true,
+"PLA Folsom::15445075558558": true,
+"Travel Skate Shop::15486858461261": true,
+"35th North::15506344214564": true,
+"Labor Skate Shop::15464722661478": true,
+"Kinetic::15465940451430": true,
+"Embassy::15430556287031": true,
+"No-Comply::15488264929465": true,
+"Coureur Goods::10427726561535": true,
+"Theory Skate Shop::15497931653307": true,
+"LB Skate::9003899355292": true,
+"Lapstone & Hammer::10436526374969": true,
+"Bluetile Skateboards::15499331240162": true,
+"Undefeated::6702828159237": true,
+"Mainland::8606834327637": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -57516,7 +57140,16 @@
 "m": {}
 },
 "Arts & Rec::15721329295471": {
-"l": [],
+"l": [
+"11",
+"14",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
 "m": {}
 },
 "Civil::15569934975264": {
@@ -58446,7 +58079,9 @@
 "m": {}
 },
 "Skatepark of Tampa::15518912250129": {
-"l": [],
+"l": [
+"Navy/ Black"
+],
 "m": {}
 },
 "No-Comply::15509646770361": {
@@ -58724,7 +58359,7 @@
 "9.5"
 ],
 "m": {
-"13": 1
+"13": 2
 }
 },
 "Seasons Skate Shop::10476684050690": {
@@ -58800,7 +58435,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"14": 1
+}
 },
 "Black Sheep NC::7688558084142": {
 "l": [
@@ -58811,6 +58448,251 @@
 "13.0",
 "14.0",
 "9.0"
+],
+"m": {}
+},
+"510 Skateboarding::15454308827241": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"PLA Folsom::15445075558558": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Travel Skate Shop::15486858461261": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"35th North::15506344214564": {
+"l": [
+"10",
+"10.5",
+"11",
+"12",
+"13",
+"14",
+"5.5",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Labor Skate Shop::15464722661478": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"4",
+"4.5",
+"5",
+"5.5",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Kinetic::15465940451430": {
+"l": [
+"10.0 M",
+"10.5 M",
+"11.0 M",
+"11.5 M",
+"12.0 M",
+"13.0 M",
+"14.0 M",
+"15.0 M",
+"8.5 M",
+"9.0 M",
+"9.5 M"
+],
+"m": {}
+},
+"Embassy::15430556287031": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"8",
+"9",
+"9.5"
+],
+"m": {}
+},
+"No-Comply::15488264929465": {
+"l": [
+"M10.5=W12",
+"M10=W11.5",
+"M11.5=W13",
+"M11=W12.5",
+"M12=W13.5",
+"M13=W14.5",
+"M14=W15.5",
+"M15=W16.5",
+"M5=W6.5",
+"M6=W7.5",
+"M7=W8.5",
+"M8.5=W10",
+"M8=W9.5",
+"M9.5=W11",
+"M9=W10.5"
+],
+"m": {}
+},
+"Coureur Goods::10427726561535": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Theory Skate Shop::15497931653307": {
+"l": [
+"M10.5/W12",
+"M10/W11.5",
+"M11.5/W13",
+"M11/W12.5",
+"M12/W13.5",
+"M13/W14.5",
+"M14/W15.5",
+"M4.5/W6",
+"M5.5/W7",
+"M5/W6.5",
+"M6.5/W8",
+"M6/W7.5",
+"M7.5/W9",
+"M7/W8.5",
+"M8/W9.5",
+"M9.5/W11",
+"M9/W10.5"
+],
+"m": {}
+},
+"LB Skate::9003899355292": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"14",
+"15",
+"4",
+"4.5",
+"5",
+"5.5",
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Lapstone & Hammer::10436526374969": {
+"l": [
+"6",
+"6.5",
+"7",
+"7.5",
+"8",
+"8.5"
+],
+"m": {}
+},
+"Bluetile Skateboards::15499331240162": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Undefeated::6702828159237": {
+"l": [
+"-"
+],
+"m": {}
+},
+"Mainland::8606834327637": {
+"l": [
+"Navy/Black"
 ],
 "m": {}
 }
@@ -60114,16 +59996,6 @@
 }
 },
 "msgs": {
-"1568277795392463014": {
-"cid": "1550909316897177842",
-"keys": [
-"t:dunk low pro premium black spuce metallic gold black",
-"p:Theory Skate Shop::15478159671483"
-],
-"title": "Nike SB Dunk Low Pro Premium (Black Spuce/Metallic Gold-Black)",
-"t": 1793976964,
-"link": "https://theoryskate.com/products/nike-sb-dunk-low-pro-premium-black-spuce-metallic-gold-black"
-},
 "1568279266515353713": {
 "cid": "1550909316897177842",
 "keys": [
@@ -61062,6 +60934,189 @@
 "title": "Nike SB Air Force 1 AF1 Navy - Black",
 "t": 1794581764,
 "link": "https://blacksheepskateshop.com/products/nike-sb-air-force-1-af1-navy-black"
+},
+"1570815802104479806": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 navy black",
+"p:510 Skateboarding::15454308827241"
+],
+"title": "Nike SB Air Force 1 SB (Navy/Black)",
+"t": 1794582072,
+"link": "https://510skateboarding.com/products/nike-sb-air-force-1-sb-navy-black"
+},
+"1570815807167012936": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black",
+"p:PLA Folsom::15445075558558"
+],
+"title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
+"t": 1794582073,
+"link": "https://plaskate.com/products/nike-sb-air-force-1-navy-black-hm8517-400"
+},
+"1570815812485386521": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black navy",
+"p:Travel Skate Shop::15486858461261"
+],
+"title": "Nike SB Air Force 1 (Navy/Black-Navy)",
+"t": 1794582074,
+"link": "https://travelskateshop.com/products/nike-sb-air-force-1-navy-black-navy"
+},
+"1570815818143629353": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black",
+"p:35th North::15506344214564"
+],
+"title": "Nike SB Air Force 1 - Navy / Black",
+"t": 1794582075,
+"link": "https://35thnorth.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570815822975471721": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black navy",
+"p:Labor Skate Shop::15464722661478"
+],
+"title": "Nike SB Air Force 1 - Navy/Black/Navy",
+"t": 1794582077,
+"link": "https://laborskateshop.com/products/nike-sb-air-force-1-navy-black-navy"
+},
+"1570815829782560791": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black",
+"p:Kinetic::15465940451430"
+],
+"title": "Nike SB Air Force 1 (Navy/Black)",
+"t": 1794582078,
+"link": "https://kineticskateboarding.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570815833813295235": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 low navy black hm8517 400",
+"p:Embassy::15430556287031"
+],
+"title": "Nike SB Air Force 1 Low - Navy / Black (HM8517-400)",
+"t": 1794582079,
+"link": "https://embassyboardshop.com/products/nike-sb-air-force-1-low-navy-black"
+},
+"1570815838355726570": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black navy 11 13",
+"p:Arts & Rec::15721329295471"
+],
+"title": "Nike SB Air Force 1 - Navy / Black-Navy (11/13)",
+"t": 1794582080,
+"link": "https://artsandrecstore.com/products/nike-sb-air-force-1-navy-black-navy"
+},
+"1570815843670040687": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"p:No-Comply::15488264929465"
+],
+"title": "Nike SB Air Force 1 Shoes",
+"t": 1794582081,
+"link": "https://www.nocomplyatx.com/products/nike-sb-air-force-1-shoes"
+},
+"1570815848330035332": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black",
+"p:Skatepark of Tampa::15518912250129"
+],
+"title": "Nike SB Air Force 1 Navy Black Shoes",
+"t": 1794582083,
+"link": "https://skateparkoftampa.com/products/nike-sb-air-force-1"
+},
+"1570815853463732257": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black",
+"p:Coureur Goods::10427726561535"
+],
+"title": "Nike SB Air Force 1 Navy/Black",
+"t": 1794582084,
+"link": "https://coureurgoods.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570815858320609281": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 navy black",
+"p:Theory Skate Shop::15497931653307"
+],
+"title": "Nike SB Air Force 1 (Navy/Black)",
+"t": 1794582085,
+"link": "https://theoryskate.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570815862993068073": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 navy black navy read description",
+"p:LB Skate::9003899355292"
+],
+"title": "Nike Sb Air Force 1 Navy Black Navy Shoes (Read Description)",
+"t": 1794582086,
+"link": "https://lbskate.com/products/nike-sb-air-force-1-navy-black-navy-shoes"
+},
+"1570815868235944178": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IF7380-200",
+"t:union x dunk low sp fatigue",
+"p:Lapstone & Hammer::10436526374969"
+],
+"title": "UNION X NIKE DUNK LOW SP \"FATIGUE\"",
+"t": 1794582087,
+"link": "https://www.lapstoneandhammer.com/products/if7380_200"
+},
+"1570815872338231390": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force 1 navy black",
+"p:Bluetile Skateboards::15499331240162"
+],
+"title": "NIKE SB AIR FORCE 1 NAVY / BLACK",
+"t": 1794582088,
+"link": "https://bluetilesc.com/products/nike-sb-air-force-1-navy-black"
+},
+"1570815877077540915": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IF7380-200",
+"t:x union dunk low bamboo university gold",
+"p:Undefeated::6702828159237"
+],
+"title": "NIKE X UNION DUNK LOW  - BAMBOO/ UNIVERSITY GOLD",
+"t": 1794582089,
+"link": "https://undefeated.com/products/nike-x-union-dunk-low-bamboo-university-gold"
+},
+"1570815880903000266": {
+"cid": "1562917305531506738",
+"keys": [
+"s:HM8517-400",
+"t:air force 1 af1 skate navy black",
+"p:Mainland::8606834327637"
+],
+"title": "Nike SB Air Force 1 'AF1' Skate Shoes Navy/Black",
+"t": 1794582090,
+"link": "https://mainlandskateandsurf.com/products/nike-sb-air-force-1-af1-skate-shoes-navy-black"
 }
 },
 "nike_dunk_seeded": true,
