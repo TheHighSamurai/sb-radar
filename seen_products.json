@@ -5761,6 +5761,7 @@
 "Labor Skate Shop::15437920895078",
 "Labor Skate Shop::15464638054502",
 "Labor Skate Shop::15464722661478",
+"Labor Skate Shop::15509399240806",
 "Labor Skate Shop::15519774736486",
 "Labor Skate Shop::7303666532454",
 "Labor Skate Shop::7534535835750",
@@ -17241,7 +17242,8 @@
 "Notre::15698937249903": true,
 "Barewires::15498594975997": true,
 "Kinetic::7686555140198": true,
-"Travel Skate Shop::15491304718413": true
+"Travel Skate Shop::15491304718413": true,
+"Labor Skate Shop::15509399240806": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -58719,7 +58721,7 @@
 "M9/W10.5"
 ],
 "m": {
-"M7/W8.5": 1
+"M7/W8.5": 2
 }
 },
 "LB Skate::9003899355292": {
@@ -59145,6 +59147,21 @@
 "12",
 "13",
 "7.5",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Labor Skate Shop::15509399240806": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"13",
+"14",
 "8",
 "8.5",
 "9",
