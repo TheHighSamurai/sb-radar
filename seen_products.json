@@ -567,6 +567,7 @@
 "Barewires::15432267858173",
 "Barewires::15444456014077",
 "Barewires::15475182600445",
+"Barewires::15498594975997",
 "Barewires::9161007202557",
 "Barewires::9215179194621",
 "Barewires::9216392036605",
@@ -17215,7 +17216,8 @@
 "Union LA::15487178014797": true,
 "Underground Skateshop::8310019326152": false,
 "Transport Skate::9669216764181": true,
-"Notre::15698937249903": true
+"Notre::15698937249903": true,
+"Barewires::15498594975997": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -17238,7 +17240,8 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1
+"Drift House::9327544467711": 1,
+"Blacklist::15415934779625": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -47618,7 +47621,12 @@
 "8",
 "8.5"
 ],
-"m": {}
+"m": {
+"7": 1,
+"8.5": 1,
+"7.5": 1,
+"8": 1
+}
 },
 "Blacklist::9352181088489": {
 "l": [
@@ -57690,7 +57698,11 @@
 "8.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"9.5": 1,
+"14": 1,
+"11.5": 1
+}
 },
 "CCS::7371004903607": {
 "l": [
@@ -59129,6 +59141,17 @@
 "8.5 M",
 "9 M",
 "9.5 M"
+],
+"m": {}
+},
+"Barewires::15498594975997": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"9.5"
 ],
 "m": {}
 }
@@ -61739,6 +61762,16 @@
 "title": "Union Dunk Low Sneaker in Bamboo/Bamboo/University Gold",
 "t": 1794668167,
 "link": "https://www.notre-shop.com/products/union-dunk-low-sneaker-in-bamboo-bamboo-university-gold"
+},
+"1571185761510891522": {
+"cid": "1562917305531506738",
+"keys": [
+"t:air force navy black navy",
+"p:Barewires::15498594975997"
+],
+"title": "Nike Sb Air Force Navy/Black/Navy",
+"t": 1794670277,
+"link": "https://barewiresurfshop.com/products/nike-sb-air-force-navyblacknavy"
 }
 },
 "nike_dunk_seeded": true,
