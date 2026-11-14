@@ -14193,7 +14193,7 @@
 "Exodus Rideshop::8079843098742": true,
 "Exodus Rideshop::8078740127862": true,
 "Exodus Rideshop::8072613560438": false,
-"Exodus Rideshop::8064955744374": true,
+"Exodus Rideshop::8064955744374": false,
 "Exodus Rideshop::8056406540406": true,
 "Exodus Rideshop::8039731462262": true,
 "Exodus Rideshop::8035998072950": true,
@@ -17250,8 +17250,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Exodus Rideshop::8064955744374": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -24976,7 +24975,9 @@
 "8",
 "9.5"
 ],
-"m": {}
+"m": {
+"9.5": 1
+}
 },
 "Labor Skate Shop::8136446148710": {
 "l": [
@@ -42146,12 +42147,8 @@
 "m": {}
 },
 "Exodus Rideshop::8064955744374": {
-"l": [
-"M 9.5 / W 11"
-],
-"m": {
-"M 9.5 / W 11": 2
-}
+"l": [],
+"m": {}
 },
 "Exodus Rideshop::8056406540406": {
 "l": [
