@@ -6439,6 +6439,7 @@
 "No-Comply::8694561013945",
 "No-Comply::8716523438265",
 "No-Comply::8716531433657",
+"Notre::15698937249903",
 "Olympia Skate Shop::10047466996019",
 "Olympia Skate Shop::10047872205107",
 "Olympia Skate Shop::10048044925235",
@@ -17213,7 +17214,8 @@
 "Union LA::15487178408013": true,
 "Union LA::15487178014797": true,
 "Underground Skateshop::8310019326152": false,
-"Transport Skate::9669216764181": true
+"Transport Skate::9669216764181": true,
+"Notre::15698937249903": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -58962,14 +58964,11 @@
 "12",
 "13",
 "14",
-"8",
 "8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "Sneaker Politics::9436406055100": {
 "l": [
@@ -59110,6 +59109,26 @@
 "Transport Skate::9669216764181": {
 "l": [
 "Navy/Black"
+],
+"m": {}
+},
+"Notre::15698937249903": {
+"l": [
+"10 M",
+"10.5 M",
+"11 M",
+"11.5 M",
+"12 M",
+"13 M",
+"14 M",
+"6 M",
+"6.5 M",
+"7 M",
+"7.5 M",
+"8 M",
+"8.5 M",
+"9 M",
+"9.5 M"
 ],
 "m": {}
 }
@@ -61709,6 +61728,17 @@
 "title": "NIKE X UNION DUNK LOW  - BAMBOO/ UNIVERSITY GOLD",
 "t": 1794647766,
 "link": "https://undefeated.com/products/nike-x-union-dunk-low-bamboo-university-gold"
+},
+"1571176907503050753": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IF7380-200",
+"t:union dunk low sneaker in bamboo bamboo university gold",
+"p:Notre::15698937249903"
+],
+"title": "Union Dunk Low Sneaker in Bamboo/Bamboo/University Gold",
+"t": 1794668167,
+"link": "https://www.notre-shop.com/products/union-dunk-low-sneaker-in-bamboo-bamboo-university-gold"
 }
 },
 "nike_dunk_seeded": true,
