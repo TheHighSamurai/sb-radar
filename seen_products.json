@@ -14165,7 +14165,7 @@
 "Exodus Rideshop::8304882188406": true,
 "Exodus Rideshop::8301316472950": true,
 "Exodus Rideshop::8278695182454": true,
-"Exodus Rideshop::8239850193014": true,
+"Exodus Rideshop::8239850193014": false,
 "Exodus Rideshop::8241320919158": true,
 "Exodus Rideshop::8241300111478": true,
 "Exodus Rideshop::8241291198582": true,
@@ -17236,8 +17236,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Exodus Rideshop::8239850193014": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -25559,7 +25558,9 @@
 "8",
 "9"
 ],
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Renarts::7956328841259": {
 "l": [
@@ -41997,12 +41998,8 @@
 "m": {}
 },
 "Exodus Rideshop::8239850193014": {
-"l": [
-"M 13 / W 14.5"
-],
-"m": {
-"M 13 / W 14.5": 2
-}
+"l": [],
+"m": {}
 },
 "Exodus Rideshop::8241320919158": {
 "l": [
@@ -58854,7 +58851,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"11": 1
+}
 },
 "CCS::8561832820919": {
 "l": [
