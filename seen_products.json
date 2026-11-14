@@ -19439,6 +19439,7 @@
 "12",
 "13",
 "8",
+"8.5",
 "9.5"
 ],
 "m": {}
@@ -19447,6 +19448,7 @@
 "l": [
 "10",
 "10.5",
+"11.5",
 "12",
 "13",
 "8",
@@ -61843,6 +61845,16 @@
 "title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
 "t": 1794689467,
 "link": "https://geometricskateshop.com/products/nike-sb-air-force-1-navy-black"
+},
+"1571281341490659491": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FQ1273-100",
+"p:Travel Skate Shop::7879998668877"
+],
+"title": "Nike SB Nyjah 4",
+"t": 1794693066,
+"link": "https://travelskateshop.com/products/nike-sb-nyjah-7"
 }
 },
 "nike_dunk_seeded": true,
