@@ -19086,7 +19086,9 @@
 "12",
 "9"
 ],
-"m": {}
+"m": {
+"12": 1
+}
 },
 "Pawnshop Skate::15745877409952": {
 "l": [],
@@ -19830,12 +19832,17 @@
 "Travel Skate Shop::7413954576461": {
 "l": [
 "10",
+"11.5",
 "12",
+"13",
 "8",
+"8.5",
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Travel Skate Shop::7413952577613": {
 "l": [
@@ -47341,13 +47348,10 @@
 "l": [
 "10.0",
 "10.5",
-"8.0",
 "8.5",
 "9.0"
 ],
-"m": {
-"8.0": 2
-}
+"m": {}
 },
 "Uprise Skateshop::9325835518167": {
 "l": [
@@ -61820,6 +61824,16 @@
 "title": "NIKE SB AIR FORCE 1 NAVY",
 "t": 1794684963,
 "link": "https://olympiaskateshop.com/products/nike-sb-air-force-1-navy"
+},
+"1571261242985676876": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FD6757-101",
+"p:Travel Skate Shop::7413954576461"
+],
+"title": "Nike SB Janoski OG+",
+"t": 1794688274,
+"link": "https://travelskateshop.com/products/nike-sb-janoski-og-2"
 }
 },
 "nike_dunk_seeded": true,
