@@ -7795,6 +7795,7 @@
 "Seasons Skate Shop::10474281992450",
 "Seasons Skate Shop::10476684050690",
 "Seasons Skate Shop::10476684214530",
+"Seasons Skate Shop::10480856727810",
 "Seasons Skate Shop::8001557987586",
 "Seasons Skate Shop::9113496781058",
 "Seasons Skate Shop::9123955081474",
@@ -10795,6 +10796,15 @@
 "sizes": "XL, L, M",
 "link": "https://brooklynprojects.com/products/nike-sb-break-polo-1",
 "image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2026-11-13at3.52.39PM.png?v=1794614095",
+"local": false
+},
+{
+"store": "Seasons Skate Shop",
+"title": "Nike SB 1/2 Zip Fleece Sweatshirt- Gym Red/Stealth",
+"price": "80.00",
+"sizes": "Large, Medium, XL",
+"link": "https://seasonsskateshop.com/products/nike-sb-1-2-zip-fleece-sweatshirt-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0489/2943/9896/files/library-B3576431-1071-4AEB-A682-FC00D487874E-L0-001.jpg?v=1794677751",
 "local": false
 }
 ],
