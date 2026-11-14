@@ -1173,12 +1173,14 @@
 "Brooklyn Projects::16393683304529",
 "Brooklyn Projects::16396521406545",
 "Brooklyn Projects::16408898928721",
+"Brooklyn Projects::16412393537617",
 "Brooklyn Projects::16427690786897",
 "Brooklyn Projects::16434649497681",
 "Brooklyn Projects::16448304316497",
 "Brooklyn Projects::16455140245585",
 "Brooklyn Projects::16461149569105",
 "Brooklyn Projects::16465037885521",
+"Brooklyn Projects::16465092935761",
 "Brooklyn Projects::4494849900625",
 "Brooklyn Projects::6603237654609",
 "Brooklyn Projects::6962319687761",
@@ -10773,6 +10775,24 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://afterhoursskateshop.com/products/nike-sb-smile-tshirt-slate",
 "image": null,
+"local": false
+},
+{
+"store": "Brooklyn Projects",
+"title": "Nike SB Solid Break AF1 Polo",
+"price": "65.00",
+"sizes": "XL, L, S, M",
+"link": "https://brooklynprojects.com/products/nike-sb-solid-break-af1-polo",
+"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/10-27-26-NikeSBPoloBlck-1SolidBreak_1100x_jpg.webp?v=1793235442",
+"local": false
+},
+{
+"store": "Brooklyn Projects",
+"title": "Nike SB Break Polo",
+"price": "70.00",
+"sizes": "XL, L, M",
+"link": "https://brooklynprojects.com/products/nike-sb-break-polo-1",
+"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2026-11-13at3.52.39PM.png?v=1794614095",
 "local": false
 }
 ],
@@ -34050,7 +34070,7 @@
 "9M"
 ],
 "m": {
-"9.5M": 1
+"9.5M": 2
 }
 },
 "Val Surf::15020784222368": {
