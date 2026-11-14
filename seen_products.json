@@ -17187,7 +17187,7 @@
 "LB Skate::9003899355292": true,
 "Lapstone & Hammer::10436526374969": true,
 "Bluetile Skateboards::15499331240162": true,
-"Undefeated::6702828159237": false,
+"Undefeated::6702828159237": true,
 "Mainland::8606834327637": true,
 "Pawnshop Skate::15971803824288": true,
 "Pharmacy Temecula::7694018412626": true,
@@ -58775,7 +58775,9 @@
 "m": {}
 },
 "Undefeated::6702828159237": {
-"l": [],
+"l": [
+"-"
+],
 "m": {}
 },
 "Mainland::8606834327637": {
@@ -61704,6 +61706,17 @@
 "title": "Nike SB Zoom Janoski OG+ Shoes - Black/White/Gum Light Brown",
 "t": 1794637579,
 "link": "https://ccs.com/products/nike-sb-zoom-janoski-og-shoes-black-white-gum-light-brown"
+},
+"1571091342052958314": {
+"cid": "1550909316897177842",
+"keys": [
+"s:IF7380-200",
+"t:x union dunk low bamboo university gold",
+"p:Undefeated::6702828159237"
+],
+"title": "NIKE X UNION DUNK LOW  - BAMBOO/ UNIVERSITY GOLD",
+"t": 1794647766,
+"link": "https://undefeated.com/products/nike-x-union-dunk-low-bamboo-university-gold"
 }
 },
 "nike_dunk_seeded": true,
