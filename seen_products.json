@@ -19839,16 +19839,11 @@
 "l": [
 "10",
 "12",
-"13",
 "8",
-"8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8.5": 2,
-"13": 2
-}
+"m": {}
 },
 "Travel Skate Shop::7413952577613": {
 "l": [
@@ -60426,16 +60421,6 @@
 }
 },
 "msgs": {
-"1569075555926675537": {
-"cid": "1562917305531506738",
-"keys": [
-"t:zoom tennis classic black black",
-"p:Brooklyn Projects::16448304316497"
-],
-"title": "Nike SB Zoom Tennis Classic Black/Black",
-"t": 1794167165,
-"link": "https://brooklynprojects.com/products/nike-sb-zoom-tennis-classic-1"
-},
 "1569086889502445709": {
 "cid": "1562917305531506738",
 "keys": [
