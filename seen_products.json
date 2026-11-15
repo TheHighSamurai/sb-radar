@@ -15621,7 +15621,7 @@
 "Undefeated::6662346047749": true,
 "Undefeated::6660648796421": false,
 "Undefeated::6662346146053": true,
-"Undefeated::6672335339781": true,
+"Undefeated::6672335339781": false,
 "Undefeated::6662346080517": false,
 "Undefeated::6677200601349": true,
 "Undefeated::6660884791557": true,
@@ -17276,8 +17276,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Undefeated::6672335339781": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -49981,12 +49980,8 @@
 "m": {}
 },
 "Undefeated::6672335339781": {
-"l": [
-"-"
-],
-"m": {
-"-": 2
-}
+"l": [],
+"m": {}
 },
 "Undefeated::6662346080517": {
 "l": [],
