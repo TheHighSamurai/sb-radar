@@ -3841,6 +3841,7 @@
 "Familia Skateshop::10959988326712",
 "Familia Skateshop::11000667996472",
 "Familia Skateshop::11000720032056",
+"Familia Skateshop::11027206570296",
 "Familia Skateshop::9473564311864",
 "Familia Skateshop::9473565163832",
 "Feature::1602768076871",
@@ -10818,6 +10819,15 @@
 "sizes": "M, L, XL, S",
 "link": "https://laborskateshop.com/products/nike-sb-skate-skate-polo-black-court-green",
 "image": "https://cdn.shopify.com/s/files/1/0025/9925/6153/files/IMG_0914_cfc7dcdb-9054-470c-9980-29170ac50cd7.jpg?v=1794685639",
+"local": false
+},
+{
+"store": "Familia Skateshop",
+"title": "NIKE SB YUTO DENIM CORDURA SKATE PANT",
+"price": "190.00",
+"sizes": "32, 34, 36",
+"link": "https://familiaskate.com/products/nike-sb-yuto-denim-cordura-skate-pant",
+"image": "https://cdn.shopify.com/s/files/1/0670/4513/0552/files/NIKES-YUTO-DENIM.jpg?v=1794693204",
 "local": false
 }
 ],
