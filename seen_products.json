@@ -19672,9 +19672,12 @@
 "12",
 "14",
 "8.5",
-"9"
+"9",
+"9.5"
 ],
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Travel Skate Shop::7577981059149": {
 "l": [
@@ -61782,6 +61785,15 @@
 "title": "Nike SB Malor",
 "t": 1794862266,
 "link": "https://travelskateshop.com/products/nike-sb-malor-1"
+},
+"1572007387613892651": {
+"cid": "1562917305531506738",
+"keys": [
+"p:Travel Skate Shop::7578201981005"
+],
+"title": "Nike SB Air Max Ishod",
+"t": 1794866168,
+"link": "https://travelskateshop.com/products/nike-sb-air-max-ishod-10"
 }
 },
 "nike_dunk_seeded": true,
