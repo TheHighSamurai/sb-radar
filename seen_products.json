@@ -19920,7 +19920,9 @@
 "11.5",
 "12",
 "8",
-"8.5"
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 },
@@ -47623,12 +47625,9 @@
 },
 "Arts & Rec::15585678950511": {
 "l": [
-"10",
 "12.5"
 ],
-"m": {
-"10": 2
-}
+"m": {}
 },
 "Arts & Rec::7588452335727": {
 "a": "W 7",
@@ -61876,6 +61875,16 @@
 "title": "Nike SB Zoom Blazer Mid",
 "t": 1794859271,
 "link": "https://travelskateshop.com/products/nike-sb-zoom-blazer-mid-5"
+},
+"1571991020613406824": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FV6064-001",
+"p:Travel Skate Shop::7344522952781"
+],
+"title": "Nike SB Malor",
+"t": 1794862266,
+"link": "https://travelskateshop.com/products/nike-sb-malor-1"
 }
 },
 "nike_dunk_seeded": true,
