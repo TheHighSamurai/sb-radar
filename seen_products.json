@@ -38337,12 +38337,9 @@
 "LB Skate::8467134382236": {
 "l": [
 "4.5",
-"5.5",
-"6"
+"5.5"
 ],
-"m": {
-"6": 2
-}
+"m": {}
 },
 "LB Skate::8559354839196": {
 "a": "10|10.5|11|11.5|12|7.5|8|8.5|9|9.5",
@@ -60400,17 +60397,6 @@
 }
 },
 "msgs": {
-"1569332250359767061": {
-"cid": "1562917305531506738",
-"keys": [
-"s:HM8517-400",
-"t:air force 1 navy black navy",
-"p:Flatspot::15851366482293"
-],
-"title": "Nike SB Air Force 1 Shoes - Navy / Black - Navy",
-"t": 1794228366,
-"link": "https://www.flatspot.com/products/nike-sb-air-force-1-shoes-navy-black-navy"
-},
 "1569396458023559264": {
 "cid": "1562917305531506738",
 "keys": [
