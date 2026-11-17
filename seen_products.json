@@ -34008,7 +34008,7 @@
 "8M"
 ],
 "m": {
-"12M": 1
+"12M": 2
 }
 },
 "Val Surf::15164114665632": {
@@ -57836,9 +57836,18 @@
 },
 "Civil::15596700795168": {
 "l": [
+"10",
 "10.5",
+"11",
 "11.5",
-"12"
+"12",
+"13",
+"7",
+"7.5",
+"8",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 },
@@ -61734,6 +61743,17 @@
 "title": "Dunk Low Mens Lifestyle Shoes (White/Light Smoke Grey)",
 "t": 1794936780,
 "link": "https://www.shoepalace.com/products/nike-hf5441-105-dunk-low-mens-lifestyle-shoes-white-light-smoke-grey"
+},
+"1572324456305528898": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IB0108-001",
+"t:code 58 black summit white",
+"p:Civil::15596700795168"
+],
+"title": "Nike SB Code 58 - Black / Summit White",
+"t": 1794941764,
+"link": "https://wearecivil.com/products/nike-sb-code-58-summit-white-mystic-dates-copy"
 }
 },
 "nike_dunk_seeded": true,
