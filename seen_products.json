@@ -5120,6 +5120,7 @@
 "Geometric Skate Shop::15462201721107",
 "Geometric Skate Shop::15469374865683",
 "Geometric Skate Shop::15473801691411",
+"Geometric Skate Shop::15480750997779",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -17333,7 +17334,8 @@
 "Deli Skate Supply::15383733600505": true,
 "Swellophonic::7698638766162": false,
 "Olympia Skate Shop::15490346123571": true,
-"Swellophonic::7699132186706": false
+"Swellophonic::7699132186706": false,
+"Geometric Skate Shop::15480750997779": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -18543,7 +18545,6 @@
 "PLA Folsom::7640228790430": {
 "l": [
 "10",
-"10.5",
 "11",
 "11.5",
 "6.5",
@@ -18552,9 +18553,7 @@
 "8.5",
 "9.5"
 ],
-"m": {
-"10.5": 2
-}
+"m": {}
 },
 "PLA Folsom::7638901915806": {
 "l": [
@@ -59079,6 +59078,21 @@
 "Swellophonic::7699132186706": {
 "l": [],
 "m": {}
+},
+"Geometric Skate Shop::15480750997779": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
 }
 },
 "muted": {
@@ -61790,6 +61804,17 @@
 "title": "Nike Dunk Low Retro - Summit White / Bright Citron / Desert Ochre",
 "t": 1794957071,
 "link": "https://kith.com/products/nkhf5441-113"
+},
+"1572392411429339219": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IO0667-300",
+"t:blazer mid black spruce corduroy brown",
+"p:Geometric Skate Shop::15480750997779"
+],
+"title": "Nike SB Blazer Mid - (Black Spruce/Corduroy Brown)",
+"t": 1794957964,
+"link": "https://geometricskateshop.com/products/nike-sb-blazer-mid-green-brown"
 }
 },
 "nike_dunk_seeded": true,
