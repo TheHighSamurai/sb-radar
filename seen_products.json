@@ -23730,7 +23730,8 @@
 },
 "Brooklyn Projects::7703851401297": {
 "l": [
-"10.5"
+"10.5",
+"13"
 ],
 "m": {}
 },
@@ -23743,8 +23744,8 @@
 "9.5"
 ],
 "m": {
-"8.5": 1,
-"8": 1
+"8.5": 2,
+"8": 2
 }
 },
 "Brooklyn Projects::7728637247569": {
@@ -23784,7 +23785,8 @@
 },
 "Brooklyn Projects::7548090024017": {
 "l": [
-"10.5"
+"10.5",
+"11"
 ],
 "m": {}
 },
@@ -61816,6 +61818,26 @@
 "title": "Nike SB Zoom Blazer Mid Shoes",
 "t": 1794960364,
 "link": "https://www.nocomplyatx.com/products/nike-sb-zoom-blazer-mid-black-white-864349-007"
+},
+"1572411331255205899": {
+"cid": "1562917305531506738",
+"keys": [
+"t:blazer mid x anti hero",
+"p:Brooklyn Projects::7703851401297"
+],
+"title": "Nike SB Blazer Mid x Anti-Hero",
+"t": 1794962475,
+"link": "https://brooklynprojects.com/products/nike-sb-blazer-x-anti-hero"
+},
+"1572411335889653833": {
+"cid": "1562917305531506738",
+"keys": [
+"t:zoom blazer mid x diorr greenwood",
+"p:Brooklyn Projects::7548090024017"
+],
+"title": "Nike SB Zoom Blazer Mid x Di'Orr Greenwood",
+"t": 1794962477,
+"link": "https://brooklynprojects.com/products/nike-sb-zoom-blazer-mid-x-diorr-greenwood"
 }
 },
 "nike_dunk_seeded": true,
