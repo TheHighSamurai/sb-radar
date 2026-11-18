@@ -11502,7 +11502,7 @@
 "Brooklyn Projects::15592986673233": true,
 "Brooklyn Projects::15592973074513": true,
 "Brooklyn Projects::7763853475921": true,
-"Brooklyn Projects::7709631545425": false,
+"Brooklyn Projects::7709631545425": true,
 "Brooklyn Projects::7667800539217": true,
 "Brooklyn Projects::7818237083729": true,
 "Brooklyn Projects::7811254321233": true,
@@ -23879,7 +23879,9 @@
 "m": {}
 },
 "Brooklyn Projects::7709631545425": {
-"l": [],
+"l": [
+"11.5"
+],
 "m": {}
 },
 "Brooklyn Projects::7667800539217": {
@@ -35468,7 +35470,7 @@
 "9.5"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Deli Skate Supply::7542392422649": {
@@ -61864,6 +61866,16 @@
 "title": "Nike SB Blazer Low Pro GT - Blue Void / Sail",
 "t": 1795031465,
 "link": "https://wearecivil.com/products/nike-sb-blazer-low-pro-gt-blue-void-sail"
+},
+"1572709497590382696": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FV8493-002",
+"p:Brooklyn Projects::7709631545425"
+],
+"title": "Nike SB PS8 Grey/Metallic Silver",
+"t": 1795033564,
+"link": "https://brooklynprojects.com/products/nike-sb-ps8-1"
 }
 },
 "nike_dunk_seeded": true,
