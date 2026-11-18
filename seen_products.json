@@ -5591,6 +5591,7 @@
 "Kith::8282343145600",
 "Kith::8282343178368",
 "Kith::8282350911616",
+"Kith::8282396393600",
 "Kith::8282431586432",
 "Kith::8282446430336",
 "Kith::8282479952000",
@@ -17349,7 +17350,8 @@
 "Swellophonic::7699132186706": false,
 "Geometric Skate Shop::15480750997779": true,
 "Pawnshop Skate::15809871610016": true,
-"Flatspot::15851366515061": true
+"Flatspot::15851366515061": true,
+"Kith::8282396393600": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -31155,12 +31157,9 @@
 },
 "Orchard::8738860925093": {
 "l": [
-"6Y",
 "7Y"
 ],
-"m": {
-"6Y": 2
-}
+"m": {}
 },
 "Orchard::8727017324709": {
 "l": [
@@ -59108,6 +59107,12 @@
 "UK 10.5"
 ],
 "m": {}
+},
+"Kith::8282396393600": {
+"l": [
+"OS"
+],
+"m": {}
 }
 },
 "muted": {
@@ -61837,6 +61842,15 @@
 "title": "Nike SB x Eric Koston Air Max 95 Shoes - Obsidian / Speed Yellow - Midnight Navy - Navy",
 "t": 1795008364,
 "link": "https://www.flatspot.com/products/nike-sb-x-eric-koston-air-max-95-shoes-obsidian-speed-yellow-midnight-navy-navy"
+},
+"1572642848174641155": {
+"cid": "1550909316897177842",
+"keys": [
+"p:Kith::8282396393600"
+],
+"title": "Nike SB The Dunk Book",
+"t": 1795017674,
+"link": "https://kith.com/products/riz9780847866694"
 }
 },
 "nike_dunk_seeded": true,
