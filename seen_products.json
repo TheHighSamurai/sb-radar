@@ -15052,7 +15052,7 @@
 "Skaters Advocate::8777878110442": false,
 "Travel Skate Shop::15418007027789": true,
 "Geometric Skate Shop::15404847431955": true,
-"Arts & Rec::15604923072623": false,
+"Arts & Rec::15604923072623": true,
 "Southside Boardshop::9805562609981": true,
 "Underground Skateshop::8347264286920": true,
 "Travel Skate Shop::15418113163341": true,
@@ -18782,7 +18782,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Unheardof::10593372602533": {
 "l": [
@@ -46368,7 +46370,9 @@
 "m": {}
 },
 "Arts & Rec::15604923072623": {
-"l": [],
+"l": [
+"12"
+],
 "m": {}
 },
 "Southside Boardshop::9805562609981": {
