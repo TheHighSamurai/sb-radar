@@ -17211,7 +17211,7 @@
 "Skatepark of Tampa::15481063604497": true,
 "Bluetile Skateboards::15479552868578": true,
 "Swellophonic::7688196554834": false,
-"Southside Boardshop::15477219950909": false,
+"Southside Boardshop::15477219950909": true,
 "Pastime Skateshop::15958864265376": true,
 "Barewires::15475182600445": true,
 "Blue Flowers::11283959120039": true,
@@ -17312,7 +17312,7 @@
 "NJ Skateshop::15591446151202": true,
 "People Skate and Snowboard::15476212236503": true,
 "Richmond Hood::15781174870180": true,
-"Southside Boardshop::15477224735037": false,
+"Southside Boardshop::15477224735037": true,
 "Seasons Skate Shop::10476684050690": true,
 "Innercity Skate::15488600473879": true,
 "Val Surf::15967994577056": true,
@@ -57292,7 +57292,9 @@
 "m": {}
 },
 "Southside Boardshop::15477219950909": {
-"l": [],
+"l": [
+"8.5"
+],
 "m": {}
 },
 "Pastime Skateshop::15958864265376": {
@@ -58407,7 +58409,9 @@
 "m": {}
 },
 "Southside Boardshop::15477224735037": {
-"l": [],
+"l": [
+"9.5"
+],
 "m": {}
 },
 "Seasons Skate Shop::10476684050690": {
@@ -61886,6 +61890,16 @@
 "title": "NIKE SB BLAZER MID BLACK SPRUCE / CORDUROY BROWN",
 "t": 1795021866,
 "link": "https://bluetilesc.com/products/nike-sb-blazer-mid-black-spruce-corduroy-brown"
+},
+"1572671781666426944": {
+"cid": "1562917305531506738",
+"keys": [
+"t:af1 navy black hm8517400 suede skateboarding",
+"p:Southside Boardshop::15477224735037"
+],
+"title": "AF1 Navy Black HM8517400 Nike SB Suede Skateboarding Shoes",
+"t": 1795024572,
+"link": "https://southsideskateshop.com/products/af1-navy-black-navy-hm8517400-nike-sb-suede-skateboarding-shoes"
 }
 },
 "nike_dunk_seeded": true,
