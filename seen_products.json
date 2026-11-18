@@ -17882,7 +17882,6 @@
 "Doubler Kicks::10404373233949": {
 "l": [
 "10",
-"10.5",
 "11.5",
 "12",
 "8",
@@ -17890,9 +17889,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"10.5": 2
-}
+"m": {}
 },
 "Doubler Kicks::10404361109789": {
 "l": [
@@ -23773,6 +23770,7 @@
 "Brooklyn Projects::7714529706065": {
 "l": [
 "10",
+"8",
 "9",
 "9.5"
 ],
@@ -44340,7 +44338,7 @@
 "UK 7.5"
 ],
 "m": {
-"UK 7.5": 1
+"UK 7.5": 2
 }
 },
 "Flatspot::15850383835509": {
@@ -57362,7 +57360,7 @@
 "11.0 M"
 ],
 "m": {
-"10.5 M": 1
+"10.5 M": 2
 }
 },
 "Theory Skate Shop::15478159671483": {
@@ -61921,6 +61919,16 @@
 "title": "Nike SB Zoom Blazer Low x Dancer",
 "t": 1795035673,
 "link": "https://brooklynprojects.com/products/nike-sb-zoom-blazer-low-x-dancer-skateboards"
+},
+"1572729632678215852": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FD6757-101",
+"p:Brooklyn Projects::7714529706065"
+],
+"title": "Nike SB Zoom Janoski OG Plus",
+"t": 1795038364,
+"link": "https://brooklynprojects.com/products/nike-sb-zoom-janoski-og-plus-sanddrift-thunder-blue"
 }
 },
 "nike_dunk_seeded": true,
