@@ -17150,7 +17150,7 @@
 "Xtreme::15477650980958": true,
 "Olympia Skate Shop::9644479185203": true,
 "Transport Skate::9646006829333": true,
-"Furnace Skate::10681778634936": true,
+"Furnace Skate::10681778634936": false,
 "Skaters Advocate::8783548121322": true,
 "Pawnshop Skate::15936326926496": true,
 "CCS::8859858829495": true,
@@ -17426,8 +17426,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Furnace Skate::10681778634936": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -56496,12 +56495,8 @@
 "m": {}
 },
 "Furnace Skate::10681778634936": {
-"l": [
-"11"
-],
-"m": {
-"11": 2
-}
+"l": [],
+"m": {}
 },
 "Skaters Advocate::8783548121322": {
 "l": [
@@ -57134,12 +57129,9 @@
 "7",
 "8",
 "8.5",
-"9",
-"9.5"
+"9"
 ],
-"m": {
-"9.5": 2
-}
+"m": {}
 },
 "Val Surf::15644204794016": {
 "l": [
