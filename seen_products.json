@@ -30458,6 +30458,8 @@
 },
 "VU Skate Shop::8357993676967": {
 "l": [
+"10",
+"10.5",
 "11",
 "11.5",
 "13",
@@ -61924,6 +61926,16 @@
 "title": "Nike SB Chron 2 Shoes - Black / White - Black - Gum Light Brown",
 "t": 1795074993,
 "link": "https://www.flatspot.com/products/nike-sb-chron-2-shoes-black-white-black-gum-light-brown"
+},
+"1573002702059864095": {
+"cid": "1562917305531506738",
+"keys": [
+"t:zoom blazer mid black white",
+"p:VU Skate Shop::8357993676967"
+],
+"title": "Nike SB Zoom Blazer Mid (Black/White)",
+"t": 1795103470,
+"link": "https://vuskateboardshop.com/products/nike-sb-zoom-blazer-mid-black-white"
 }
 },
 "nike_dunk_seeded": true,
