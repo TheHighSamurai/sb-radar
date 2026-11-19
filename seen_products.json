@@ -11436,7 +11436,7 @@
 "Travel Skate Shop::7413944811597": false,
 "Travel Skate Shop::7411703447629": true,
 "Travel Skate Shop::7411692896333": true,
-"Travel Skate Shop::7411688505421": true,
+"Travel Skate Shop::7411688505421": false,
 "Travel Skate Shop::7410755371085": true,
 "Travel Skate Shop::7344529702989": true,
 "Travel Skate Shop::7344522952781": true,
@@ -17426,8 +17426,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Travel Skate Shop::7411688505421": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -20015,12 +20014,8 @@
 "m": {}
 },
 "Travel Skate Shop::7411688505421": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Travel Skate Shop::7410755371085": {
 "l": [
