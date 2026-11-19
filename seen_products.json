@@ -734,6 +734,7 @@
 "Bluetile Skateboards::15479552868578",
 "Bluetile Skateboards::15490439446754",
 "Bluetile Skateboards::15499331240162",
+"Bluetile Skateboards::15519649005794",
 "Bluetile Skateboards::6816775110814",
 "Bluetile Skateboards::6816780320926",
 "Bluetile Skateboards::6816780353694",
@@ -10979,6 +10980,15 @@
 "sizes": "XL, L, M",
 "link": "https://coureurgoods.com/products/nike-sb-1-2-zip-fleece-skate-sweatshirt-gym-red-stealth",
 "image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-nike-sb-crew-tennis-classic-1-2-zip-fleece.webp?v=1795114433",
+"local": false
+},
+{
+"store": "Bluetile Skateboards",
+"title": "NIKE SB AF1 SKATE POLO BLACK",
+"price": "64.95",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://bluetilesc.com/products/nike-sb-af1-skate-polo-black",
+"image": "https://cdn.shopify.com/s/files/1/0581/5900/5854/files/nikesbAirForce1SEPoloShirt.jpg?v=1795131515",
 "local": false
 }
 ],
