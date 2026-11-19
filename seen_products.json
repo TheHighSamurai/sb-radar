@@ -30462,6 +30462,7 @@
 "10.5",
 "11",
 "11.5",
+"12",
 "13",
 "8.0",
 "8.5",
@@ -42019,7 +42020,9 @@
 "M 9 / W 10.5",
 "M 9.5 / W 11"
 ],
-"m": {}
+"m": {
+"M 11.5 / W 13": 1
+}
 },
 "Exodus Rideshop::8301316472950": {
 "l": [
@@ -42120,7 +42123,9 @@
 "M 13 / W 14.5",
 "M 8.5 / W 10"
 ],
-"m": {}
+"m": {
+"M 11.5 / W 13": 1
+}
 },
 "Exodus Rideshop::8193866268790": {
 "l": [
@@ -61935,6 +61940,16 @@
 ],
 "title": "Nike SB Zoom Blazer Mid (Black/White)",
 "t": 1795103470,
+"link": "https://vuskateboardshop.com/products/nike-sb-zoom-blazer-mid-black-white"
+},
+"1573004027887882383": {
+"cid": "1562917305531506738",
+"keys": [
+"t:zoom blazer mid black white",
+"p:VU Skate Shop::8357993676967"
+],
+"title": "Nike SB Zoom Blazer Mid (Black/White)",
+"t": 1795103785,
 "link": "https://vuskateboardshop.com/products/nike-sb-zoom-blazer-mid-black-white"
 }
 },
