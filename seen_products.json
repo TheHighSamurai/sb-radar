@@ -20646,6 +20646,7 @@
 },
 "NJ Skateshop::8399742435362": {
 "l": [
+"10",
 "11.5",
 "8",
 "8.5",
@@ -61876,6 +61877,17 @@
 "title": "Nike SB Air Force 1- Navy/Black",
 "t": 1795121465,
 "link": "https://seasonsskateshop.com/products/nike-sb-air-force-1-navy-black-copy-1"
+},
+"1573083212983304346": {
+"cid": "1562917305531506738",
+"keys": [
+"s:IQ6827-001",
+"t:paul rodriguez 1 qs black black black",
+"p:NJ Skateshop::8399742435362"
+],
+"title": "Nike SB - Paul Rodriguez 1 QS (Black/Black-Black)",
+"t": 1795122665,
+"link": "https://njskateshop.com/products/nike-sb-paul-rodriguez-1-qs-black-gum"
 }
 },
 "nike_dunk_seeded": true,
