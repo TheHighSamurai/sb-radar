@@ -1842,6 +1842,7 @@
 "Coureur Goods::10410401366271",
 "Coureur Goods::10410456809727",
 "Coureur Goods::10427726561535",
+"Coureur Goods::10452996555007",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
 "Coureur Goods::8375408197887",
@@ -10969,6 +10970,15 @@
 "sizes": "XL",
 "link": "https://doublerkicks.com/products/nike-sb-full-zip-hoodie-black",
 "image": "https://cdn.shopify.com/s/files/1/0715/8077/8781/files/AURORA_FZ8796-010_PHSFM001-3144.png?v=1732307419",
+"local": false
+},
+{
+"store": "Coureur Goods",
+"title": "Nike SB 1/2 Zip Fleece Skate Sweatshirt Gym Red/Stealth",
+"price": "80.00",
+"sizes": "XL, L, M",
+"link": "https://coureurgoods.com/products/nike-sb-1-2-zip-fleece-skate-sweatshirt-gym-red-stealth",
+"image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-nike-sb-crew-tennis-classic-1-2-zip-fleece.webp?v=1795114433",
 "local": false
 }
 ],
