@@ -17775,7 +17775,9 @@
 "11.5",
 "8"
 ],
-"m": {}
+"m": {
+"11.5": 1
+}
 },
 "Doubler Kicks::10262193537309": {
 "l": [
@@ -60387,16 +60389,6 @@
 }
 },
 "msgs": {
-"1570891367708622960": {
-"cid": "1562917305531506738",
-"keys": [
-"t:air force 1 navy black",
-"p:Geometric Skate Shop::15469374865683"
-],
-"title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
-"t": 1794600088,
-"link": "https://geometricskateshop.com/products/nike-sb-air-force-1-navy-black"
-},
 "1570892582622335017": {
 "cid": "1562917305531506738",
 "keys": [
