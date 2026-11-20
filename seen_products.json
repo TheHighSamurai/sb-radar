@@ -8554,6 +8554,7 @@
 "Skaters Advocate::8796385870058",
 "Skaters Advocate::8796666527978",
 "Skaters Advocate::8796668133610",
+"Skaters Advocate::8811006427370",
 "Sneaker Politics::7414416277692",
 "Sneaker Politics::7514910785724",
 "Sneaker Politics::8741505827004",
@@ -10725,6 +10726,15 @@
 "sizes": "Large, X-Large, Medium",
 "link": "https://deliskatesupply.com/products/nike-sb-air-max-tee-white",
 "image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/IMG_8765.heic?v=1795200298",
+"local": false
+},
+{
+"store": "Skaters Advocate",
+"title": "Nike SB Kyle Wilson Shirt",
+"price": "50.00",
+"sizes": "L, M, XL, S",
+"link": "https://skatersadvocate.com/products/nike-sb-kyle-wilson-shirt",
+"image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/1657091-nike-sb-wilson-tshirt-white.webp?v=1795201652",
 "local": false
 }
 ],
@@ -18107,7 +18117,7 @@
 "9.5"
 ],
 "m": {
-"11": 1
+"11": 2
 }
 },
 "PLA Folsom::8821280014494": {
@@ -58200,7 +58210,7 @@
 "8.5"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Black Sheep NC::7688558084142": {
