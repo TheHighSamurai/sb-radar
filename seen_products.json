@@ -17772,12 +17772,9 @@
 },
 "Doubler Kicks::10262204219677": {
 "l": [
-"11.5",
 "8"
 ],
-"m": {
-"11.5": 2
-}
+"m": {}
 },
 "Doubler Kicks::10262193537309": {
 "l": [
@@ -60389,16 +60386,6 @@
 }
 },
 "msgs": {
-"1570893786488242432": {
-"cid": "1562917305531506738",
-"keys": [
-"t:air force 1 navy black",
-"p:Val Surf::15967994577056"
-],
-"title": "Nike SB Air Force 1 - Navy/Black",
-"t": 1794600664,
-"link": "https://valsurf.com/products/nike-sb-air-force-1-navy-black"
-},
 "1570922785688002591": {
 "cid": "1562917305531506738",
 "keys": [
