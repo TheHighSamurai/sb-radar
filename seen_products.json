@@ -16147,7 +16147,7 @@
 "DTLR::8398181335274": false,
 "DTLR::8392948383978": false,
 "DTLR::8391854555370": false,
-"DTLR::8389566267626": false,
+"DTLR::8389566267626": true,
 "DTLR::8273546543338": false,
 "DTLR::8387128099050": false,
 "DTLR::8126136058090": false,
@@ -52012,7 +52012,9 @@
 "m": {}
 },
 "DTLR::8389566267626": {
-"l": [],
+"l": [
+"6.5"
+],
 "m": {}
 },
 "DTLR::8273546543338": {
@@ -61966,6 +61968,16 @@
 "title": "Nike Dunk High 1985 - Arctic Orange/Summit White/Orange Blaze/Arctic Orange",
 "t": 1795152670,
 "link": "https://www.nike.com/t/dunk-high-1985-shoes-L05QbB/DV1143-800"
+},
+"1573235507281010790": {
+"cid": "1550909316897177842",
+"keys": [
+"s:FB9109-110",
+"p:DTLR::8389566267626"
+],
+"title": "Nike Dunk Low Grade-School",
+"t": 1795158974,
+"link": "https://www.dtlr.com/products/nike-dunk-low-gs-fb9109-110-purple"
 }
 },
 "nike_dunk_seeded": true,
