@@ -2282,6 +2282,7 @@
 "Deli Skate Supply::15374640578809",
 "Deli Skate Supply::15374645821689",
 "Deli Skate Supply::15383733600505",
+"Deli Skate Supply::15397020205305",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10715,6 +10716,15 @@
 "sizes": "XL, L, M, S",
 "link": "https://njskateshop.com/products/nike-sb-kyle-wilson-tee",
 "image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/nike-sb-kyle-wilson-t-shirt-white-1_1300x1500_crop_center.progressive-removebg-preview.png?v=1795193029",
+"local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Air Max Tee White",
+"price": "49.99",
+"sizes": "Large, X-Large, Medium",
+"link": "https://deliskatesupply.com/products/nike-sb-air-max-tee-white",
+"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/IMG_8765.heic?v=1795200298",
 "local": false
 }
 ],
@@ -33857,7 +33867,9 @@
 "8.5M",
 "9.5M"
 ],
-"m": {}
+"m": {
+"10M": 1
+}
 },
 "Val Surf::15059218890912": {
 "l": [
@@ -34001,7 +34013,9 @@
 "11.5M",
 "8.5M"
 ],
-"m": {}
+"m": {
+"11.5M": 1
+}
 },
 "Val Surf::13438022451360": {
 "l": [
