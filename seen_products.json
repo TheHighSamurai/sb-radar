@@ -17030,7 +17030,7 @@
 "Skatepark of Tampa::15481063604497": true,
 "Bluetile Skateboards::15479552868578": true,
 "Swellophonic::7688196554834": false,
-"Southside Boardshop::15477219950909": true,
+"Southside Boardshop::15477219950909": false,
 "Pastime Skateshop::15958864265376": true,
 "Barewires::15475182600445": true,
 "Blue Flowers::11283959120039": true,
@@ -17222,7 +17222,6 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Southside Boardshop::15477219950909": 2,
 "Flatspot::7743722258612": 1
 },
 "avail": {
@@ -18351,6 +18350,7 @@
 "PLA Folsom::8175986999454": {
 "l": [
 "10",
+"11.5",
 "12",
 "13",
 "8",
@@ -57047,12 +57047,8 @@
 "m": {}
 },
 "Southside Boardshop::15477219950909": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Pastime Skateshop::15958864265376": {
 "l": [
@@ -58704,7 +58700,6 @@
 "11.5",
 "12",
 "13",
-"14",
 "4",
 "4.5",
 "5",
@@ -58718,9 +58713,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"14": 2
-}
+"m": {}
 },
 "Union LA::15487178014797": {
 "l": [
@@ -61310,6 +61303,17 @@
 "title": "Nike SB - Air Force 1 (Navy/Black-Navy)",
 "t": 1795208164,
 "link": "https://303boards-com.myshopify.com/products/nike-sb-air-force-1-navy-black-navy"
+},
+"1573453157470703717": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FD6757-002",
+"t:zoom janoski og black university red",
+"p:PLA Folsom::8175986999454"
+],
+"title": "NIKE SB ZOOM JANOSKI OG+ - BLACK/UNIVERSITY RED",
+"t": 1795210866,
+"link": "https://plaskate.com/products/nike-sb-zoom-janoski-og-black-university-red-fd6757-002"
 }
 },
 "nike_dunk_seeded": true,
