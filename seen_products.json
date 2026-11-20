@@ -531,6 +531,7 @@
 "Arts & Rec::15834383286383",
 "Arts & Rec::7121500209263",
 "Arts & Rec::7128968986735",
+"Arts & Rec::7427550707823",
 "Arts & Rec::7525986730095",
 "Arts & Rec::7585284751471",
 "Arts & Rec::7585286226031",
@@ -10738,6 +10739,15 @@
 "link": "https://skatersadvocate.com/products/nike-sb-kyle-wilson-shirt",
 "image": "https://cdn.shopify.com/s/files/1/0635/4885/0410/files/1657091-nike-sb-wilson-tshirt-white.webp?v=1795201652",
 "local": false
+},
+{
+"store": "Arts & Rec",
+"title": "NIKE SB Club Hat - Black / White",
+"price": "12.00",
+"sizes": "M/L",
+"link": "https://artsandrecstore.com/products/nike-sb-club-hat-black-white",
+"image": "https://cdn.shopify.com/s/files/1/3043/9188/files/ScreenShot2024-04-28at10.54.55PM.png?v=1714370108",
+"local": true
 }
 ],
 "apparel_seeded": true,
@@ -23916,7 +23926,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Innercity Skate::10394407534871": {
 "l": [
@@ -36933,7 +36945,7 @@
 "9.5"
 ],
 "m": {
-"8": 1
+"8": 2
 }
 },
 "Xtreme::7698879086686": {
@@ -57522,7 +57534,7 @@
 "9.5"
 ],
 "m": {
-"13": 1
+"13": 2
 }
 },
 "Xtreme::15506855952478": {
