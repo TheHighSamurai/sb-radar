@@ -6095,6 +6095,7 @@
 "NJ Skateshop::15549618585634",
 "NJ Skateshop::15591446151202",
 "NJ Skateshop::15602942410786",
+"NJ Skateshop::15639770693666",
 "NJ Skateshop::2256769581115",
 "NJ Skateshop::7781460181026",
 "NJ Skateshop::7802310983714",
@@ -10705,7 +10706,17 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "NJ Skateshop",
+"title": "Nike SB - Kyle Wilson Tee",
+"price": "50.00",
+"sizes": "XL, L, M, S",
+"link": "https://njskateshop.com/products/nike-sb-kyle-wilson-tee",
+"image": "https://cdn.shopify.com/s/files/1/0099/4266/3227/files/nike-sb-kyle-wilson-t-shirt-white-1_1300x1500_crop_center.progressive-removebg-preview.png?v=1795193029",
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-11-20",
 "stock": {
@@ -50134,7 +50145,7 @@
 "9.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "Sneaker Politics::9352456798396": {
@@ -60368,17 +60379,6 @@
 }
 },
 "msgs": {
-"1570840938392199340": {
-"cid": "1550909316897177842",
-"keys": [
-"s:IF7380-200",
-"t:union x dunk low sp fatigue",
-"p:Lapstone & Hammer::10436526374969"
-],
-"title": "UNION X NIKE DUNK LOW SP \"FATIGUE\"",
-"t": 1794588065,
-"link": "https://www.lapstoneandhammer.com/products/if7380_200"
-},
 "1570846061029883957": {
 "cid": "1562917305531506738",
 "keys": [
