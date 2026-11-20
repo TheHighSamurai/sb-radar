@@ -17776,7 +17776,7 @@
 "8"
 ],
 "m": {
-"11.5": 1
+"11.5": 2
 }
 },
 "Doubler Kicks::10262193537309": {
@@ -60389,27 +60389,6 @@
 }
 },
 "msgs": {
-"1570892582622335017": {
-"cid": "1562917305531506738",
-"keys": [
-"s:HM8517-400",
-"t:air force 1 navy black",
-"p:Richmond Hood::15781174870180"
-],
-"title": "Nike SB Air Force 1 - Navy/Black",
-"t": 1794600377,
-"link": "https://richmondhood.com/products/nike-sb-air-force-1-navy-black"
-},
-"1570892587135537296": {
-"cid": "1562917305531506738",
-"keys": [
-"t:air force 1 navy black",
-"p:Geometric Skate Shop::15469374865683"
-],
-"title": "NIKE SB AIR FORCE 1 - NAVY/BLACK",
-"t": 1794600379,
-"link": "https://geometricskateshop.com/products/nike-sb-air-force-1-navy-black"
-},
 "1570893786488242432": {
 "cid": "1562917305531506738",
 "keys": [
