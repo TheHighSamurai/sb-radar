@@ -9446,6 +9446,7 @@
 "Travel Skate Shop::15491304718413",
 "Travel Skate Shop::15512874221645",
 "Travel Skate Shop::15512879464525",
+"Travel Skate Shop::15512882020429",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -10841,6 +10842,15 @@
 "sizes": "Medium, Small, X-Large",
 "link": "https://travelskateshop.com/products/nike-sb-enforcer-skate-jersey",
 "image": "https://cdn.shopify.com/s/files/1/1193/7716/files/shopping-4_036ec9fe-3b2c-48b8-83d7-f324866aad18.webp?v=1795289774",
+"local": false
+},
+{
+"store": "Travel Skate Shop",
+"title": "Nike SB Fleece 1/2-Zip Skate Sweatshirt",
+"price": "80.00",
+"sizes": "Large, X-Large",
+"link": "https://travelskateshop.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt",
+"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/Screenshot2026-11-21at2.43.46PM.png?v=1795290345",
 "local": false
 }
 ],
@@ -28672,7 +28682,9 @@
 "9.0",
 "9.5"
 ],
-"m": {}
+"m": {
+"9.0": 1
+}
 },
 "Black Sheep NC::7435765678126": {
 "l": [
@@ -57460,7 +57472,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"10.5": 1
+}
 },
 "Skaters Advocate::8796385870058": {
 "l": [
