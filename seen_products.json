@@ -17279,7 +17279,7 @@
 "Brooklyn Projects::16434649497681": true,
 "After Hours Skateshop::10433920368895": true,
 "Overload::10189338935543": true,
-"The Block Skate Supply::15488602210519": true,
+"The Block Skate Supply::15488602210519": false,
 "Stratosphere::8856848728225": true,
 "Geometric Skate Shop::15469374865683": true,
 "Sneaker Politics::9436406055100": true,
@@ -17339,8 +17339,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"The Block Skate Supply::15488602210519": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -24644,7 +24643,7 @@
 "9.5"
 ],
 "m": {
-"8.5": 1
+"8.5": 2
 }
 },
 "Coureur Goods::9556576534783": {
@@ -27996,15 +27995,12 @@
 "Magnolia Skateshop::9625757647061": {
 "l": [
 "10",
-"11",
 "11.5",
 "12",
 "13",
 "9.5"
 ],
-"m": {
-"11": 2
-}
+"m": {}
 },
 "Magnolia Skateshop::9618938691797": {
 "l": [],
@@ -58624,12 +58620,8 @@
 "m": {}
 },
 "The Block Skate Supply::15488602210519": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Stratosphere::8856848728225": {
 "l": [
