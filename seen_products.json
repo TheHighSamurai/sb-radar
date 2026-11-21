@@ -9445,6 +9445,7 @@
 "Travel Skate Shop::15489217265741",
 "Travel Skate Shop::15491304718413",
 "Travel Skate Shop::15512874221645",
+"Travel Skate Shop::15512879464525",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -10831,6 +10832,15 @@
 "sizes": "X- Large, Large, Medium, Small",
 "link": "https://travelskateshop.com/products/nike-sb-cell-tee",
 "image": "https://cdn.shopify.com/s/files/1/1193/7716/files/Screenshot2026-11-21at2.27.25PM.png?v=1795289516",
+"local": false
+},
+{
+"store": "Travel Skate Shop",
+"title": "Nike SB Enforcer Skate Jersey",
+"price": "125.00",
+"sizes": "Medium, Small, X-Large",
+"link": "https://travelskateshop.com/products/nike-sb-enforcer-skate-jersey",
+"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/shopping-4_036ec9fe-3b2c-48b8-83d7-f324866aad18.webp?v=1795289774",
 "local": false
 }
 ],
@@ -32764,12 +32774,9 @@
 "No-Comply::8716523438265": {
 "l": [
 "M11.5=W13",
-"M11=W12.5",
-"M8.5=W10"
+"M11=W12.5"
 ],
-"m": {
-"M8.5=W10": 2
-}
+"m": {}
 },
 "No-Comply::8674746466489": {
 "l": [
