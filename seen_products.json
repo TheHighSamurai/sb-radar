@@ -23871,6 +23871,7 @@
 "Brooklyn Projects::7675129692241": {
 "l": [
 "10.5",
+"8",
 "8.5"
 ],
 "m": {}
@@ -58487,12 +58488,9 @@
 "11.5",
 "13",
 "6",
-"8",
 "9.5"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "Pharmacy Temecula::7694018412626": {
 "l": [
@@ -61268,6 +61266,15 @@
 "title": "UNION X NIKE DUNK LOW SP \"FATIGUE\"",
 "t": 1795289774,
 "link": "https://www.lapstoneandhammer.com/products/if7380_200"
+},
+"1573816800435638333": {
+"cid": "1562917305531506738",
+"keys": [
+"p:Brooklyn Projects::7675129692241"
+],
+"title": "Nike SB Vertebrae Purple/Gold",
+"t": 1795297566,
+"link": "https://brooklynprojects.com/products/nike-sb-vertebrae-purple-gold"
 }
 },
 "nike_dunk_seeded": true,
