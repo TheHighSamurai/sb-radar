@@ -9191,6 +9191,7 @@
 "Theory Skate Shop::15482548912315",
 "Theory Skate Shop::15497931653307",
 "Theory Skate Shop::15498247405755",
+"Theory Skate Shop::15525438193851",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
 "Theory Skate Shop::7914806542523",
@@ -10811,6 +10812,15 @@
 "sizes": "XXL",
 "link": "https://lbskate.com/products/nike-sb-woven-skate-striped-l-s-button-up-shirt",
 "image": "https://cdn.shopify.com/s/files/1/0013/8795/4221/files/NikeStripedShirt0525WhitePurple_1200x_88f8bf92-e7db-46a5-b465-4fadd4563349.webp?v=1795114867",
+"local": false
+},
+{
+"store": "Theory Skate Shop",
+"title": "Nike SB Kyle Wilson Skate T-Shirt (White)",
+"price": "50.00",
+"sizes": "XL, S, L, M",
+"link": "https://theoryskate.com/products/nike-sb-kyle-wilson-skate-t-shirt-white",
+"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/D6_IW6964-100_PHSFM001_4X5-2000.jpg?v=1795285603",
 "local": false
 }
 ],
@@ -58767,7 +58777,12 @@
 "9 M",
 "9.5 M"
 ],
-"m": {}
+"m": {
+"7.5 M": 1,
+"10 M": 1,
+"9.5 M": 1,
+"7 M": 1
+}
 },
 "Barewires::15498594975997": {
 "l": [
