@@ -9447,6 +9447,7 @@
 "Travel Skate Shop::15512874221645",
 "Travel Skate Shop::15512879464525",
 "Travel Skate Shop::15512882020429",
+"Travel Skate Shop::15512908202061",
 "Travel Skate Shop::4917561032781",
 "Travel Skate Shop::6697500115021",
 "Travel Skate Shop::6801739186253",
@@ -10851,6 +10852,15 @@
 "sizes": "Large, X-Large",
 "link": "https://travelskateshop.com/products/nike-sb-fleece-1-2-zip-skate-sweatshirt",
 "image": "https://cdn.shopify.com/s/files/1/1193/7716/files/Screenshot2026-11-21at2.43.46PM.png?v=1795290345",
+"local": false
+},
+{
+"store": "Travel Skate Shop",
+"title": "Nike SB Long-Sleeve Skate T-Shirt",
+"price": "50.00",
+"sizes": "X-Large, Large",
+"link": "https://travelskateshop.com/products/nike-sb-long-sleeve-skate-t-shirt",
+"image": "https://cdn.shopify.com/s/files/1/1193/7716/files/Screenshot2026-11-21at3.18.00PM.png?v=1795292407",
 "local": false
 }
 ],
@@ -58793,7 +58803,9 @@
 "6.5 M",
 "8 M"
 ],
-"m": {}
+"m": {
+"8 M": 1
+}
 },
 "Barewires::15498594975997": {
 "l": [
@@ -58836,14 +58848,11 @@
 "11.5",
 "13",
 "14",
-"8",
 "8.5",
 "9",
 "9.5"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "Geometric Skate Shop::15473801691411": {
 "l": [
