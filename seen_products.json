@@ -5138,6 +5138,7 @@
 "Geometric Skate Shop::15469374865683",
 "Geometric Skate Shop::15473801691411",
 "Geometric Skate Shop::15480750997779",
+"Geometric Skate Shop::15488875626771",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -10788,6 +10789,15 @@
 "sizes": "White, Anthracite",
 "link": "https://mainlandskateandsurf.com/products/nike-sb-champagne-skate-tee",
 "image": "https://cdn.shopify.com/s/files/1/1230/8246/files/nike-sb-tee-skate-t-shirt-champagne-anthracite-IW3134-060.png?v=1795219346",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike Sb Kyle Wilson Tee - White/Green",
+"price": "50.00",
+"sizes": "2XL, XL, L, S, M",
+"link": "https://geometricskateshop.com/products/nike-sb-kyle-wilson-tee-white-green",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/NK_NKIW6964_100_198966653276_3.webp?v=1795217321",
 "local": false
 }
 ],
@@ -56857,8 +56867,8 @@
 "9"
 ],
 "m": {
-"9": 1,
-"8.5": 1
+"9": 2,
+"8.5": 2
 }
 },
 "Rock City Kicks::15441305501854": {
