@@ -5182,6 +5182,7 @@
 "Geometric Skate Shop::9925522129171",
 "Home Base Skate Shop::15450352386202",
 "Home Base Skate Shop::15483276361882",
+"Home Base Skate Shop::15538541723802",
 "Humidity Skateshop::10011064271139",
 "Humidity Skateshop::10011065975075",
 "Humidity Skateshop::10011681390883",
@@ -10861,6 +10862,15 @@
 "sizes": "X-Large, Large",
 "link": "https://travelskateshop.com/products/nike-sb-long-sleeve-skate-t-shirt",
 "image": "https://cdn.shopify.com/s/files/1/1193/7716/files/Screenshot2026-11-21at3.18.00PM.png?v=1795292407",
+"local": false
+},
+{
+"store": "Home Base Skate Shop",
+"title": "Nike SB Ishod T-Shirt",
+"price": "55.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://homebaseskateshop.com/products/nike-sb-ishod-t-shirt",
+"image": null,
 "local": false
 }
 ],
@@ -58804,7 +58814,7 @@
 "8 M"
 ],
 "m": {
-"8 M": 1
+"8 M": 2
 }
 },
 "Barewires::15498594975997": {
