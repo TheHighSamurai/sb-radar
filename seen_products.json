@@ -23387,12 +23387,9 @@
 "10.5",
 "11",
 "11.5",
-"12",
-"13"
+"12"
 ],
-"m": {
-"13": 2
-}
+"m": {}
 },
 "Brooklyn Projects::15944441102417": {
 "l": [
@@ -60515,17 +60512,6 @@
 }
 },
 "msgs": {
-"1571629880397799497": {
-"cid": "1562917305531506738",
-"keys": [
-"s:HM8517-400",
-"t:air force 1 navy black",
-"p:Richmond Hood::15781174870180"
-],
-"title": "Nike SB Air Force 1 - Navy/Black",
-"t": 1794776163,
-"link": "https://richmondhood.com/products/nike-sb-air-force-1-navy-black"
-},
 "1571650021290545324": {
 "cid": "1562917305531506738",
 "keys": [
