@@ -8568,6 +8568,7 @@
 "Skaters Advocate::8796385870058",
 "Skaters Advocate::8796666527978",
 "Skaters Advocate::8796668133610",
+"Skaters Advocate::8804190191850",
 "Skaters Advocate::8811006427370",
 "Sneaker Politics::7414416277692",
 "Sneaker Politics::7514910785724",
@@ -17318,7 +17319,8 @@
 "Icon Boardshop::8413460005160": true,
 "303 Annex::10392153653313": true,
 "303 Boards::10392153653313": true,
-"Brooklyn Projects::6637509804113": true
+"Brooklyn Projects::6637509804113": true,
+"Skaters Advocate::8804190191850": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -59005,6 +59007,21 @@
 "Brooklyn Projects::6637509804113": {
 "l": [
 "M"
+],
+"m": {}
+},
+"Skaters Advocate::8804190191850": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
+"13",
+"8",
+"8.5",
+"9",
+"9.5"
 ],
 "m": {}
 }
