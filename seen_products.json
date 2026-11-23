@@ -1203,6 +1203,7 @@
 "Brooklyn Projects::7212102942801",
 "Brooklyn Projects::7215987327057",
 "Brooklyn Projects::7215987753041",
+"Brooklyn Projects::7257328451665",
 "Brooklyn Projects::7321067520081",
 "Brooklyn Projects::7348589461585",
 "Brooklyn Projects::7413009121361",
@@ -10916,6 +10917,15 @@
 "sizes": "Medium, Large, Small, XL",
 "link": "https://wearecivil.com/products/nike-sb-kyle-wilson-skate-t-shirt-white",
 "image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IW6964-100_PHSYM001-2000.jpg?v=1795465230",
+"local": false
+},
+{
+"store": "Brooklyn Projects",
+"title": "Nike SB Rayssa Tee",
+"price": "30.00",
+"sizes": "Black",
+"link": "https://brooklynprojects.com/products/nike-sb-rayssa-tee",
+"image": "https://cdn.shopify.com/s/files/1/0711/2409/files/images_d1919628-fccb-4403-b5f0-78d87d75092e.jpg?v=1710268598",
 "local": false
 }
 ],
@@ -44221,7 +44231,7 @@
 "UK 8.5"
 ],
 "m": {
-"UK 10.5": 1
+"UK 10.5": 2
 }
 },
 "Flatspot::15663966683509": {
