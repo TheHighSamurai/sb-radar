@@ -17120,7 +17120,7 @@
 "Reset Mercantile::10272975782184": true,
 "Val Surf::15246133264544": true,
 "Underground Skateshop::8351435489480": true,
-"Blue Flowers::11283864256679": true,
+"Blue Flowers::11283864256679": false,
 "Rock City Kicks::15441305501854": true,
 "Rock City Kicks::15441304387742": true,
 "Stratosphere::8860845899937": true,
@@ -17344,8 +17344,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Blue Flowers::11283864256679": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -24559,12 +24558,9 @@
 "Coureur Goods::9670186959103": {
 "l": [
 "11.5",
-"12",
-"9.5"
+"12"
 ],
-"m": {
-"9.5": 2
-}
+"m": {}
 },
 "Coureur Goods::9666554134783": {
 "l": [
@@ -24593,12 +24589,9 @@
 },
 "Coureur Goods::9628334457087": {
 "l": [
-"11.5",
-"9.5"
+"11.5"
 ],
-"m": {
-"9.5": 2
-}
+"m": {}
 },
 "Coureur Goods::9636841423103": {
 "l": [
@@ -56841,12 +56834,8 @@
 "m": {}
 },
 "Blue Flowers::11283864256679": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Rock City Kicks::15441305501854": {
 "l": [
