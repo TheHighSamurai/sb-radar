@@ -2296,6 +2296,7 @@
 "Deli Skate Supply::15374645821689",
 "Deli Skate Supply::15383733600505",
 "Deli Skate Supply::15397020205305",
+"Deli Skate Supply::15404551176441",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10936,6 +10937,15 @@
 "sizes": "XXL",
 "link": "https://brooklynprojects.com/products/nike-sb-logo-tee-team-red",
 "image": "https://cdn.shopify.com/s/files/1/0711/2409/files/Screenshot2025-01-03at3.52.12PM.png?v=1735996681",
+"local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Yuto Skate Jersey Black",
+"price": "94.99",
+"sizes": "Large, Medium",
+"link": "https://deliskatesupply.com/products/nike-sb-yuto-skate-jersey-black",
+"image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/U_NK_SB_YUTO_SS_JSY_png.avif?v=1795473060",
 "local": false
 }
 ],
