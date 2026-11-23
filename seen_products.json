@@ -1563,6 +1563,7 @@
 "Civil::15611952202016",
 "Civil::15611955904800",
 "Civil::15640567808288",
+"Civil::15641218449696",
 "Civil::8630668820768",
 "Civil::9157701173536",
 "Civil::9157701271840",
@@ -10905,6 +10906,15 @@
 "sizes": "XXL",
 "link": "https://brooklynprojects.com/products/nike-sb-city-of-love-longsleeve-tee-coconut-milk",
 "image": "https://cdn.shopify.com/s/files/1/0711/2409/files/cityoflovet.jpg?v=1764624397",
+"local": false
+},
+{
+"store": "Civil",
+"title": "Nike SB Kyle Wilson Skate T-Shirt - White",
+"price": "50.00",
+"sizes": "Medium, Large, Small, XL",
+"link": "https://wearecivil.com/products/nike-sb-kyle-wilson-skate-t-shirt-white",
+"image": "https://cdn.shopify.com/s/files/1/0774/2393/5776/files/AURORA_IW6964-100_PHSYM001-2000.jpg?v=1795465230",
 "local": false
 }
 ],
