@@ -2298,6 +2298,7 @@
 "Deli Skate Supply::15383733600505",
 "Deli Skate Supply::15397020205305",
 "Deli Skate Supply::15404551176441",
+"Deli Skate Supply::15406854373625",
 "Deli Skate Supply::7537686020345",
 "Deli Skate Supply::7542392422649",
 "Deli Skate Supply::7772859564281",
@@ -10971,6 +10972,15 @@
 "link": "https://undefeated.com/products/nike-sb-yuto-denim-skate-pants-obsidian",
 "image": "https://cdn.shopify.com/s/files/1/0282/5850/files/apparel_bottom_nike_sb-yuto-denim-skate-pants_IM5635-451.color_obsidian.view_1.jpg?v=1795510564",
 "local": false
+},
+{
+"store": "Deli Skate Supply",
+"title": "NIKE SB - Kyle Wilson Air Max Tee Black",
+"price": "49.99",
+"sizes": "Large, Medium, X-Large",
+"link": "https://deliskatesupply.com/products/nike-sb-kyle-wilson-air-max-tee-black",
+"image": null,
+"local": false
 }
 ],
 "apparel_seeded": true,
@@ -16440,7 +16450,7 @@
 "Extra Butter::6083660021943": false,
 "Extra Butter::7782588285111": false,
 "Extra Butter::7807152554167": false,
-"Extra Butter::7681682112695": true,
+"Extra Butter::7681682112695": false,
 "Extra Butter::7782588219575": false,
 "Extra Butter::7790431404215": false,
 "Extra Butter::7790431469751": false,
@@ -17445,8 +17455,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Extra Butter::7681682112695": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -53202,12 +53211,8 @@
 "m": {}
 },
 "Extra Butter::7681682112695": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Extra Butter::7782588219575": {
 "l": [],
