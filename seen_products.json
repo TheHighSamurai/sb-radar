@@ -5148,6 +5148,7 @@
 "Geometric Skate Shop::15473801691411",
 "Geometric Skate Shop::15480750997779",
 "Geometric Skate Shop::15488875626771",
+"Geometric Skate Shop::15495161348371",
 "Geometric Skate Shop::4486451134518",
 "Geometric Skate Shop::4905904963638",
 "Geometric Skate Shop::6789652611126",
@@ -10946,6 +10947,15 @@
 "sizes": "Large, Medium",
 "link": "https://deliskatesupply.com/products/nike-sb-yuto-skate-jersey-black",
 "image": "https://cdn.shopify.com/s/files/1/0427/2314/7935/files/U_NK_SB_YUTO_SS_JSY_png.avif?v=1795473060",
+"local": false
+},
+{
+"store": "Geometric Skate Shop",
+"title": "Nike SB Yuto Jersey - Black",
+"price": "95.00",
+"sizes": "M, XL, L",
+"link": "https://geometricskateshop.com/products/nike-sb-yuto-jersey-black",
+"image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/U_NK_SB_YUTO_SS_JSY.avif?v=1795480256",
 "local": false
 }
 ],
