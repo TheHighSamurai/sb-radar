@@ -9682,6 +9682,7 @@
 "Undefeated::6702785069317",
 "Undefeated::6702825111813",
 "Undefeated::6702828159237",
+"Undefeated::6702878556421",
 "Underground Skateshop::4541167992931",
 "Underground Skateshop::8127413977288",
 "Underground Skateshop::8127414993096",
@@ -10957,6 +10958,15 @@
 "sizes": "M, XL, L",
 "link": "https://geometricskateshop.com/products/nike-sb-yuto-jersey-black",
 "image": "https://cdn.shopify.com/s/files/1/0101/1915/1673/files/U_NK_SB_YUTO_SS_JSY.avif?v=1795480256",
+"local": false
+},
+{
+"store": "Undefeated",
+"title": "NIKE SB YUTO DENIM SKATE PANTS - OBSIDIAN",
+"price": "200.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://undefeated.com/products/nike-sb-yuto-denim-skate-pants-obsidian",
+"image": "https://cdn.shopify.com/s/files/1/0282/5850/files/apparel_bottom_nike_sb-yuto-denim-skate-pants_IM5635-451.color_obsidian.view_1.jpg?v=1795510564",
 "local": false
 }
 ],
