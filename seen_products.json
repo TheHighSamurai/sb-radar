@@ -17920,7 +17920,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"11.5": 1
+}
 },
 "Doubler Kicks::10404373233949": {
 "l": [
@@ -50994,12 +50996,10 @@
 "Shoe Palace::7532733628622": {
 "l": [
 "10.5",
-"13",
-"9"
+"13"
 ],
 "m": {
-"9": 2,
-"10.5": 1
+"10.5": 2
 }
 },
 "Shoe Palace::7582245126350": {
@@ -60721,17 +60721,6 @@
 }
 },
 "msgs": {
-"1572303553861517357": {
-"cid": "1550909316897177842",
-"keys": [
-"s:HF5441-105",
-"t:dunk low lifestyle white light smoke grey",
-"p:Shoe Palace::7545247137998"
-],
-"title": "Dunk Low Mens Lifestyle Shoes (White/Light Smoke Grey)",
-"t": 1794936780,
-"link": "https://www.shoepalace.com/products/nike-hf5441-105-dunk-low-mens-lifestyle-shoes-white-light-smoke-grey"
-},
 "1572324456305528898": {
 "cid": "1562917305531506738",
 "keys": [
