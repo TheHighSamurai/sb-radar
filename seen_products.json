@@ -9211,6 +9211,7 @@
 "Theory Skate Shop::15497931653307",
 "Theory Skate Shop::15498247405755",
 "Theory Skate Shop::15525438193851",
+"Theory Skate Shop::15533682491579",
 "Theory Skate Shop::7910930186427",
 "Theory Skate Shop::7910936936635",
 "Theory Skate Shop::7914806542523",
@@ -10980,6 +10981,15 @@
 "sizes": "Large, Medium, X-Large",
 "link": "https://deliskatesupply.com/products/nike-sb-kyle-wilson-air-max-tee-black",
 "image": null,
+"local": false
+},
+{
+"store": "Theory Skate Shop",
+"title": "Nike SB Long-Sleeve Skate Jersey (Black)",
+"price": "125.00",
+"sizes": "XL, S, M, L",
+"link": "https://theoryskate.com/products/nike-sb-long-sleeve-skate-jersey-black",
+"image": "https://cdn.shopify.com/s/files/1/0411/9855/1205/files/D6_IM5426-010_PHSFM001_4X5-2000.jpg?v=1795556554",
 "local": false
 }
 ],
@@ -21229,7 +21239,7 @@
 "8.5"
 ],
 "m": {
-"10.5": 1
+"10.5": 2
 }
 },
 "Richmond Hood::10191983411364": {
