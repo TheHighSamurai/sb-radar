@@ -22273,16 +22273,13 @@
 "12",
 "13",
 "5.5",
-"6.5",
 "7",
 "7.5",
 "8",
 "8.5",
 "9"
 ],
-"m": {
-"6.5": 2
-}
+"m": {}
 },
 "The Block Skate Supply::8654117929175": {
 "l": [
@@ -60747,16 +60744,6 @@
 }
 },
 "msgs": {
-"1572355968765792419": {
-"cid": "1562917305531506738",
-"keys": [
-"t:zoom blazer mid black white",
-"p:Deli Skate Supply::7537686020345"
-],
-"title": "NIKE SB - Zoom Blazer Mid Black/White",
-"t": 1794949276,
-"link": "https://deliskatesupply.com/products/nike-sb-zoom-blazer-mid-black-white"
-},
 "1572357172967243937": {
 "cid": "1562917305531506738",
 "keys": [
