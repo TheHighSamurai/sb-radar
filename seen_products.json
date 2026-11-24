@@ -25004,7 +25004,7 @@
 "9.5"
 ],
 "m": {
-"13": 1
+"13": 2
 }
 },
 "Labor Skate Shop::7992643944550": {
@@ -60702,6 +60702,22 @@
 "title": "Nike SB Zoom Blazer Mid (Black/White)",
 "link": "https://vuskateboardshop.com/products/nike-sb-zoom-blazer-mid-black-white",
 "t": 1795398017
+},
+"s:HF5441-701": {
+"mids": [
+"1574561714589147318"
+],
+"title": "Nike Dunk Low",
+"link": "https://www.dtlr.com/products/nike-dunk-low-ma-black-orange-hf5441-701",
+"t": 1795536915
+},
+"p:DTLR::8536621482218": {
+"mids": [
+"1574561714589147318"
+],
+"title": "Nike Dunk Low",
+"link": "https://www.dtlr.com/products/nike-dunk-low-ma-black-orange-hf5441-701",
+"t": 1795536915
 }
 },
 "msgs": {
