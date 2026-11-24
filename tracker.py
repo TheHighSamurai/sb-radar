@@ -17,6 +17,7 @@ import time
 import smtplib
 import logging
 import concurrent.futures
+import threading
 import urllib.parse
 from collections import Counter
 from email.mime.text import MIMEText
@@ -110,6 +111,8 @@ def send_discord(find: dict):
         content = "🔔 NOW AVAILABLE — sizes just unlocked"
     elif find.get("restock"):
         content = "🔁 RESTOCK — sizes back in stock"
+    elif find.get("news"):
+        content = "📰 SB Dunk release news"
     elif find.get("store") == "Nike SNKRS":
         content = "🗓️ SNKRS Dunk launch announced"
     elif find.get("feed") == "dunks":
@@ -679,6 +682,13 @@ STORES = [
     {"name": "Nike SNKRS", "url": "https://www.nike.com/launch", "snkrs": True},
     # Nike.com's own Dunk page, newest first — general releases that skip SNKRS.
     {"name": "Nike.com", "url": "https://www.nike.com/w/dunk-shoes-90aohzy7ok?sortby=newest", "nike_wall": True},
+    # Release-news RSS feeds (Nov 2026). Catch SB Dunks that never touch a skate shop's
+    # Shopify store — e.g. Ducks of a Feather "The Zoo" (Flight Club + GOAT only).
+    # Public RSS, read once per run; one alert per release (deduped by style code).
+    {"name": "Sneaker News", "url": "https://sneakernews.com/feed/", "news_feed": True},
+    {"name": "Sneaker Bar Detroit", "url": "https://sneakerbardetroit.com/feed/", "news_feed": True},
+    {"name": "Sneaker Files", "url": "https://www.sneakerfiles.com/feed/", "news_feed": True},
+    {"name": "House of Heat", "url": "https://houseofheat.co/feed", "news_feed": True},
 ]
 
 # ── Cache ─────────────────────────────────────────────────────────────────────
@@ -702,6 +712,7 @@ def load_cache() -> dict:
             "msgs": data.get("msgs", {}),
             "nike_dunk_seeded": data.get("nike_dunk_seeded", False),
             "boutique_reseed": data.get("boutique_reseed", False),
+            "news": data.get("news", []),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
             "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}, "muted": {}, "msgs": {}}
@@ -721,13 +732,19 @@ def save_cache(cache: dict):
         "msgs": cache.get("msgs", {}),
         "nike_dunk_seeded": cache.get("nike_dunk_seeded", False),
         "boutique_reseed": cache.get("boutique_reseed", False),
+        "news": cache.get("news", []),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
 
+# Resale sites and some shops put "SB" after the model: "Dunk Low SB 'The Zoo'",
+# "Nike Dunk Low Pro SB ...". Those used to fall through to "regular Nike Dunk"
+# (Discord only, never emailed).
+_DUNK_SB_RE = re.compile(r"\bdunk\b[^|/\n]{0,25}?\bsb\b", re.I)
+
 def is_sb(text: str) -> bool:
     lower = text.lower()
-    return any(kw in lower for kw in SB_KEYWORDS)
+    return any(kw in lower for kw in SB_KEYWORDS) or bool(_DUNK_SB_RE.search(lower))
 
 def is_dunk(text: str) -> bool:
     return "dunk" in text.lower()
@@ -792,15 +809,25 @@ def is_apparel(title: str, product_type: str = "") -> bool:
     text = f"{title} {product_type}".lower()
     return any(re.search(rf"\b{re.escape(kw)}\b", text) for kw in APPAREL_KEYWORDS)
 
+SHOPIFY_PROBE_TIMEOUT = 15   # the old 6 s probe timed out on slow-but-fine Shopify stores
+
 def is_shopify(url: str, cache: dict) -> bool:
+    """True once a store has served /products.json. Only a YES is cached for good: a NO
+    is re-checked every run. (Before Nov 2026 a single timed-out probe cached NO forever,
+    leaving ~60 stores on homepage scraping that never found a real listing.)"""
     base = url.rstrip("/")
-    if base in cache["shopify"]:
-        return cache["shopify"][base]
+    if cache["shopify"].get(base) is True:
+        return True
     try:
-        r = requests.get(f"{base}/products.json?limit=1", timeout=REQUEST_TIMEOUT, headers=HEADERS)
-        result = r.status_code == 200 and "products" in r.text
+        r = requests.get(f"{base}/products.json?limit=1", timeout=SHOPIFY_PROBE_TIMEOUT, headers=HEADERS)
+        result = r.status_code == 200 and '"products"' in r.text
     except Exception:
         result = False
+    if result and cache["shopify"].get(base) is False:
+        # Was stuck on scraping: its Shopify listings have never been seen, so give it a
+        # fresh silent seed pass instead of alerting its whole catalog as new.
+        cache.setdefault("_reseed", set()).add(base)
+        log.info("%s now reads as Shopify (was cached as not) — silent re-seed this run", base)
     cache["shopify"][base] = result
     return result
 
@@ -809,10 +836,15 @@ def fetch_shopify(store: dict) -> list:
     base = store["url"].rstrip("/")
     while True:
         try:
-            r = requests.get(
-                f"{base}/products.json?limit=250&page={page}",
-                timeout=REQUEST_TIMEOUT, headers=HEADERS,
-            )
+            url = f"{base}/products.json?limit=250&page={page}"
+            try:
+                r = requests.get(url, timeout=REQUEST_TIMEOUT, headers=HEADERS)
+            except requests.RequestException:
+                r = None
+            if r is None or r.status_code in (429, 500, 502, 503, 504):
+                # One slower retry: a single slow page used to drop the rest of the catalog.
+                time.sleep(1.5)
+                r = requests.get(url, timeout=REQUEST_TIMEOUT * 2, headers=HEADERS)
             if r.status_code != 200:
                 if store.get("shopify_only") and page == 1:
                     log.warning(f"{store['name']} products.json HTTP {r.status_code} — skipped this run")
@@ -1042,6 +1074,114 @@ def check_nike_wall(store: dict, cache: dict) -> list:
         log.info(f"  NEW NIKE.COM [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
 
+NEWS_MAX_AGE_DAYS = 3        # ignore older articles (first load, or a feed that lags)
+NEWS_MEMORY       = 300      # recent news alerts remembered for cross-feed de-duping
+_NEWS_LOCK        = threading.Lock()   # feeds are read in parallel; de-dupe across them
+_NEWS_SB_RE = re.compile(r"\b(sb\s+dunk|dunk\s+sb|nike\s+sb)\b|\bdunk\b[^|/\n]{0,25}?\bsb\b", re.I)
+_NEWS_SKIP_RE = re.compile(r"\b(deals?|weekly|this week|recap|ranking|best of|top \d+|giveaway)\b", re.I)
+# Article boilerplate, so "first look" / "release date" / "where to buy" posts about the
+# same shoe reduce to the same words ("ducks feather zoo").
+_NEWS_FILLER = {
+    "release", "releases", "releasing", "released", "date", "dates", "official", "officially", "images",
+    "image", "photos", "first", "look", "closer", "detailed", "where", "buy", "how", "price", "info",
+    "coming", "soon", "here", "almost", "arrives", "arriving", "returns", "return", "drops", "dropping",
+    "drop", "debut", "debuts", "revealed", "reveal", "unveil", "unveils", "surfaces", "surface", "leak",
+    "leaked", "early", "now", "available", "the", "a", "an", "of", "on", "in", "is", "are", "for",
+    "with", "this", "that", "its", "to", "at", "by", "from", "and", "x", "new", "week", "month",
+    "holiday", "spring", "summer", "fall", "winter", "2025", "2026", "2027", "joins", "party",
+    "pair", "pairs", "pack", "collab", "collaboration", "dunk", "dunks", "nike", "sb", "low", "high",
+    "mid", "pro", "og", "qs",
+}
+
+def _news_words(title: str) -> frozenset:
+    return frozenset(w for w in _name_set(title) if w not in _NEWS_FILLER and not w.isdigit())
+
+def _same_release(a: frozenset, b: frozenset) -> bool:
+    small, big = (a, b) if len(a) <= len(b) else (b, a)
+    return len(small) >= 2 and small <= big
+
+def _rss_items(xml: str) -> list:
+    """(title, link, description, pubDate) from an RSS 2.0 feed — stdlib-free, tolerant parsing."""
+    def tag(block, name):
+        m = re.search(rf"<{name}[^>]*>(.*?)</{name}>", block, re.S | re.I)
+        if not m:
+            return ""
+        v = m.group(1).strip()
+        v = re.sub(r"^<!\[CDATA\[(.*)\]\]>$", r"\1", v, flags=re.S)
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", v)).strip()
+    import html as _h
+    return [tuple(_h.unescape(tag(b, n)) for n in ("title", "link", "description", "pubDate"))
+            for b in re.findall(r"<item\b.*?</item>", xml, re.S | re.I)]
+
+def _news_age_days(pub: str) -> float:
+    from email.utils import parsedate_to_datetime
+    try:
+        when = parsedate_to_datetime(pub)
+        return (datetime.now(when.tzinfo) - when).total_seconds() / 86400
+    except Exception:
+        return 0.0
+
+def check_news(store: dict, cache: dict) -> list:
+    """SB Dunk release headlines from a sneaker-news RSS feed. One alert per release: the
+    style code (JJ7565-300) is the identity when the article gives one, else the shoe's
+    name words, so 'first look', 'release date' and 'where to buy' posts alert once."""
+    seen, finds = cache["seen"], []
+    try:
+        r = requests.get(store["url"], headers=HEADERS, timeout=REQUEST_TIMEOUT * 2)
+        if r.status_code != 200:
+            log.warning("%s feed HTTP %s", store["name"], r.status_code)
+            return []
+        items = _rss_items(r.text)
+    except Exception as e:
+        log.warning("%s feed error: %s", store["name"], e)
+        return []
+    if not items:
+        log.warning("%s feed returned no items", store["name"])
+        return []
+    cache.setdefault("_fetched", set()).add(store["name"])
+    news = cache.setdefault("news", [])           # [{"code", "words", "title"}], newest last
+    lock = _NEWS_LOCK
+    for title, link, desc, pub in items:
+        if not (_NEWS_SB_RE.search(title) and is_dunk(title)) or _NEWS_SKIP_RE.search(title):
+            continue
+        if is_womens(title) or is_kids(title) or _news_age_days(pub) > NEWS_MAX_AGE_DAYS:
+            continue
+        m = _STYLE_LOOSE_RE.search(f"{title} {link} {desc}".upper())
+        code = f"{m.group(1)}-{m.group(2)}" if m else None
+        pid = f"{store['name']}::{code or link}"
+        if pid in seen:
+            continue
+        name = _news_words(title)
+        with lock:
+            dup = any((code and e.get("code") == code)
+                      or ((not code or not e.get("code")) and _same_release(name, frozenset(e.get("words", []))))
+                      for e in news)
+            if dup:
+                seen.add(pid)           # same release, other article/feed: remember quietly
+                continue
+            news.append({"code": code, "words": sorted(name), "title": title})
+            del news[:-NEWS_MEMORY]
+        keys = (["s:" + code] if code else []) + [k for k in [title_key(title)] if k] + ["p:" + pid]
+        finds.append({
+            "id":    pid,
+            "store": store["name"],
+            "title": title,
+            "price": "TBA",
+            "sizes": "Release news" + (f" — style {code}" if code else "") + " (see article for date and stores)",
+            "link":  link or store["url"],
+            "image": None,
+            "keys":  keys,
+            "local": False,
+            "apparel": False,
+            "feed":  "dunks",
+            "gr":    False,
+            "sb":    True,
+            "news":  True,
+        })
+    for f in finds:
+        log.info(f"  NEW NEWS [{store['name']}]: {f['title']}")
+    return finds
+
 def live_sizes(find: dict):
     """Sizes buyable right now, from the store's product endpoint (products.json is a cached
     feed and can lag on a hot drop). None = couldn't check; [] = nothing buyable."""
@@ -1100,6 +1240,8 @@ def check_store(store: dict, cache: dict) -> list:
         return check_snkrs(store, cache)
     if store.get("nike_wall"):
         return check_nike_wall(store, cache)
+    if store.get("news_feed"):
+        return check_news(store, cache)
 
     # Boutiques: Shopify feed only, re-tried every run (never cached as "not Shopify",
     # never homepage-scraped — scraping them produced duplicate, priceless junk alerts).
@@ -1297,6 +1439,9 @@ def run():
     # existing catalog — only genuinely new drops alert from its second check on.
     checked_names = {store["name"] for store in STORES}
     fetched = cache.pop("_fetched", set())
+    reseed = cache.pop("_reseed", set())
+    if reseed:
+        cache["seeded_stores"] -= {s["name"] for s in STORES if s["url"].rstrip("/") in reseed}
     new_stores = checked_names - cache["seeded_stores"]
     if new_stores & fetched:
         log.info("Silently seeding %d new store(s): %s", len(new_stores & fetched), ", ".join(sorted(new_stores & fetched)))
@@ -1456,7 +1601,7 @@ def backfill_digest(days: int):
 
     def scan(store):
         out = []
-        if not is_shopify(store["url"], cache):
+        if store.get("news_feed") or store.get("snkrs") or store.get("nike_wall") or not is_shopify(store["url"], cache):
             return out
         for p in fetch_shopify(store):
             title = p.get("title", "")

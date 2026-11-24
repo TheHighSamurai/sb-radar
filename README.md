@@ -23,6 +23,11 @@ Actions secrets, never in the code.
   back to the repo after each run, so only genuinely new listings alert.
 - First run seeds the cache silently (no alert flood for things already
   listed) — only drops that appear *after* that count.
+- Also reads a few sneaker-news RSS feeds (Sneaker News, Sneaker Bar Detroit,
+  Sneaker Files, House of Heat) for SB Dunk release headlines, so drops that
+  never hit a skate shop's site (e.g. Flight Club / GOAT exclusives like the
+  Ducks of a Feather "The Zoo") still alert. One alert per release, deduped by
+  style code across feeds.
 - Local San Diego / North County shops are flagged 📍 **LOCAL** in the alert
   since those may only carry stock in-store.
 
@@ -70,6 +75,12 @@ Open `tracker.py`, find `STORES = [`, and add:
 {"name": "Store Name", "url": "https://storename.com"},
 ```
 For local SD/North County shops, add `"local_sd": True`.
+
+## Tests
+
+Offline regression tests (no network, no alerts) cover the drops that were
+missed in Nov 2026: `python -m unittest discover -s tests -v`. They also run
+on every pull request (`.github/workflows/tests.yml`).
 
 ## Troubleshooting
 
