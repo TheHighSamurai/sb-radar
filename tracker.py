@@ -13,6 +13,7 @@ Nike SB Dunk Tracker — SB Radar
 import os
 import json
 import re
+import html
 import time
 import smtplib
 import logging
@@ -161,8 +162,21 @@ _STYLE_RE   = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4}-\d{3})(?!\d)")
 _TITLE_STOP = {"nike", "sb", "mens", "men", "s", "shoe", "shoes"}
 TITLE_KEY_MIN_TOKENS = 5   # a bare "Dunk Low Pro" must never mute every colorway
 
+_SIZE_IN_TITLE_RE = re.compile(r"\b(?:size|sz)\s*\d{1,2}(?:\.\d)?\b")
+
+def clean_title(title: str) -> str:
+    """Undo HTML entities (some shops' pages give '&amp;quot;Muni Fast Pass&amp;quot;') and drop a
+    'Size 7.5' that one listing per size puts in its name, so the same shoe reads the same."""
+    t = title or ""
+    for _ in range(2):                      # "&amp;quot;" is escaped twice
+        t2 = html.unescape(t)
+        if t2 == t:
+            break
+        t = t2
+    return _SIZE_IN_TITLE_RE.sub(" ", t.lower()).strip()
+
 def _title_tokens(title: str) -> list:
-    return [t for t in re.sub(r"[^a-z0-9]+", " ", (title or "").lower().replace("\u2019", "'").replace("'", "")).split()
+    return [t for t in re.sub(r"[^a-z0-9]+", " ", clean_title(title).replace("\u2019", "'").replace("'", "")).split()
             if t not in _TITLE_STOP]
 
 def title_key(title: str):
@@ -223,34 +237,99 @@ def _full_name(title: str, link: str = "") -> frozenset:
         return t
     return t | _name_set(handle_text(link))
 
+# Words a store may add to or leave out of a model's name ("Zoom Blazer Mid" vs "Blazer Mid",
+# "Air Max Ishod" vs "Ishod"). Ignored on the SHORTER title only, so they can't hide a colorway.
+_MODEL_FILLER = {"zoom", "air", "max", "shoes", "shoe", "wair", "suede"}
+# Model families: two titles naming different families are never the same shoe, however
+# much of the colorway they share ("Dunk Low Black Spruce" vs "Blazer Mid Black Spruce").
+_FAMILIES = {
+    "dunk": "dunk", "blazer": "blazer", "ishod": "ishod", "nyjah": "nyjah", "janoski": "janoski",
+    "tennis": "tennis", "ps8": "ps8", "pogo": "pogo", "vertebrae": "vertebrae", "leo": "leo",
+    "rodriguez": "prod", "chron": "chron", "bruin": "bruin", "adversary": "adversary", "kobe": "kobe",
+    "trainer": "trainer", "code": "code58", "af1": "af1",
+}
+_HEIGHTS = ("low", "mid", "high")
+
+def _families(words) -> frozenset:
+    w = set(words)
+    fam = {_FAMILIES[x] for x in w if x in _FAMILIES}
+    if "force" in w:
+        fam.add("force58" if "58" in w else "af1")
+    return frozenset(fam)
+
+def _height(title: str):
+    found = {h for h in _HEIGHTS if re.search(rf"\b{h}\b", clean_title(title))}
+    return found.pop() if len(found) == 1 else None
+
+def _colorway(words_in_order) -> tuple:
+    """Basic color words in title order, repeats collapsed: 'Black/White' -> ('black', 'white')."""
+    out = []
+    for w in words_in_order:
+        w = _NAME_NORMAL.get(w, w)
+        if w in _COLOR_WORDS and (not out or out[-1] != w):
+            out.append(w)
+    return tuple(out)
+
 def names_match(a, b) -> bool:
-    """a / b: a title string, or an already-built name set (title + URL words)."""
+    """a / b: a title string, or an already-built name set (title + URL words).
+    Same shoe when one name's words are all in the other's (model filler words like
+    'zoom' allowed to be missing from the shorter one), the shared words include something
+    beyond model names / basic colors, and the two don't name different model families."""
     sa = a if isinstance(a, frozenset) else _name_set(a)
     sb = b if isinstance(b, frozenset) else _name_set(b)
+    fa, fb = _families(sa), _families(sb)
+    if fa and fb and not (fa & fb):
+        return False
     for small, big in ((sa, sb), (sb, sa)):
-        if len(small) >= NAME_MATCH_MIN_TOKENS and small <= big \
-                and any(t not in _GENERIC_WORDS and not t.isdigit() for t in small):
+        core = small - (_MODEL_FILLER - big)
+        if len(core) >= NAME_MATCH_MIN_TOKENS and core <= big \
+                and any(t not in _GENERIC_WORDS and not t.isdigit() for t in core):
             return True
     return False
 
+def plain_colorway_match(title_a: str, words_a, title_b: str, words_b) -> bool:
+    """Shoes whose colorway is only basic colors ('Blazer Mid Black/White') have no
+    distinctive word for names_match. Count them the same shoe when the model family,
+    the height, SB-ness and the ordered colors all agree and nothing else distinctive differs."""
+    fam_a, fam_b = _families(words_a), _families(words_b)
+    if not fam_a or fam_a != fam_b:
+        return False
+    if _height(title_a) != _height(title_b) or is_sb(clean_title(title_a)) != is_sb(clean_title(title_b)):
+        return False
+    ca, cb = _colorway(words_a), _colorway(words_b)
+    if len(ca) < 2 or ca != cb:
+        return False
+    extra = lambda ws: {w for w in ws if w not in _GENERIC_WORDS and w not in _MODEL_FILLER
+                        and w not in _NAME_DROP and not w.isdigit()}
+    return extra(words_a) == extra(words_b)
+
 _STYLE_LOOSE_RE = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4})-?(\d{3})(?!\d)")   # also "IR0460001"
+_STYLE_OLD_RE   = re.compile(r"(?<![A-Z0-9])(\d{6})-(\d{3})(?!\d)")                # older codes, "864349-007"
+
+def _codes_in(text: str, old_format: bool = False) -> list:
+    t = (text or "").upper()
+    out = [f"{m.group(1)}-{m.group(2)}" for m in _STYLE_LOOSE_RE.finditer(t)]
+    if old_format and not out:
+        out = [f"{m.group(1)}-{m.group(2)}" for m in _STYLE_OLD_RE.finditer(t)]
+    return out
 
 def style_code(p: dict):
     """Nike style code (e.g. HQ1625-201) for a Shopify product: from the variant SKUs first,
     else from tags, the URL handle, or the description — many stores leave SKUs blank."""
     codes = Counter()
     for v in p.get("variants", []) or []:
-        m = _STYLE_LOOSE_RE.search((v.get("sku") or "").upper())
-        if m:
-            codes[f"{m.group(1)}-{m.group(2)}"] += 1
+        for c in _codes_in(v.get("sku"))[:1]:
+            codes[c] += 1
     if not codes:
         tags = p.get("tags") or []
         tags = ",".join(tags) if isinstance(tags, list) else str(tags)
-        handle = p.get("handle") or ""             # e.g. "nike-hf5441-107-dunk-low-..."
+        handle = p.get("handle") or ""             # e.g. "nike-hf5441-107-dunk-low-..." or "...-hm8517400-..."
         body = re.sub(r"<[^>]+>", " ", p.get("body_html") or "")
-        for text in (tags, handle, body):          # first source that has one wins
-            for m in _STYLE_RE.finditer(text.upper()):
-                codes[m.group(1)] += 1
+        # first source that has one wins; the title and handle are short, so an undashed
+        # code there ("AF1 Navy Black HM8517400") is safe to read; old 6-digit codes too
+        for text, old_fmt in ((p.get("title") or "", True), (tags, False), (handle, True), (body, False)):
+            for c in _codes_in(text, old_fmt):
+                codes[c] += 1
             if codes:
                 break
     return codes.most_common(1)[0][0] if codes else None
@@ -276,12 +355,26 @@ def is_muted(find: dict, cache: dict) -> bool:
         return True
     title, link = find.get("title", ""), find.get("link", "")
     mine = {_name_set(title), _full_name(title, link)}
-    theirs = set()
+    my_words = _plain_words(title, link)
+    seen_titles = set()
     for e in muted.values():
-        theirs.add(_name_set(e.get("title", "")))
-        if e.get("link"):
-            theirs.add(_full_name(e.get("title", ""), e["link"]))
-    return any(names_match(a, b) for a in mine for b in theirs)
+        t, l = e.get("title", ""), e.get("link", "")
+        if (t, l) in seen_titles:
+            continue                      # one mute stores 2-3 keys with the same title
+        seen_titles.add((t, l))
+        theirs = {_name_set(t)} | ({_full_name(t, l)} if l else set())
+        if any(names_match(a, b) for a in mine for b in theirs):
+            return True
+        if plain_colorway_match(title, my_words, t, _plain_words(t, l)):
+            return True
+    return False
+
+def _plain_words(title: str, link: str = "") -> list:
+    """Title words in order (URL words appended when the title names no colorway)."""
+    words = [_NAME_NORMAL.get(w, w) for w in _title_tokens(title)]
+    if not _colorway(words) and link:
+        words += [_NAME_NORMAL.get(w, w) for w in _title_tokens(handle_text(link))]
+    return words
 
 def _bot(method: str, path: str, **kw):
     r = requests.request(method, DISCORD_API + path, headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}"}, timeout=10, **kw)
@@ -876,7 +969,7 @@ def fetch_html(store: dict) -> list:
             )
             candidates += re.findall(r'<h[123][^>]*>([^<]{5,100})</h[123]>', html, re.IGNORECASE)
             for c in candidates:
-                c = c.strip()
+                c = html.unescape(html.unescape(c)).strip()
                 if feed_for(c) and not is_apparel(c):
                     found.append({
                         "id":    f"{store['name']}::html::{c.lower()[:60]}",
@@ -906,16 +999,39 @@ def format_sizes(product: dict) -> str:
         except Exception: return 999
     return ", ".join(sorted(set(available), key=key))
 
-WATCH_SIZES = ("11", "11.5")          # email-only restock watch (Dunks)
-OOS_RUNS = 3                          # an item must read unavailable this many runs in a row (~15 min) to count as sold out
-_SIZE_RE = re.compile(r"^\s*(?:us|m|men'?s)?\s*(11(?:\.0+)?|11\.5)\s*(?:us|m)?\s*$", re.I)
+def _watch_sizes(raw):
+    """Men's sizes that restock emails are for. Set WATCH_SIZES (e.g. "11.5" or "11,11.5");
+    "none" turns restock emails off entirely. Unset or blank keeps the default."""
+    raw = (raw or "").strip()
+    if not raw:
+        raw = "11,11.5"
+    if raw.lower() in ("none", "off", "0"):
+        return ()
+    out = []
+    for x in raw.split(","):
+        try:
+            v = float(x.strip())
+        except ValueError:
+            continue
+        out.append(str(int(v)) if v == int(v) else str(v))
+    return tuple(out)
 
-def watched_label(label: str):
-    """Map a size label to '11' / '11.5' (men's only), else None."""
-    m = _SIZE_RE.match(label or "")
+WATCH_SIZES = _watch_sizes(os.environ.get("WATCH_SIZES"))   # restock emails (Dunks) only in these sizes
+OOS_RUNS = 3                          # an item must read unavailable this many runs in a row (~15 min) to count as sold out
+_SIZE_RE   = re.compile(r"^\s*(?:us|m|men'?s)?\s*(\d{1,2}(?:\.\d+)?)\s*(?:us|m)?\s*$", re.I)
+_SIZE_MW_RE = re.compile(r"^\s*(?:us\s*)?m(?:en'?s)?\s*(\d{1,2}(?:\.\d+)?)\s*(?:/|-|,)\s*w", re.I)   # "M 11 / W 12.5"
+
+def watched_label(label: str, sizes=None):
+    """Map a men's size label to one of the watched sizes ('11', '11.5'), else None."""
+    sizes = WATCH_SIZES if sizes is None else sizes
+    m = _SIZE_RE.match(label or "") or _SIZE_MW_RE.match(label or "")
     if not m:
         return None
-    return "11.5" if float(m.group(1)) == 11.5 else "11"
+    v = float(m.group(1))
+    for w in sizes:
+        if float(w) == v:
+            return w
+    return None
 
 def _num(l):
     try: return float(re.sub(r"[^\d.]", "", l) or 999)
@@ -1331,6 +1447,8 @@ def check_store(store: dict, cache: dict) -> list:
                         "local": store.get("local_sd", False),
                         "apparel": False,
                         "flip":  True,
+                        # watched sizes in stock right now: the email only goes out if one is
+                        "watch_avail": sorted({watched_label(l) for l in labels if watched_label(l)}, key=float),
                     })
                 elif size_back:
                     finds.append({
@@ -1544,6 +1662,13 @@ def run():
 
     # Email = Nike SB Dunks only (regular Nike Dunks go to Discord, not email).
     dunk_finds = [f for f in shoe_finds if f.get("feed") == "dunks" and f.get("sb") and not f.get("restock")]
+    # "Now available" means a listing went from nothing buyable to buyable, usually a restock.
+    # Email it only when one of his sizes is among what came back (Discord still gets it).
+    _wrong_size = [f for f in dunk_finds if f.get("flip") and not f.get("watch_avail")]
+    if _wrong_size:
+        log.info("Not emailing %d now-available listing(s) without size %s: %s", len(_wrong_size),
+                 "/".join(WATCH_SIZES) or "(restock emails off)", "; ".join(f["title"][:40] for f in _wrong_size))
+        dunk_finds = [f for f in dunk_finds if f not in _wrong_size]
     if dunk_finds:
         n_live = sum(1 for f in dunk_finds if f.get("flip"))
         subject = f"SB Radar: {len(dunk_finds)} new SB Dunk(s) detected"
@@ -1555,7 +1680,7 @@ def run():
         except Exception as e:
             log.error("Email alert failed: %s", e)
     else:
-        log.info("No Dunks this run (%d non-Dunk SB shoe find(s) -> #sbs) — email skipped.", len(shoe_finds))
+        log.info("No SB Dunk email this run (%d other shoe find(s) went to Discord only).", len(shoe_finds))
 
     # Alerts are out — now it is safe to mark everything seen / record stock state.
     _commit_state()

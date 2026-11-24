@@ -47,6 +47,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           BACKFILL_DAYS: ${{ github.event.inputs.backfill_days || '0' }}
+          WATCH_SIZES: ${{ vars.WATCH_SIZES }}   # optional repo variable; blank = 11,11.5
         run: python tracker.py
 
       - name: Commit updated cache

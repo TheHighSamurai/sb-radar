@@ -68,6 +68,22 @@ on the default branch. You can also trigger a run manually from the
 **Actions** tab → **SB Radar Tracker** → **Run workflow**, useful for
 confirming everything's wired up without waiting for the next 5-minute tick.
 
+### Restock email size (optional)
+Restock and "now available" emails only go out when one of your sizes is in
+stock. The default is men's 11 and 11.5. To change it, add a repository
+**variable** (Settings → Secrets and variables → Actions → Variables) named
+`WATCH_SIZES`, e.g. `11.5` or `11,11.5`. Set it to `none` to get no restock
+emails at all. New drops are emailed whatever the size; Discord still gets
+every restock.
+
+## Rejecting a shoe
+
+React 🚫 on a Discord alert and that shoe is muted in Discord and email. The
+same shoe at other shops is matched by its Nike style code (dashed, undashed or
+old 6-digit) or by its name: one shop leaving out "Zoom", HTML-coded quotes,
+"Size 7.5" in a title, and plain colorways like Black/White all still match.
+A different model, height or color order does not.
+
 ## Adding more stores
 
 Open `tracker.py`, find `STORES = [`, and add:
@@ -79,7 +95,8 @@ For local SD/North County shops, add `"local_sd": True`.
 ## Tests
 
 Offline regression tests (no network, no alerts) cover the drops that were
-missed in Nov 2026: `python -m unittest discover -s tests -v`. They also run
+missed in Nov 2026, rejected shoes that came back, and restock emails in
+the wrong size: `python -m unittest discover -s tests -v`. They also run
 on every pull request (`.github/workflows/tests.yml`).
 
 ## Troubleshooting
