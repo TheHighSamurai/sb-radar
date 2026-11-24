@@ -2442,6 +2442,7 @@
 "Doubler Kicks::15438362345757",
 "Doubler Kicks::15438368637213",
 "Doubler Kicks::15554065629469",
+"Doubler Kicks::15565119815965",
 "Doubler Kicks::8255938953501",
 "Doubler Kicks::8271036023069",
 "Doubler Kicks::8271037727005",
@@ -17442,7 +17443,8 @@
 "Brooklyn Projects::16496534388817": true,
 "Premier MI::10457772195905": true,
 "Extra Butter::8725539160247": true,
-"Extra Butter::8723600081079": true
+"Extra Butter::8723600081079": true,
+"Doubler Kicks::15565119815965": true
 },
 "oos": {
 "Seasons Skate Shop::10415770403074": 1,
@@ -59055,6 +59057,20 @@
 },
 "Extra Butter::8723600081079": {
 "l": [
+"8",
+"8.5",
+"9",
+"9.5"
+],
+"m": {}
+},
+"Doubler Kicks::15565119815965": {
+"l": [
+"10",
+"10.5",
+"11",
+"11.5",
+"12",
 "8",
 "8.5",
 "9",
