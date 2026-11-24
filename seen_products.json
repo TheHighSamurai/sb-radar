@@ -11739,7 +11739,7 @@
 "Rose Street Encinitas::6871567466695": true,
 "Rose Street Encinitas::8554704765127": true,
 "Rose Street Encinitas::8511205376199": false,
-"Rose Street Encinitas::8309423767751": true,
+"Rose Street Encinitas::8309423767751": false,
 "Rose Street Encinitas::8364176244935": true,
 "Rose Street Encinitas::8226022621383": true,
 "Rose Street Encinitas::8120128209095": true,
@@ -17478,7 +17478,7 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Rose Street Encinitas::8309423767751": 2
+"Doubler Kicks::9713396351261": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -24973,12 +24973,8 @@
 "m": {}
 },
 "Rose Street Encinitas::8309423767751": {
-"l": [
-"10.5"
-],
-"m": {
-"10.5": 2
-}
+"l": [],
+"m": {}
 },
 "Rose Street Encinitas::8364176244935": {
 "l": [
@@ -46214,7 +46210,9 @@
 "l": [
 "Medium"
 ],
-"m": {}
+"m": {
+"Medium": 1
+}
 },
 "Rock City Kicks::7657326870686": {
 "l": [
@@ -58432,12 +58430,9 @@
 },
 "Lapstone & Hammer::10436526374969": {
 "l": [
-"6",
-"8"
+"6"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "Bluetile Skateboards::15499331240162": {
 "l": [
