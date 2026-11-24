@@ -15140,7 +15140,7 @@
 "Overload::10128778526967": true,
 "Overload::10129113481463": true,
 "Unheardof::10809753534629": true,
-"Doubler Kicks::9713396351261": true,
+"Doubler Kicks::9713396351261": false,
 "Rock City Kicks::7657326870686": true,
 "Val Surf::15277814612128": true,
 "Pawnshop Skate::15915379753120": true,
@@ -17477,8 +17477,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Doubler Kicks::9713396351261": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -46207,12 +46206,8 @@
 "m": {}
 },
 "Doubler Kicks::9713396351261": {
-"l": [
-"Medium"
-],
-"m": {
-"Medium": 2
-}
+"l": [],
+"m": {}
 },
 "Rock City Kicks::7657326870686": {
 "l": [
