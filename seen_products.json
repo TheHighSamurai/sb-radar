@@ -12882,7 +12882,7 @@
 "Geometric Skate Shop::9925522129171": true,
 "Geometric Skate Shop::9922446950675": true,
 "Geometric Skate Shop::9715498287379": true,
-"Geometric Skate Shop::9811643990291": true,
+"Geometric Skate Shop::9811643990291": false,
 "Geometric Skate Shop::9788037693715": true,
 "Geometric Skate Shop::9776527704339": true,
 "Geometric Skate Shop::9720048058643": true,
@@ -17441,8 +17441,7 @@
 "Overload::9734418956535": 2,
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
-"Drift House::9327544467711": 1,
-"Geometric Skate Shop::9811643990291": 2
+"Drift House::9327544467711": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -31765,22 +31764,8 @@
 "m": {}
 },
 "Geometric Skate Shop::9811643990291": {
-"l": [
-"10",
-"10.5",
-"14",
-"8.5",
-"9",
-"9.5"
-],
-"m": {
-"9": 2,
-"8.5": 2,
-"14": 2,
-"10.5": 2,
-"10": 2,
-"9.5": 2
-}
+"l": [],
+"m": {}
 },
 "Geometric Skate Shop::9788037693715": {
 "l": [
