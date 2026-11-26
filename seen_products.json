@@ -15278,7 +15278,7 @@
 "Skaters Advocate::8776259829994": true,
 "Skaters Advocate::8776248688874": true,
 "Humidity Skateshop::10404518887715": true,
-"NJ Skateshop::8678870777890": true,
+"NJ Skateshop::8678870777890": false,
 "PLA Folsom::15387924594846": true,
 "PLA Folsom::15387939274910": true,
 "Theory Skate Shop::15417518424251": true,
@@ -17299,7 +17299,7 @@
 "Pharmacy Temecula::7679396413522": true,
 "Theory Skate Shop::15435653513403": true,
 "510 Skateboarding::15414412836969": false,
-"PLA Folsom::15408364814494": true,
+"PLA Folsom::15408364814494": false,
 "Travel Skate Shop::15436563185741": true,
 "Pawnshop Skate::15934128914592": true,
 "35th North::15439331688484": true,
@@ -17631,9 +17631,7 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Humidity Skateshop::8583152009507": 1,
-"PLA Folsom::15408364814494": 2,
-"NJ Skateshop::8678870777890": 2
+"Humidity Skateshop::8583152009507": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -42101,16 +42099,13 @@
 },
 "Exodus Rideshop::8193892221046": {
 "l": [
-"M 10 / W 11.5",
 "M 10.5 / W 12",
 "M 11 / W 12.5",
 "M 12 / W 13.5",
 "M 13 / W 14.5",
 "M 8.5 / W 10"
 ],
-"m": {
-"M 10 / W 11.5": 2
-}
+"m": {}
 },
 "Exodus Rideshop::8193866268790": {
 "l": [
@@ -46951,12 +46946,8 @@
 "m": {}
 },
 "NJ Skateshop::8678870777890": {
-"l": [
-"8"
-],
-"m": {
-"8": 2
-}
+"l": [],
+"m": {}
 },
 "Overload::10157022773495": {
 "l": [
@@ -56150,12 +56141,8 @@
 "m": {}
 },
 "PLA Folsom::15408364814494": {
-"l": [
-"11"
-],
-"m": {
-"11": 2
-}
+"l": [],
+"m": {}
 },
 "Travel Skate Shop::15436563185741": {
 "l": [
@@ -57622,7 +57609,7 @@
 "9.5"
 ],
 "m": {
-"11.5": 1
+"11.5": 2
 }
 },
 "People Skate and Snowboard::15476198932695": {
