@@ -7723,6 +7723,7 @@
 "Rock City Kicks::15443118358686",
 "Rock City Kicks::15455413076126",
 "Rock City Kicks::15506503729310",
+"Rock City Kicks::15506698567838",
 "Rock City Kicks::7034123714718",
 "Rock City Kicks::7101368500382",
 "Rock City Kicks::7156800127134",
@@ -11107,6 +11108,15 @@
 "sizes": "None purchasable yet \u2014 will alert when sizes unlock",
 "link": "https://chane.com/products/nike-sb-peak-skate-beanie-black",
 "image": "https://cdn.shopify.com/s/files/1/1310/3457/files/studioshots_d95ccec6-2627-4993-811e-203e735e9bde.png?v=1795642128",
+"local": false
+},
+{
+"store": "Rock City Kicks",
+"title": "Nike SB Yuto Horigome Short Sleeve Skate Jersey (Black/Anthracite)",
+"price": "95.00",
+"sizes": "L, M, XL",
+"link": "https://rockcitykicks.com/products/nike-sb-yuto-short-sleeve-skate-jersey-black-anthracite",
+"image": "https://cdn.shopify.com/s/files/1/0208/4764/files/NikeSBYutoHorigomeShortSleeveSkateJersey_Black_Anthracite_IM5465-0101.jpg?v=1795651730",
 "local": false
 }
 ],
@@ -38225,14 +38235,11 @@
 "LB Skate::9181519151260": {
 "l": [
 "10",
-"10.5",
 "11.5",
 "9",
 "9.5"
 ],
-"m": {
-"10.5": 2
-}
+"m": {}
 },
 "LB Skate::9166470185116": {
 "l": [
