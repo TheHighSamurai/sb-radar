@@ -17609,7 +17609,9 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Humidity Skateshop::8583152009507": 1
+"Humidity Skateshop::8583152009507": 1,
+"Xtreme::7444254785630": 1,
+"Xtreme::7231166873694": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -37354,7 +37356,7 @@
 "9"
 ],
 "m": {
-"9": 1
+"9": 2
 }
 },
 "Xtreme::7567661531230": {
@@ -37467,7 +37469,9 @@
 "l": [
 "13"
 ],
-"m": {}
+"m": {
+"13": 1
+}
 },
 "Xtreme::7444254031966": {
 "l": [],
@@ -37508,7 +37512,9 @@
 "7",
 "8"
 ],
-"m": {}
+"m": {
+"7": 1
+}
 },
 "Xtreme::7385267601502": {
 "l": [],
@@ -37593,7 +37599,9 @@
 "l": [
 "9.5"
 ],
-"m": {}
+"m": {
+"9.5": 1
+}
 },
 "Xtreme::7229432037470": {
 "l": [],
@@ -37702,7 +37710,8 @@
 "7",
 "7.5",
 "8",
-"9"
+"9",
+"9.5"
 ],
 "m": {}
 },
@@ -37874,7 +37883,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"6.5": 1
+}
 },
 "Xtreme::6771870957662": {
 "l": [],
@@ -57649,9 +57660,9 @@
 "9.5"
 ],
 "m": {
-"9.5": 1,
-"12": 1,
-"10.5": 1
+"9.5": 2,
+"12": 2,
+"10.5": 2
 }
 },
 "Brooklyn Projects::16448304316497": {
@@ -61509,6 +61520,17 @@
 "title": "Nike Dunk Low Retro (Gold Suede/Black-Pale Ivory)",
 "t": 1795651563,
 "link": "https://rockcitykicks.com/products/nike-dunk-low-retro-gold-suede-black-pale-ivory"
+},
+"1575314168389697649": {
+"cid": "1562917305531506738",
+"keys": [
+"s:FD6757-301",
+"t:zoom janoski og pacific moss black pacific moss black",
+"p:Xtreme::7147532845150"
+],
+"title": "Nike SB Zoom Janoski OG+ Pacific Moss/Black/Pacific Moss/Black",
+"t": 1795654567,
+"link": "https://xbusa.com/products/nike-sb-zoom-janoski-og-pacific-moss-black-pacific-moss-black"
 }
 },
 "nike_dunk_seeded": true,
