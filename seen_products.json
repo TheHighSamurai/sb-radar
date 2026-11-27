@@ -12661,7 +12661,7 @@
 "Geometric Skate Shop::10507864998163": true,
 "Geometric Skate Shop::10051863871763": true,
 "Geometric Skate Shop::10446460584211": true,
-"Geometric Skate Shop::10294252175635": true,
+"Geometric Skate Shop::10294252175635": false,
 "Geometric Skate Shop::10488144167187": true,
 "Geometric Skate Shop::10472320663827": false,
 "Geometric Skate Shop::10479355101459": true,
@@ -17260,8 +17260,7 @@
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
 "Humidity Skateshop::8583152009507": 1,
-"Oneness::10438106873940": 2,
-"Geometric Skate Shop::10294252175635": 2
+"Oneness::10438106873940": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -24438,7 +24437,9 @@
 "8",
 "8.5"
 ],
-"m": {}
+"m": {
+"11.5": 1
+}
 },
 "Coureur Goods::9563233321215": {
 "l": [
@@ -24491,12 +24492,9 @@
 "l": [
 "12",
 "6",
-"7",
-"8"
+"7"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "Coureur Goods::9092005560575": [
 "XXL",
@@ -31138,12 +31136,8 @@
 "m": {}
 },
 "Geometric Skate Shop::10294252175635": {
-"l": [
-"10"
-],
-"m": {
-"10": 2
-}
+"l": [],
+"m": {}
 },
 "Geometric Skate Shop::10488144167187": {
 "l": [
@@ -46544,7 +46538,7 @@
 "9.5"
 ],
 "m": {
-"8.5": 1
+"8.5": 2
 }
 },
 "Seasons Skate Shop::10427835023618": {
