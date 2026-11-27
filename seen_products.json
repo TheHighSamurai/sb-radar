@@ -11452,7 +11452,7 @@
 "NJ Skateshop::8399742435362": true,
 "NJ Skateshop::8681605857314": true,
 "NJ Skateshop::8678945685538": true,
-"NJ Skateshop::8493856292898": true,
+"NJ Skateshop::8493856292898": false,
 "NJ Skateshop::8648172208162": false,
 "NJ Skateshop::8563372556322": false,
 "NJ Skateshop::8544910180386": true,
@@ -17287,7 +17287,7 @@
 "Richmond Hood::15777797374116": true,
 "Innercity Skate::15454967464215": true,
 "Val Surf::15934311497888": true,
-"NJ Skateshop::15477152415778": true,
+"NJ Skateshop::15477152415778": false,
 "Pastime Skateshop::15934439686304": true,
 "Pastime Skateshop::15934441029792": true,
 "After Hours Skateshop::10374586007807": true,
@@ -17632,9 +17632,7 @@
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
 "Humidity Skateshop::8583152009507": 1,
-"Oneness::10438106873940": 2,
-"NJ Skateshop::15477152415778": 2,
-"NJ Skateshop::8493856292898": 2
+"Oneness::10438106873940": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -20811,21 +20809,15 @@
 },
 "NJ Skateshop::15396784046114": {
 "l": [
-"8.5",
 "9"
 ],
-"m": {
-"8.5": 2
-}
+"m": {}
 },
 "NJ Skateshop::8399742435362": {
 "l": [
-"8",
 "8.5"
 ],
-"m": {
-"8": 2
-}
+"m": {}
 },
 "NJ Skateshop::8681605857314": {
 "l": [
@@ -20858,12 +20850,8 @@
 "m": {}
 },
 "NJ Skateshop::8493856292898": {
-"l": [
-"6"
-],
-"m": {
-"6": 2
-}
+"l": [],
+"m": {}
 },
 "NJ Skateshop::8648172208162": {
 "l": [],
@@ -56001,14 +55989,8 @@
 "m": {}
 },
 "NJ Skateshop::15477152415778": {
-"l": [
-"10",
-"9.5"
-],
-"m": {
-"9.5": 2,
-"10": 2
-}
+"l": [],
+"m": {}
 },
 "Pastime Skateshop::15934439686304": {
 "l": [
@@ -57243,12 +57225,9 @@
 "l": [
 "6.5",
 "7.5",
-"8",
-"9"
+"8"
 ],
-"m": {
-"9": 2
-}
+"m": {}
 },
 "35th North::15487947374628": {
 "l": [
