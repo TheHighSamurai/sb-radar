@@ -11483,7 +11483,7 @@
 "The Block Skate Supply::9311163515095": false,
 "The Block Skate Supply::9311157289175": true,
 "The Block Skate Supply::9311155093719": false,
-"The Block Skate Supply::9307923939543": true,
+"The Block Skate Supply::9307923939543": false,
 "The Block Skate Supply::9278340235479": false,
 "The Block Skate Supply::9278244258007": true,
 "The Block Skate Supply::9254974947543": true,
@@ -17260,8 +17260,7 @@
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
 "Humidity Skateshop::8583152009507": 1,
-"Oneness::10438106873940": 2,
-"The Block Skate Supply::9307923939543": 2
+"Oneness::10438106873940": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -18438,7 +18437,7 @@
 "9.5"
 ],
 "m": {
-"9.5": 1
+"9.5": 2
 }
 },
 "PLA Folsom::7638901915806": {
@@ -21916,12 +21915,8 @@
 "m": {}
 },
 "The Block Skate Supply::9307923939543": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "The Block Skate Supply::9278340235479": {
 "l": [],
@@ -22680,7 +22675,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"9": 1
+}
 },
 "Humidity Skateshop::10397185409315": {
 "l": [
@@ -25867,7 +25864,7 @@
 "9.5"
 ],
 "m": {
-"11": 1
+"11": 2
 }
 },
 "Rock City Kicks::8859688173726": {
@@ -57666,7 +57663,6 @@
 "Innercity Skate::15488600473879": {
 "l": [
 "10.5",
-"11",
 "12",
 "13",
 "4",
@@ -57679,9 +57675,7 @@
 "9",
 "9.5"
 ],
-"m": {
-"11": 2
-}
+"m": {}
 },
 "Val Surf::15967994577056": {
 "l": [
