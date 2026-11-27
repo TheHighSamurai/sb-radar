@@ -15883,7 +15883,7 @@
 "Undefeated::6702658191621": false,
 "Undefeated::6702659272965": true,
 "Undefeated::6702551990533": true,
-"Undefeated::6702538850565": true,
+"Undefeated::6702538850565": false,
 "Undefeated::6701743341829": true,
 "Undefeated::6702733754629": true,
 "Undefeated::6702697513221": true,
@@ -17631,8 +17631,7 @@
 "Overload::9613020889335": 2,
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
-"Humidity Skateshop::8583152009507": 1,
-"Undefeated::6702538850565": 2
+"Humidity Skateshop::8583152009507": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -49481,12 +49480,8 @@
 "m": {}
 },
 "Undefeated::6702538850565": {
-"l": [
-"-"
-],
-"m": {
-"-": 2
-}
+"l": [],
+"m": {}
 },
 "Undefeated::6701743341829": {
 "l": [
