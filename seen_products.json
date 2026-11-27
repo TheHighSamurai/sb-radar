@@ -16912,7 +16912,7 @@
 "Richmond Hood::15777797374116": true,
 "Innercity Skate::15454967464215": true,
 "Val Surf::15934311497888": true,
-"NJ Skateshop::15477152415778": false,
+"NJ Skateshop::15477152415778": true,
 "Pastime Skateshop::15934439686304": true,
 "Pastime Skateshop::15934441029792": true,
 "After Hours Skateshop::10374586007807": true,
@@ -34870,12 +34870,9 @@
 "Deli Skate Supply::9508150411513": {
 "l": [
 "10.5",
-"12",
 "9"
 ],
-"m": {
-"12": 2
-}
+"m": {}
 },
 "Deli Skate Supply::9508148707577": {
 "l": [
@@ -46990,7 +46987,9 @@
 "8.5",
 "9.5"
 ],
-"m": {}
+"m": {
+"10": 1
+}
 },
 "Rock City Kicks::8523690999966": {
 "a": "5.5W|6W",
@@ -55483,7 +55482,9 @@
 "m": {}
 },
 "NJ Skateshop::15477152415778": {
-"l": [],
+"l": [
+"8"
+],
 "m": {}
 },
 "Pastime Skateshop::15934439686304": {
