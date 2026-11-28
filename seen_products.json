@@ -1862,6 +1862,8 @@
 "Coureur Goods::10410456809727",
 "Coureur Goods::10427726561535",
 "Coureur Goods::10452996555007",
+"Coureur Goods::10476459884799",
+"Coureur Goods::10476466045183",
 "Coureur Goods::8121970327807",
 "Coureur Goods::8121970950399",
 "Coureur Goods::8375408197887",
@@ -10794,7 +10796,26 @@
 "Xhibition",
 "Xtreme"
 ],
-"weekly_digest": [],
+"weekly_digest": [
+{
+"store": "Coureur Goods",
+"title": "Nike SB Kyle Wilson Tee Black",
+"price": "50.00",
+"sizes": "None purchasable yet \u2014 will alert when sizes unlock",
+"link": "https://coureurgoods.com/products/nike-sb-kyle-wilson-tee-black",
+"image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-kyle-wilson-tee-black-tees-coureur-goods-304983.jpg?v=1795812010",
+"local": false
+},
+{
+"store": "Coureur Goods",
+"title": "Nike SB Stitch Woven Top Dark Russet/Black/White",
+"price": "110.00",
+"sizes": "S, M, L",
+"link": "https://coureurgoods.com/products/niek-sb-stitch-woven-top-dark-russet-black-white",
+"image": "https://cdn.shopify.com/s/files/1/0594/3915/3321/files/nike-sb-stitch-woven-top-dark-russetblackwhite-jackets-nike-sb-392616.webp?v=1795812212",
+"local": false
+}
+],
 "apparel_seeded": true,
 "last_digest_date": "2026-11-27",
 "stock": {
@@ -11101,7 +11122,7 @@
 "NJ Skateshop::8563372556322": false,
 "NJ Skateshop::8544910180386": true,
 "NJ Skateshop::8648421277730": true,
-"NJ Skateshop::8498448891938": true,
+"NJ Skateshop::8498448891938": false,
 "NJ Skateshop::8496307666978": false,
 "NJ Skateshop::8601472729122": true,
 "NJ Skateshop::8590541226018": true,
@@ -17300,8 +17321,7 @@
 "Humidity Skateshop::8583152009507": 1,
 "Oneness::10438106873940": 2,
 "Flatspot::7256335384756": 1,
-"Flatspot::7256335417524": 1,
-"NJ Skateshop::8498448891938": 2
+"Flatspot::7256335417524": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -20499,16 +20519,8 @@
 "m": {}
 },
 "NJ Skateshop::8498448891938": {
-"l": [
-"10",
-"9",
-"9.5"
-],
-"m": {
-"10": 2,
-"9": 2,
-"9.5": 2
-}
+"l": [],
+"m": {}
 },
 "NJ Skateshop::8601472729122": {
 "l": [
@@ -20551,7 +20563,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"12": 1
+}
 },
 "NJ Skateshop::8498530713634": {
 "l": [
@@ -20592,8 +20606,8 @@
 "9.5"
 ],
 "m": {
-"9.5": 1,
-"8.5": 1
+"9.5": 2,
+"8.5": 2
 }
 },
 "NJ Skateshop::8333653114914": {
@@ -21369,7 +21383,9 @@
 "9",
 "9.5"
 ],
-"m": {}
+"m": {
+"11": 1
+}
 },
 "Stolen Skate Shop::8428106547244": {
 "l": [
@@ -56683,7 +56699,7 @@
 "8"
 ],
 "m": {
-"6.5": 1
+"6.5": 2
 }
 },
 "35th North::15487947374628": {
