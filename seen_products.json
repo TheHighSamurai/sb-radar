@@ -11753,7 +11753,7 @@
 "Stolen Skate Shop::7866543308844": true,
 "Stolen Skate Shop::7174970015788": true,
 "Stolen Skate Shop::7792129703980": true,
-"Stolen Skate Shop::7753239167020": true,
+"Stolen Skate Shop::7753239167020": false,
 "Stolen Skate Shop::7174971949100": true,
 "Stolen Skate Shop::7699946766380": true,
 "Stolen Skate Shop::7288440881196": true,
@@ -11763,7 +11763,7 @@
 "Stolen Skate Shop::7174972997676": true,
 "Stolen Skate Shop::7174972145708": true,
 "Stolen Skate Shop::7407673737260": false,
-"Stolen Skate Shop::7214808891436": true,
+"Stolen Skate Shop::7214808891436": false,
 "Stolen Skate Shop::7231969230892": true,
 "Stolen Skate Shop::7764321271852": false,
 "Stolen Skate Shop::7752411283500": false,
@@ -17331,9 +17331,7 @@
 "Humidity Skateshop::8583152009507": 1,
 "Oneness::10438106873940": 2,
 "Flatspot::7256335384756": 1,
-"Flatspot::7256335417524": 1,
-"Stolen Skate Shop::7753239167020": 2,
-"Stolen Skate Shop::7214808891436": 2
+"Flatspot::7256335417524": 1
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -21742,12 +21740,8 @@
 "m": {}
 },
 "Stolen Skate Shop::7753239167020": {
-"l": [
-"13"
-],
-"m": {
-"13": 2
-}
+"l": [],
+"m": {}
 },
 "Stolen Skate Shop::7174971949100": {
 "l": [
@@ -21820,12 +21814,8 @@
 "m": {}
 },
 "Stolen Skate Shop::7214808891436": {
-"l": [
-"8.5"
-],
-"m": {
-"8.5": 2
-}
+"l": [],
+"m": {}
 },
 "Stolen Skate Shop::7231969230892": {
 "l": [
