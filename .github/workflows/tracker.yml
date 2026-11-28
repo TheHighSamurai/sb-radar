@@ -24,6 +24,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Tip of the branch, not the commit that triggered the run: a run that waited in
+          # the concurrency queue would otherwise start from a cache the previous run had
+          # already replaced, and its cache push was rejected ("fetch first").
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,6 +47,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           BACKFILL_DAYS: ${{ github.event.inputs.backfill_days || '0' }}
+          WATCH_SIZES: ${{ vars.WATCH_SIZES }}   # optional repo variable; blank = 11,11.5
         run: python tracker.py
 
       - name: Commit updated cache
@@ -49,9 +55,19 @@ jobs:
           if [ -n "$(git status --porcelain seen_products.json)" ]; then
             git config user.name "sb-radar-bot"
             git config user.email "actions@users.noreply.github.com"
-            git add seen_products.json
-            git commit -m "Update seen-products cache [skip ci]"
-            git push
+            cp seen_products.json "$RUNNER_TEMP/seen_products.json"
+            for attempt in 1 2 3; do
+              git add seen_products.json
+              git commit -m "Update seen-products cache [skip ci]"
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+              echo "Push rejected (attempt $attempt): branch moved, re-applying this run's cache on top"
+              sleep $((attempt * 3))
+              git fetch origin "${GITHUB_REF_NAME}"
+              git reset --hard FETCH_HEAD
+              cp "$RUNNER_TEMP/seen_products.json" seen_products.json
+            done
+            echo "::error::Could not push the updated cache after 3 attempts"
+            exit 1
           else
             echo "No cache changes to commit."
           fi

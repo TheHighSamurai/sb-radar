@@ -13,10 +13,12 @@ Nike SB Dunk Tracker — SB Radar
 import os
 import json
 import re
+import html
 import time
 import smtplib
 import logging
 import concurrent.futures
+import threading
 import urllib.parse
 from collections import Counter
 from email.mime.text import MIMEText
@@ -110,6 +112,8 @@ def send_discord(find: dict):
         content = "🔔 NOW AVAILABLE — sizes just unlocked"
     elif find.get("restock"):
         content = "🔁 RESTOCK — sizes back in stock"
+    elif find.get("news"):
+        content = "📰 SB Dunk release news"
     elif find.get("store") == "Nike SNKRS":
         content = "🗓️ SNKRS Dunk launch announced"
     elif find.get("feed") == "dunks":
@@ -158,8 +162,21 @@ _STYLE_RE   = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4}-\d{3})(?!\d)")
 _TITLE_STOP = {"nike", "sb", "mens", "men", "s", "shoe", "shoes"}
 TITLE_KEY_MIN_TOKENS = 5   # a bare "Dunk Low Pro" must never mute every colorway
 
+_SIZE_IN_TITLE_RE = re.compile(r"\b(?:size|sz)\s*\d{1,2}(?:\.\d)?\b")
+
+def clean_title(title: str) -> str:
+    """Undo HTML entities (some shops' pages give '&amp;quot;Muni Fast Pass&amp;quot;') and drop a
+    'Size 7.5' that one listing per size puts in its name, so the same shoe reads the same."""
+    t = title or ""
+    for _ in range(2):                      # "&amp;quot;" is escaped twice
+        t2 = html.unescape(t)
+        if t2 == t:
+            break
+        t = t2
+    return _SIZE_IN_TITLE_RE.sub(" ", t.lower()).strip()
+
 def _title_tokens(title: str) -> list:
-    return [t for t in re.sub(r"[^a-z0-9]+", " ", (title or "").lower().replace("\u2019", "'").replace("'", "")).split()
+    return [t for t in re.sub(r"[^a-z0-9]+", " ", clean_title(title).replace("\u2019", "'").replace("'", "")).split()
             if t not in _TITLE_STOP]
 
 def title_key(title: str):
@@ -220,34 +237,99 @@ def _full_name(title: str, link: str = "") -> frozenset:
         return t
     return t | _name_set(handle_text(link))
 
+# Words a store may add to or leave out of a model's name ("Zoom Blazer Mid" vs "Blazer Mid",
+# "Air Max Ishod" vs "Ishod"). Ignored on the SHORTER title only, so they can't hide a colorway.
+_MODEL_FILLER = {"zoom", "air", "max", "shoes", "shoe", "wair", "suede"}
+# Model families: two titles naming different families are never the same shoe, however
+# much of the colorway they share ("Dunk Low Black Spruce" vs "Blazer Mid Black Spruce").
+_FAMILIES = {
+    "dunk": "dunk", "blazer": "blazer", "ishod": "ishod", "nyjah": "nyjah", "janoski": "janoski",
+    "tennis": "tennis", "ps8": "ps8", "pogo": "pogo", "vertebrae": "vertebrae", "leo": "leo",
+    "rodriguez": "prod", "chron": "chron", "bruin": "bruin", "adversary": "adversary", "kobe": "kobe",
+    "trainer": "trainer", "code": "code58", "af1": "af1",
+}
+_HEIGHTS = ("low", "mid", "high")
+
+def _families(words) -> frozenset:
+    w = set(words)
+    fam = {_FAMILIES[x] for x in w if x in _FAMILIES}
+    if "force" in w:
+        fam.add("force58" if "58" in w else "af1")
+    return frozenset(fam)
+
+def _height(title: str):
+    found = {h for h in _HEIGHTS if re.search(rf"\b{h}\b", clean_title(title))}
+    return found.pop() if len(found) == 1 else None
+
+def _colorway(words_in_order) -> tuple:
+    """Basic color words in title order, repeats collapsed: 'Black/White' -> ('black', 'white')."""
+    out = []
+    for w in words_in_order:
+        w = _NAME_NORMAL.get(w, w)
+        if w in _COLOR_WORDS and (not out or out[-1] != w):
+            out.append(w)
+    return tuple(out)
+
 def names_match(a, b) -> bool:
-    """a / b: a title string, or an already-built name set (title + URL words)."""
+    """a / b: a title string, or an already-built name set (title + URL words).
+    Same shoe when one name's words are all in the other's (model filler words like
+    'zoom' allowed to be missing from the shorter one), the shared words include something
+    beyond model names / basic colors, and the two don't name different model families."""
     sa = a if isinstance(a, frozenset) else _name_set(a)
     sb = b if isinstance(b, frozenset) else _name_set(b)
+    fa, fb = _families(sa), _families(sb)
+    if fa and fb and not (fa & fb):
+        return False
     for small, big in ((sa, sb), (sb, sa)):
-        if len(small) >= NAME_MATCH_MIN_TOKENS and small <= big \
-                and any(t not in _GENERIC_WORDS and not t.isdigit() for t in small):
+        core = small - (_MODEL_FILLER - big)
+        if len(core) >= NAME_MATCH_MIN_TOKENS and core <= big \
+                and any(t not in _GENERIC_WORDS and not t.isdigit() for t in core):
             return True
     return False
 
+def plain_colorway_match(title_a: str, words_a, title_b: str, words_b) -> bool:
+    """Shoes whose colorway is only basic colors ('Blazer Mid Black/White') have no
+    distinctive word for names_match. Count them the same shoe when the model family,
+    the height, SB-ness and the ordered colors all agree and nothing else distinctive differs."""
+    fam_a, fam_b = _families(words_a), _families(words_b)
+    if not fam_a or fam_a != fam_b:
+        return False
+    if _height(title_a) != _height(title_b) or is_sb(clean_title(title_a)) != is_sb(clean_title(title_b)):
+        return False
+    ca, cb = _colorway(words_a), _colorway(words_b)
+    if len(ca) < 2 or ca != cb:
+        return False
+    extra = lambda ws: {w for w in ws if w not in _GENERIC_WORDS and w not in _MODEL_FILLER
+                        and w not in _NAME_DROP and not w.isdigit()}
+    return extra(words_a) == extra(words_b)
+
 _STYLE_LOOSE_RE = re.compile(r"(?<![A-Z0-9])([A-Z]{2}\d{4})-?(\d{3})(?!\d)")   # also "IR0460001"
+_STYLE_OLD_RE   = re.compile(r"(?<![A-Z0-9])(\d{6})-(\d{3})(?!\d)")                # older codes, "864349-007"
+
+def _codes_in(text: str, old_format: bool = False) -> list:
+    t = (text or "").upper()
+    out = [f"{m.group(1)}-{m.group(2)}" for m in _STYLE_LOOSE_RE.finditer(t)]
+    if old_format and not out:
+        out = [f"{m.group(1)}-{m.group(2)}" for m in _STYLE_OLD_RE.finditer(t)]
+    return out
 
 def style_code(p: dict):
     """Nike style code (e.g. HQ1625-201) for a Shopify product: from the variant SKUs first,
     else from tags, the URL handle, or the description — many stores leave SKUs blank."""
     codes = Counter()
     for v in p.get("variants", []) or []:
-        m = _STYLE_LOOSE_RE.search((v.get("sku") or "").upper())
-        if m:
-            codes[f"{m.group(1)}-{m.group(2)}"] += 1
+        for c in _codes_in(v.get("sku"))[:1]:
+            codes[c] += 1
     if not codes:
         tags = p.get("tags") or []
         tags = ",".join(tags) if isinstance(tags, list) else str(tags)
-        handle = p.get("handle") or ""             # e.g. "nike-hf5441-107-dunk-low-..."
+        handle = p.get("handle") or ""             # e.g. "nike-hf5441-107-dunk-low-..." or "...-hm8517400-..."
         body = re.sub(r"<[^>]+>", " ", p.get("body_html") or "")
-        for text in (tags, handle, body):          # first source that has one wins
-            for m in _STYLE_RE.finditer(text.upper()):
-                codes[m.group(1)] += 1
+        # first source that has one wins; the title and handle are short, so an undashed
+        # code there ("AF1 Navy Black HM8517400") is safe to read; old 6-digit codes too
+        for text, old_fmt in ((p.get("title") or "", True), (tags, False), (handle, True), (body, False)):
+            for c in _codes_in(text, old_fmt):
+                codes[c] += 1
             if codes:
                 break
     return codes.most_common(1)[0][0] if codes else None
@@ -273,12 +355,26 @@ def is_muted(find: dict, cache: dict) -> bool:
         return True
     title, link = find.get("title", ""), find.get("link", "")
     mine = {_name_set(title), _full_name(title, link)}
-    theirs = set()
+    my_words = _plain_words(title, link)
+    seen_titles = set()
     for e in muted.values():
-        theirs.add(_name_set(e.get("title", "")))
-        if e.get("link"):
-            theirs.add(_full_name(e.get("title", ""), e["link"]))
-    return any(names_match(a, b) for a in mine for b in theirs)
+        t, l = e.get("title", ""), e.get("link", "")
+        if (t, l) in seen_titles:
+            continue                      # one mute stores 2-3 keys with the same title
+        seen_titles.add((t, l))
+        theirs = {_name_set(t)} | ({_full_name(t, l)} if l else set())
+        if any(names_match(a, b) for a in mine for b in theirs):
+            return True
+        if plain_colorway_match(title, my_words, t, _plain_words(t, l)):
+            return True
+    return False
+
+def _plain_words(title: str, link: str = "") -> list:
+    """Title words in order (URL words appended when the title names no colorway)."""
+    words = [_NAME_NORMAL.get(w, w) for w in _title_tokens(title)]
+    if not _colorway(words) and link:
+        words += [_NAME_NORMAL.get(w, w) for w in _title_tokens(handle_text(link))]
+    return words
 
 def _bot(method: str, path: str, **kw):
     r = requests.request(method, DISCORD_API + path, headers={"Authorization": f"Bot {DISCORD_BOT_TOKEN}"}, timeout=10, **kw)
@@ -679,6 +775,13 @@ STORES = [
     {"name": "Nike SNKRS", "url": "https://www.nike.com/launch", "snkrs": True},
     # Nike.com's own Dunk page, newest first — general releases that skip SNKRS.
     {"name": "Nike.com", "url": "https://www.nike.com/w/dunk-shoes-90aohzy7ok?sortby=newest", "nike_wall": True},
+    # Release-news RSS feeds (Nov 2026). Catch SB Dunks that never touch a skate shop's
+    # Shopify store — e.g. Ducks of a Feather "The Zoo" (Flight Club + GOAT only).
+    # Public RSS, read once per run; one alert per release (deduped by style code).
+    {"name": "Sneaker News", "url": "https://sneakernews.com/feed/", "news_feed": True},
+    {"name": "Sneaker Bar Detroit", "url": "https://sneakerbardetroit.com/feed/", "news_feed": True},
+    {"name": "Sneaker Files", "url": "https://www.sneakerfiles.com/feed/", "news_feed": True},
+    {"name": "House of Heat", "url": "https://houseofheat.co/feed", "news_feed": True},
 ]
 
 # ── Cache ─────────────────────────────────────────────────────────────────────
@@ -702,6 +805,7 @@ def load_cache() -> dict:
             "msgs": data.get("msgs", {}),
             "nike_dunk_seeded": data.get("nike_dunk_seeded", False),
             "boutique_reseed": data.get("boutique_reseed", False),
+            "news": data.get("news", []),
         }
     return {"seen": set(), "shopify": {}, "seeded_stores": set(), "weekly_digest": [],
             "apparel_seeded": False, "last_digest_date": None, "stock": {}, "oos": {}, "avail": {}, "muted": {}, "msgs": {}}
@@ -721,13 +825,19 @@ def save_cache(cache: dict):
         "msgs": cache.get("msgs", {}),
         "nike_dunk_seeded": cache.get("nike_dunk_seeded", False),
         "boutique_reseed": cache.get("boutique_reseed", False),
+        "news": cache.get("news", []),
     }, indent=0))
 
 # ── Detection & fetching ──────────────────────────────────────────────────────
 
+# Resale sites and some shops put "SB" after the model: "Dunk Low SB 'The Zoo'",
+# "Nike Dunk Low Pro SB ...". Those used to fall through to "regular Nike Dunk"
+# (Discord only, never emailed).
+_DUNK_SB_RE = re.compile(r"\bdunk\b[^|/\n]{0,25}?\bsb\b", re.I)
+
 def is_sb(text: str) -> bool:
     lower = text.lower()
-    return any(kw in lower for kw in SB_KEYWORDS)
+    return any(kw in lower for kw in SB_KEYWORDS) or bool(_DUNK_SB_RE.search(lower))
 
 def is_dunk(text: str) -> bool:
     return "dunk" in text.lower()
@@ -792,15 +902,25 @@ def is_apparel(title: str, product_type: str = "") -> bool:
     text = f"{title} {product_type}".lower()
     return any(re.search(rf"\b{re.escape(kw)}\b", text) for kw in APPAREL_KEYWORDS)
 
+SHOPIFY_PROBE_TIMEOUT = 15   # the old 6 s probe timed out on slow-but-fine Shopify stores
+
 def is_shopify(url: str, cache: dict) -> bool:
+    """True once a store has served /products.json. Only a YES is cached for good: a NO
+    is re-checked every run. (Before Nov 2026 a single timed-out probe cached NO forever,
+    leaving ~60 stores on homepage scraping that never found a real listing.)"""
     base = url.rstrip("/")
-    if base in cache["shopify"]:
-        return cache["shopify"][base]
+    if cache["shopify"].get(base) is True:
+        return True
     try:
-        r = requests.get(f"{base}/products.json?limit=1", timeout=REQUEST_TIMEOUT, headers=HEADERS)
-        result = r.status_code == 200 and "products" in r.text
+        r = requests.get(f"{base}/products.json?limit=1", timeout=SHOPIFY_PROBE_TIMEOUT, headers=HEADERS)
+        result = r.status_code == 200 and '"products"' in r.text
     except Exception:
         result = False
+    if result and cache["shopify"].get(base) is False:
+        # Was stuck on scraping: its Shopify listings have never been seen, so give it a
+        # fresh silent seed pass instead of alerting its whole catalog as new.
+        cache.setdefault("_reseed", set()).add(base)
+        log.info("%s now reads as Shopify (was cached as not) — silent re-seed this run", base)
     cache["shopify"][base] = result
     return result
 
@@ -809,10 +929,15 @@ def fetch_shopify(store: dict) -> list:
     base = store["url"].rstrip("/")
     while True:
         try:
-            r = requests.get(
-                f"{base}/products.json?limit=250&page={page}",
-                timeout=REQUEST_TIMEOUT, headers=HEADERS,
-            )
+            url = f"{base}/products.json?limit=250&page={page}"
+            try:
+                r = requests.get(url, timeout=REQUEST_TIMEOUT, headers=HEADERS)
+            except requests.RequestException:
+                r = None
+            if r is None or r.status_code in (429, 500, 502, 503, 504):
+                # One slower retry: a single slow page used to drop the rest of the catalog.
+                time.sleep(1.5)
+                r = requests.get(url, timeout=REQUEST_TIMEOUT * 2, headers=HEADERS)
             if r.status_code != 200:
                 if store.get("shopify_only") and page == 1:
                     log.warning(f"{store['name']} products.json HTTP {r.status_code} — skipped this run")
@@ -844,7 +969,7 @@ def fetch_html(store: dict) -> list:
             )
             candidates += re.findall(r'<h[123][^>]*>([^<]{5,100})</h[123]>', html, re.IGNORECASE)
             for c in candidates:
-                c = c.strip()
+                c = html.unescape(html.unescape(c)).strip()
                 if feed_for(c) and not is_apparel(c):
                     found.append({
                         "id":    f"{store['name']}::html::{c.lower()[:60]}",
@@ -874,16 +999,39 @@ def format_sizes(product: dict) -> str:
         except Exception: return 999
     return ", ".join(sorted(set(available), key=key))
 
-WATCH_SIZES = ("11", "11.5")          # email-only restock watch (Dunks)
-OOS_RUNS = 3                          # an item must read unavailable this many runs in a row (~15 min) to count as sold out
-_SIZE_RE = re.compile(r"^\s*(?:us|m|men'?s)?\s*(11(?:\.0+)?|11\.5)\s*(?:us|m)?\s*$", re.I)
+def _watch_sizes(raw):
+    """Men's sizes that restock emails are for. Set WATCH_SIZES (e.g. "11.5" or "11,11.5");
+    "none" turns restock emails off entirely. Unset or blank keeps the default."""
+    raw = (raw or "").strip()
+    if not raw:
+        raw = "11,11.5"
+    if raw.lower() in ("none", "off", "0"):
+        return ()
+    out = []
+    for x in raw.split(","):
+        try:
+            v = float(x.strip())
+        except ValueError:
+            continue
+        out.append(str(int(v)) if v == int(v) else str(v))
+    return tuple(out)
 
-def watched_label(label: str):
-    """Map a size label to '11' / '11.5' (men's only), else None."""
-    m = _SIZE_RE.match(label or "")
+WATCH_SIZES = _watch_sizes(os.environ.get("WATCH_SIZES"))   # restock emails (Dunks) only in these sizes
+OOS_RUNS = 3                          # an item must read unavailable this many runs in a row (~15 min) to count as sold out
+_SIZE_RE   = re.compile(r"^\s*(?:us|m|men'?s)?\s*(\d{1,2}(?:\.\d+)?)\s*(?:us|m)?\s*$", re.I)
+_SIZE_MW_RE = re.compile(r"^\s*(?:us\s*)?m(?:en'?s)?\s*(\d{1,2}(?:\.\d+)?)\s*(?:/|-|,)\s*w", re.I)   # "M 11 / W 12.5"
+
+def watched_label(label: str, sizes=None):
+    """Map a men's size label to one of the watched sizes ('11', '11.5'), else None."""
+    sizes = WATCH_SIZES if sizes is None else sizes
+    m = _SIZE_RE.match(label or "") or _SIZE_MW_RE.match(label or "")
     if not m:
         return None
-    return "11.5" if float(m.group(1)) == 11.5 else "11"
+    v = float(m.group(1))
+    for w in sizes:
+        if float(w) == v:
+            return w
+    return None
 
 def _num(l):
     try: return float(re.sub(r"[^\d.]", "", l) or 999)
@@ -1042,6 +1190,114 @@ def check_nike_wall(store: dict, cache: dict) -> list:
         log.info(f"  NEW NIKE.COM [{store['name']}]: {f['title']} — ${f['price']}")
     return finds
 
+NEWS_MAX_AGE_DAYS = 3        # ignore older articles (first load, or a feed that lags)
+NEWS_MEMORY       = 300      # recent news alerts remembered for cross-feed de-duping
+_NEWS_LOCK        = threading.Lock()   # feeds are read in parallel; de-dupe across them
+_NEWS_SB_RE = re.compile(r"\b(sb\s+dunk|dunk\s+sb|nike\s+sb)\b|\bdunk\b[^|/\n]{0,25}?\bsb\b", re.I)
+_NEWS_SKIP_RE = re.compile(r"\b(deals?|weekly|this week|recap|ranking|best of|top \d+|giveaway)\b", re.I)
+# Article boilerplate, so "first look" / "release date" / "where to buy" posts about the
+# same shoe reduce to the same words ("ducks feather zoo").
+_NEWS_FILLER = {
+    "release", "releases", "releasing", "released", "date", "dates", "official", "officially", "images",
+    "image", "photos", "first", "look", "closer", "detailed", "where", "buy", "how", "price", "info",
+    "coming", "soon", "here", "almost", "arrives", "arriving", "returns", "return", "drops", "dropping",
+    "drop", "debut", "debuts", "revealed", "reveal", "unveil", "unveils", "surfaces", "surface", "leak",
+    "leaked", "early", "now", "available", "the", "a", "an", "of", "on", "in", "is", "are", "for",
+    "with", "this", "that", "its", "to", "at", "by", "from", "and", "x", "new", "week", "month",
+    "holiday", "spring", "summer", "fall", "winter", "2025", "2026", "2027", "joins", "party",
+    "pair", "pairs", "pack", "collab", "collaboration", "dunk", "dunks", "nike", "sb", "low", "high",
+    "mid", "pro", "og", "qs",
+}
+
+def _news_words(title: str) -> frozenset:
+    return frozenset(w for w in _name_set(title) if w not in _NEWS_FILLER and not w.isdigit())
+
+def _same_release(a: frozenset, b: frozenset) -> bool:
+    small, big = (a, b) if len(a) <= len(b) else (b, a)
+    return len(small) >= 2 and small <= big
+
+def _rss_items(xml: str) -> list:
+    """(title, link, description, pubDate) from an RSS 2.0 feed — stdlib-free, tolerant parsing."""
+    def tag(block, name):
+        m = re.search(rf"<{name}[^>]*>(.*?)</{name}>", block, re.S | re.I)
+        if not m:
+            return ""
+        v = m.group(1).strip()
+        v = re.sub(r"^<!\[CDATA\[(.*)\]\]>$", r"\1", v, flags=re.S)
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", v)).strip()
+    import html as _h
+    return [tuple(_h.unescape(tag(b, n)) for n in ("title", "link", "description", "pubDate"))
+            for b in re.findall(r"<item\b.*?</item>", xml, re.S | re.I)]
+
+def _news_age_days(pub: str) -> float:
+    from email.utils import parsedate_to_datetime
+    try:
+        when = parsedate_to_datetime(pub)
+        return (datetime.now(when.tzinfo) - when).total_seconds() / 86400
+    except Exception:
+        return 0.0
+
+def check_news(store: dict, cache: dict) -> list:
+    """SB Dunk release headlines from a sneaker-news RSS feed. One alert per release: the
+    style code (JJ7565-300) is the identity when the article gives one, else the shoe's
+    name words, so 'first look', 'release date' and 'where to buy' posts alert once."""
+    seen, finds = cache["seen"], []
+    try:
+        r = requests.get(store["url"], headers=HEADERS, timeout=REQUEST_TIMEOUT * 2)
+        if r.status_code != 200:
+            log.warning("%s feed HTTP %s", store["name"], r.status_code)
+            return []
+        items = _rss_items(r.text)
+    except Exception as e:
+        log.warning("%s feed error: %s", store["name"], e)
+        return []
+    if not items:
+        log.warning("%s feed returned no items", store["name"])
+        return []
+    cache.setdefault("_fetched", set()).add(store["name"])
+    news = cache.setdefault("news", [])           # [{"code", "words", "title"}], newest last
+    lock = _NEWS_LOCK
+    for title, link, desc, pub in items:
+        if not (_NEWS_SB_RE.search(title) and is_dunk(title)) or _NEWS_SKIP_RE.search(title):
+            continue
+        if is_womens(title) or is_kids(title) or _news_age_days(pub) > NEWS_MAX_AGE_DAYS:
+            continue
+        m = _STYLE_LOOSE_RE.search(f"{title} {link} {desc}".upper())
+        code = f"{m.group(1)}-{m.group(2)}" if m else None
+        pid = f"{store['name']}::{code or link}"
+        if pid in seen:
+            continue
+        name = _news_words(title)
+        with lock:
+            dup = any((code and e.get("code") == code)
+                      or ((not code or not e.get("code")) and _same_release(name, frozenset(e.get("words", []))))
+                      for e in news)
+            if dup:
+                seen.add(pid)           # same release, other article/feed: remember quietly
+                continue
+            news.append({"code": code, "words": sorted(name), "title": title})
+            del news[:-NEWS_MEMORY]
+        keys = (["s:" + code] if code else []) + [k for k in [title_key(title)] if k] + ["p:" + pid]
+        finds.append({
+            "id":    pid,
+            "store": store["name"],
+            "title": title,
+            "price": "TBA",
+            "sizes": "Release news" + (f" — style {code}" if code else "") + " (see article for date and stores)",
+            "link":  link or store["url"],
+            "image": None,
+            "keys":  keys,
+            "local": False,
+            "apparel": False,
+            "feed":  "dunks",
+            "gr":    False,
+            "sb":    True,
+            "news":  True,
+        })
+    for f in finds:
+        log.info(f"  NEW NEWS [{store['name']}]: {f['title']}")
+    return finds
+
 def live_sizes(find: dict):
     """Sizes buyable right now, from the store's product endpoint (products.json is a cached
     feed and can lag on a hot drop). None = couldn't check; [] = nothing buyable."""
@@ -1100,6 +1356,8 @@ def check_store(store: dict, cache: dict) -> list:
         return check_snkrs(store, cache)
     if store.get("nike_wall"):
         return check_nike_wall(store, cache)
+    if store.get("news_feed"):
+        return check_news(store, cache)
 
     # Boutiques: Shopify feed only, re-tried every run (never cached as "not Shopify",
     # never homepage-scraped — scraping them produced duplicate, priceless junk alerts).
@@ -1189,6 +1447,8 @@ def check_store(store: dict, cache: dict) -> list:
                         "local": store.get("local_sd", False),
                         "apparel": False,
                         "flip":  True,
+                        # watched sizes in stock right now: the email only goes out if one is
+                        "watch_avail": sorted({watched_label(l) for l in labels if watched_label(l)}, key=float),
                     })
                 elif size_back:
                     finds.append({
@@ -1297,6 +1557,9 @@ def run():
     # existing catalog — only genuinely new drops alert from its second check on.
     checked_names = {store["name"] for store in STORES}
     fetched = cache.pop("_fetched", set())
+    reseed = cache.pop("_reseed", set())
+    if reseed:
+        cache["seeded_stores"] -= {s["name"] for s in STORES if s["url"].rstrip("/") in reseed}
     new_stores = checked_names - cache["seeded_stores"]
     if new_stores & fetched:
         log.info("Silently seeding %d new store(s): %s", len(new_stores & fetched), ", ".join(sorted(new_stores & fetched)))
@@ -1399,6 +1662,13 @@ def run():
 
     # Email = Nike SB Dunks only (regular Nike Dunks go to Discord, not email).
     dunk_finds = [f for f in shoe_finds if f.get("feed") == "dunks" and f.get("sb") and not f.get("restock")]
+    # "Now available" means a listing went from nothing buyable to buyable, usually a restock.
+    # Email it only when one of his sizes is among what came back (Discord still gets it).
+    _wrong_size = [f for f in dunk_finds if f.get("flip") and not f.get("watch_avail")]
+    if _wrong_size:
+        log.info("Not emailing %d now-available listing(s) without size %s: %s", len(_wrong_size),
+                 "/".join(WATCH_SIZES) or "(restock emails off)", "; ".join(f["title"][:40] for f in _wrong_size))
+        dunk_finds = [f for f in dunk_finds if f not in _wrong_size]
     if dunk_finds:
         n_live = sum(1 for f in dunk_finds if f.get("flip"))
         subject = f"SB Radar: {len(dunk_finds)} new SB Dunk(s) detected"
@@ -1410,7 +1680,7 @@ def run():
         except Exception as e:
             log.error("Email alert failed: %s", e)
     else:
-        log.info("No Dunks this run (%d non-Dunk SB shoe find(s) -> #sbs) — email skipped.", len(shoe_finds))
+        log.info("No SB Dunk email this run (%d other shoe find(s) went to Discord only).", len(shoe_finds))
 
     # Alerts are out — now it is safe to mark everything seen / record stock state.
     _commit_state()
@@ -1456,7 +1726,7 @@ def backfill_digest(days: int):
 
     def scan(store):
         out = []
-        if not is_shopify(store["url"], cache):
+        if store.get("news_feed") or store.get("snkrs") or store.get("nike_wall") or not is_shopify(store["url"], cache):
             return out
         for p in fetch_shopify(store):
             title = p.get("title", "")
