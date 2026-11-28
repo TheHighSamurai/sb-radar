@@ -14470,7 +14470,7 @@
 "Flatspot::15471819620725": true,
 "Flatspot::15105778286965": false,
 "Flatspot::15834257916277": false,
-"Flatspot::15471819719029": true,
+"Flatspot::15471819719029": false,
 "Flatspot::15471819653493": false,
 "Flatspot::15471819882869": false,
 "Flatspot::15471819817333": false,
@@ -17260,8 +17260,7 @@
 "Southside Boardshop::10399462818109": 2,
 "Drift House::9327544467711": 1,
 "Humidity Skateshop::8583152009507": 1,
-"Oneness::10438106873940": 2,
-"Flatspot::15471819719029": 2
+"Oneness::10438106873940": 2
 },
 "avail": {
 "Defy Boardshop::7863138517110": {
@@ -43899,12 +43898,8 @@
 "m": {}
 },
 "Flatspot::15471819719029": {
-"l": [
-"UK 5.5"
-],
-"m": {
-"UK 5.5": 2
-}
+"l": [],
+"m": {}
 },
 "Flatspot::15471819653493": {
 "l": [],
